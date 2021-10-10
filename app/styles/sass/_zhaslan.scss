@@ -1,0 +1,485 @@
+//PAGE CARS
+.cars {
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    .section-desc {
+        @include fontParameter(18px, 400, 139%, $dark);
+        margin-bottom: 60px;
+    }
+
+    .group {
+        &-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        &-card {
+            padding: 20px;
+        }
+    }
+
+    .title {
+        a {
+            svg {
+                width: 20px;
+                height: 20px;
+                display: block;
+            }
+        }
+    }
+}
+
+//=============================
+//PROMOTIONS
+.promotions {
+    .img {
+        a {
+            img {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+
+    &-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    .swiper-slide {
+        background-color: $lgray;
+    }
+
+    .title {
+        padding: 20px;
+
+        a {
+            @include fontParameter(18px, 700, 139%, $dark);
+        }
+    }
+
+    &-date {
+        margin-top: 10px;
+    }
+
+    &-desc {
+        margin-top: 10px;
+    }
+}
+
+//OFFERS
+.offers {
+    .img {
+        a {
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+
+    .swiper-slide {
+        background-color: $lgray;
+    }
+
+    .title {
+        padding: 20px;
+
+        a {
+            @include fontParameter(18px, 700, 139%, $dark);
+        }
+    }
+
+    &-date {
+        margin-top: 10px;
+    }
+
+    &-desc {
+        margin-top: 10px;
+        line-height: 20px;
+    }
+}
+
+//SERVICES 
+.service {
+    background-color: $lgray;
+
+    .swiper-slide {
+        background-color: $pattensBlue;
+    }
+
+    &-block {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    &-img {
+        margin-right: 20px;
+    }
+
+    &-text {
+        @include fontParameter(17px, 400, 139%, $dark)
+    }
+
+    .arrow {
+        position: absolute;
+        top: 27px;
+    }
+}
+
+// NEWS
+.news {
+    .img {
+        a {
+            img {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+
+    .swiper-slide {
+        background-color: $lgray;
+    }
+
+    .title {
+        padding: 20px;
+    }
+
+    &-date {
+        margin-top: 40px;
+    }
+}
+
+//CONTACTS
+.contacts {
+    .section-heading {
+        margin-bottom: 0;
+        @include fontParameter(35px, 700, 140%, $dark);
+    }
+
+    .links {
+        text-align: center;
+
+        a {
+            width: 165px;
+            @include fontParameter(18px, 700, 139%, $dark);
+
+            &::before {
+                bottom: 1px;
+            }
+        }
+
+        &-item {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+
+    &-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// FOOTER
+.footer {
+    background: $dark;
+    color: $white;
+
+    &-inner {
+        @include fontParameter(15px, 400, 167%, $dgray);
+        border-bottom: 1px solid $dgray;
+
+        p {
+            padding-bottom: 15px;
+        }
+    }
+
+    &-details {
+        @include fontParameter(15px, 400, 167%, $white);
+        margin-bottom: 60px;
+        cursor: pointer;
+
+        svg {
+            fill: $white;
+            width: 20px;
+            height: 20px;
+            display: block;
+            transform: rotate(90deg);
+        }
+    }
+
+    &-logo {
+
+        svg {
+            fill: $white;
+            width: 70px;
+            height: 35px;
+            display: block;
+        }
+    }
+
+    &-title {
+        @include fontParameter(18px, 700, 167%, inherit);
+    }
+
+    &-menu {
+        margin-top: 65px;
+        margin-bottom: 125px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &-block {
+        &:not(.right-block) {
+            a {
+                position: relative;
+            
+                &:hover {
+                    &::after {
+                        transform: scaleX(1);
+                    }
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    top: calc(100% + 5px);
+                    left: 0;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    @include transition(.3s ease);
+                    background: $white;
+                }
+
+            }
+            
+        }
+        li {
+            margin-bottom: 20px;
+
+            a {
+                @include fontParameter(15px, 400, 139%, inherit);
+                color: $gray;
+                display: inline-block;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: $white;
+                    color: $white;
+                    display: block;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-heading {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        &.lg {
+            li {
+                a {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &-social {
+        margin-top: 10px;
+    }
+
+    &-text {
+        p {
+            @include fontParameter(12px, 400, 125%, $dgray);
+        }
+    }
+
+    &-btn {
+        margin-left: 10px;
+    }
+
+    &-copyright {
+        margin-top: 20px;
+
+        &-left {
+            a {
+                @include fontParameter(12px, 400, 125%, $dgray);
+                margin-right: 20px;
+                position: relative;
+            }
+        }
+
+        &-right {
+            div {
+                span {
+                    @include fontParameter(12px, 400, 125%, $dgray);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .cars {
+        .group {
+            &-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    .group .section-desc {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cars {
+        .group {
+            &-cards {
+                grid-template-columns: repeat(2, 2fr);
+            }
+        }
+    }
+
+    .footer {
+        &-menu {
+            flex-wrap: wrap;
+        }
+    }
+
+    .contacts {
+        .links {
+            &-item {
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluid {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    .news {
+        .section-heading {
+            text-align: start;
+        }
+    }
+
+    .contacts {
+        &-info {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .links {
+            &-item {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .footer {
+        &-menu {
+            margin-bottom: 60px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        &-info {
+            flex-wrap: wrap;
+        }
+
+        &-text {
+            order: 2;
+        }
+
+        &-btn {
+            order: 1;
+            width: 100%;
+            margin-bottom: 60px;
+
+            a {
+                width: 100%;
+            }
+        }
+
+        &-info {
+            margin-bottom: 60px;
+        }
+
+        &-copyright {
+            flex-direction: column;
+
+            &-right {
+                align-self: flex-start;
+            }
+
+            &-left {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cars {
+        .section-desc {
+            margin-bottom: 30px;
+        }
+
+        .group {
+            &-cards {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            &-card {
+                border-top: 1px solid $gray;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .footer {
+        &-menu {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

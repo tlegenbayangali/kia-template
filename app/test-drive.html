@@ -1,0 +1,98 @@
+<!--#set var="title" value="Записаться на тест драйв" -->
+<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/sections/page-header-steps-1-2.html" -->
+
+<div id="test-drive-app" class="vue-app">
+    <div class="section section-divided pos-r pt-40">
+        <!-- Slider main container -->
+        <div class="container-fluid">
+            <div class="pos-r models-sm-container dalacode-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div v-for="car in cars" :key="car.id" class="swiper-slide d-flex flex-column justify-content-between model">
+                        <div class="top">
+                            <div class="img">
+                                <img :src="car.image.lg" :alt="car.title">
+                            </div>
+                            <div class="title">
+                                <div class="d-flex">
+                                    <span class="underlined-black fz-18 fw-700">{{car.title}}</span>
+                                </div>
+                            </div>
+                            <div class="model-row">
+                                <div class="d-flex">
+                                    <span class="price">от {{car.starting_price}} ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <button class="arrow arrow-prev swiper-button-prev">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                        <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5"></path>
+                    </svg>
+                </button>
+                <button class="arrow arrow-next swiper-button-next">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                        <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pos-r models-lg-container">
+                        <div class="swiper-wrapper">
+                            <div v-for="car in cars" :key="car.id" :data-hash="car.slug" class="swiper-slide model">
+                                <div class="top">
+                                    <div class="title">
+                                        <span>{{car.title}}</span>
+                                    </div>
+                                    <div class="img">
+                                        <a href="#">
+                                            <img :src="car.image.lg" :alt="car.title">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <button class="arrow arrow-prev swiper-button-prev">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                                <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                        <button class="arrow arrow-next swiper-button-next">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                                <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section section-divided next-section-btn bg-white">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-end">
+                        <form method="GET" action="/test-drive-form.html">
+                            <input type="text" value="valuecar" hidden>
+                            <button type="submit" class="btn btn-lg btn-black">Далее</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer-vue.html" -->

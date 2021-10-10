@@ -1,0 +1,17 @@
+.wpcf7 {
+    &-form {
+        position: relative;
+    }
+
+    &-response-output {
+        display: none;
+    }
+
+    .ajax-loader {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+        background-color: $black;
+    }
+}

@@ -1,0 +1,65 @@
+<!--#set var="title" value="Записаться на тест драйв" -->
+<!--#include virtual="/parts/header.html" -->
+<!--#include virtual="/sections/page-header-steps-2-2.html" -->
+
+<div class="vue-app">
+    <div class="section section-divided pos-r">
+        <div class="container-fluid">
+            <div class="row g-0">
+                <div class="col-xl-4 col-lg-12 pr-80 aside bg-lgray">
+                    <aside class="pt-60 pb-60">
+                        <div class="model-info">
+                            <div class="model-info-title">
+                                Новый Rio
+                            </div>
+                            <div class="model-info-image d-flex justify-content-center">
+                                <img src="images/dist/aside/rio_new.png" alt="Новый Rio">
+                            </div>
+                            <div class="model-info-price d-flex justify-content-between">
+                                <span>Стоимость</span>
+                                <span class="fw-700 fz-18">от 5 000 000 ₸</span>
+                            </div>
+                            <div class="model-info-dealer mt-20">
+                                <span class="model-info-dealer-title mb-10 fw-700 d-block">Урал Авто Кров</span>
+                                <span class="model-info-dealer-address mb-10 d-block">
+                                    г. Уральск, ул. Шолохова, 15
+                                </span>
+                                <span class="model-info-dealer-address mb-10 d-block">
+                                    Пн–Вс с 09:00 до 21:00
+                                </span>
+                                <a href="tel:+77777777777" class="underlined underlined-black model-info-dealer-phone fw-700">
+                                    +7 (777) 777-77-77
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-xl-8 col-lg-12">
+                    <div class="content pt-60 pb-60 pl-80">
+                        <div class="callback-form">
+                            <h5 class="mb-2">Ваши контакты</h5>
+                            <p>Поля, отмеченные *, обязательны для заполнения</p>
+                            <form>
+                                <div class="callback-form-row d-flex justify-content-between mb-40">
+                                    <input placeholder="Имя *:" type="text" class="input-name" name="form-name" id="form-name">
+                                    <input placeholder="Телефон *:" type="text" class="input-phone" name="form-phone" id="form-phone">
+                                </div>
+                                <div class="callback-form-row d-flex justify-content-between mb-40">
+                                    <textarea class="input-message" name="form-message" id="form-message" placeholder="Дополнительно"></textarea>
+                                </div>
+                                <div class="callback-form-row">
+                                    <input type="checkbox" name="form-agreement" id="form-agreement" class="input-checkbox" value="Согласен на обработку данных">
+                                </div>
+                                <div class="callback-form-row mt-40 d-flex justify-content-start">
+                                    <input class="btn btn-lg btn-black" type="submit" value="Отправить заявку">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer-vue.html" -->

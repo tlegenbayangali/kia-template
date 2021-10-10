@@ -1,0 +1,102 @@
+<section class="models section pt-80">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4 class="section-heading">Авто в наличии</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="dalacode-selector mb-8" data-container="available-models-slider">
+                    <input value="Все модели" type="text" hidden="true">
+                    <div class="current d-flex justify-content-between align-items-center">
+                        <span></span>
+                        <svg class="inline-svg-icon">
+                            <use xlink:href="images/dist/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </div>
+                    <div class="options">
+                        <ul>
+                            <li data-option="all">
+                                Все модели
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider main container -->
+    <div class="container-fluid">
+        <div class="pos-r available-models-slider dalacode-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide d-flex flex-column justify-content-between model model-wide" data-option="Car 1">
+                    <div class="top">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/dist/available-models/rio-x-comfort.png" alt="Rio X Comfort">
+                            </a>
+                        </div>
+                        <div class="title">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <span class="underlined mr-2 underlined-black fz-18 fw-700">Rio X Comfort</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quos?
+                        </div>
+                        <div class="price mt-2">
+                            5 990 000 ₸ <span class="price-sm">550 561 ₸/мес.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide d-flex flex-column justify-content-between model model-wide" data-option="Cerato">
+                    <div class="top">
+                        <div class="img">
+                            <a href="#">
+                                <img src="images/dist/available-models/rio-x-comfort.png" alt="Cerato">
+                            </a>
+                        </div>
+                        <div class="title">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <span class="underlined mr-2 underlined-black fz-18 fw-700">Cerato</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quos?
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- If we need navigation buttons -->
+            <button class="arrow arrow-prev swiper-button-prev">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                    <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5"></path>
+                </svg>
+            </button>
+            <button class="arrow arrow-next swiper-button-next">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                    <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid mt-40">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <a href="#" class="btn btn-white btn-lg btn-border-black">
+                    Все авто в наличии
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
