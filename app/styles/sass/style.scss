@@ -79,7 +79,7 @@ input::-webkit-inner-spin-button {
 
     &::after {
         content: '';
-        background: url('../images/dist/kia_logo.svg') no-repeat center;
+        background: url('../images/dist/kia-logo-new.svg') no-repeat center;
         width: 80px;
         height: 40px;
         top: 50%;
@@ -374,6 +374,16 @@ h5 {
 
     &c {
         text-align: center;
+    }
+}
+
+.f {
+    &-dark {
+        fill: $dark;
+    }
+
+    &-light {
+        fill: $white;
     }
 }
 

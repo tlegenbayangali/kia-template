@@ -35,10 +35,9 @@
 						<div class="header-top-inner d-flex justify-content-between align-items-center">
 							<div class="left d-flex align-items-center">
 								<a class="d-flex align-items-center" href="/">
-									<svg class="left-icon d-block">
-										<use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/images/dist/sprite.svg#kia-header-logo"></use>
+									<svg class="left-icon d-block f-dark">
+										<use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/images/dist/sprite.svg#kia-logo-new"></use>
 									</svg>
-									<!-- <img src="<?php echo get_template_directory_uri() . '/dist/images/dist/kia_logo.png'; ?>" alt="logo"> -->
 									<div class="left-text pos-r">
 										<?php the_field('site_name', 'options'); ?>
 										<div class="bottom">

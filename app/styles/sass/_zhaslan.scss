@@ -274,10 +274,9 @@
                 display: inline-block;
 
                 svg {
-                    width: 30px;
-                    height: 30px;
-                    fill: transparent;
-                    color: $white;
+                    width: 24px;
+                    height: 24px;
+                    fill: $white;
                     display: block;
                 }
             }
@@ -306,11 +305,6 @@
 
     &-social {
         margin-top: 10px;
-
-        a {
-            background: transparent;
-            border: 1px solid $white;
-        }
     }
 
     &-text {

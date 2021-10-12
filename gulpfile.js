@@ -78,7 +78,7 @@ function images() {
 
 function copySvg() {
 	return src('app/images/src/**/*.svg')
-		.pipe(dest('app/images/dist'))
+		.pipe(dest('dist/images/dist'))
 }
 
 function buildcopy() {
@@ -113,7 +113,7 @@ function startwatch() {
 	watch(`app/styles/${preprocessor}/**/*`, { usePolling: true }, styles)
 	watch(`dist/styles/${preprocessor}/**/*`, { usePolling: true }, styles)
 	watch(['app/js/**/*.js', '!app/js/**/*.min.js'], { usePolling: true }, scripts)
-	watch('app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
+	watch('app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, copySvg)
 	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
 }
 
@@ -123,4 +123,4 @@ exports.images  = images
 exports.svg  = copySvg
 exports.assets  = series(styles, images, scripts)
 exports.build   = series(cleandist, styles, buildcopy, buildhtml, scripts)
-exports.default = series(cleanImagesDirectory, styles, buildcopy, scripts, startwatch)
+exports.default = series(cleanImagesDirectory, styles, copySvg, scripts, startwatch)

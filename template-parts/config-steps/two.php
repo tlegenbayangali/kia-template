@@ -24,9 +24,9 @@
         $engine_set = [
             'id' => $id,
             'engine' => get_field('common_chars', $config->ID)['engine'],
-            'power' => get_field('power', $config->ID),
-            'engine_type' => get_field('engine_type', $config->ID),
-            'starting_price' => get_field('price', $config->ID)
+            'power' => get_field('common_chars', $config->ID)['power'],
+            'engine_type' => get_field('common_chars', $config->ID)['engine_type'],
+            'starting_price' => get_field('common_chars', $config->ID)['starting_price']
         ];
         $engines_set[] = $engine_set;
 

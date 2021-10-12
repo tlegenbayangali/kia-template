@@ -17,8 +17,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="footer-logo d-flex align-items-center">
-						<svg class="inline-svg-icon">
-							<use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/images/dist/sprite.svg#kia-logo"></use>
+						<svg class="left-icon d-block f-light">
+							<use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/images/dist/sprite.svg#kia-logo-new"></use>
 						</svg>
 						<span class="divider divider-md"></span>
 						<span class="footer-title"><?php the_field('site_name', 'options'); ?></span>
