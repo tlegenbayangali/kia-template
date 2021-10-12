@@ -39,7 +39,7 @@ get_header();
                         </div>
                         <div class="info-bottom">
                             <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                <a href="<?php echo get_post_permalink( $slide['main_slider_slide_button']['main_slider_slide_button_link'] ); ?>" class="btn">
+                                <a href="<?= $slide['main_slider_slide_button']['main_slider_slide_button_link'] ?>" class="btn">
                                     <?php echo $slide['main_slider_slide_button']['main_slider_slide_button_text'] ?>
                                 </a>
                             </div>
