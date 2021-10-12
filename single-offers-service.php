@@ -30,7 +30,7 @@ get_header(); ?>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="offer-info d-flex flex-column flex-md-row justify-content-md-end">
+                            <div class="offer-info d-none flex-column flex-md-row justify-content-md-end">
                                 <div class="period">
                                 <span class="lg d-block">
                                     <?php
