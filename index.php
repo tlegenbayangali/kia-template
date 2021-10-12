@@ -30,9 +30,9 @@ get_header();
                     </div>
                     <div class="info d-flex justify-content-between flex-column">
                         <div class="info-top">
-                            <h3 class="slider-heading">
+                            <div class="slider-heading">
                                 <?php echo $slide['main_slider_slide_heading'] ?>
-                            </h3>
+                            </div>
                             <span class="slider-description">
 								<?php echo $slide['main_slider_slide_description'] ?>
                             </span>
@@ -83,7 +83,7 @@ get_header();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="section-heading"><?php the_field('models_slider_heading', 'options') ?></h4>
+                    <h1 class="section-heading"><?php the_field('models_slider_heading', 'options') ?></h1>
                 </div>
             </div>
 

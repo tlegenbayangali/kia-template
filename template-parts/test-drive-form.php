@@ -41,9 +41,9 @@
             <div class="col-xl-4 col-lg-12 pb-30 pr-80 aside bg-lgray">
                 <aside class="pt-60 pb-60 h-100-p" data-sticky-container>
                     <div class="model-info" data-sticky-for="1200" data-margin-top="30" data-sticky-wrap="true">
-                        <div class="model-info-title">
+                        <h1 class="model-info-title">
                             <?= $current_model->post_title ?>
-                        </div>
+                        </h1>
                         <div class="model-info-image d-flex justify-content-center">
                             <?= get_the_post_thumbnail( $current_model->ID, 'full' ) ?>
                         </div>

@@ -25,7 +25,8 @@
                             wp_reset_query();
                         ?>
                         <div class="header-model-left model d-flex align-items-center">
-                            <a href="#" class="header-model-name d-flex align-items-center">
+                            <h1 class="header-model-name d-flex align-items-center"><?php echo esc_html( get_the_title($args['parent_post']->ID) );?></h1>
+                            <!--<a href="#" class="header-model-name d-flex align-items-center">
                                 <?php echo esc_html( get_the_title($args['parent_post']->ID) );?>
                                 <button type="button"
                                     class="button-arrow d-xl-none d-flex align-items-center justify-content-center">
@@ -33,7 +34,7 @@
                                         <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#arrow-bottom"></use>
                                     </svg>
                                 </button>
-                            </a>
+                            </a>-->
                             <div class="header-model-price align-items-center d-xl-flex d-none">
                                 <span class="d-block"> от <?= get_field('starting_price', $args['parent_post']->ID) ?> ₸ </span>
                                 <?php if (get_field('car_price_conditions', $args['parent_post']->ID)) : ?>

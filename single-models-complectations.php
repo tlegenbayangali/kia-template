@@ -8,7 +8,7 @@
         <div class="col-lg-12">
             <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
                 <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
-                <div class="equip-breadcrumbs-right d-flex align-items-center">
+                <div class="equip-breadcrumbs-right d-flex align-items-md-center">
                     <?php if (get_field('model_price_list', $parent_post_id)) : ?>
                     <div class="equip-breadcrumbs-right-price">
                         <a class="d-flex align-items-center underlined underlined-black" href="<?= get_field('model_price_list', $parent_post_id)['url'] ?>">

@@ -41,6 +41,12 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+.h-w-b-0 {
+    height: 0;
+    width: 0;
+    border: none;
+}
+
 .box-sh {
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .75);
 }
@@ -178,11 +184,13 @@ button {
             background: $red;
         }
     }
+
     &-green {
         &::after {
             background: $green;
         }
     }
+
     &-white {
         &::after {
             background: $white;
@@ -378,7 +386,7 @@ h5 {
 
         &::before {
             content: '';
-            background: url(../images/dist/check.svg) no-repeat center/cover;
+            background: url(../images/dist/check-black.svg) no-repeat center/cover;
             width: 8px;
             height: 8px;
             position: absolute;
@@ -558,6 +566,7 @@ h5 {
         display: inline-block;
         padding: 0 7px 2px;
     }
+
     &-yellow {
         background: $yellow;
         color: $white;
@@ -1002,6 +1011,7 @@ hr {
     text-align: center;
     cursor: pointer;
     display: inline-block;
+
     &:hover .btn {
         &:after {
             transform: translateX(-50%) scale(1);
@@ -1022,28 +1032,35 @@ hr {
     &-black {
         background: $dark;
         border: $white 1px solid;
+
         .btn {
             color: $white;
+
             &:after {
                 background: $white;
             }
         }
     }
+
     &-white {
         background: $white;
+
         .btn {
             color: $dark;
+
             &:after {
                 background: $dark;
             }
         }
     }
+
     // GENERAL
     .btn {
         border: none;
         position: relative;
         font-weight: 700;
         display: inline-block;
+
         &:after {
             content: '';
             position: absolute;
@@ -1081,7 +1098,7 @@ hr {
 //             transform: translateX(-50%) scaleX(1);
 //         }
 //     }
-    
+
 //     // BTN COLORS
 //     &-white {
 //         background: $white;
@@ -1505,8 +1522,17 @@ hr {
 
     &-breadcrumbs {
         &-right {
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+            }
+
             &-price {
                 margin-right: 55px;
+
+                @media screen and (max-width: 767px) {
+                    margin-right: 0 !important;
+                    margin-bottom: 30px;
+                }
             }
 
             a {

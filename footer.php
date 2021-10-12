@@ -32,7 +32,8 @@
 							<?php
 							wp_nav_menu( [
 								'theme_location' => 'footer-menu-1',
-								'container' => false
+								'container' => false,
+								'menu_class' => 'footer-menu-item'
 							] );
 							?>
 						</div>
@@ -43,7 +44,8 @@
 							<?php
 							wp_nav_menu( [
 								'theme_location' => 'footer-menu-2',
-								'container' => false
+								'container' => false,
+								'menu_class' => 'footer-menu-item'
 							] );
 							?>
 						</div>
@@ -54,7 +56,8 @@
 							<?php
 							wp_nav_menu( [
 								'theme_location' => 'footer-menu-3',
-								'container' => false
+								'container' => false,
+								'menu_class' => 'footer-menu-item'
 							] );
 							?>
 						</div>
@@ -65,7 +68,8 @@
 							<?php
 							wp_nav_menu( [
 								'theme_location' => 'footer-menu-4',
-								'container' => false
+								'container' => false,
+								'menu_class' => 'footer-menu-item'
 							] );
 							?>
 						</div>

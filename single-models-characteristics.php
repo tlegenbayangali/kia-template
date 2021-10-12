@@ -8,7 +8,7 @@
         <div class="col-lg-12">
             <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
                 <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
-                <div class="equip-breadcrumbs-right d-flex align-items-center">
+                <div class="equip-breadcrumbs-right d-flex align-items-md-center">
                     <div class="equip-breadcrumbs-right-price">
                         <a class="d-flex align-items-center underlined underlined-black" href="<?= get_field('model_price_list', $parent_post_id)['url'] ?>">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -70,11 +70,11 @@
                         <span class="val">
                             <?php the_field('starting_price', $parent_post_id);?> ₸
                         </span>
-                        <span class="equip-hero-min-price-info d-block">
+                        <!--<span class="equip-hero-min-price-info d-block">
                             <svg class="info info-additional conditions">
                                 <use xlink:href="<?= get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info"></use>
                             </svg>
-                        </span>
+                        </span>-->
                     </div>
                     <div class="equip-hero-banner">
                         <img src="<?php the_field('bottom_section_car_image_medium', $parent_post_id);?>" alt="banner">

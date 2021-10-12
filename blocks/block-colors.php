@@ -5,9 +5,9 @@
     <!-- COLORS SECTION-->
     <div class="model-sections-inner-wide">
         <div class="model-sections-colors"> <!-- MAIN BLOCK FOR COLORS-->
-            <div class="model-sections-colors-header">
+            <h3 class="model-sections-colors-header">
                 <?php the_field('colors-block-title')?>
-            </div>
+            </h3>
             <div class="model-sections-colors-image-wrapper d-flex justify-content-center">
                 <!-- COLORS IMAGE-->
                 <div class="model-sections-colors-image">

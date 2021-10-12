@@ -241,12 +241,13 @@
         &:not(.right-block) {
             a {
                 position: relative;
-            
+
                 &:hover {
                     &::after {
                         transform: scaleX(1);
                     }
                 }
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -261,8 +262,9 @@
                 }
 
             }
-            
+
         }
+
         li {
             margin-bottom: 20px;
 
@@ -274,7 +276,7 @@
                 svg {
                     width: 30px;
                     height: 30px;
-                    fill: $white;
+                    fill: transparent;
                     color: $white;
                     display: block;
                 }
@@ -304,6 +306,11 @@
 
     &-social {
         margin-top: 10px;
+
+        a {
+            background: transparent;
+            border: 1px solid $white;
+        }
     }
 
     &-text {

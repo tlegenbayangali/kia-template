@@ -277,8 +277,10 @@
         form {
             margin-top: 40px;
         }
+
         &-input-wrapper {
             position: relative;
+
             &::after {
                 content: '';
                 position: absolute;
@@ -291,6 +293,7 @@
                 transition: .3s ease;
                 transform-origin: left;
             }
+
             &:hover {
                 &:after {
                     transform: translateX(-50%) scaleX(1);

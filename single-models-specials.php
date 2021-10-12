@@ -7,7 +7,7 @@
         <div class="col-lg-12">
             <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
                 <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
-                <div class="equip-breadcrumbs-right d-flex align-items-center">
+                <div class="equip-breadcrumbs-right d-flex align-items-md-center">
                     <div class="equip-breadcrumbs-right-call">
                         <a class="d-flex align-items-center underlined underlined-black" href="/callback">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"

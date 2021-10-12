@@ -5,7 +5,7 @@ import jQuery from 'jquery';
         const init = function formValidatorInit() {
             const $this = $(this);
             const quantityOfRequiredFields = $this.find('.is-required').length;
-            const $submitEl = $this.find('input[type=submit]');
+            const $submitEl = $this.find('input[type=submit]').parent('.btn-wrapper');
 
             $submitEl.addClass('disallowed');
 

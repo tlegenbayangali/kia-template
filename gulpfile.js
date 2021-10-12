@@ -57,7 +57,6 @@ function scripts() {
 		.pipe(rename('app.min.js'))
 		.pipe(dest('app/js'))
 		.pipe(dest('dist/js'))
-		.pipe(browserSync.stream())
 }
 
 function styles() {
@@ -69,14 +68,12 @@ function styles() {
 		.pipe(rename({ suffix: ".min" }))
 		.pipe(dest('app/css'))
 		.pipe(dest('dist/css'))
-		.pipe(browserSync.stream())
 }
 
 function images() {
 	return src('app/images/src/**/*.{jpeg,jpg,png}')
 		.pipe(imagemin())
 		.pipe(dest('app/images/dist'))
-		.pipe(browserSync.stream())
 }
 
 function copySvg() {
@@ -126,4 +123,4 @@ exports.images  = images
 exports.svg  = copySvg
 exports.assets  = series(styles, images, scripts)
 exports.build   = series(cleandist, styles, buildcopy, buildhtml, scripts)
-exports.default = series(cleanImagesDirectory, styles, buildcopy, scripts, parallel(browsersync, startwatch))
+exports.default = series(cleanImagesDirectory, styles, buildcopy, scripts, startwatch)

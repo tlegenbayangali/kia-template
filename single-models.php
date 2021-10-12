@@ -3,7 +3,7 @@ $current_post = get_post();?>
 <?php get_template_part( 'template-parts/content', 'header-models', [ 'parent_post' => $current_post, ] ); ?>
 <div class="hero-model" style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
     <?php if (get_field('model_hero_video', get_the_ID())) : ?>
-    <video class="hero-model-video" autoplay loop style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
+    <video class="hero-model-video" autoplay="true" loop style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
         <?php if (get_field('model_hero_video', get_the_ID())['mp4']) : ?>
         <source src="<?= get_field('model_hero_video', get_the_ID())['mp4'] ?>">
         <?php endif; ?>
@@ -71,9 +71,9 @@ $current_post = get_post();?>
                 <!-- COLORS SECTION-->
                 <div class="model-sections-inner-wide">
                     <div class="model-sections-colors"> <!-- MAIN BLOCK FOR COLORS-->
-                        <div class="model-sections-colors-header">
+                        <h3 class="model-sections-colors-header">
                             <?php the_title(); ?>
-                        </div>
+                        </h3>
                         <div class="model-sections-colors-image-wrapper d-flex justify-content-center">
                             <!-- COLORS IMAGE-->
                             <div class="model-sections-colors-image">
@@ -145,9 +145,9 @@ $current_post = get_post();?>
                             <span class="model-sections-title-sub">
                                 Комплектации
                             </span>
-                            <div class="model-sections-title-header">
+                            <h3 class="model-sections-title-header">
                                 Варианты <?php the_title();?>
-                            </div>
+                            </h3>
                         </div>
                         <div class="model-sections-variations-bottom">
                             <div class="model-sections-variations-bottom-sub">
@@ -171,7 +171,7 @@ $current_post = get_post();?>
                                         <div class="swiper-slide model-sections-variations-slide">
                                             <div class="model-sections-variations-slide-inner">
                                                 <div class="title">
-                                                    <?php echo esc_html( get_the_title($current_post_ID) );?>
+                                                    <h5><?php echo esc_html( get_the_title($current_post_ID) );?></h5>
                                                     <span class="price">
                                                         <?php echo esc_attr(the_field('price', $current_post_ID))?> ₸
                                                     </span>
@@ -236,9 +236,9 @@ $current_post = get_post();?>
                                 <span class="model-sections-title-sub model-sections-bottom-block-sub">
                                     Консультация
                                 </span>
-                                <div class="model-sections-title-header model-sections-bottom-block-header">
+                                <h3 class="model-sections-title-header model-sections-bottom-block-header">
                                     Узнайте больше о <?php the_title(); ?>
-                                </div>
+                                </h3>
                                 
                                 <div class="model-sections-bottom-block-btn  btn-wrapper btn-wrapper-lg btn-wrapper-white">
                                     <a href="/callback" class="btn">

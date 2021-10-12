@@ -14,9 +14,9 @@
                 <span class="model-sections-title-sub">
                     <?php the_field('popup-sub-title')?>
                 </span>
-                <div class="model-sections-title-header">
+                <h3 class="model-sections-title-header">
                     <?php the_field('popup-title')?>
-                </div>
+                </h3>
             </div>
             <div class="model-sections-desc">
                 <p class="model-sections-desc-text">

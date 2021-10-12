@@ -22,9 +22,9 @@
                     <span class="model-sections-title-sub">
                         <?php the_field('items-sub-title')?>
                     </span>
-                    <div class="model-sections-title-header">
+                    <h3 class="model-sections-title-header">
                         <?php the_field('items-title')?>
-                    </div>
+                    </h3>
                 </div>
                 <?php if(get_field('items-description')) { ?>
                 <div class="model-sections-desc">
