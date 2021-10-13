@@ -1,37 +1,38 @@
 <?php
 get_header(); ?>
     <div class="page">
-        <div class="page-cover d-flex flex-column justify-content-between pb-20" style="background: url(<?php
-        echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>) no-repeat center/cover">
-            <div class="top">
-                <?php
-                get_template_part('template-parts/breadcrumbs'); ?>
-                <div class="container-fluid">
-                    <div class="row mt-20">
-                        <div class="col-lg-8">
-                            <div class="post-title">
-                                <h1>
-                                    <?php
-                                    the_title(); ?>
-                                </h1>
-                            </div>
+        <section class="pb-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="breadcrumbs">
+                            <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
                         </div>
-                    </div>
-                    <div class="row mt-20">
-                        <div class="col-lg-6">
-                            <p>
-                                <?= get_field('short_description', get_the_ID()) ?>
-                            </p>
+                        <div class="post-title">
+                            <h1>
+                                <?php the_title(); ?>
+                            </h1>
+                        </div>
+                        <div class="post-thumbnail mt-20">
+                            <?= get_the_post_thumbnail( get_the_ID(), 'full' ) ?>
                         </div>
                     </div>
                 </div>
+                <div class="row mt-20 justify-content-center">
+                    <div class="col-lg-7">
+                        <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
+                            <?php the_content(); ?>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="offer-info d-none flex-column flex-md-row justify-content-md-end">
-                                <div class="period">
+            <hr>
+            <div class="container">
+                <div class="row mt-20 justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="offer-info flex-column flex-md-row justify-content-md-end">
+                            <div class="period">
+                                <span class="d-block mb-10">Длительность</span>
                                 <span class="lg d-block">
                                     <?php
                                     $period = get_field('period', get_the_ID());
@@ -59,36 +60,20 @@ get_header(); ?>
                                     <?php
                                     endif; ?>
                                 </span>
-                                    <span class="d-block mt-10">Длительность</span>
-                                </div>
-                                <?php
-                                if (downcounter($date_end, ['days' => true])) : ?>
-                                    <div class="period">
-                                <span class="lg d-block">
-                                    <?= downcounter($date_end, [
-                                        'days' => true
-                                    ]) ?>
-                                </span>
-                                        <span class="d-block mt-10">До завершения</span>
-                                    </div>
-                                <?php
-                                endif; ?>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="pt-60 pb-60">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <article id="post-<?php
-                        the_ID(); ?>" <?php
-                        post_class('article'); ?>>
                             <?php
-                            the_content(); ?>
-                        </article>
+                            if (downcounter($date_end, ['days' => true])) : ?>
+                                <div class="period">
+                                    <span class="d-block mb-10">До завершения</span>
+                                    <span class="lg d-block">
+                                        <?= downcounter($date_end, [
+                                            'days' => true
+                                        ]) ?>
+                                    </span>
+                                </div>
+                            <?php
+                            endif; ?>
+                        </div>
                     </div>
                 </div>
             </div>

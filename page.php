@@ -24,7 +24,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row mt-20 justify-content-center">
                 <div class="col-lg-7">
                     <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
                         <?php the_content(); ?>
