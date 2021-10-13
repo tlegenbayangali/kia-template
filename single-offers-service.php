@@ -30,7 +30,7 @@ get_header(); ?>
             <div class="container">
                 <div class="row mt-20 justify-content-center">
                     <div class="col-lg-7">
-                        <div class="offer-info flex-column flex-md-row justify-content-md-end">
+                        <div class="offer-info d-flex">
                             <div class="period">
                                 <span class="d-block mb-10">Длительность</span>
                                 <span class="lg d-block">
