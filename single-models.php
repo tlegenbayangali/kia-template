@@ -20,9 +20,6 @@ $current_post = get_post();?>
                 <div class="hero-model-inner d-flex">
                     <div class="breadcrumbs">
                         <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
-                        <!--<div class="hero-model-minprice">
-                            <span>от <?= $GLOBALS['model_min_price']; ?> ₸</span>
-                        </div>-->
                     </div>
                     <div class="hero-model-bottom d-flex">
                         <div class="hero-model-title">
