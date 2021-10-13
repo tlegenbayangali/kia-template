@@ -1,4 +1,4 @@
-<div class="col-12 col-md-6 col-xl-3">
+<div class="col-12 col-md-6 col-xl-4">
     <div class="d-flex bg-lgray h-100-p w-100-p flex-column justify-content-between model">
         <div class="offers-card">
             <div class="img">
