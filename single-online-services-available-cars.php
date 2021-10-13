@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 <section class="cars">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="group">

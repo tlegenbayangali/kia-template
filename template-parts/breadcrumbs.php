@@ -1,4 +1,4 @@
-<div class="container-fluid breadcrumbs-container">
+<div class="container breadcrumbs-container">
     <div class="row">
         <div class="col-lg-12">
             <div class="breadcrumbs">

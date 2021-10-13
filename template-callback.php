@@ -13,7 +13,7 @@ if (isset($_GET['current_model'])) {
 }
 ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-<div class="container-fluid mt-4 mt-lg-0 mb-30">
+<div class="container mt-4 mt-lg-0 mb-30">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="fz-35">
@@ -29,7 +29,7 @@ if (isset($_GET['current_model'])) {
 <?php else : ?>
 <hr>
 <div class="pb-60 pt-60">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-7 callback-col">
                 <div class="callback-form">

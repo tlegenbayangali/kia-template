@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
 
-    .container-fluid {
+    .container {
         .row {
             &>div {
                 position: static;
@@ -85,9 +85,11 @@
 
         &-adress {
             line-height: 1;
+
             &-wrapper {
                 margin-left: 13px;
             }
+
             &-desc {
                 font-size: 12px;
                 font-weight: 400;
@@ -207,9 +209,11 @@
                                 &-link {
                                     &-banner {
                                         width: 25%;
+
                                         a {
                                             color: $white;
                                         }
+
                                         .top {
                                             height: 165px;
                                             width: 100%;
@@ -329,6 +333,7 @@
             span {
                 width: max-content;
             }
+
             .condition {
                 width: 20px;
                 height: 20px;
@@ -351,6 +356,7 @@
         &-menu {
             &-main {
                 position: relative;
+
                 &-button {
                     align-items: center;
                 }
@@ -428,9 +434,10 @@
             }
         }
     }
+
     @media screen and (max-width: 1199px) {
         &-model {
-            &-menu{
+            &-menu {
                 &-sub {
                     &-wrapper {
                         padding: 20px 80px;
@@ -1492,19 +1499,23 @@
                 a {
                     color: $white !important;
                 }
+
                 .model-sections-title-sub {
                     color: $yellow;
                 }
+
                 .model-sections-list-top-items-inner {
                     li.active a::after {
                         background: $white;
                     }
-                } 
+                }
+
                 .model-sections-list-items-inner {
                     li.active::before {
                         background: $white;
                     }
                 }
+
                 .model-sections-desc-more::before {
                     background: url(../images/dist/arrow-right-light.svg) no-repeat center/cover;
                 }
@@ -1784,6 +1795,7 @@
                                 border-radius: 50%;
                                 background: $dark;
                             }
+
                             a {
                                 font-weight: 700;
                             }
@@ -1941,10 +1953,12 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+
                     &-text {
                         font-size: 50px;
                         font-weight: 700;
                     }
+
                     .close {
                         cursor: pointer;
                         display: block;
@@ -2259,6 +2273,7 @@
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 10px;
                 margin-top: 30px;
+
                 img {
                     margin-right: 15px;
                 }
@@ -2366,6 +2381,7 @@
                         &.active {
                             a {
                                 font-weight: 700;
+
                                 &::after {
                                     transform: scale(1);
                                 }
@@ -2788,16 +2804,19 @@
         }
     }
 }
+
 .swiper-pagination {
     &-bullets {
         bottom: 20px !important;
     }
+
     &-bullet {
         width: 40px;
         height: 16px;
         border-radius: 0;
         position: relative;
         background: transparent;
+
         &::before {
             content: '';
             width: 100%;

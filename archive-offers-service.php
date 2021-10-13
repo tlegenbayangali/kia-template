@@ -10,7 +10,7 @@
 get_header(); ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 <section class="offers pb-60" id="offers">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<h1><?php the_archive_title(); ?></h1>

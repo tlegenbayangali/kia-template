@@ -89,7 +89,7 @@ if (get_field('is_models_slider', 'options')) : ?>
     ?>
     <section class="models section pt-80 pb-80">
         <div class="overflow-fix-y">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="section-heading"><?php
@@ -132,7 +132,7 @@ if (get_field('is_models_slider', 'options')) : ?>
 
             </div>
             <!-- Slider main container -->
-            <div class="container-fluid">
+            <div class="container">
                 <div class="pos-r models-container dalacode-slider">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
@@ -256,7 +256,7 @@ endif; ?>
 <?php
 if (get_field('is_online_services', 'options')) : ?>
     <section class="service section pt-80 pb-80">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="section-heading">Онлайн сервисы</h4>
@@ -328,7 +328,7 @@ if (get_field('is_available_cars', 'options')) : ?>
 
     ?>
     <section class="models section pt-80 pb-80">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="section-heading">Авто в наличии</h4>
@@ -372,7 +372,7 @@ if (get_field('is_available_cars', 'options')) : ?>
             </div>
         </div>
         <!-- Slider main container -->
-        <div class="container-fluid">
+        <div class="container">
             <div class="pos-r available-models-slider dalacode-slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -432,7 +432,7 @@ if (get_field('is_available_cars', 'options')) : ?>
                 </button>
             </div>
         </div>
-        <div class="container-fluid mt-40">
+        <div class="container mt-40">
             <div class="row">
                 <div class="col-lg-12 d-flex">
                     <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
@@ -447,7 +447,7 @@ if (get_field('is_available_cars', 'options')) : ?>
 <?php
 endif; ?>
     <section class="offers section pt-80 pb-80">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="section-heading">
@@ -506,7 +506,7 @@ endif; ?>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-40">
+        <div class="container mt-40">
             <div class="row">
                 <div class="col-lg-12 d-flex">
                     <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
@@ -520,7 +520,7 @@ endif; ?>
     </section>
     <hr class="separator">
     <section class="callback pt-80 pb-80" id="callback">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 callback-col d-flex justify-content-center">
                     <div class="callback-form">
@@ -536,7 +536,7 @@ endif; ?>
 <?php
 if (false) : ?>
     <section class="offers section pt-80 pb-80">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="section-heading">
@@ -595,7 +595,7 @@ if (false) : ?>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-40">
+        <div class="container mt-40">
             <div class="row">
                 <div class="col-lg-12 d-flex">
                     <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
@@ -610,7 +610,7 @@ if (false) : ?>
 <?php
 endif; ?>
     <section class="offers d-none section pt-80 pb-80">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="section-heading">
@@ -669,7 +669,7 @@ endif; ?>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-40">
+        <div class="container mt-40">
             <div class="row">
                 <div class="col-lg-12 d-flex">
                     <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">

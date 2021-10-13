@@ -23,7 +23,7 @@ $configs = new WP_Query([
     <div class="page-cover d-flex flex-column justify-content-between pb-20" style="background: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>) no-repeat center/cover">
         <div class="top">
             <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row mt-20">
                     <div class="col-lg-8">
                         <div class="post-title">
@@ -49,7 +49,7 @@ $configs = new WP_Query([
         ?>
         <?php if ($date_start && $date_end) : ?>
         <div class="bottom">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="offer-info d-flex flex-column flex-md-row">
@@ -128,7 +128,7 @@ $configs = new WP_Query([
     </section>
     <?php if (isset($models)) : ?>
     <hr>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h3 class="section-heading">Модельный ряд</h3>
@@ -189,7 +189,7 @@ $configs = new WP_Query([
                     ?>
                     <?php if ($model->post_name === $model_name[0]) : ?>
                         <div class="model-configs-item pb-60">
-                            <div class="container-fluid">
+                            <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="row">
@@ -272,7 +272,7 @@ $configs = new WP_Query([
     </div>
     <?php endif; ?>
     <hr>
-    <div id="callback-form" class="container-fluid pb-60 pt-30">
+    <div id="callback-form" class="container pb-60 pt-30">
         <div class="row">
             <div class="col-lg-12">
                 <div class="d-flex callback-col justify-content-center">

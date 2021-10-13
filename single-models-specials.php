@@ -2,7 +2,7 @@
     $parent_post = get_post($post->post_parent);
     get_template_part( 'template-parts/content', 'header-models', [ 'parent_post' => $parent_post, ] );
 ?>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
@@ -27,7 +27,7 @@
     </div>
 </div>
 <section class="offers pb-60" id="offers">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<h1>

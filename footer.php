@@ -13,7 +13,7 @@
 
 	<!--Footer Section-->
 	<footer class="footer section pt-80 pb-80" id="footer">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="footer-logo d-flex align-items-center">

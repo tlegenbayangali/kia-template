@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="page">
 	<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-7">
 				<div class="row mt-20">
@@ -27,7 +27,7 @@
 		</div>
 	</div>
     <section class="pt-60 pb-60">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>

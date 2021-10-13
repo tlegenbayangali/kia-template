@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="page">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-7">
 				<div class="row">

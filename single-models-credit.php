@@ -20,7 +20,7 @@ if (isset($_POST['config-step'])) {
 ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 <div class="steps mt-40 mb-30">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="steps-wrapper">
@@ -72,7 +72,7 @@ if (isset($_POST['config-step'])) {
     </div>
 </div>
 <div class="section section-divided pos-r">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row g-0">
             <div class="col-xl-4 col-xxl-3 col-lg-12 pr-80 pb-30 aside bg-lgray">
                 <aside class="pt-60 pb-60 h-100-p">
@@ -204,7 +204,7 @@ if (isset($_POST['config-step'])) {
 </div>
 
 <div class="section section-divided next-section-btn bg-white" data-sticky>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12 d-flex justify-content-end">
                 <form method="POST">

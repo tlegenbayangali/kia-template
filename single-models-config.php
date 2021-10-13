@@ -20,7 +20,7 @@ if (isset($_POST['config-step'])) {
 ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 <div class="steps mt-40 mb-30">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="steps-wrapper">
@@ -70,7 +70,7 @@ if (isset($_POST['config-step'])) {
     </div>
 </div>
 <div class="section section-divided pos-r" data-sticky-container>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row g-0">
             <div class="col-xl-4 col-xxl-3 col-lg-12 pr-80 pb-30 aside bg-lgray <?php if ($current_step == 5) : echo 'd-none'; endif; ?>">
                 <aside class="pt-60 pb-60 h-100-p" data-sticky-container>
@@ -162,7 +162,7 @@ if (isset($_POST['config-step'])) {
 </div>
 <?php if ($current_step == 5) : ?>
 <section class="pb-60 pt-60 bg-lgray">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-7 callback-col">
                 <div class="callback-form">
@@ -177,7 +177,7 @@ if (isset($_POST['config-step'])) {
 <?php endif; ?>
 
 <div class="section section-divided next-section-btn bg-white">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12 d-flex justify-content-end">
                 <form method="POST">

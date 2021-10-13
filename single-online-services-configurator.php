@@ -17,7 +17,7 @@ foreach ($models->posts as $model) {
 }
 
 ?>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="mt-30"><?php the_title(); ?></h1>
@@ -25,7 +25,7 @@ foreach ($models->posts as $model) {
     </div>
 </div>
 <div class="steps mt-40">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="steps-wrapper">
@@ -80,7 +80,7 @@ foreach ($models->posts as $model) {
 
 <div class="step-one-page">
     <section class="models models-grouped">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <?php foreach($categories as $category) : ?>

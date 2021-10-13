@@ -7,7 +7,7 @@ $models = new WP_Query([
 
 ?>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1><?php the_title(); ?></h1>
@@ -15,7 +15,7 @@ $models = new WP_Query([
     </div>
 </div>
 <div class="steps mt-40">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="steps-wrapper">
@@ -46,7 +46,7 @@ $models = new WP_Query([
 <div id="test-drive-app">
     <div class="section pos-r">
         <!-- Slider main container -->
-        <div class="container-fluid">
+        <div class="container">
             <div class="pos-r models-sm-container dalacode-slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -89,7 +89,7 @@ $models = new WP_Query([
                 </button>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="pos-r models-lg-container">
@@ -126,7 +126,7 @@ $models = new WP_Query([
         </div>
 
         <div class="section section-divided next-section-btn bg-white">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-end">
                         <form method="POST" id="test-drive">

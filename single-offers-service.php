@@ -78,7 +78,7 @@ get_header(); ?>
                 </div>
             </div>
             <hr>
-            <div id="callback-form" class="container-fluid pb-60 pt-30">
+            <div id="callback-form" class="container pb-60 pt-30">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="d-flex callback-col justify-content-center">

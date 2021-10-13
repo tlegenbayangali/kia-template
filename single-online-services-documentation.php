@@ -11,7 +11,7 @@
     <div class="page-cover d-flex flex-column justify-content-between pb-20" style="background: url(<?= get_field('heading_bg', get_the_ID()) ?>) no-repeat center/cover">
         <div class="top">
             <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row mt-20">
                     <div class="col-lg-8">
                         <div class="post-title">
@@ -32,7 +32,7 @@
         </div>
     </div>
     <section class="car-info pt-60 pb-60 section">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h4 class="fz-25">Данные об автомобиле</h4>

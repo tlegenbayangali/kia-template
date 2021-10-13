@@ -14,7 +14,7 @@ $credit_offers = new WP_Query([
 ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 <section class="heading" id="heading">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="fz-50 mt-30 mb-30"><?= $current_model[0]->name ?> <?php the_title(); ?></h1>
@@ -23,7 +23,7 @@ $credit_offers = new WP_Query([
     </div>
 </section>
 <section class="config-single section-divided" id="config-single">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row row-divided">
             <div class="col-lg-4">
                 <aside class="py-30 pr-60">

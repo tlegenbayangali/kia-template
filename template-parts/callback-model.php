@@ -1,5 +1,5 @@
 <div class="section section-divided pos-r">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row g-0">
             <div class="col-xl-4 col-lg-12 pb-30 pr-80 aside bg-lgray">
                 <aside class="pt-60 pb-60 h-100-p" data-sticky-container>

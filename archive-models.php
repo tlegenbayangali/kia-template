@@ -25,7 +25,7 @@ foreach ($models->posts as $model) {
 
 ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="mb-40">Все модели</h1>
@@ -33,7 +33,7 @@ foreach ($models->posts as $model) {
     </div>
 </div>
 <section class="models models-grouped">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
 				<?php foreach($categories as $category) : ?>

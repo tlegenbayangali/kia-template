@@ -10,7 +10,7 @@
 ?>
 
 <div class="hero-model" style="background: url(images/dist/cars-single/pecanto-hero.jpg) no-repeat center center /cover gray;">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="hero-model-inner d-flex">
@@ -81,7 +81,7 @@
     </div>
 </div>
 <div class="hero-model-padding"></div>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <!-- <div class="model-sections"> -->
