@@ -48,6 +48,8 @@ get_header(); ?>
                                         <?php if ($date_start < $date_end) : ?>
                                             <?php if ($duration->d == 0 || $duration->d >= 5) : ?>
                                                 <?= $duration->d ?> дней
+                                            <?php elseif ($duration->d == 1) : ?>
+                                                <?= $duration->d ?> день
                                             <?php elseif ($duration->d >= 2 && $duration->d <= 4) : ?>
                                                 <?= $duration->d ?> дня
                                             <?php endif; ?>
