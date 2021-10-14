@@ -31,7 +31,7 @@ if (get_field('main_slider_slides', 'options')) : ?>
                                 <?php
                                 echo wp_get_attachment_image($slide[ 'main_slider_slide_image' ], 'full'); ?>
                             </div>
-                            <div class="info d-flex justify-content-between flex-column">
+                            <a href="<?= $slide[ 'main_slider_slide_button' ][ 'main_slider_slide_button_link' ] ?>" class="info d-flex justify-content-between flex-column">
                                 <div class="info-top">
                                     <div class="slider-heading">
                                         <?php
@@ -43,14 +43,14 @@ if (get_field('main_slider_slides', 'options')) : ?>
                             </span>
                                 </div>
                                 <div class="info-bottom">
-                                    <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
+                                    <!--<div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
                                         <a href="<?= $slide[ 'main_slider_slide_button' ][ 'main_slider_slide_button_link' ] ?>" class="btn">
                                             <?php
                                             echo $slide[ 'main_slider_slide_button' ][ 'main_slider_slide_button_text' ] ?>
                                         </a>
-                                    </div>
+                                    </div>-->
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 <?php
