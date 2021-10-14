@@ -126,12 +126,7 @@
 		</div>
 	</footer>
 </div><!-- #page -->
-<script>
-window.replainSettings = { id: '87b9b1d5-6220-4568-a317-8631f8eb6577' };
-(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
-var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js');
-</script>
+<script src="//code-ya.jivosite.com/widget/a9MGWOFuXm" async></script> 
 <!-- <script>if(!window.teletypeWidget){window._teletypeWidget = window._teletypeWidget || {};!function(){var t = document.getElementsByTagName("app-teletype-root");if (t.length > 0 && _teletypeWidget.init)return;var d = new Date().getTime();var n = document.createElement("script"),c = document.getElementsByTagName("script")[0];n.id = "teletype-widget-embed",n.src = "https://widget.teletype.app/init.js?_==" + d,n.async = !0,n.setAttribute("data-embed-version", "0.1");c.parentNode.insertBefore(n, c);}();document.addEventListener("teletype.ready", function(){console.log("Teletype ready")});window.teletypeExternalId = "a6ufKHN02UbVRks5RtEpLZ1HGeL_rzPJOfnvIKxcwFcE0eKxeximnfCZzvngG0V1";}</script> -->
 <?php wp_footer(); ?>
 <!-- Yandex.Metrika counter -->
