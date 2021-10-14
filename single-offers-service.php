@@ -35,44 +35,46 @@ get_header(); ?>
                                 <span class="d-block mb-10">Длительность</span>
                                 <span class="lg d-block">
                                     <?php
-                                    $period = get_field('period', get_the_ID());
-                                    $date_start = $period[ 'period_start' ];
-                                    $date_end = $period[ 'period_end' ];
+                                        $now = new DateTime('Asia/Oral');
+
+                                        $period = get_field('period', get_the_ID());
+                                        $date_start = DateTime::createFromFormat('Y-m-d', $period[ 'period_start' ]);
+                                        $date_end = DateTime::createFromFormat('Y-m-d', $period[ 'period_end' ]);
+
+                                        $duration = $date_end->diff($date_start);
+                                        $left = $date_end->diff($now);
                                     ?>
-                                    <?php
-                                    if ($date_start && $date_end) : ?>
-                                        <?php
-                                        if (downcounter($date_end, ['days' => true])) : ?>
-                                            <?php
-                                            if (get_field('period', get_the_ID())) : ?>
-                                                <?= date_i18n("j", strtotime($date_start)); ?>-<?= date_i18n("j F Y",
-                                                    strtotime($date_end)); ?>
-                                            <?php
-                                            endif; ?>
-                                        <?php
-                                        else : ?>
-                                            Время истекло
-                                        <?php
-                                        endif; ?>
-                                    <?php
-                                    else: ?>
+                                    <?php if ($date_start && $date_end) : ?>
+                                        <?php if ($date_start < $date_end) : ?>
+                                            <?php if ($duration->d == 0 || $duration->d >= 5) : ?>
+                                                <?= $duration->d ?> дней
+                                            <?php elseif ($duration->d >= 2 && $duration->d <= 4) : ?>
+                                                <?= $duration->d ?> дня
+                                            <?php endif; ?>
+                                        <?php else : ?>
+                                            Дата начала позднее даты окончания
+                                        <?php endif; ?>
+                                    <?php else: ?>
                                         Постоянная акция
-                                    <?php
-                                    endif; ?>
+                                    <?php endif; ?>
                                 </span>
                             </div>
-                            <?php
-                            if (downcounter($date_end, ['days' => true])) : ?>
-                                <div class="period">
-                                    <span class="d-block mb-10">До завершения</span>
-                                    <span class="lg d-block">
-                                        <?= downcounter($date_end, [
-                                            'days' => true
-                                        ]) ?>
-                                    </span>
-                                </div>
-                            <?php
-                            endif; ?>
+                            <div class="period">
+                                <span class="d-block mb-10">До завершения</span>
+                                <span class="lg d-block">
+                                    <?php if ($now <= $date_end) : ?>
+                                        <?php if ($left->d == 0 || $left->d >= 5) : ?>
+                                            <?= $left->d ?> дней
+                                        <?php elseif ($left->d == 1) : ?>
+                                            <?= $left->d ?> день
+                                        <?php elseif ($left->d >= 2 && $left->d <= 4) : ?>
+                                            <?= $left->d ?> дня
+                                        <?php endif; ?>
+                                    <?php else : ?>
+                                        Завершено
+                                    <?php endif; ?>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
