@@ -8,12 +8,12 @@ get_header(); ?>
                         <div class="breadcrumbs">
                             <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
                         </div>
-                        <div class="post-title">
+                        <div class="post-title d-none">
                             <h1>
                                 <?php the_title(); ?>
                             </h1>
                         </div>
-                        <div class="post-thumbnail mt-20">
+                        <div class="post-thumbnail">
                             <?= get_the_post_thumbnail( get_the_ID(), 'full' ) ?>
                         </div>
                     </div>

@@ -24,9 +24,9 @@ $configs = new WP_Query([
         <div class="top">
             <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
             <div class="container">
-                <div class="row mt-20">
+                <div class="row">
                     <div class="col-lg-8">
-                        <div class="post-title">
+                        <div class="post-title d-none">
                             <h1>
                                 <?php the_title(); ?>
                             </h1>

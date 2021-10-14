@@ -9,7 +9,7 @@
             <div class="title">
                 <div class="d-flex flex-column">
                     <a href="<?= get_the_permalink() ?>">
-                        <span class="mr-2 underlined-black fz-15 fw-700">
+                        <span class="mr-2 underlined-black fz-15 d-none fw-700">
                             <?= get_the_title() ?>
                         </span>
                     </a>
