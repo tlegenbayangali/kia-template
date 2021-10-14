@@ -36,7 +36,7 @@ function scripts() {
 		.pipe(eslint())
 		.pipe(eslint.format())
 		.pipe(webpack({
-			mode: 'development',
+			mode: 'production',
 			performance: { hints: false },
 			module: {
 				rules: [
