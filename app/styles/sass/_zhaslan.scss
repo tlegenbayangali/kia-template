@@ -84,6 +84,22 @@
                 @media screen and (max-width: 767px) {
                     height: 240px;
                 }
+
+                @media screen and (max-width: 465px) {
+                    height: 225px;
+                }
+
+                @media screen and (max-width: 430px) {
+                    height: 200px;
+                }
+
+                @media screen and (max-width: 390px) {
+                    height: 180px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    height: 145px;
+                }
             }
         }
     }
