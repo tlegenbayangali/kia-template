@@ -27,6 +27,7 @@
                         ?>
                         <?php if ($date_start && $date_end) : ?>
                             <?php if ($now <= $date_end) : ?>
+                                Осталось: 
                                 <?php if ($left->d == 0 || $left->d >= 5) : ?>
                                     <?= $left->d ?> дней
                                 <?php elseif ($left->d == 1) : ?>
