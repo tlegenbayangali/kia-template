@@ -126,36 +126,7 @@
 		</div>
 	</footer>
 </div><!-- #page -->
-<script src="//code-ya.jivosite.com/widget/a9MGWOFuXm" async></script> 
-<!-- <script>if(!window.teletypeWidget){window._teletypeWidget = window._teletypeWidget || {};!function(){var t = document.getElementsByTagName("app-teletype-root");if (t.length > 0 && _teletypeWidget.init)return;var d = new Date().getTime();var n = document.createElement("script"),c = document.getElementsByTagName("script")[0];n.id = "teletype-widget-embed",n.src = "https://widget.teletype.app/init.js?_==" + d,n.async = !0,n.setAttribute("data-embed-version", "0.1");c.parentNode.insertBefore(n, c);}();document.addEventListener("teletype.ready", function(){console.log("Teletype ready")});window.teletypeExternalId = "a6ufKHN02UbVRks5RtEpLZ1HGeL_rzPJOfnvIKxcwFcE0eKxeximnfCZzvngG0V1";}</script> -->
+<?= get_field('footer_scripts', 'options') ?>
 <?php wp_footer(); ?>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(85569115, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/85569115" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!-- Smartpoint Code Start -->
-<script type="text/javascript">
-	(function(w, p) {
-		var a, s;
-		(w[p] = w[p] || []).push(
-			"uid=200616",
-			"site="+encodeURIComponent(window.location.href)
-		);
-		a = document.createElement('script'); a.type = 'text/javascript'; a.async = true;	a.charset='utf-8';
-		a.src = 'https://panel.smartpoint.pro/collectwidgets/?'+window.SMP_params.join('&');
-		s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(a, s);
-	})(window, 'SMP_params');
-</script>
-<!-- Smartpoint Code End -->
 </body>
 </html>
