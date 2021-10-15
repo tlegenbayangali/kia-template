@@ -25,7 +25,7 @@ get_header()
                 <p class="mt-20">
                     <?php the_field('site_description', 'options'); ?>
                 </p>
-                    <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black mt-20">
+                    <div class="mt-20 btn-wrapper btn-wrapper-lg btn-wrapper-black">
                         <a href="/callback" class="btn">Заказать звонок</a>
                     </div>
                 <hr>
@@ -67,6 +67,20 @@ get_header()
                                 </a>
                             </span>
                         </div>
+                        <?php if (get_field('dealer_info', 'options')['email']) : ?>
+                        <div class="contacts-info-group">
+                            <span class="small">
+                                Email
+                            </span>
+                            <span class="info d-flex flex-column">
+                                <?php foreach (get_field('dealer_info', 'options')['email'] as $email) : ?>
+                                <a href="mailto:<?= $email['email_item'] ?>" class="right-number pos-r d-block">
+                                    <?= $email['email_item'] ?>
+                                </a>
+                                <?php endforeach; ?>
+                            </span>
+                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
