@@ -20,98 +20,24 @@ $configs = new WP_Query([
 
 ?>
 <div class="page">
-    <div class="page-cover d-flex flex-column justify-content-between pb-20" style="background: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>) no-repeat center/cover">
-        <div class="top">
-            <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="post-title d-none">
-                            <h1>
-                                <?php the_title(); ?>
-                            </h1>
-                        </div>
+    <section class="pb-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
                     </div>
-                </div>
-                <div class="row mt-20">
-                    <div class="col-lg-6">
-                        <p>
-                            <?= get_field('short_description', get_the_ID()) ?>
-                        </p>
+                    <div class="post-title d-none">
+                        <h1>
+                            <?php the_title(); ?>
+                        </h1>
+                    </div>
+                    <div class="post-thumbnail">
+                        <?= get_the_post_thumbnail( get_the_ID(), 'full' ) ?>
                     </div>
                 </div>
             </div>
-        </div>
-        <?php 
-            $period = get_field('period', get_the_ID());
-            $date_start = $period['period_start'];
-            $date_end = $period['period_end'];
-        ?>
-        <?php if ($date_start && $date_end) : ?>
-        <div class="bottom">
-        <div class="container">
-            <div class="row mt-20 justify-content-center">
-                <div class="col-lg-7">
-                    <div class="offer-info d-flex">
-                        <div class="period">
-                            <span class="d-block mb-10">Длительность</span>
-                            <span class="lg d-block">
-                                <?php
-                                    $now = new DateTime('Asia/Oral');
-
-                                    $period = get_field('period', get_the_ID());
-                                    $date_start = DateTime::createFromFormat('Y-m-d', $period[ 'period_start' ]);
-                                    $date_end = DateTime::createFromFormat('Y-m-d', $period[ 'period_end' ]);
-                                    if ($date_start && $date_end) {
-                                        $duration = $date_end->diff($date_start);
-                                        $left = $date_end->diff($now);
-                                    }
-                                ?>
-                                <?php if ($date_start && $date_end) : ?>
-                                    <?php if ($date_start < $date_end) : ?>
-                                        <?php if ($duration->d == 0 || $duration->d >= 5) : ?>
-                                            <?= $duration->d ?> дней
-                                        <?php elseif ($duration->d == 1) : ?>
-                                            <?= $duration->d ?> день
-                                        <?php elseif ($duration->d >= 2 && $duration->d <= 4) : ?>
-                                            <?= $duration->d ?> дня
-                                        <?php endif; ?>
-                                    <?php else : ?>
-                                        Дата начала позднее даты окончания
-                                    <?php endif; ?>
-                                <?php else: ?>
-                                    Постоянная акция
-                                <?php endif; ?>
-                            </span>
-                        </div>
-                        <?php if ($date_start && $date_end) : ?>
-                        <div class="period">
-                            <span class="d-block mb-10">До завершения</span>
-                            <span class="lg d-block">
-                                    <?php if ($now <= $date_end) : ?>
-                                        <?php if ($left->d == 0 || $left->d >= 5) : ?>
-                                            <?= $left->d ?> дней
-                                        <?php elseif ($left->d == 1) : ?>
-                                            <?= $left->d ?> день
-                                        <?php elseif ($left->d >= 2 && $left->d <= 4) : ?>
-                                            <?= $left->d ?> дня
-                                        <?php endif; ?>
-                                    <?php else : ?>
-                                        Завершено
-                                    <?php endif; ?>
-                            </span>
-                        </div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <?php endif; ?>
-    </div>
-    <section class="pt-60 pb-60">
-        <div class="container">
-            <div class="row justify-content-center mb-60">
+            <div class="mt-20 row justify-content-center mb-60">
                 <div class="col-lg-12">
                     <?php the_content(); ?>
                 </div>
@@ -230,27 +156,27 @@ $configs = new WP_Query([
                                                 </h4>
                                                 <?php endif; ?>
 
-                                                <span class="description mt-20 d-block c-disabled">
+                                                <span class="mt-20 description d-block c-disabled">
                                                     <div>
                                                         <?= get_field('engine', $config->ID) ?> / <?= get_field('power', $config->ID) ?> л.с. / <?= get_field('transmission', $config->ID) ?> / <?= get_field('drive_wheels', $config->ID) ?>
                                                     </div>
                                                 </span>
 
                                                 <?php if (get_field('price', $config->ID)) : ?>
-                                                <span class="price mt-20 d-block">
+                                                <span class="mt-20 price d-block">
                                                     <?= get_field('price', $config->ID) ?> ₸
                                                 </span>
                                                 <?php endif; ?>
 
                                                 <?php if (get_field('trade_in', $config->ID)) : ?>
-                                                <span class="trade-in mt-20 d-block">
+                                                <span class="mt-20 trade-in d-block">
                                                     Программа Трейд-ин. Выгода 250 000 ₸
                                                 </span>
                                                 <?php endif; ?>
                                             </div>
                                             <div class="col-12 col-xl-2">
                                                 <div class="other-offers">
-                                                    <span class="c-disabled mb-20 d-block">Другие спецпредложения</span>
+                                                    <span class="mb-20 c-disabled d-block">Другие спецпредложения</span>
                                                     <?php 
                                                     
                                                         $offers = get_field('other_offers', $config->ID);
@@ -302,7 +228,7 @@ $configs = new WP_Query([
                     <div class="callback-form" id="offer-form">
                         <h5 class="mb-2">Отправить заявку дилеру</h5>
                         <p>После отправки заявки, дилер свяжется с Вами для уточнения деталей бронирования.</p>
-                        <p class="fz-12 mt-10 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
+                        <p class="mt-10 fz-12 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
                         <?= do_shortcode('[contact-form-7 id="4077" title="Форма заявки со страницы спецпредложения"]') ?>
                     </div>
                 </div>
