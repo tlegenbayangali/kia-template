@@ -79,7 +79,7 @@
 									<?php the_field('address', 'options') ?>
 								</li>
 								<li>
-									<a href="<?= cleanPhone(get_field('phone', 'options')) ?>" class="active">
+									<a href="tel:<?= cleanPhone(get_field('phone', 'options')) ?>" class="active">
 										<?php the_field('phone', 'options') ?>
 									</a>
 								</li>
