@@ -44,7 +44,7 @@ get_header()
                                 Юридическое лицо
                             </span>
                             <span class="info">
-                                <?php the_field('site_name', 'options'); ?>
+                                <?= get_field('dealer_info', 'options')['dealer_name'] ?>
                             </span>
                         </div>
                         <div class="contacts-info-group">
