@@ -89,7 +89,7 @@ get_header()
                 </div>
             </div>
             <?php if (get_field('dealer_info', 'options')['dealer_map']) : ?>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 s">
                 <?= get_field('dealer_info', 'options')['dealer_map'] ?>
             </div>
             <?php endif; ?>
