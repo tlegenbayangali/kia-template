@@ -126,7 +126,12 @@
 		</div>
 	</footer>
 </div><!-- #page -->
-<?= get_field('footer_scripts', 'options') ?>
+<?php 
+	$scripts = get_field('footer_scripts_connection', 'options');
+	foreach($scripts as $script) :
+?>
+	<?= $script['script'] ?>
+<?php endforeach; ?>
 <?php wp_footer(); ?>
 </body>
 </html>
