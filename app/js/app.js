@@ -75,6 +75,18 @@ if (cfForm.length) {
     });
 }
 
+/**
+ * Form Submitter Button
+ */
+const formSubmitter = $('.wpcf7-form .btn-wrapper.btn-wrapper-lg');
+const input = formSubmitter.children('input[type=submit]')[0];
+
+formSubmitter.on('click', function formSubmitterHandler() {
+    setTimeout(() => {
+        $(input).trigger('click');
+    }, 500);
+});
+
 $('a[href^="#"]').on('click', function transitionHadler(event) {
     // отменяем стандартное действие
     event.preventDefault();
