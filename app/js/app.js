@@ -24,6 +24,7 @@ import './utils/credit-results';
 import './utils/equip';
 import './utils/slider-with-thumbs';
 import './utils/callback';
+import './utils/cookies';
 // import './utils/dateex';
 
 window.jQuery = $;
@@ -87,22 +88,20 @@ formSubmitter.on('click', function formSubmitterHandler() {
     }, 500);
 });
 
-$('a[href^="#"]').on('click', function transitionHadler(event) {
-    // отменяем стандартное действие
-    event.preventDefault();
-    const sc = $(this).attr('href');
-    const dn = $(sc).offset().top;
-    /*
-    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
-    * dn - определяем положение блока на странице
-    */
-
-    $('html, body').animate({ 'scrollTop': dn }, 1000);
-
-    /*
-    * 1000 скорость перехода в миллисекундах
-    */
-});
+// $('a[href^="#"]').on('click', function transitionHadler(event) {
+//     // отменяем стандартное действие
+//     event.preventDefault();
+//     const sc = $(this).attr('href');
+//     const dn = $(sc).offset().top;
+//     /*
+//     * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+//     * dn - определяем положение блока на странице
+//     */
+//     $('html, body').animate({ 'scrollTop': dn }, 1000);
+//     /*
+//     * 1000 скорость перехода в миллисекундах
+//     */
+// });
 
 // eslint-disable-next-line no-unused-vars
 const sticky = new Sticky('.model-info');

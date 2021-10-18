@@ -891,6 +891,37 @@ hr {
     }
 }
 
+.cookies {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    padding: 16px;
+    background: $white;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+
+    &-wrapper {
+        background: transparentize($color: $black, $amount: .5);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 998;
+        display: none;
+
+        &.opened {
+            display: block;
+        }
+    }
+
+    &-agreement {
+        font-size: 1rem;
+    }
+}
+
 .offer {
 
     &-info {

@@ -126,6 +126,18 @@
 		</div>
 	</footer>
 </div><!-- #page -->
+<div class="cookies-wrapper">
+	<div class="cookies d-flex flex-column align-items-start">
+		<div class="cookies-agreement mb-30">
+			Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.
+		</div>
+		<div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
+			<a href="#" class="btn">
+				Согласиться
+			</a>
+		</div>
+	</div>
+</div>
 <?php 
 	$scripts = get_field('footer_scripts_connection', 'options');
 	foreach($scripts as $script) :
