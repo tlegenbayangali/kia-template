@@ -140,10 +140,12 @@
 </div>
 <?php 
 	$scripts = get_field('footer_scripts_connection', 'options');
+	if ($scripts) :
 	foreach($scripts as $script) :
 ?>
 	<?= $script['script'] ?>
 <?php endforeach; ?>
+<?php endif; ?>
 <?php wp_footer(); ?>
 </body>
 </html>
