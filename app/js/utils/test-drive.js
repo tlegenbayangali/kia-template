@@ -44,7 +44,7 @@ if ($('.test-drive-form').length) {
     const modelName = $.trim($('.model-info-title').text());
     const modelInput = $('#hidden-input-model');
 
-    modelInput.val(modelName);
-
-    console.log(modelInput.val());
+    $('form').on('submit', function formHandler() {
+        modelInput.val(modelName);
+    });
 }
