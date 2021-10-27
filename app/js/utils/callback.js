@@ -10,5 +10,7 @@ if (getQueryStringValue('current_model').length) {
     const currentModelName = $.trim($('.model-info-title').text());
     const hiddenModelNameInput = $('#hidden-input-model');
 
-    hiddenModelNameInput.val(currentModelName);
+    $('form').on('submit', function formHandler() {
+        hiddenModelNameInput.val(currentModelName);
+    })
 }
