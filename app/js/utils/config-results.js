@@ -39,13 +39,15 @@ if ($('.config-result').length) {
     const formExterior = $('#hidden-input-exterior');
     const resultForm = $('#result-form');
 
-    resultForm.text(`Забронировать автомобиль ${$('.config-result .model-title').text()} ${sessionStorage.getItem('engine')}`);
-    formModel.val($('.config-result .model-title').text());
-    formPrice.val(`от ${sessionStorage.getItem('price')}₸`);
-    formComplectation.val(sessionStorage.getItem('complectation-name'));
-    formEngine.val(sessionStorage.getItem('engine'));
-    formTransmission.val(sessionStorage.getItem('transmission'));
-    formDW.val(sessionStorage.getItem('dw'));
-    formInterior.val(sessionStorage.getItem('color-name-interior'));
-    formExterior.val(sessionStorage.getItem('color-name'));
+    $('form').on('submit', function formHandler() {
+        resultForm.text(`Забронировать автомобиль ${$('.config-result .model-title').text()} ${sessionStorage.getItem('engine')}`);
+        formModel.val($('.config-result .model-title').text());
+        formPrice.val(`от ${sessionStorage.getItem('price')}₸`);
+        formComplectation.val(sessionStorage.getItem('complectation-name'));
+        formEngine.val(sessionStorage.getItem('engine'));
+        formTransmission.val(sessionStorage.getItem('transmission'));
+        formDW.val(sessionStorage.getItem('dw'));
+        formInterior.val(sessionStorage.getItem('color-name-interior'));
+        formExterior.val(sessionStorage.getItem('color-name'));
+    });
 }
