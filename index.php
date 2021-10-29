@@ -101,7 +101,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                 if (get_field('is_models_slider_filter', 'options')) : ?>
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="dalacode-selector mb-8" data-container="models-container">
+                            <div class="mb-8 dalacode-selector" data-container="models-container">
                                 <input value="Все модели" type="text" hidden="true">
                                 <div class="current d-flex justify-content-between align-items-center">
                                     <span></span>
@@ -139,17 +139,19 @@ if (get_field('is_models_slider', 'options')) : ?>
                         <!-- Slides -->
                         <?php
                         foreach ($models->posts as $model) : ?>
-                            <div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
+                            <div itemscope itemtype="http://schema.org/Product" class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
                                 <div class="top">
                                     <div class="img">
                                         <a href="<?= get_post_permalink($model->ID) ?>">
-                                            <?= get_the_post_thumbnail($model->ID, 'full') ?>
+                                            <?= get_the_post_thumbnail($model->ID, 'full', [
+                                                'itemprop' => 'image'
+                                            ]) ?>
                                         </a>
                                     </div>
                                     <div class="title">
                                         <div class="d-flex">
                                             <a href="<?= get_post_permalink($model->ID) ?>">
-                                                <span class="title-content underlined mr-2 underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
+                                                <span itemprop="name" class="mr-2 title-content underlined underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
                                             </a>
 
                                             <?php
@@ -161,8 +163,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                                     </div>
                                     <div class="model-row">
                                         <div class="d-flex">
-                                            <span class="price-sm mr-2">от <?= get_field('starting_price',
-                                                    $model->ID) ?> ₸</span>
+                                            <span itemscope itemtype="http://schema.org/Offer" itemprop="offers" class="mr-2 price-sm">от <span itemprop="price"><?= get_field('starting_price', $model->ID) ?></span> <span class="d-none" itemprop="priceCurrency">KZT</span>₸</span>
                                             <?php
                                             if (get_field('car_price_conditions', $model->ID)) : ?>
                                                 <svg class="info-additional conditions">
@@ -177,7 +178,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                                     if (get_field('every_month_price', $model->ID)) : ?>
                                         <div class="model-row">
                                             <div class="d-flex">
-                                                <span class="price-sm mr-2"><?= get_field('every_month_price',
+                                                <span class="mr-2 price-sm"><?= get_field('every_month_price',
                                                         $model->ID) ?> ₸/мес</span>
                                                 <?php
                                                 if (get_field('car_credit_calc', $model->ID)) : ?>
@@ -219,6 +220,16 @@ if (get_field('is_models_slider', 'options')) : ?>
                                     <?php
                                     endif; ?>
                                 </div>
+                                <span class="d-none" itemprop="slogan"><?= get_field('model_hero_short_text', $model->ID) ?></span>
+                                <span class="d-none" itemprop="logo"><?= get_field('model_logo', $model->ID) ?></span>
+                                <span class="d-none" itemprop="category"><?= get_field('category', $model->ID) ?></span>
+                                <span class="d-none" itemprop="brand"><?= get_field('model_logo_top', $model->ID) ?></span>
+                                <span class="d-none" itemprop="model"><?= $model->post_title ?></span>
+                                <span class="d-none" itemprop="description">
+                                    <?php foreach (get_field('model_option', $model->ID) as $idx => $option) :?>
+                                        <?= $option['model_option_description'] . '.' ?>
+                                    <?php endforeach; ?>
+                                </span>
                                 <div class="bottom">
                                     <div class="model-row justify-content-end">
                                         <div class="d-flex links">
@@ -336,7 +347,7 @@ if (get_field('is_available_cars', 'options')) : ?>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="dalacode-selector mb-8" data-container="available-models-slider">
+                    <div class="mb-8 dalacode-selector" data-container="available-models-slider">
                         <input value="Все модели" type="text" hidden="true">
                         <div class="current d-flex justify-content-between align-items-center">
                             <span></span>
@@ -391,7 +402,7 @@ if (get_field('is_available_cars', 'options')) : ?>
                                 <div class="title">
                                     <div class="d-flex">
                                         <a href="<?= get_the_permalink($car->ID) ?>">
-                                            <span class="underlined mr-2 underlined-black fz-18 fw-700"><?= $terms[ 0 ]->name ?> <?= $car->post_title ?></span>
+                                            <span class="mr-2 underlined underlined-black fz-18 fw-700"><?= $terms[ 0 ]->name ?> <?= $car->post_title ?></span>
                                         </a>
                                     </div>
                                 </div>
@@ -404,7 +415,7 @@ if (get_field('is_available_cars', 'options')) : ?>
                                 endif; ?>
                                 <?php
                                 if (get_field('price', $car->ID)) : ?>
-                                    <div class="price mt-2">
+                                    <div class="mt-2 price">
                                         <?= get_field('price', $car->ID) ?> ₸
                                         <span class="price-sm"><?= price_for_month('price', $car->ID,
                                                 36) ?> ₸/мес.</span>

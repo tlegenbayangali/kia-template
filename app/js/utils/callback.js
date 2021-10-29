@@ -12,5 +12,5 @@ if (getQueryStringValue('current_model').length) {
 
     $('form').on('submit', function formHandler() {
         hiddenModelNameInput.val(currentModelName);
-    })
+    });
 }

@@ -28,7 +28,7 @@ $current_post = get_post();?>
                                 <img src="<?= get_field('model_logo', get_the_ID()); ?>" alt="<?= get_the_title( get_the_ID() ) ?>">
                             </div>
                             <div class="hero-model-title-sub">
-                                <?= get_field('model_hero_short_text', get_the_ID());?>                              
+                                <?= get_field('model_hero_short_text', get_the_ID()) ?>                              
                             </div>
                         </div>
                         <?php
@@ -165,19 +165,19 @@ $current_post = get_post();?>
                                     foreach ($configs->posts as $post) {
                                         $current_post_ID = $post->ID; ?>
                                         <!-- SLIDES -->
-                                        <div class="swiper-slide model-sections-variations-slide">
+                                        <div itemscope itemtype="http://schema.org/Product" class="swiper-slide model-sections-variations-slide">
                                             <div class="model-sections-variations-slide-inner">
                                                 <div class="title">
-                                                    <h5><?php echo esc_html( get_the_title($current_post_ID) );?></h5>
-                                                    <span class="price">
-                                                        <?php echo esc_attr(the_field('price', $current_post_ID))?> ₸
+                                                    <h5 itemprop="name"><?php echo esc_html( get_the_title($current_post_ID) );?></h5>
+                                                    <span class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                        <span itemprop="price"><?php echo esc_attr(the_field('price', $current_post_ID))?></span> <span class="d-none" itemprop="priceCurrency">KZT</span> ₸
                                                     </span>
                                                 </div>
                                                 <div class="content">
                                                     <ul>
                                                         <li>
                                                             <span class="content-header">Двигатель и трансмиссия</span>
-                                                            <p>
+                                                            <p itemprop="description">
                                                                 <?php echo get_field('engine', $current_post_ID) .' / '.
                                                                 get_field('power', $current_post_ID) .' л.с / '.
                                                                 get_field('engine_type', $current_post_ID) .' / '.
@@ -193,6 +193,11 @@ $current_post = get_post();?>
                                                         </li>
                                                     </ul>
                                                 </div>
+                                                <span class="d-none" itemprop="slogan"><?= get_field('model_hero_short_text', $current_post->ID) ?></span>
+                                                <span class="d-none" itemprop="logo"><?= get_field('model_logo', $current_post->ID) ?></span>
+                                                <span class="d-none" itemprop="category"><?= get_field('category', $current_post->ID) ?></span>
+                                                <span class="d-none" itemprop="brand"><?= get_field('model_logo_top', $current_post->ID) ?></span>
+                                                <span class="d-none" itemprop="model"><?= get_the_title( $current_post->ID ) ?></span>
                                                 <!-- MORE BUTTON TO ANOTHER PAGE-->
                                                 <div class="button">
                                                     <a href="/models/<?= $current_model ?>/complectations" class="content-more model-sections-desc-more underlined underlined-green">
@@ -237,7 +242,7 @@ $current_post = get_post();?>
                                     Узнайте больше о <?php the_title(); ?>
                                 </h3>
                                 
-                                <div class="model-sections-bottom-block-btn  btn-wrapper btn-wrapper-lg btn-wrapper-white">
+                                <div class="model-sections-bottom-block-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
                                     <a href="/callback" class="btn">
                                         Заказать звонок дилера
                                     </a>

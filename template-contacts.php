@@ -18,11 +18,11 @@ get_header()
 <div class="pb-60">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
-                <h2 class="fz-50">
+            <div class="col-12 col-md-6" itemscope itemtype="https://schema.org/Organization">
+                <h2 class="fz-50" itemprop>
                     <?php the_field('site_name', 'options'); ?>
                 </h2>
-                <p class="mt-20">
+                <p class="mt-20" itemprop="description">
                     <?php the_field('site_description', 'options'); ?>
                 </p>
                     <div class="mt-20 btn-wrapper btn-wrapper-lg btn-wrapper-black">
@@ -35,7 +35,7 @@ get_header()
                             <span class="small">
                                 Адрес
                             </span>
-                            <span class="info">
+                            <span class="info" itemprop="address">
                                 <?php the_field('address', 'options') ?>
                             </span>
                         </div>
@@ -43,7 +43,7 @@ get_header()
                             <span class="small">
                                 Юридическое лицо
                             </span>
-                            <span class="info">
+                            <span class="info" itemprop="legalName">
                                 <?= get_field('dealer_info', 'options')['dealer_name'] ?>
                             </span>
                         </div>
@@ -65,7 +65,7 @@ get_header()
                             <span class="info d-flex flex-column">
                                 <?php foreach (get_field('dealer_info', 'options')['dealer_phones'] as $phone) : ?>
                                 <a href="tel:<?= cleanPhone($phone['dealer_phone']) ?>" class="right-number pos-r d-block">
-                                    <?= $phone['dealer_phone'] ?>
+                                    <span itemprop="telephone"><?= $phone['dealer_phone'] ?></span>
                                 </a>
                                 <?php endforeach; ?>
                             </span>
@@ -79,7 +79,7 @@ get_header()
                             <span class="info d-flex flex-column">
                                 <?php foreach (get_field('dealer_info', 'options')['email'] as $email) : ?>
                                 <a href="mailto:<?= $email['email_item'] ?>" class="right-number pos-r d-block">
-                                    <?= $email['email_item'] ?>
+                                    <span itemprop="email"><?= $email['email_item'] ?></span>
                                 </a>
                                 <?php endforeach; ?>
                             </span>
