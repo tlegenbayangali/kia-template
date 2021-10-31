@@ -44,36 +44,6 @@ foreach ($models->posts as $model) {
                     <div class="group-models pb-60 d-flex flex-wrap">
 						<?php foreach ($models->posts as $model) : ?>
 							<?php if (get_field('category', $model->ID) == $category) : ?>
-								<!-- <div class="d-flex model" data-option="<?= $model->post_name ?>">
-									<div class="top">
-										<div class="img">
-											<a href="<?= get_the_permalink( $model->ID ) ?>">
-												<?= get_the_post_thumbnail( $model->ID, 'full' ) ?>
-											</a>
-										</div>
-									</div>
-									<div class="bottom">
-										<div class="title">
-											<div class="d-flex">
-												<a href="<?= get_the_permalink( $model->ID ) ?>">
-													<span class="underlined mr-2 underlined-black fz-25 fw-700"><?= $model->post_title ?></span>
-												</a>
-											</div>
-										</div>
-										<div class="model-row">
-											<div class="d-flex">
-												<span class="price mr-2">от 5 990 000 ₸</span>
-											</div>
-										</div>
-										<div class="model-row justify-content-end">
-											<div class="d-flex links">
-												<a href="#" class="underlined underlined-black readmore">
-													Цены
-												</a>
-											</div>
-										</div>
-									</div>
-								</div> -->
 								<?php
 									$configurations = new WP_Query([
 										'post_type' => 'configs',
@@ -92,78 +62,107 @@ foreach ($models->posts as $model) {
 									$GLOBALS['model_min_price'] = $model_min_price;
 									wp_reset_query();
 								?>
-								<div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
-									<div class="top">
-										<div class="img">
-											<a href="<?= get_post_permalink($model->ID) ?>">
-												<?= get_the_post_thumbnail($model->ID, 'full') ?>
-											</a>
-										</div>
-										<div class="title">
-											<div class="d-flex">
-												<a href="<?= get_post_permalink($model->ID) ?>">
-													<span class="title-content underlined mr-2 underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
-												</a>
-												
-												<?php if (get_field('is_new_model', $model->ID)) : ?>
-												<span class="mark-green">Новинка</span>
-												<?php endif; ?>
-											</div>
-										</div>
-										<div class="model-row">
-											<div class="d-flex">
-												<span class="price-sm mr-2">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
-												<?php if (get_field('car_price_conditions', $model->ID)) : ?>
-												<svg class="info-additional conditions">
-													<use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
-												</svg>
-												<?php endif; ?>
-											</div>
-										</div>
-										<?php if (get_field('every_month_price', $model->ID)) : ?>
-										<div class="model-row">
-											<div class="d-flex">
-												<span class="price-sm mr-2"><?= get_field('every_month_price', $model->ID) ?> ₸/мес</span>
-												<?php if (get_field('car_credit_calc', $model->ID)) : ?>
-												<svg class="info-additional credit">
-													<use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
-												</svg>
-												<?php endif; ?>
-											</div>
-										</div>
-										<?php endif; ?>
-										<?php if (get_field('profit', $model->ID)) : ?>
-										<div class="model-row">
-											<div class="d-flex">
-												<span class="mark-yellow">
-													Выгода до <?= get_field('profit', $model->ID) ?> ₸
-												</span>
-											</div>
-										</div>
-										<?php endif; ?>
+								<div itemscope itemtype="http://schema.org/Product" class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
+                                <div class="top">
+                                    <div class="img">
+                                        <a href="<?= get_post_permalink($model->ID) ?>">
+                                            <?= get_the_post_thumbnail($model->ID, 'full', [
+                                                'itemprop' => 'image'
+                                            ]) ?>
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <div class="d-flex">
+                                            <a href="<?= get_post_permalink($model->ID) ?>">
+                                                <span itemprop="name" class="mr-2 title-content underlined underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
+                                            </a>
 
-										<?php if (get_field('car_price_conditions', $model->ID)) : ?>
-										<div class="model-conditions">
-											<?= get_field('car_price_conditions', $model->ID) ?>
-										</div>
-										<?php endif; ?>
+                                            <?php
+                                            if (get_field('is_new_model', $model->ID)) : ?>
+                                                <span class="mark-green">Новинка</span>
+                                            <?php
+                                            endif; ?>
+                                        </div>
+                                    </div>
+                                    <div class="model-row">
+                                        <div class="d-flex">
+                                            <span itemscope itemtype="http://schema.org/Offer" itemprop="offers" class="mr-2 price-sm">от <span itemprop="price"><?= get_field('starting_price', $model->ID) ?></span> <span class="d-none" itemprop="priceCurrency">KZT</span>₸</span>
+                                            <?php
+                                            if (get_field('car_price_conditions', $model->ID)) : ?>
+                                                <svg class="info-additional conditions">
+                                                    <use xlink:href="<?php
+                                                    echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
+                                                </svg>
+                                            <?php
+                                            endif; ?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                    if (get_field('every_month_price', $model->ID)) : ?>
+                                        <div class="model-row">
+                                            <div class="d-flex">
+                                                <span class="mr-2 price-sm"><?= get_field('every_month_price',
+                                                        $model->ID) ?> ₸/мес</span>
+                                                <?php
+                                                if (get_field('car_credit_calc', $model->ID)) : ?>
+                                                    <svg class="info-additional credit">
+                                                        <use xlink:href="<?php
+                                                        echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
+                                                    </svg>
+                                                <?php
+                                                endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php
+                                    endif; ?>
+                                    <?php
+                                    if (get_field('profit', $model->ID)) : ?>
+                                        <div class="model-row">
+                                            <div class="d-flex">
+                                    <span class="mark-yellow">
+                                        Выгода до <?= get_field('profit', $model->ID) ?> ₸
+                                    </span>
+                                            </div>
+                                        </div>
+                                    <?php
+                                    endif; ?>
 
-										<?php if (get_field('car_credit_calc', $model->ID)) : ?>
-										<div class="model-credit">
-											<?= get_field('car_credit_calc', $model->ID) ?>
-										</div>
-										<?php endif; ?>
-									</div>
-									<div class="bottom">
-										<div class="model-row justify-content-end">
-											<div class="d-flex links">
-												<a href="<?= get_post_permalink($model->ID) ?>" class="underlined underlined-black readmore">
-													Цены
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
+                                    <?php
+                                    if (get_field('car_price_conditions', $model->ID)) : ?>
+                                        <div class="model-conditions">
+                                            <?= get_field('car_price_conditions', $model->ID) ?>
+                                        </div>
+                                    <?php
+                                    endif; ?>
+
+                                    <?php
+                                    if (get_field('car_credit_calc', $model->ID)) : ?>
+                                        <div class="model-credit">
+                                            <?= get_field('car_credit_calc', $model->ID) ?>
+                                        </div>
+                                    <?php
+                                    endif; ?>
+                                </div>
+                                <span class="d-none" itemprop="slogan"><?= get_field('model_hero_short_text', $model->ID) ?></span>
+                                <span class="d-none" itemprop="logo"><?= get_field('model_logo', $model->ID) ?></span>
+                                <span class="d-none" itemprop="category"><?= get_field('category', $model->ID) ?></span>
+                                <span class="d-none" itemprop="brand"><?= get_field('model_logo_top', $model->ID) ?></span>
+                                <span class="d-none" itemprop="model"><?= $model->post_title ?></span>
+                                <span class="d-none" itemprop="description">
+                                    <?php foreach (get_field('model_option', $model->ID) as $idx => $option) :?>
+                                        <?= $option['model_option_description'] . '.' ?>
+                                    <?php endforeach; ?>
+                                </span>
+                                <div class="bottom">
+                                    <div class="model-row justify-content-end">
+                                        <div class="d-flex links">
+                                            <a href="<?= get_post_permalink($model->ID) ?>" class="underlined underlined-black readmore">
+                                                О модели
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 							<?php endif; ?>
 						<?php endforeach; ?>
                     </div>
