@@ -9,9 +9,9 @@
             <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
                 <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
                 <div class="equip-breadcrumbs-right d-flex align-items-md-center">
-                    <?php if (get_field('model_price_list', $parent_post_id)) : ?>
+                    <?php if (get_field('price_list_url', $parent_post_id)) : ?>
                     <div class="equip-breadcrumbs-right-price">
-                        <a class="d-flex align-items-center underlined underlined-black" href="<?= get_field('model_price_list', $parent_post_id)['url'] ?>">
+                        <a class="d-flex align-items-center underlined underlined-black" href="<?= get_field('price_list_url', $parent_post_id) ?>">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="mr-1"
                                 data-v-bee0cc60="">
