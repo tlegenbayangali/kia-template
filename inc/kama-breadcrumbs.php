@@ -80,20 +80,20 @@ class Kama_Breadcrumbs {
 
 			// Разметка по умолчанию
 			if( ! $mark ) $mark = array(
-				'wrappatt'  => '<ul class="d-inline-flex align-items-center flex-wrap">%s</ul>',
+				'wrappatt'  => '<ul class="flex-wrap d-inline-flex align-items-center">%s</ul>',
 				'linkpatt'  => '<a class="underlined underlined-black" href="%s">%s</a>',
 				'sep_after' => '',
 			);
 			// rdf
 			elseif( $mark === 'rdf.data-vocabulary.org' ) $mark = array(
-				'wrappatt'   => '<ul class="d-inline-flex align-items-center flex-wrap" prefix="v: http://rdf.data-vocabulary.org/#">%s</ul>',
+				'wrappatt'   => '<ul class="flex-wrap d-inline-flex align-items-center" prefix="v: http://rdf.data-vocabulary.org/#">%s</ul>',
 				'linkpatt'   => '<li typeof="v:Breadcrumb"><a class="underlined underlined-black" href="%s" rel="v:url" property="v:title">%s</a>',
 				'sep_after'  => '</li>', // закрываем span после разделителя!
 			);
 			// schema.org
 			elseif( $mark === 'schema.org' ) $mark = array(
-				'wrappatt'   => '<ul class="d-inline-flex align-items-center flex-wrap" itemscope itemtype="http://schema.org/BreadcrumbList">%s</ul>',
-				'linkpatt'   => '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="underlined underlined-black" href="%s" itemprop="item"><span itemprop="name">%s</span></a></li>',
+				'wrappatt'   => '<ul class="flex-wrap d-inline-flex align-items-center" itemscope itemtype="http://schema.org/BreadcrumbList">%s</ul>',
+				'linkpatt'   => '<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="1"><a class="underlined underlined-black" href="%s" itemprop="item"><span itemprop="name">%s</span></a></li>',
 				'sep_after'  => '',
 			);
 
