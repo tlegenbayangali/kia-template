@@ -19,7 +19,7 @@ if (isset($_POST['config-step'])) {
 
 ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-<div class="steps mt-40 mb-30">
+<div class="mt-40 steps mb-30">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -72,7 +72,7 @@ if (isset($_POST['config-step'])) {
 <div class="section section-divided pos-r" data-sticky-container>
     <div class="container">
         <div class="row g-0">
-            <div class="col-xl-4 col-xxl-3 col-lg-12 pr-80 pb-30 aside bg-lgray <?php if ($current_step == 5) : echo 'd-none'; endif; ?>">
+            <div class="col-xl-4 col-xxl-3 col-lg-12 pr-40 pb-30 aside bg-lgray <?php if ($current_step == 5) : echo 'd-none'; endif; ?>">
                 <aside class="pt-60 pb-60 h-100-p" data-sticky-container>
                     <div class="model-info" data-sticky-for="1200" data-margin-top="30" data-sticky-wrap="true">
                         <div class="model-info-title">
@@ -86,7 +86,7 @@ if (isset($_POST['config-step'])) {
                             <span class="fw-700 fz-18">от <span id="price-field"><?= $current_model->starting_price ?></span> ₸</span>
                         </div>
                         <hr>
-                        <div class="model-info-price mb-20 d-flex justify-content-between">
+                        <div class="mb-20 model-info-price d-flex justify-content-between">
                             <span>Двигатель: 
                                 <span id="engine-field">
                                     <?php
@@ -97,7 +97,7 @@ if (isset($_POST['config-step'])) {
                                 </span>
                             </span>
                         </div>
-                        <div class="model-info-price mb-20 d-flex justify-content-between">
+                        <div class="mb-20 model-info-price d-flex justify-content-between">
                             <span>КПП: <span id="transmission-field">
                                 <?php
                                     if (isset($_POST['transmission-input'])) {
@@ -106,7 +106,7 @@ if (isset($_POST['config-step'])) {
                                 ?>
                             </span></span>
                         </div>
-                        <div class="model-info-price mb-20 d-flex justify-content-between">
+                        <div class="mb-20 model-info-price d-flex justify-content-between">
                             <span>Привод: <span id="dw-field">
                                 <?php
                                     if (isset($_POST['dw-input'])) {
@@ -176,7 +176,7 @@ if (isset($_POST['config-step'])) {
 </section>
 <?php endif; ?>
 
-<div class="section section-divided next-section-btn bg-white">
+<div class="bg-white section section-divided next-section-btn">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 d-flex justify-content-end">

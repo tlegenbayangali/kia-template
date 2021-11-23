@@ -19,7 +19,7 @@ if (isset($_POST['config-step'])) {
 
 ?>
 <?php get_template_part( 'template-parts/breadcrumbs' ); ?>
-<div class="steps mt-40 mb-30">
+<div class="mt-40 steps mb-30">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -74,7 +74,7 @@ if (isset($_POST['config-step'])) {
 <div class="section section-divided pos-r">
     <div class="container">
         <div class="row g-0">
-            <div class="col-xl-4 col-xxl-3 col-lg-12 pr-80 pb-30 aside bg-lgray">
+            <div class="pr-40 col-xl-4 col-xxl-3 col-lg-12 pb-30 aside bg-lgray">
                 <aside class="pt-60 pb-60 h-100-p">
                     <div class="model-info-non-sticked">
                         <div class="model-info-title">
@@ -105,7 +105,7 @@ if (isset($_POST['config-step'])) {
                             </div>
                         </div>
                         <hr>
-                        <div class="model-info-price mb-20 d-flex justify-content-between">
+                        <div class="mb-20 model-info-price d-flex justify-content-between">
                             <span>Двигатель: 
                                 <span id="engine-field">
                                     <?php
@@ -116,7 +116,7 @@ if (isset($_POST['config-step'])) {
                                 </span>
                             </span>
                         </div>
-                        <div class="model-info-price mb-20 d-flex justify-content-between">
+                        <div class="mb-20 model-info-price d-flex justify-content-between">
                             <span>КПП: <span id="transmission-field">
                                 <?php
                                     if (isset($_POST['transmission-input'])) {
@@ -125,7 +125,7 @@ if (isset($_POST['config-step'])) {
                                 ?>
                             </span></span>
                         </div>
-                        <div class="model-info-price mb-20 d-flex justify-content-between">
+                        <div class="mb-20 model-info-price d-flex justify-content-between">
                             <span>Привод: <span id="dw-field">
                                 <?php
                                     if (isset($_POST['dw-input'])) {
@@ -144,27 +144,27 @@ if (isset($_POST['config-step'])) {
                                 <span>Расчет Kia Finance</span>
                             </div>
                             <hr class="sm">
-                            <div class="model-info-price mb-20 d-flex justify-content-between" id="kia-finance-down-payment">
+                            <div class="mb-20 model-info-price d-flex justify-content-between" id="kia-finance-down-payment">
                                 <span>Первый взнос:</span><span class="fw-700" id="kia-finance-down-payment-field"><!-- Down Payment --></span>
                             </div>
-                            <div class="model-info-price trade-in-param mb-20 d-none justify-content-between" id="kia-finance-trade-in">
+                            <div class="mb-20 model-info-price trade-in-param d-none justify-content-between" id="kia-finance-trade-in">
                                 <span>Трейд-ин: </span><span class="fw-700" id="kia-finance-trade-in-field"><!-- Trade In --></span>
                             </div>
-                            <div class="model-info-price trade-in-param mb-20 d-none justify-content-between" id="kia-finance-surcharge">
+                            <div class="mb-20 model-info-price trade-in-param d-none justify-content-between" id="kia-finance-surcharge">
                                 <span>Доплата: </span><span class="fw-700" id="kia-finance-surcharge-field"><!-- Surcharge --></span>
                             </div>
-                            <div class="model-info-price mb-20 d-flex justify-content-between" id="kia-finance-credit-summ">
+                            <div class="mb-20 model-info-price d-flex justify-content-between" id="kia-finance-credit-summ">
                                 <span>Сумма кредита: </span><span class="fw-700" id="kia-finance-credit-summ-field"><!-- Credit Summ --></span>
                             </div>
                             <?php if (false) : ?>
-                            <div class="model-info-price mb-20 d-flex justify-content-between" id="kia-finance-residual-payment">
+                            <div class="mb-20 model-info-price d-flex justify-content-between" id="kia-finance-residual-payment">
                                 <span>Остаточный платеж: </span><span class="fw-700" id="kia-finance-residual-payment-field"><!-- Residual Payment --></span>
                             </div>
                             <?php endif; ?>
-                            <div class="model-info-price mb-20 d-flex justify-content-between" id="kia-finance-credit-terms">
+                            <div class="mb-20 model-info-price d-flex justify-content-between" id="kia-finance-credit-terms">
                                 <span>Срок кредита: </span><span class="fw-700" id="kia-finance-credit-terms-field"><!-- Credit Terms --></span>
                             </div>
-                            <div class="model-info-price mb-20 d-flex justify-content-between" id="kia-finance-credit-rate">
+                            <div class="mb-20 model-info-price d-flex justify-content-between" id="kia-finance-credit-rate">
                                 <span>Кредитная ставка: </span><span class="fw-700" id="kia-finance-credit-rate-field"><!-- Credit Rate --></span>
                             </div>
                             <hr class="black sm">
@@ -203,7 +203,7 @@ if (isset($_POST['config-step'])) {
     </div>
 </div>
 
-<div class="section section-divided next-section-btn bg-white" data-sticky>
+<div class="bg-white section section-divided next-section-btn" data-sticky>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 d-flex justify-content-end">

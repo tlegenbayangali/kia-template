@@ -961,11 +961,11 @@ hr {
     &:before {
         content: '';
         background: inherit;
-        width: 100%;
+        width: 500%;
         height: 100%;
         position: absolute;
         top: 0;
-        left: -80px;
+        left: -500%;
         z-index: 1;
     }
 
