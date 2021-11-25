@@ -16,7 +16,6 @@ const newer = require("gulp-newer");
 const rsync = require("gulp-rsync");
 const del = require("del");
 const webp = require("gulp-webp");
-const eslint = require("gulp-eslint");
 function browsersync() {
   browserSync.init({
     server: {
@@ -38,8 +37,6 @@ function scripts() {
     "!app/js/utils/**/*",
     "!app/js/modules/**/*",
   ])
-    .pipe(eslint())
-    .pipe(eslint.format())
     .pipe(
       webpack({
         mode: "production",
