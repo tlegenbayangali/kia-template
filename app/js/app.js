@@ -82,11 +82,13 @@ if (cfForm.length) {
 const formSubmitter = $(".wpcf7-form .btn-wrapper.btn-wrapper-lg");
 const input = formSubmitter.children("input[type=submit]")[0];
 
-formSubmitter.on("click", function formSubmitterHandler() {
-  setTimeout(() => {
-    $(input).trigger("click");
-  }, 10);
-});
+formSubmitter.on(
+  "click",
+  "input[type=submit]",
+  function formSubmitterHandler() {
+    console.log("sent");
+  }
+);
 
 // $('a[href^="#"]').on('click', function transitionHadler(event) {
 //     // отменяем стандартное действие
