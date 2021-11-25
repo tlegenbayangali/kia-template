@@ -80,11 +80,11 @@ if (cfForm.length) {
  * Form Submitter Button
  */
 const formSubmitter = $(".wpcf7-form .btn-wrapper.btn-wrapper-lg");
-const input = formSubmitter.closest("input[type=submit]");
+const submitInput = $(".wpcf7-form input[type=submit]");
 
 formSubmitter.on("click", function formSubmitterHandler() {
-  console.log(input);
-  $(input).trigger("click");
+  console.log(submitInput);
+  $(submitInput).trigger("click");
 });
 
 // $('a[href^="#"]').on('click', function transitionHadler(event) {
