@@ -83,6 +83,7 @@ const formSubmitter = $(".wpcf7-form .btn-wrapper.btn-wrapper-lg");
 const input = formSubmitter.closest("input[type=submit]");
 
 formSubmitter.on("click", function formSubmitterHandler() {
+  console.log(input);
   $(input).trigger("click");
 });
 
