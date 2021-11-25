@@ -68,61 +68,53 @@ $current_post = get_post();?>
                 <!-- COLORS SECTION-->
                 <div class="model-sections-inner-wide">
                     <div class="model-sections-colors"> <!-- MAIN BLOCK FOR COLORS-->
-                        <h3 class="model-sections-colors-header">
-                            <?php the_title(); ?>
-                        </h3>
                         <div class="model-sections-colors-image-wrapper d-flex justify-content-center">
                             <!-- COLORS IMAGE-->
-                            <div class="model-sections-colors-image">
+                            <div class="model-sections-colors-image" id="model-sections-colors-image-0">
                                 <img src="" alt="model"> <!-- COLOR IMAGE-->
                             </div> <!-- REQUIRED CLASS MODEL SECTION COLORS IMAGE-->
                         </div>
-                        <div class="model-sections-colors-option mt-30">
-                            <div class="model-sections-colors-exterior">
-                                <div class="description-list">
-                                    <div class="model-sections-colors-exterior-desc">
-                                        Цвет:
-                                        <span><!-- COLOR NAME--></span>
+                        <div class="row mt-30">
+                            <div class="col-12 col-md-6">
+                                <div class="model-sections-colors-exterior colorpicker">
+                                    <div class="description-list">
+                                        <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-exterior-desc">
+                                            Цвет:
+                                            <span><!-- COLOR NAME--></span>
+                                        </div>
                                     </div>
+                                    <!-- COLORS LIST EXTERIOR-->   
+                                    <div class="color-list">
+                                        <?php
+                                            $current_model_colors = get_field('body_colors');
+                                        ?>
+                                        <?php foreach ($current_model_colors as $color) : ?>
+                                        <span data-text="<?= $color['body_color_name'] ?>" data-src="<?= $color['body_color_image'] ?>" class="color-list-item" data-color="<?= $color['body_colors_group']['body_colors_first'] ?>" style="background: <?= $color['body_colors_group']['body_colors_first'] ?>;"></span>
+                                        <?php endforeach; ?>
+                                    </div>                          
                                 </div>
-                                <!-- COLORS LIST EXTERIOR-->   
-                                <div class="color-list">
-                                    <!-- LIST ITEMS -->
-                                    <?php
-                                    
-                                    $body_colors = get_field('body_colors');
-                                    foreach ($body_colors as $body_color) {
-                                        if ($body_color['two_colors'] == 0) {
-                                            $body_color['body_colors_group']['body_colors_second'] =
-                                            $body_color['body_colors_group']['body_colors_first'];
-                                        } ?>
-                                        <span
-                                            data-text="<?php echo $body_color['body_color_name'];?>"
-                                            data-src="<?php echo $body_color['body_color_image'];?>"
-                                            class="color-list-item"
-                                            style="
-                                                background: linear-gradient(to bottom,
-                                                    <?php echo $body_color['body_colors_group']['body_colors_first']; ?> 50%,
-                                                    <?php echo $body_color['body_colors_group']['body_colors_second'];  ?> 50%); 
-                                            ">
-                                        </span>
-                                    <?php } ?>
-                                </div>                          
                             </div>
-                            <div class="model-sections-colors-interior">
-                                <div class="description-list">
-                                    <div>
-                                        Интерьер:
-                                        <span>Черный, Искусственная кожа с серой прострочкой (WK)</span>
-                                    </div>                                      
+                            <div class="col-12 col-md-6">
+                                <div class="model-sections-colors-interior colorpicker">
+                                    <div class="description-list">
+                                        <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
+                                            Интерьер:
+                                            <span id="interior-color-name">Черный, Искусственная кожа с серой прострочкой (WK)</span>
+                                        </div>                                      
+                                    </div>
+                                    <!-- COLORS LIST INTERIOR-->   
+                                    <div class="color-list">
+                                        <?php
+                                            $current_model_interiors = get_field('interior_colors');
+                                        ?>
+                                        <?php foreach ((array)$current_model_interiors as $interior) : ?>
+                                            <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background: <?= $interior['interior_color_rgb'] ?>"></span>
+                                        <?php endforeach; ?>
+                                    </div> 
                                 </div>
-                                <!-- COLORS LIST INTERIOR-->   
-                                <div class="color-list">
-                                    <span class="color-list-item active" style="background: rgba(0, 0, 0, 0.8);"></span>
-                                </div> 
                             </div>
                         </div>
-                    </div>                    
+                    </div>                
                 </div>
             </div>
             <?php
