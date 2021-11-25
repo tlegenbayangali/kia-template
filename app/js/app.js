@@ -81,7 +81,7 @@ if (cfForm.length) {
  */
 const formSubmitter = $(".wpcf7-form .btn-wrapper.btn-wrapper-lg");
 const input = formSubmitter.children("input[type=submit]")[0];
-
+//
 formSubmitter.on("click", function formSubmitterHandler() {
   $(this).closest("form").trigger("submit");
 });
