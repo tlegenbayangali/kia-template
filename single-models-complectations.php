@@ -113,7 +113,7 @@
 
 <div class="equip-wrapper">
     <div class="equip-inner">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <!-- WILL BE FIXED-->
