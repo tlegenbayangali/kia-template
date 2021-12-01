@@ -9135,7 +9135,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $engine = get_field('engine', $post->ID); ?>
+                                                            <?php $engine = $common_chars['engine']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
@@ -9159,7 +9159,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $power = get_field('power', $post->ID); ?>
+                                                            <?php $power = $common_chars['power']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
