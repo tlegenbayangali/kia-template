@@ -9183,7 +9183,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $rotate_moment = get_field('rotate_moment', $post->ID); ?>
+                                                            <?php $rotate_moment = $common_chars['rotate_moment']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
@@ -9207,7 +9207,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $engine_type = get_field('engine_type', $post->ID); ?>
+                                                            <?php $engine_type = $common_chars['engine_type']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
@@ -9231,7 +9231,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $transmission = get_field('transmission', $post->ID); ?>
+                                                            <?php $transmission = $common_chars['transmission']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
@@ -9255,7 +9255,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $drive_wheels = get_field('drive_wheels', $post->ID); ?>
+                                                            <?php $drive_wheels = $common_chars['drive_wheels']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
@@ -9279,7 +9279,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $zero_hundred = get_field('zero_hundred', $post->ID); ?>
+                                                            <?php $zero_hundred = $common_chars['zero_hundred']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
@@ -9303,7 +9303,7 @@
                                                     <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
                                                         
                                                         <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $consumption = get_field('consumption', $post->ID); ?>
+                                                            <?php $consumption = $common_chars['consumption']; ?>
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div> 
