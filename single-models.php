@@ -14,7 +14,7 @@ $current_post = get_post();?>
         <?php endif; ?>
     </video>
     <?php endif; ?>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <div class="hero-model-inner d-flex">
@@ -58,7 +58,7 @@ $current_post = get_post();?>
     </div>
 </div>
 <div class="hero-model-padding"></div>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
             <?php the_content(); ?>
