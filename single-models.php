@@ -189,6 +189,7 @@ $current_post = get_post();?>
                                                 <span class="d-none" itemprop="logo"><?= get_field('model_logo', $current_post->ID) ?></span>
                                                 <span class="d-none" itemprop="category"><?= get_field('category', $current_post->ID) ?></span>
                                                 <span class="d-none" itemprop="brand"><?= get_field('model_logo_top', $current_post->ID) ?></span>
+                                                <span class="d-none" itemprop="image"><?= get_field('model_side', $current_post->ID) ?></span>
                                                 <span class="d-none" itemprop="model"><?= get_the_title( $current_post->ID ) ?></span>
                                                 <!-- MORE BUTTON TO ANOTHER PAGE-->
                                                 <div class="button">
