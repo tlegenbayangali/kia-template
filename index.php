@@ -223,7 +223,9 @@ if (get_field('is_models_slider', 'options')) : ?>
                                 <span class="d-none" itemprop="slogan"><?= get_field('model_hero_short_text', $model->ID) ?></span>
                                 <span class="d-none" itemprop="logo"><?= get_field('model_logo', $model->ID) ?></span>
                                 <span class="d-none" itemprop="category"><?= get_field('category', $model->ID) ?></span>
-                                <span class="d-none" itemprop="brand"><?= get_field('model_logo_top', $model->ID) ?></span>
+                                <span class="d-none" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
+                                    <span itemprop="name"><?= get_field('model_logo_top', $model->ID) ?></span>
+                                </span>
                                 <span class="d-none" itemprop="model"><?= $model->post_title ?></span>
                                 <span class="d-none" itemprop="description">
                                     <?php foreach (get_field('model_option', $model->ID) as $idx => $option) :?>
