@@ -47,6 +47,14 @@
 								<?= get_field('car_price_conditions', $args['parent_post']->ID) ?>
 							</div>
                         </div>
+                        <?php
+                            $arguments = array(
+                                'posts_per_page' => '-1',
+                                'post_type' => 'offers-cars',
+                                'model' => $args['parent_post']->post_name,
+                            );
+                            $offers_cars = new WP_Query($arguments);
+                        ?>
                         <div class="header-model-menu d-flex align-items-center">
                             <ul class="header-model-menu-main d-flex">
                                 <li>
@@ -64,22 +72,17 @@
                                         Характеристики
                                     </a>
                                 </li>
-                                <?php if (false) : ?>
                                 <li>
+                                    <a class="underlined underlined-white" href="/callback?current_model=<?= $args['parent_post']->post_name ?>">
+                                        Заявка дилеру
+                                    </a>
+                                </li>
+                                <!-- <li>
                                     <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/credit'; ?>">
                                         Рассчитать кредит
                                     </a>
-                                </li>
-                                <?php endif; ?>
-                                <li class="has-sub d-xl-flex d-none header-model-menu-main-button">
-                                <?php
-                                    $arguments = array(
-                                        'posts_per_page' => '-1',
-                                        'post_type' => 'offers-cars',
-                                        'model' => $args['parent_post']->post_name,
-                                    );
-                                    $offers_cars = new WP_Query($arguments);
-                                ?>
+                                </li> -->
+                                <!-- <li class="has-sub d-xl-flex d-none header-model-menu-main-button">
                                     <button type="button"
                                         class="button-dots d-flex align-items-center justify-content-center">
                                         <svg class="dots">
@@ -112,11 +115,11 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
-                            <a class="underlined underlined-white d-block conf" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/config'; ?>">
+                            <!-- <a class="underlined underlined-white d-block conf" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/config'; ?>">
                                 Конфигуратор
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
