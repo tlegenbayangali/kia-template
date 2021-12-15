@@ -35,7 +35,7 @@ if (isset($_GET['current_model'])) {
                 <div class="callback-form">
                     <h5 class="mb-2" id="result-form">Ваши контакты</h5>
                     <p>Поля, отмеченные *, обязательны для заполнения</p>
-                    <?= do_shortcode( '[contact-form-7 id="139" title="Форма заявки"]' ) ?>
+                    <?= do_shortcode( '[contact-form-7 id="3786" title="Форма заявки от определенной модели"]' ) ?>
                 </div>
             </div>
         </div>
