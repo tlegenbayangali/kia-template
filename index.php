@@ -620,8 +620,7 @@ if (false) : ?>
             </div>
         </div>
     </section>
-<?php
-endif; ?>
+    <?php endif; ?>
     <section class="offers d-none section pt-80 pb-80">
         <div class="container">
             <div class="row">
