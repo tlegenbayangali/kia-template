@@ -143,7 +143,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                                 <div class="top">
                                     <div class="img">
                                         <a href="<?= get_post_permalink($model->ID) ?>">
-                                            <?= get_the_post_thumbnail($model->ID, 'full', [
+                                            <?= get_the_post_thumbnail($model->ID, 'large', [
                                                 'itemprop' => 'image'
                                             ]) ?>
                                         </a>
@@ -291,7 +291,7 @@ if (get_field('is_online_services', 'options')) : ?>
                                 <div class="swiper-slide d-flex flex-column justify-content-between services-item">
                                     <a href="<?= get_post_permalink($service->ID) ?>" class="service-block">
                                 <span class="service-img">
-									<?= get_the_post_thumbnail($service->ID, 'full') ?>
+									<?= get_the_post_thumbnail($service->ID, 'large') ?>
                                 </span>
                                         <span class="service-text">
                                     <?= $service->post_title ?>
@@ -398,7 +398,7 @@ if (get_field('is_available_cars', 'options')) : ?>
                             <div class="top">
                                 <div class="img">
                                     <a class="d-block" href="<?= get_the_permalink($car->ID) ?>">
-                                        <?= get_the_post_thumbnail($car->ID, 'full') ?>
+                                        <?= get_the_post_thumbnail($car->ID, 'large') ?>
                                     </a>
                                 </div>
                                 <div class="title">
@@ -572,7 +572,7 @@ if (false) : ?>
                                     <div class="offers-card">
                                         <div class="img">
                                             <a href="<?= get_the_permalink($offer->ID) ?>">
-                                                <?= get_the_post_thumbnail($offer->ID, 'full') ?>
+                                                <?= get_the_post_thumbnail($offer->ID, 'small') ?>
                                             </a>
                                         </div>
                                         <div class="title">
@@ -647,7 +647,7 @@ if (false) : ?>
                                     <div class="offers-card">
                                         <div class="img">
                                             <a href="<?= get_the_permalink($post->ID) ?>">
-                                                <?= get_the_post_thumbnail($post->ID, 'full') ?>
+                                                <?= get_the_post_thumbnail($post->ID, 'large') ?>
                                             </a>
                                         </div>
                                         <div class="title">

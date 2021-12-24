@@ -66,7 +66,7 @@ foreach ($models->posts as $model) {
                                 <div class="top">
                                     <div class="img">
                                         <a href="<?= get_post_permalink($model->ID) ?>">
-                                            <?= get_the_post_thumbnail($model->ID, 'full', [
+                                            <?= get_the_post_thumbnail($model->ID, 'large', [
                                                 'itemprop' => 'image'
                                             ]) ?>
                                         </a>
