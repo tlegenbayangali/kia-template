@@ -621,7 +621,16 @@ if (false) : ?>
         </div>
     </section>
     <?php endif; ?>
-    <section class="offers d-none section pt-80 pb-80">
+    
+    <?php
+
+    $company_news = new WP_Query([
+        'category' => 'news'
+    ]);
+
+    ?>
+    <?php if ($company_news->posts) : ?>
+    <section class="offers section pt-80 pb-80">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -632,13 +641,6 @@ if (false) : ?>
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <?php
-
-                            $company_news = new WP_Query([
-                                'category' => 'news'
-                            ]);
-
-                            ?>
                             <?php
                             foreach ($company_news->posts as $post) : ?>
                                 <div class="swiper-slide d-flex flex-column justify-content-between model">
@@ -662,8 +664,7 @@ if (false) : ?>
                                         </div>
                                     </div>
                                 </div>
-                            <?php
-                            endforeach; ?>
+                            <?php endforeach; ?>
                         </div>
                         <button class="arrow arrow-prev swiper-button-prev">
                             <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
@@ -693,6 +694,7 @@ if (false) : ?>
             </div>
         </div>
     </section>
+    <?php endif; ?>
     <div style="height:52px"></div>
 <?php
 get_footer();
