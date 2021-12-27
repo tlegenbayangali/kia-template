@@ -188,8 +188,10 @@ $current_post = get_post();?>
                                                 <span class="d-none" itemprop="slogan"><?= get_field('model_hero_short_text', $current_post->ID) ?></span>
                                                 <span class="d-none" itemprop="logo"><?= get_field('model_logo', $current_post->ID) ?></span>
                                                 <span class="d-none" itemprop="category"><?= get_field('category', $current_post->ID) ?></span>
-                                                <span class="d-none" itemprop="brand"><?= get_field('model_logo_top', $current_post->ID) ?></span>
-                                                <span class="d-none" itemprop="image"><?= get_field('model_side', $current_post->ID) ?></span>
+                                                <span class="d-none" itemprop="brand" itemtype="https://schema.org/Thing" itemscope>
+                                                    <meta itemprop="name" content="<?= get_field('model_logo_top', $current_post->ID) ?>" />
+                                                </span>
+                                                <link class="d-none" itemprop="image" href="<?= wp_get_attachment_image_url(get_field('model_side', $current_post->ID)) ?>" />
                                                 <span class="d-none" itemprop="model"><?= get_the_title( $current_post->ID ) ?></span>
                                                 <!-- MORE BUTTON TO ANOTHER PAGE-->
                                                 <div class="button">
@@ -236,7 +238,7 @@ $current_post = get_post();?>
                                 </h3>
                                 
                                 <div class="model-sections-bottom-block-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                    <a href="/callback/" class="btn">
+                                    <a href="/callback" class="btn">
                                         Заказать звонок дилера
                                     </a>
                                 </div>
