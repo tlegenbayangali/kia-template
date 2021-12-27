@@ -94,13 +94,13 @@ foreach ($models->posts as $model) {
                                     <div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
                                         <div class="top">
                                             <div class="img">
-                                                <a href="/models/<?= $model->post_name ?>/config">
+                                                <a href="/models/<?= $model->post_name ?>/config/">
                                                     <?= get_the_post_thumbnail($model->ID, 'full') ?>
                                                 </a>
                                             </div>
                                             <div class="title">
                                                 <div class="d-flex">
-                                                    <a href="/models/<?= $model->post_name ?>/config">
+                                                    <a href="/models/<?= $model->post_name ?>/config/">
                                                         <span class="title-content underlined mr-2 underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
                                                     </a>
                                                     
@@ -156,7 +156,7 @@ foreach ($models->posts as $model) {
                                         <div class="bottom">
                                             <div class="model-row justify-content-end">
                                                 <div class="d-flex links">
-                                                    <a href="/models/<?= $model->post_name ?>/config" class="underlined underlined-black readmore">
+                                                    <a href="/models/<?= $model->post_name ?>/config/" class="underlined underlined-black readmore">
                                                         Подобрать конфигурацию
                                                     </a>
                                                 </div>

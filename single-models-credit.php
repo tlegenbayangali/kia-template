@@ -223,7 +223,7 @@ if (isset($_POST['config-step'])) {
                 <?php endif; ?>
                 <?php if ($current_step == 4) : ?>
                     <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
-                        <a href="/callback" class="btn">Оставить заявку</a>
+                        <a href="/callback/" class="btn">Оставить заявку</a>
                     </div>
                 <?php endif; ?>
             </div>

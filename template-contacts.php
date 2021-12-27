@@ -26,7 +26,7 @@ get_header()
                     <?php the_field('site_description', 'options'); ?>
                 </p>
                     <div class="mt-20 btn-wrapper btn-wrapper-lg btn-wrapper-black">
-                        <a href="/callback" class="btn">Заказать звонок</a>
+                        <a href="/callback/" class="btn">Заказать звонок</a>
                     </div>
                 <hr>
                 <div class="row">

@@ -523,7 +523,7 @@ endif; ?>
             <div class="row">
                 <div class="col-lg-12 d-flex">
                     <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
-                        <a href="<?= get_site_url() ?>/offers-cars" class="btn">
+                        <a href="<?= get_site_url() ?>/offers-cars/" class="btn">
                             Все предложения
                         </a>
                     </div>

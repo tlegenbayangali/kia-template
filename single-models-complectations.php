@@ -40,7 +40,7 @@
                     </div>
                     <?php endif; ?>
                     <div class="equip-breadcrumbs-right-call">
-                        <a class="d-flex align-items-center underlined underlined-black" href="/callback?current_model=<?= $parent_post->post_name ?>">
+                        <a class="d-flex align-items-center underlined underlined-black" href="/callback/?current_model=<?= $parent_post->post_name ?>">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="mr-1"
                                 data-v-3802aeb3="">

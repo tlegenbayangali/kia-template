@@ -35,7 +35,7 @@ $credit_offers = new WP_Query([
                             <?= price_for_month('price', get_the_ID(), 36) ?> ₸/мес
                         </span>
                         <div class="mt-30">
-                            <a href="/callback" class="w-100-p tac btn btn-black btn-md">
+                            <a href="/callback/" class="w-100-p tac btn btn-black btn-md">
                                 Забронировать автомобиль
                             </a>
                             <a href="/models/<?= $current_model[0]->slug ?>/credit" class="w-100-p mt-10 tac btn btn-white-outline btn-md">
