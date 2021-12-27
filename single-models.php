@@ -157,19 +157,19 @@ $current_post = get_post();?>
                                     foreach ($configs->posts as $post) {
                                         $current_post_ID = $post->ID; ?>
                                         <!-- SLIDES -->
-                                        <div itemscope itemtype="http://schema.org/Product" class="swiper-slide model-sections-variations-slide">
+                                        <div class="swiper-slide model-sections-variations-slide">
                                             <div class="model-sections-variations-slide-inner">
                                                 <div class="title">
-                                                    <h5 itemprop="name"><?php echo esc_html( get_the_title($current_post_ID) );?></h5>
-                                                    <span class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                                        <span itemprop="price"><?php echo esc_attr(the_field('price', $current_post_ID))?></span> <span class="d-none" itemprop="priceCurrency">KZT</span> ₸
+                                                    <h5><?php echo esc_html( get_the_title($current_post_ID) );?></h5>
+                                                    <span class="price">
+                                                        <span><?php echo esc_attr(the_field('price', $current_post_ID))?></span> ₸
                                                     </span>
                                                 </div>
                                                 <div class="content">
                                                     <ul>
                                                         <li>
                                                             <span class="content-header">Двигатель и трансмиссия</span>
-                                                            <p itemprop="description">
+                                                            <p>
                                                                 <?php echo get_field('engine', $current_post_ID) .' / '.
                                                                 get_field('power', $current_post_ID) .' л.с / '.
                                                                 get_field('engine_type', $current_post_ID) .' / '.
@@ -185,14 +185,6 @@ $current_post = get_post();?>
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <span class="d-none" itemprop="slogan"><?= get_field('model_hero_short_text', $current_post->ID) ?></span>
-                                                <span class="d-none" itemprop="logo"><?= get_field('model_logo', $current_post->ID) ?></span>
-                                                <span class="d-none" itemprop="category"><?= get_field('category', $current_post->ID) ?></span>
-                                                <span class="d-none" itemprop="brand" itemtype="https://schema.org/Thing" itemscope>
-                                                    <meta itemprop="name" content="<?= get_field('model_logo_top', $current_post->ID) ?>" />
-                                                </span>
-                                                <link class="d-none" itemprop="image" href="<?= wp_get_attachment_image_url(get_field('model_side', $current_post->ID)) ?>" />
-                                                <span class="d-none" itemprop="model"><?= get_the_title( $current_post->ID ) ?></span>
                                                 <!-- MORE BUTTON TO ANOTHER PAGE-->
                                                 <div class="button">
                                                     <a href="/models/<?= $current_model ?>/complectations" class="content-more model-sections-desc-more underlined underlined-green">
