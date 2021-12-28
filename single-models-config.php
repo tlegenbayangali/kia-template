@@ -75,9 +75,9 @@ if (isset($_POST['config-step'])) {
             <div class="col-xl-4 col-xxl-3 col-lg-12 pr-40 pb-30 aside bg-lgray <?php if ($current_step == 5) : echo 'd-none'; endif; ?>">
                 <aside class="pt-60 pb-60 h-100-p" data-sticky-container>
                     <div class="model-info" data-sticky-for="1200" data-margin-top="30" data-sticky-wrap="true">
-                        <div class="model-info-title">
+                        <h1 class="model-info-title">
                             <?= $current_model->post_title ?>
-                        </div>
+                        </h1>
                         <div class="model-info-image d-flex justify-content-center">
                             <?= wp_get_attachment_image( get_field('model_side', $current_model->ID), 'full' ) ?>
                         </div>
