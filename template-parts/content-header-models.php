@@ -58,17 +58,17 @@
                         <div class="header-model-menu d-flex align-items-center">
                             <ul class="header-model-menu-main d-flex">
                                 <li>
-                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name; ?>">
+                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name; ?> . '/">
                                         Обзор
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/complectations'; ?>">
+                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/complectations/'; ?>">
                                         Комплектации и цены
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/characteristics'; ?>">
+                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/characteristics/'; ?>">
                                         Характеристики
                                     </a>
                                 </li>
@@ -78,7 +78,7 @@
                                     </a>
                                 </li>
                                 <!-- <li>
-                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/credit'; ?>">
+                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/credit/'; ?>">
                                         Рассчитать кредит
                                     </a>
                                 </li> -->
