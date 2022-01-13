@@ -3,7 +3,7 @@
     $parent_post_id = get_post()->post_parent;
 ?>
 <?php get_template_part( 'template-parts/content', 'header-models', [ 'parent_post' => $parent_post, ] ); ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
             <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
@@ -80,7 +80,7 @@
     // wp_reset_query();
 ?>
 <div class="equip-hero">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <div class="equip-hero-inner">
