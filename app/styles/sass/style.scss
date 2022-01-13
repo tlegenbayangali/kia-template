@@ -94,14 +94,9 @@ input::-webkit-inner-spin-button {
     z-index: 11;
 }
 
-.container {
+.container-fluid {
     padding-left: 80px;
     padding-right: 80px;
-
-    &-fluid {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
 }
 
 ul {
