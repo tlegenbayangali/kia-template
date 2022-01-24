@@ -58,7 +58,7 @@
                         <div class="header-model-menu d-flex align-items-center">
                             <ul class="header-model-menu-main d-flex">
                                 <li>
-                                    <a class="underlined underlined-white" href="/models/<?= $current_m ?>">
+                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name; ?>/">
                                         Обзор
                                     </a>
                                 </li>
