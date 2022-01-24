@@ -64,8 +64,12 @@
     $configs = new WP_Query([
         'post_type' => 'configs',
         'model' => $parent_slug,
-        'posts_per_page' => 99
+        'posts_per_page' => -1,
+        'meta_key' => 'price',
+        'order' => 'ASC',
+        'orderby' => ['meta_value_num' => 'ASC'],
     ]);
+
     $prices_array = [];
 
     foreach ($configs->posts as $post) :
