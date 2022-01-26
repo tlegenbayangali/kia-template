@@ -27,11 +27,11 @@
                         <div class="header-model-left model d-flex align-items-center">
                             <h1 class="header-model-name d-flex align-items-center"><?php echo esc_html( get_the_title($args['parent_post']->ID) );?></h1>
                             <!--<a href="#" class="header-model-name d-flex align-items-center">
-                                <?php echo esc_html( get_the_title($args['parent_post']->ID) );?>
+                                <?php // echo esc_html( get_the_title($args['parent_post']->ID) );?>
                                 <button type="button"
                                     class="button-arrow d-xl-none d-flex align-items-center justify-content-center">
                                     <svg class="arrow-bottom">
-                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#arrow-bottom"></use>
+                                        <use xlink:href="<?php // echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#arrow-bottom"></use>
                                     </svg>
                                 </button>
                             </a>-->

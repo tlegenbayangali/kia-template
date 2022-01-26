@@ -230,7 +230,7 @@ $current_post = get_post();?>
                                 </h3>
                                 
                                 <div class="model-sections-bottom-block-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                    <a href="/callback/" class="btn">
+                                    <a href="/callback/?current_model=<?= $current_post->post_name ?>" class="btn">
                                         Заказать звонок дилера
                                     </a>
                                 </div>
