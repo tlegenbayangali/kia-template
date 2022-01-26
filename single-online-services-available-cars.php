@@ -6,7 +6,7 @@
             <div class="col-lg-12">
                 <div class="group">
                     <div class="group-heading">
-                        <h3 class="section-heading"><?php the_title(); ?></h3>
+                        <h1 class="section-heading"><?php the_title(); ?></h1>
                         <div class="section-desc">
                             <?php the_content(); ?>
                         </div>

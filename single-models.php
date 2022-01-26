@@ -143,7 +143,7 @@ $current_post = get_post();?>
                                 <?php echo count($configs->posts) . ' ';?> доступных комплектаций
                             </div>
                             <!-- MORE BUTTON TO ANOTHER PAGE-->
-                            <a href="/models/<?= $current_model ?>/complectations" class="model-sections-variations-bottom-more model-sections-desc-more underlined underlined-black">
+                            <a href="/models/<?= $current_model ?>/complectations/" class="model-sections-variations-bottom-more model-sections-desc-more underlined underlined-black">
                                 Комплектации и цены
                             </a>
                         </div>
@@ -187,7 +187,7 @@ $current_post = get_post();?>
                                                 </div>
                                                 <!-- MORE BUTTON TO ANOTHER PAGE-->
                                                 <div class="button">
-                                                    <a href="/models/<?= $current_model ?>/complectations" class="content-more model-sections-desc-more underlined underlined-green">
+                                                    <a href="/models/<?= $current_model ?>/complectations/" class="content-more model-sections-desc-more underlined underlined-green">
                                                         Комплектации и цены
                                                     </a>
                                                 </div>
