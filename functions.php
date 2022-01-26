@@ -385,6 +385,21 @@ function my_navigation_template( $template, $class ){
 	';
 }
 
+add_filter( 'pre_get_document_title', function( $title ) {
+	if (isset($_GET['current_model'])) {
+		$model = new WP_Query([
+			'post_type' => 'models',
+			'post_parent' => 0,
+			'name' => $_GET['current_model']
+		]);
+		
+		$current_model = $model->posts[0];
+		
+		$title = 'Kia' . ' ' . $current_model->post_title . ' ' . $title;
+	}
+    return $title;
+}, 999, 1 );
+
 // function wp_maintenance_mode() {
 // 	if (!current_user_can('edit_themes') || !is_user_logged_in()) {
 // 		wp_die('<h1>На обслуживании</h1><br />Сайт находится на плановом обслуживании. Пожалуйста, зайдите позже.');
