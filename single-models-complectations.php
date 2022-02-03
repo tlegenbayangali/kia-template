@@ -2266,6 +2266,34 @@
                                         </div>
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
+                                                Светлая обивка салона без красной прострочки
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('interior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['svetlaya_obivka_salona_bez_krasnoj_prostrochki']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
                                                 Задний подлокотник с подстаканниками
                                             </div>
                                             <div class="equip-config-section-item-carousel">
