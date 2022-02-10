@@ -128,7 +128,7 @@ if ($(".equip-config")) {
 }
 
 if ($("#offer-form").length) {
-  const offerName = $.trim($(".post-title > *").text());
+  const offerName = $.trim($(".kb_title").text());
   const formOfferName = $("#form-offer-name");
 
   formOfferName.val(offerName);
