@@ -132,5 +132,5 @@ if ($("#offer-form").length) {
   const formOfferName = $("#form-offer-name");
   console.log(formOfferName, offerName);
 
-  formOfferName.val(offerName);
+  formOfferName.val("asdasdasd");
 }
