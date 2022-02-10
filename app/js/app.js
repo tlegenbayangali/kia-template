@@ -131,5 +131,5 @@ if ($("#offer-form").length) {
   const offerName = $.trim($(".breadcrumbs .kb_title").text());
   const formOfferName = $("#form-offer-name");
 
-  $(this).val(offerName);
+  formOfferName.val(offerName);
 }
