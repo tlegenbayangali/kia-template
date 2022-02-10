@@ -7,15 +7,15 @@
         'order' => 'asc'
     ]);
 
-    echo '<pre>';
-    print_r($configs);
-    echo '</pre>';
-
     $useful_configs = [];
 
     foreach ($configs->posts as $config) {
         $useful_configs[] = $config;
     }
+
+    echo '<pre>';
+    print_r($useful_configs);
+    echo '</pre>';
 ?>
 
 <div class="content complections pt-60 pb-60 pl-80">
