@@ -133,5 +133,5 @@ if ($("#offer-form").length) {
 
   setTimeout(() => {
     formOfferName.val(offerName);
-  }, 3000);
+  }, 10000);
 }
