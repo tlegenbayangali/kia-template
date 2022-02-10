@@ -130,7 +130,8 @@ if ($(".equip-config")) {
 if ($("#offer-form").length) {
   const offerName = $.trim($(".breadcrumbs .kb_title").text());
   const formOfferName = $("#form-offer-name");
-  console.log(formOfferName, offerName);
 
-  formOfferName.val("asdasdasd");
+  setTimeout(() => {
+    formOfferName.val(offerName);
+  }, 500);
 }
