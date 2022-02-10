@@ -7,6 +7,10 @@
         'order' => 'asc'
     ]);
 
+    echo '<pre>';
+    print_r($configs);
+    echo '</pre>';
+
     $useful_configs = [];
 
     foreach ($configs->posts as $config) {
