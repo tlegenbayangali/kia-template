@@ -26,17 +26,21 @@
                             }
                         ?>
                         <?php if ($date_start && $date_end) : ?>
-                            <?php if ($now <= $date_end) : ?>
-                                Осталось: 
-                                <?php if ($left->d == 0 || $left->d >= 5) : ?>
-                                    <?= $left->d ?> дней
-                                <?php elseif ($left->d == 1) : ?>
-                                    <?= $left->d ?> день
-                                <?php elseif ($left->d >= 2 && $left->d <= 4) : ?>
-                                    <?= $left->d ?> дня
-                                <?php endif; ?>
+                            <?php if ($now < $date_start) : ?>
+                                Начало акции: <?= $date_start ?>
                             <?php else : ?>
-                                Завершено
+                                <?php if ($now <= $date_end) : ?>
+                                    Осталось: 
+                                    <?php if ($left->d == 0 || $left->d >= 5) : ?>
+                                        <?= $left->d ?> дней
+                                    <?php elseif ($left->d == 1) : ?>
+                                        <?= $left->d ?> день
+                                    <?php elseif ($left->d >= 2 && $left->d <= 4) : ?>
+                                        <?= $left->d ?> дня
+                                    <?php endif; ?>
+                                <?php else : ?>
+                                    Завершено
+                                <?php endif; ?>
                             <?php endif; ?>
                         <?php else : ?>
                             Постоянная акция
