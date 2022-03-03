@@ -27,7 +27,7 @@
                         ?>
                         <?php if ($date_start && $date_end) : ?>
                             <?php if ($now < $date_start) : ?>
-                                Начало акции: <?= $date_start ?>
+                                Начало акции: <?= $date ?>
                             <?php else : ?>
                                 <?php if ($now <= $date_end) : ?>
                                     Осталось: 
