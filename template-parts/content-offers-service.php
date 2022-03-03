@@ -36,7 +36,7 @@
                                     <?= $left->d ?> дня
                                 <?php endif; ?>
                             <?php elseif ($now < $date_start) : ?>
-                                asdasdasd
+                                Начало акции: <?= $date_start ?>
                             <?php else : ?>
                                 Завершено
                             <?php endif; ?>
