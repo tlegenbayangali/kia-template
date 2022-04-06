@@ -139,19 +139,17 @@ if (get_field('is_models_slider', 'options')) : ?>
                         <!-- Slides -->
                         <?php
                         foreach ($models->posts as $model) : ?>
-                            <div itemscope itemtype="http://schema.org/Product" class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
+                            <div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
                                 <div class="top">
                                     <div class="img">
                                         <a href="<?= get_post_permalink($model->ID) ?>">
-                                            <?= get_the_post_thumbnail($model->ID, 'large', [
-                                                'itemprop' => 'image'
-                                            ]) ?>
+                                            <?= get_the_post_thumbnail($model->ID, 'large') ?>
                                         </a>
                                     </div>
                                     <div class="title">
                                         <div class="d-flex">
                                             <a href="<?= get_post_permalink($model->ID) ?>">
-                                                <span itemprop="name" class="mr-2 title-content underlined underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
+                                                <span class="mr-2 title-content underlined underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
                                             </a>
 
                                             <?php
@@ -163,7 +161,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                                     </div>
                                     <div class="model-row">
                                         <div class="d-flex">
-                                            <span itemscope itemtype="http://schema.org/Offer" itemprop="offers" class="mr-2 price-sm">от <span itemprop="price"><?= get_field('starting_price', $model->ID) ?></span> <span class="d-none" itemprop="priceCurrency">KZT</span>₸</span>
+                                            <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
                                             <?php
                                             if (get_field('car_price_conditions', $model->ID)) : ?>
                                                 <svg class="info-additional conditions">
@@ -220,18 +218,6 @@ if (get_field('is_models_slider', 'options')) : ?>
                                     <?php
                                     endif; ?>
                                 </div>
-                                <span class="d-none" itemprop="slogan"><?= get_field('model_hero_short_text', $model->ID) ?></span>
-                                <span class="d-none" itemprop="logo"><?= get_field('model_logo', $model->ID) ?></span>
-                                <span class="d-none" itemprop="category"><?= get_field('category', $model->ID) ?></span>
-                                <span class="d-none" itemprop="brand" itemscope itemtype="http://schema.org/Brand">
-                                    <span itemprop="name"><?= get_field('model_logo_top', $model->ID) ?></span>
-                                </span>
-                                <span class="d-none" itemprop="model"><?= $model->post_title ?></span>
-                                <span class="d-none" itemprop="description">
-                                    <?php foreach (get_field('model_option', $model->ID) as $idx => $option) :?>
-                                        <?= $option['model_option_description'] . '.' ?>
-                                    <?php endforeach; ?>
-                                </span>
                                 <div class="bottom">
                                     <div class="model-row justify-content-end">
                                         <div class="d-flex links">
@@ -620,16 +606,18 @@ if (false) : ?>
             </div>
         </div>
     </section>
-    <?php endif; ?>
-    
-    <?php
+<?php
+endif; ?>
 
-    $company_news = new WP_Query([
-        'category' => 'news'
-    ]);
+<?php
 
-    ?>
-    <?php if ($company_news->posts) : ?>
+$company_news = new WP_Query([
+    'category' => 'news'
+]);
+
+?>
+<?php
+if ($company_news->posts) : ?>
     <section class="offers section pt-80 pb-80">
         <div class="container">
             <div class="row">
@@ -664,7 +652,8 @@ if (false) : ?>
                                         </div>
                                     </div>
                                 </div>
-                            <?php endforeach; ?>
+                            <?php
+                            endforeach; ?>
                         </div>
                         <button class="arrow arrow-prev swiper-button-prev">
                             <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
@@ -694,7 +683,8 @@ if (false) : ?>
             </div>
         </div>
     </section>
-    <?php endif; ?>
+<?php
+endif; ?>
     <div style="height:52px"></div>
 <?php
 get_footer();
