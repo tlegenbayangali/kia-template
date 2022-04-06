@@ -103,8 +103,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                                 if (get_field('every_month_price', $model->ID)) : ?>
                                                     <div class="model-row">
                                                         <div class="d-flex">
-                                                <span class="mr-2 price-sm"><?= get_field('every_month_price',
-                                                        $model->ID) ?> ₸/мес</span>
+                                                            <span class="mr-2 price-sm"><?= get_field('every_month_price', $model->ID) ?> ₸/мес</span>
                                                             <?php
                                                             if (get_field('car_credit_calc', $model->ID)) : ?>
                                                                 <svg class="info-additional credit">
