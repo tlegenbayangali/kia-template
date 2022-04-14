@@ -1,54 +1,55 @@
-<div class="col-12 col-md-6 col-xl-4">
-    <div class="d-flex bg-lgray h-100-p w-100-p flex-column justify-content-between model">
-        <div class="offers-card">
-            <div class="img">
-                <a href="<?= get_the_permalink() ?>">
-                    <?= get_the_post_thumbnail( get_the_ID(), 'full' ) ?>
-                </a>
-            </div>
-            <div class="title">
-                <div class="d-flex flex-column">
-                    <a href="<?= get_the_permalink() ?>">
-                        <span class="mr-2 underlined-black fz-15 d-none fw-700">
-                            <?= get_the_title() ?>
-                        </span>
-                    </a>
-                    <p class="c-disabled mt-10">
-                        <?php
-                            $now = new DateTime('Asia/Oral');
+<?php
+/**
+ * The template for displaying archive pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package kia
+ */
 
-                            $period = get_field('period', get_the_ID());
-                            $date_start = DateTime::createFromFormat('Y-m-d', $period[ 'period_start' ]);
-                            $date_end = DateTime::createFromFormat('Y-m-d', $period[ 'period_end' ]);
-                            if ($date_start && $date_end) {
-                                $duration = $date_end->diff($date_start);
-                                $left = $date_end->diff($now);
-                            }
-                        ?>
-                        <?php if ($date_start && $date_end) : ?>
-                            <?php if ($now >= $date_start && $now <= $date_end) : ?>
-                                Осталось: 
-                                <?php if ($left->d == 0 || $left->d >= 5) : ?>
-                                    <?= $left->d ?> дней
-                                <?php elseif ($left->d == 1) : ?>
-                                    <?= $left->d ?> день
-                                <?php elseif ($left->d >= 2 && $left->d <= 4) : ?>
-                                    <?= $left->d ?> дня
-                                <?php endif; ?>
-                            <?php elseif ($now < $date_start) : ?>
-                                Начало акции: <?= $date_start->format('d.m.Y') ?>
-                            <?php else : ?>
-                                Завершено
-                            <?php endif; ?>
-                        <?php else : ?>
-                            Постоянная акция
-                        <?php endif; ?>
-                    </p>
-                    <p class="offers-desc">
-                        <?= get_field('short_description', get_the_ID()) ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+get_header(); ?>
+<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
+<section class="offers pb-60" id="offers">
+	<div class="container">
+		<div class="row mt-4 mt-xl-0">
+			<div class="col-lg-12">
+				<h1><?php the_archive_title(); ?></h1>
+			</div>
+		</div>
+		<div class="row mt-60 grid-30">
+		<?php if ( have_posts() ) : ?>
+
+			<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+
+				/*
+				* Include the Post-Type-specific template for the content.
+				* If you want to override this in a child theme, then include a file
+				* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				*/
+				get_template_part( 'template-parts/content', get_post_type() );
+
+			endwhile;
+
+			else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+			endif;
+			?>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<?php the_posts_pagination([
+					'end_size' => 1,
+					'mid_size' => 1,
+				]); ?>
+			</div>
+		</div>
+		<?php wp_reset_query(); ?>
+	</div>
+</section>
+	
+<?php get_footer();
