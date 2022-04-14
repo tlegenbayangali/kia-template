@@ -42,8 +42,8 @@ $configs = new WP_Query([
                     <?php the_content(); ?>
                 </div>
             </div>
-            <div class="row justify-content-between">
-                <div class="col-lg-5 offer-conditions">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 offer-conditions">
                     <h2 class="fz-35 mb-30">Условия участия</h2>
                     <ul class="check">
                         <?php 
