@@ -53,5 +53,13 @@ function my_acf_blocks_init() {
             'category'          => 'formatting',
             'render_template'   => 'blocks/block-without-list.php',
         ));
+        acf_register_block_type(array(
+            'name'              => 'carousel-block',
+            'title'             => __('Блок со слайдером'),
+            'description'       => __('Блок со слайдером.'),
+            'category'          => 'formatting',
+            'render_template'   => 'blocks/block-carousel.php',
+        ));
+        
     }
 }

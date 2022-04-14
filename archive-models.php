@@ -53,18 +53,6 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                             'post_type' => 'configs',
                                             'model'     => $model->post_name,
                                         ]);
-                                        $prices_array = [];
-
-                                        foreach ($configurations->posts as $post) :
-                                            $prices_array[] = get_field('price', $post->ID);
-                                        endforeach;
-                                        if (count($prices_array) > 1):
-                                            $model_min_price = min(...$prices_array);
-                                        else :
-                                            $model_min_price = $prices_array[ 0 ];
-                                        endif;
-                                        $GLOBALS[ 'model_min_price' ] = $model_min_price;
-                                        wp_reset_query();
                                         ?>
                                         <div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
                                             <div class="top">
