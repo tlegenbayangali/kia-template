@@ -23,7 +23,7 @@ $configs = new WP_Query([
     <section class="pb-60">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="breadcrumbs">
                         <?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs();?>
                     </div>
@@ -38,7 +38,7 @@ $configs = new WP_Query([
                 </div>
             </div>
             <div class="mt-20 row justify-content-center mb-60">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <?php the_content(); ?>
                 </div>
             </div>
