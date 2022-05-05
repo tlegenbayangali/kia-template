@@ -26,10 +26,8 @@ import "./utils/slider-with-thumbs";
 import "./utils/callback";
 import "./utils/cookies";
 // import './utils/dateex';
-
 // import Sagyndyk do
 import "./utils/slider-block";
-
 window.jQuery = $;
 
 $("body").addClass("is-loading");
