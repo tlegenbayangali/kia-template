@@ -1,7 +1,7 @@
 <?php
 $id = 'text-block-with-carousel-' . $block['id'];
 ?>
-<div class="model-sections model-sections-margin" id="<?php echo $id; ?>" style="margin-top: -80px;">
+<div class="model-sections model-sections-margin" id="<?php echo $id; ?>">
     <div class="model-sections-inner  
         <?php if (get_field('dark-mode') == 1) :
             echo 'dark';
@@ -31,7 +31,7 @@ $id = 'text-block-with-carousel-' . $block['id'];
                         <div class="swiper-wrapper swiper-slider-block-wrapper">
                             <!-- Slides -->
                             <?php while (have_rows('carousel-list')) : the_row();
-                                $image = get_sub_field('image');
+                                $image = get_sub_field('carousel-list-img');
                             ?>
                                 <div class="swiper-slide swiper-slider-block-slide">
                                     <img class="image-full" src="<?php echo $image; ?>" alt="full-image">
