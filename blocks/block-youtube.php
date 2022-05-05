@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="model-sections-image-block pos-r">
-            <a href="https://www.youtube.com/watch?v=5XlTBGhoWvo" class="youtube-overlay" data-fancybox>
+            <a href="<?= get_field('youtube_link') ?>" class="youtube-overlay" data-fancybox>
                 <div class="youtube-overlay-icon">
                     <img src="<?= get_template_directory_uri() ?>/dist/images/dist/youtube-play.svg" alt="Show Video">
                 </div>
