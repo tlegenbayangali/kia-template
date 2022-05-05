@@ -15,15 +15,13 @@
 ?>
 
 <div class="content complections pt-60 pb-60 pl-80">
-    <h5 class="counter">
-        
-    </h5>
+    <h5 class="counter"></h5>
     <div class="complectation mt-30 grid-1">
         <?php foreach ($useful_configs as $idx => $config) : ?>
         <div class="complectation-item" data-id="<?= $config->post_name ?>">
-            <span data-engine="<?= get_field('engine', $config->ID) ?>" hidden></span>
-            <span data-transmission="<?= get_field('transmission', $config->ID) ?>" hidden></span>
-            <span data-dw="<?= get_field('drive_wheels', $config->ID) ?>" hidden></span>
+            <span data-engine="<?= get_field('common_chars', $config->ID)['engine'] ?>" hidden></span>
+            <span data-transmission="<?= get_field('common_chars', $config->ID)['transmission'] ?>" hidden></span>
+            <span data-dw="<?= get_field('common_chars', $config->ID)['drive_wheels'] ?>" hidden></span>
             <span data-price="<?= get_field('price', $config->ID) ?>" hidden></span>
             <div class="top d-flex justify-content-between align-items-center">
                 <div class="left d-flex align-items-center">
