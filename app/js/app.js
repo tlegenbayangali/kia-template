@@ -28,6 +28,7 @@ import "./utils/cookies";
 // import './utils/dateex';
 // import Sagyndyk do
 import "./utils/slider-block";
+import "./utils/scroll";
 window.jQuery = $;
 
 $("body").addClass("is-loading");

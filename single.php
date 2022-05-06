@@ -8,7 +8,7 @@
 					<div class="col-lg-12">
 						<div class="post-title">
 							<h1>
-								<?php the_title(); ?>
+								<?php the_title(); ?> 
 							</h1>
 						</div>
 						<div class="post-image mt-20">

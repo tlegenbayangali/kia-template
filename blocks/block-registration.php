@@ -60,6 +60,13 @@ function my_acf_blocks_init() {
             'category'          => 'formatting',
             'render_template'   => 'blocks/block-carousel.php',
         ));
+        acf_register_block_type(array(
+            'name'              => 'carousel-bg-block',
+            'title'             => __('Блок с фоновым видео'),
+            'description'       => __('Блок с фоновым видео.'),
+            'category'          => 'formatting',
+            'render_template'   => 'blocks/block-bg-video.php',
+        ));
         
     }
 }

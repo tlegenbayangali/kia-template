@@ -1,5 +1,6 @@
 <?php get_header();
 $current_post = get_post();?>
+
 <?php get_template_part( 'template-parts/content', 'header-models', [ 'parent_post' => $current_post, ] ); ?>
 <div class="hero-model" style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
     <?php if (get_field('model_hero_video', get_the_ID())) : ?>

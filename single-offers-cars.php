@@ -29,7 +29,7 @@ $configs = new WP_Query([
                     </div>
                     <div class="post-title d-none">
                         <h1>
-                            <?php the_title(); ?>
+                            <?php the_title();?>
                         </h1>
                     </div>
                     <div class="post-thumbnail">

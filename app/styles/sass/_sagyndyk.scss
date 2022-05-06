@@ -35,3 +35,38 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
 .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
     background-color: #05141F;
 }
+
+.hero-model-promo-title {
+    font-family: 'KiaSignatureBold', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 70px;
+    margin: 10px 0;
+    color: white;
+}
+
+.model-video {
+    // width: 100%;
+    // height: 500px;
+    // margin-bottom: 80px;
+    video {
+        width: 100%;
+    }
+}
+
+.model-sections-inner-video {
+    margin-bottom: 100px;
+}
+
+.callback-news {
+    .callback-input {
+        margin-bottom: 20px;
+    }
+}
+
+.callback-sportage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
