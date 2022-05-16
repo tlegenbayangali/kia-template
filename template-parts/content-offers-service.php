@@ -8,11 +8,13 @@
             </div>
             <div class="title">
                 <div class="d-flex flex-column">
+                    <?php if (get_field('is_show_card_heading', 'options')) : ?>
                     <a href="<?= get_the_permalink() ?>">
-                        <span class="mr-2 underlined-black fz-15 d-none fw-700">
+                        <span class="mr-2 underlined-black fz-15 fw-700">
                             <?= get_the_title() ?>
                         </span>
                     </a>
+                    <?php endif; ?>
                     <p class="c-disabled mt-10">
                         <?php
                             $now = new DateTime('Asia/Oral');
