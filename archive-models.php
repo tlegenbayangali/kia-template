@@ -76,7 +76,9 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                                 </div>
                                                 <div class="model-row">
                                                     <div class="d-flex">
-                                                        <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
+                                                        <?php if (get_field('starting_price', $model->ID)) : ?>
+                                                            <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
+                                                        <?php endif; ?>
                                                         <?php
                                                         if (get_field('car_price_conditions', $model->ID)) : ?>
                                                             <svg class="info-additional conditions">
