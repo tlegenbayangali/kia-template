@@ -37,9 +37,11 @@ $configs = new WP_Query([
                     </div>
                 </div>
             </div>
-            <div class="mt-20 row justify-content-center mb-60">
-                <div class="col-lg-8">
-                    <?php the_content(); ?>
+            <div class="row mt-20 justify-content-center mb-60">
+                <div class="col-lg-7">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
+                        <?php the_content(); ?>
+                    </article>
                 </div>
             </div>
 
