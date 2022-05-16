@@ -8,7 +8,7 @@
             </div>
             <div class="title">
                 <div class="d-flex flex-column">
-                    <?php if (get_field('is_show_card_heading', 'options')) : ?>
+                    <?php if (get_field('show_card_heading', 'options')) : ?>
                     <a href="<?= get_the_permalink() ?>">
                         <span class="mr-2 underlined-black fz-15 fw-700">
                             <?= get_the_title() ?>
