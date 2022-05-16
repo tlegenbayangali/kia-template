@@ -76,7 +76,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                                 </div>
                                                 <div class="model-row">
                                                     <div class="d-flex">
-                                                        <?php if (get_field('starting_price', $model->ID).length > 0) : ?>
+                                                        <?php if (get_field('starting_price', $model->ID)) : ?>
                                                             <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
                                                         <?php endif; ?>
                                                         <?php
