@@ -171,11 +171,11 @@ $current_post = get_post();?>
                                                         <li>
                                                             <span class="content-header">Двигатель и трансмиссия</span>
                                                             <p>
-                                                                <?php echo get_field('engine', $current_post_ID) .' / '.
-                                                                get_field('power', $current_post_ID) .' л.с / '.
-                                                                get_field('engine_type', $current_post_ID) .' / '.
-                                                                get_field('transmission', $current_post_ID) .' / '.
-                                                                get_field('drive_wheels', $current_post_ID); ?>
+                                                                <?php echo get_field('common_chars', $current_post_ID)['engine'] .' / '.
+                                                                get_field('common_chars', $current_post_ID)['power'] .' л.с / '.
+                                                                get_field('common_chars', $current_post_ID)['engine_type'] .' / '.
+                                                                get_field('common_chars', $current_post_ID)['transmission'] .' / '.
+                                                                get_field('common_chars', $current_post_ID)['drive_wheels']; ?>
                                                             </p>
                                                         </li>
                                                         <li>
