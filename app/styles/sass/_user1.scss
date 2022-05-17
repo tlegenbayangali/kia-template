@@ -1058,7 +1058,7 @@
 .model {
     &-sections {
         margin: 0 -80px;
-        
+
 
         @media screen and (max-width: 767px) {
             margin: 0 -55px;
@@ -1320,6 +1320,7 @@
             &-smallimage {
                 max-width: 500px;
                 height: auto;
+
                 &-excerpt {
                     line-height: 1.6em;
                     margin-top: 20px;
@@ -1328,6 +1329,7 @@
 
                 &-item {
                     display: none;
+
                     &.show {
                         display: block;
                     }
@@ -1420,6 +1422,7 @@
 
             &-right {
                 max-width: 450px;
+
                 @media screen and (min-width: 1200px) {
                     margin-left: 50px;
                 }
