@@ -95,8 +95,10 @@ input::-webkit-inner-spin-button {
 }
 
 .container-fluid {
-    padding-left: 80px;
-    padding-right: 80px;
+    @media screen and (min-width: 992px) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
 
 ul {
@@ -1427,15 +1429,10 @@ hr {
             left: 0;
             top: 0;
             width: 100%;
-            padding: 0 80px;
+            padding: 0 10px;
 
-            @media screen and (max-width: 767px) {
-                padding: 0 55px;
-
-            }
-
-            @media screen and (max-width: 524px) {
-                padding: 0 30px;
+            @media screen and (min-width: 992px) {
+                padding: 0 80px;
             }
         }
 
@@ -1563,17 +1560,8 @@ hr {
 
     &-breadcrumbs {
         &-right {
-            @media screen and (max-width: 767px) {
-                flex-direction: column;
-            }
-
             &-price {
                 margin-right: 55px;
-
-                @media screen and (max-width: 767px) {
-                    margin-right: 0 !important;
-                    margin-bottom: 30px;
-                }
             }
 
             a {
@@ -1710,6 +1698,20 @@ hr {
                     background: $lgray;
                 }
 
+                &.plain {
+                    .items {
+                        ul {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+
+                            li {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+
                 &-carousel {
                     margin-top: 10px;
                 }
@@ -1720,6 +1722,13 @@ hr {
                     &>div {
                         padding: 0 30px;
                         font-weight: 700;
+                    }
+
+                    svg {
+                        width: 14px;
+                        height: 18px;
+                        fill: transparent;
+                        stroke: $black;
                     }
                 }
             }

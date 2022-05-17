@@ -100,30 +100,31 @@ $current_post = get_post(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="model-sections-colors-interior colorpicker">
-                                        <div class="description-list">
-                                            <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
-                                                Интерьер:
-                                                <span id="interior-color-name">Черный, Искусственная кожа с серой прострочкой (WK)</span>
-                                            </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-none">
+                                <div class="model-sections-colors-interior colorpicker">
+                                    <div class="description-list">
+                                        <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
+                                            Интерьер:
+                                            <span id="interior-color-name">Черный, Искусственная кожа с серой прострочкой (WK)</span>
                                         </div>
-                                        <!-- COLORS LIST INTERIOR-->
-                                        <div class="color-list">
-                                            <?php
-                                            $current_model_interiors = get_field('interior_colors');
-                                            ?>
-                                            <?php foreach ((array)$current_model_interiors as $interior) : ?>
-                                                <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background: <?= $interior['interior_color_rgb'] ?>"></span>
-                                            <?php endforeach; ?>
-                                        </div>
+                                    </div>
+                                    <!-- COLORS LIST INTERIOR-->
+                                    <div class="color-list">
+                                        <?php
+                                        $current_model_interiors = get_field('interior_colors');
+                                        ?>
+                                        <?php foreach ((array)$current_model_interiors as $interior) : ?>
+                                            <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background: <?= $interior['interior_color_rgb'] ?>"></span>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            <?php
+        </div>
+    <?php
             endif;
             $current_model = $current_post->post_name;
             $configs = new WP_Query([
@@ -131,76 +132,75 @@ $current_post = get_post(); ?>
                 'model' => $current_model,
                 'order' => 'asc'
             ]);
-            ?>
-            <?php if (get_field('show_complectations')) : ?>
-                <div class="model-sections">
-                    <!-- VARIATIONS OF EQUIPMENT-->
-                    <div class="model-sections-inner background-gray">
-                        <div class="model-sections-variations">
-                            <div class="model-sections-title-centered model-sections-title">
-                                <span class="model-sections-title-sub">
-                                    Комплектации
-                                </span>
-                                <h3 class="model-sections-title-header">
-                                    Варианты <?php the_title(); ?>
-                                </h3>
-                            </div>
-                            <div class="model-sections-variations-bottom">
-                                <div class="model-sections-variations-bottom-sub">
-                                    <?php echo count($configs->posts) . ' '; ?> доступных комплектаций
-                                </div>
-                                <!-- MORE BUTTON TO ANOTHER PAGE-->
-                                <a href="/models/<?= $current_model ?>/complectations/" class="model-sections-variations-bottom-more model-sections-desc-more underlined underlined-black">
-                                    Комплектации и цены
-                                </a>
-                            </div>
+    ?>
+    <?php if (get_field('show_complectations')) : ?>
+        <div class="model-sections">
+            <!-- VARIATIONS OF EQUIPMENT-->
+            <div class="model-sections-inner background-gray">
+                <div class="model-sections-variations">
+                    <div class="model-sections-title-centered model-sections-title">
+                        <span class="model-sections-title-sub">
+                            Комплектации
+                        </span>
+                        <h3 class="model-sections-title-header">
+                            Варианты <?php the_title(); ?>
+                        </h3>
+                    </div>
+                    <div class="model-sections-variations-bottom">
+                        <div class="model-sections-variations-bottom-sub">
+                            <?php echo count($configs->posts) . ' '; ?> доступных комплектаций
+                        </div>
+                        <!-- MORE BUTTON TO ANOTHER PAGE-->
+                        <a href="/models/<?= $current_model ?>/complectations/" class="model-sections-variations-bottom-more model-sections-desc-more underlined underlined-black">
+                            Комплектации и цены
+                        </a>
+                    </div>
 
-                            <div class="model-sections-variations-slider">
-                                <!-- SLIDER MAIN CONTAINER -->
-                                <div class="swiper-container model-sections-variations-container">
-                                    <!-- ADDITIONAL REQUIRED WRAPPER -->
-                                    <div class="swiper-wrapper model-sections-variations-wrapper">
-                                        <?php
-                                        foreach ($configs->posts as $post) {
-                                            $current_post_ID = $post->ID; ?>
-                                            <!-- SLIDES -->
-                                            <div class="swiper-slide model-sections-variations-slide">
-                                                <div class="model-sections-variations-slide-inner">
-                                                    <div class="title">
-                                                        <h5><?php echo esc_html(get_the_title($current_post_ID)); ?></h5>
-                                                        <span class="price">
-                                                            <span><?php echo esc_attr(the_field('price', $current_post_ID)) ?></span> ₸
-                                                        </span>
-                                                    </div>
-                                                    <div class="content">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="content-header">Двигатель и трансмиссия</span>
-                                                                <p>
-                                                                    <?php echo get_field('engine', $current_post_ID) . ' / ' .
-                                                                        get_field('power', $current_post_ID) . ' л.с / ' .
-                                                                        get_field('engine_type', $current_post_ID) . ' / ' .
-                                                                        get_field('transmission', $current_post_ID) . ' / ' .
-                                                                        get_field('drive_wheels', $current_post_ID); ?>
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <span class="content-header">Основные опции</span>
-                                                                <?php while (have_rows('main_options', $current_post_ID)) : the_row(); ?>
-                                                                    <p><?php the_sub_field('options_item'); ?></p>
-                                                                <?php endwhile; ?>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <!-- MORE BUTTON TO ANOTHER PAGE-->
-                                                    <div class="button">
-                                                        <a href="/models/<?= $current_model ?>/complectations/" class="content-more model-sections-desc-more underlined underlined-green">
-                                                            Комплектации и цены
-                                                        </a>
-                                                    </div>
-                                                </div>
+                    <div class="model-sections-variations-slider">
+                        <!-- SLIDER MAIN CONTAINER -->
+                        <div class="swiper-container model-sections-variations-container">
+                            <!-- ADDITIONAL REQUIRED WRAPPER -->
+                            <div class="swiper-wrapper model-sections-variations-wrapper">
+                                <?php
+                                foreach ($configs->posts as $post) {
+                                    $current_post_ID = $post->ID; ?>
+                                    <!-- SLIDES -->
+                                    <div class="swiper-slide model-sections-variations-slide">
+                                        <div class="model-sections-variations-slide-inner">
+                                            <div class="title">
+                                                <h5><?php echo esc_html(get_the_title($current_post_ID)); ?></h5>
+                                                <span class="price">
+                                                    <span><?php echo esc_attr(the_field('price', $current_post_ID)) ?></span> ₸
+                                                </span>
                                             </div>
-                                        <?php } ?>
+                                            <div class="content">
+                                                <ul>
+                                                    <li>
+                                                        <span class="content-header">Двигатель и трансмиссия</span>
+                                                        <p>
+                                                            <?php echo get_field('common_chars', $current_post_ID)['engine'] . ' / ' .
+                                                                get_field('common_chars', $current_post_ID)['power'] . ' л.с / ' .
+                                                                get_field('common_chars', $current_post_ID)['engine_type'] . ' / ' .
+                                                                get_field('common_chars', $current_post_ID)['transmission'] . ' / ' .
+                                                                get_field('common_chars', $current_post_ID)['drive_wheels']; ?>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <span class="content-header">Основные опции</span>
+                                                        <?php while (have_rows('main_options', $current_post_ID)) : the_row(); ?>
+                                                            <p><?php the_sub_field('options_item'); ?></p>
+                                                        <?php endwhile; ?>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- MORE BUTTON TO ANOTHER PAGE-->
+                                            <div class="button">
+                                                <a href="/models/<?= $current_model ?>/complectations/" class="content-more model-sections-desc-more underlined underlined-green">
+                                                    Комплектации и цены
+                                                </a>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
                                     </div>
                                     <button class="variations-button-prev model-sections-swiper-arrow-prev model-sections-swiper-arrow arrow">
                                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
@@ -214,76 +214,76 @@ $current_post = get_post(); ?>
                                             </path>
                                         </svg>
                                     </button>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            <?php endif ?>
-            <!-- BOTTOM SECTION-->
-            <div class="model-sections">
-                <div class="model-sections-bottom-block">
-                    <div class="model-sections-bottom-block-bg">
-                        <?php wp_reset_query(); ?>
-                        <img src="<?php the_field('bottom_section_image', get_the_ID()) ?>" alt="background">
-                    </div>
-                    <div class="model-sections-inner-wide">
-                        <div class="model-sections-bottom-block-inner">
-                            <div class="model-sections-title-centered">
-                                <span class="model-sections-title-sub model-sections-bottom-block-sub">
-                                    Консультация
-                                </span>
-                                <h3 class="model-sections-title-header model-sections-bottom-block-header">
-                                    Узнайте больше о <?php the_title(); ?>
-                                </h3>
-
-                                <div class="model-sections-bottom-block-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                    <a href="/callback/?current_model=<?= $current_post->post_name ?>" class="btn">
-                                        Заказать звонок дилера
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="model-sections-bottom-block-image">
-                                <picture>
-                                    <source media="(max-width: 524px)" srcset="<?php the_field('bottom_section_car_image_small', get_the_ID()); ?>">
-                                    <img src="<?php the_field('bottom_section_car_image_medium', get_the_ID()); ?>" alt="model">
-                                </picture>
-                            </div>
-                        </div>
-                        <?php
-                        if (have_rows('useful_links', get_the_ID()) || have_rows('useful_docs', get_the_ID())) :
-                            $useful_links = get_field('useful_links', get_the_ID());
-                            $useful_docs = get_field('useful_docs', get_the_ID()); ?>
-                            <div class="model-sections-bottom-block-links">
-                                <?php
-                                foreach ($useful_links as $link) {
-                                    $link_text =  $link['useful_link']['useful_link_text'];
-                                    $link_link = $link['useful_link']['useful_link_link'];
-                                ?>
-                                    <a href="<?php echo esc_url($link_link) ?>" class="model-sections-bottom-block-links-item">
-                                        <img src="<?php echo esc_url($link['choose_link_icon']) ?>" alt="icon">
-                                        <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
-                                            <?php echo esc_html($link_text) ?>
-                                        </span>
-                                    </a>
-                                <?php }
-
-                                foreach ($useful_docs as $doc) {
-                                    $doc_text =  $doc['useful_doc']['useful_doc_text'];
-                                    $doc_link = $doc['useful_doc']['useful_doc_link'];
-                                ?>
-                                    <a href="<?php echo esc_url($doc_link) ?>" class="model-sections-bottom-block-links-item">
-                                        <img src="<?php echo esc_url($doc['choose_doc_icon']) ?>" alt="icon">
-                                        <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
-                                            <?php echo esc_html($doc_text) ?>
-                                        </span>
-                                    </a>
-                                <?php } ?>
-                            </div>
-                        <?php endif; ?>
                     </div>
                 </div>
             </div>
+        <?php endif ?>
+        <!-- BOTTOM SECTION-->
+        <div class="model-sections">
+            <div class="model-sections-bottom-block">
+                <div class="model-sections-bottom-block-bg">
+                    <?php wp_reset_query(); ?>
+                    <img src="<?php the_field('bottom_section_image', get_the_ID()) ?>" alt="background">
+                </div>
+                <div class="model-sections-inner-wide">
+                    <div class="model-sections-bottom-block-inner">
+                        <div class="model-sections-title-centered">
+                            <span class="model-sections-title-sub model-sections-bottom-block-sub">
+                                Консультация
+                            </span>
+                            <h3 class="model-sections-title-header model-sections-bottom-block-header">
+                                Узнайте больше о <?php the_title(); ?>
+                            </h3>
+
+                            <div class="model-sections-bottom-block-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
+                                <a href="/callback/?current_model=<?= $current_post->post_name ?>" class="btn">
+                                    Заказать звонок дилера
+                                </a>
+                            </div>
+                        </div>
+                        <div class="model-sections-bottom-block-image">
+                            <picture>
+                                <source media="(max-width: 524px)" srcset="<?php the_field('bottom_section_car_image_small', get_the_ID()); ?>">
+                                <img src="<?php the_field('bottom_section_car_image_medium', get_the_ID()); ?>" alt="model">
+                            </picture>
+                        </div>
+                    </div>
+                    <?php
+                    if (have_rows('useful_links', get_the_ID()) || have_rows('useful_docs', get_the_ID())) :
+                        $useful_links = get_field('useful_links', get_the_ID());
+                        $useful_docs = get_field('useful_docs', get_the_ID()); ?>
+                        <div class="model-sections-bottom-block-links">
+                            <?php
+                            foreach ($useful_links as $link) {
+                                $link_text =  $link['useful_link']['useful_link_text'];
+                                $link_link = $link['useful_link']['useful_link_link'];
+                            ?>
+                                <a href="<?php echo esc_url($link_link) ?>" class="model-sections-bottom-block-links-item">
+                                    <img src="<?php echo esc_url($link['choose_link_icon']) ?>" alt="icon">
+                                    <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
+                                        <?php echo esc_html($link_text) ?>
+                                    </span>
+                                </a>
+                            <?php }
+
+                            foreach ($useful_docs as $doc) {
+                                $doc_text =  $doc['useful_doc']['useful_doc_text'];
+                                $doc_link = $doc['useful_doc']['useful_doc_link'];
+                            ?>
+                                <a href="<?php echo esc_url($doc_link) ?>" class="model-sections-bottom-block-links-item">
+                                    <img src="<?php echo esc_url($doc['choose_doc_icon']) ?>" alt="icon">
+                                    <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
+                                        <?php echo esc_html($doc_text) ?>
+                                    </span>
+                                </a>
+                            <?php } ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
         </div>
         <!--ROW-->
     </div>
