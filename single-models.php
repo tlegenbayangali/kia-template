@@ -100,23 +100,25 @@ $current_post = get_post(); ?>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 d-none">
-                                <div class="model-sections-colors-interior colorpicker">
-                                    <div class="description-list">
-                                        <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
-                                            Интерьер:
-                                            <span id="interior-color-name">Черный, Искусственная кожа с серой прострочкой (WK)</span>
+                                <div class="col-12 col-md-6 d-none">
+                                    <div class="model-sections-colors-interior colorpicker">
+                                        <div class="description-list">
+                                            <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
+                                                Интерьер:
+                                                <span id="interior-color-name">Черный, Искусственная кожа с серой прострочкой (WK)</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- COLORS LIST INTERIOR-->
-                                    <div class="color-list">
                                         <?php
                                         $current_model_interiors = get_field('interior_colors');
                                         ?>
-                                        <?php foreach ((array)$current_model_interiors as $interior) : ?>
-                                            <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background: <?= $interior['interior_color_rgb'] ?>"></span>
-                                        <?php endforeach; ?>
+                                        <?php if ($current_model_interiors) : ?>
+                                            <!-- COLORS LIST INTERIOR-->
+                                            <div class="color-list">
+                                                <?php foreach ((array)$current_model_interiors as $interior) : ?>
+                                                    <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background: <?= $interior['interior_color_rgb'] ?>"></span>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
@@ -160,9 +162,10 @@ $current_post = get_post(); ?>
                                 <div class="swiper-container model-sections-variations-container">
                                     <!-- ADDITIONAL REQUIRED WRAPPER -->
                                     <div class="swiper-wrapper model-sections-variations-wrapper">
-                                        <?php
-                                        foreach ($configs->posts as $post) {
-                                            $current_post_ID = $post->ID; ?>
+                                        <?php foreach ($configs->posts as $post) : ?>
+                                            <?php
+                                            $current_post_ID = $post->ID;
+                                            ?>
                                             <!-- SLIDES -->
                                             <div class="swiper-slide model-sections-variations-slide">
                                                 <div class="model-sections-variations-slide-inner">
@@ -199,7 +202,6 @@ $current_post = get_post(); ?>
                                                         </a>
                                                     </div>
                                                 </div>
-                                            <?php } ?>
                                             </div>
                                             <button class="variations-button-prev model-sections-swiper-arrow-prev model-sections-swiper-arrow arrow">
                                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
@@ -213,6 +215,7 @@ $current_post = get_post(); ?>
                                                     </path>
                                                 </svg>
                                             </button>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                             </div>
