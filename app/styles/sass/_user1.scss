@@ -1763,7 +1763,9 @@
 
             &-right {
                 max-width: 450px;
-                margin-left: 50px;
+                @media screen and (min-width: 1200px) {
+                    margin-left: 50px;
+                }
             }
 
             &-items {
@@ -1815,7 +1817,9 @@
                 flex-direction: row-reverse;
 
                 &>div:nth-child(1) {
-                    margin-left: 50px;
+                    @media screen and (min-width: 1200px) {
+                        margin-left: 50px;
+                    }
                 }
 
                 &>div:nth-child(2) {

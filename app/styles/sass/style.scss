@@ -95,8 +95,10 @@ input::-webkit-inner-spin-button {
 }
 
 .container-fluid {
-    padding-left: 80px;
-    padding-right: 80px;
+    @media screen and (min-width: 992px) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
 
 ul {

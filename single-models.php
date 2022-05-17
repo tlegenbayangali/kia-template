@@ -95,7 +95,7 @@ $current_post = get_post();?>
                                     </div>                          
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6 d-none">
                                 <div class="model-sections-colors-interior colorpicker">
                                     <div class="description-list">
                                         <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
