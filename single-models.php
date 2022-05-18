@@ -3,7 +3,7 @@ $current_post = get_post(); ?>
 <?php get_template_part('template-parts/content', 'header-models', ['parent_post' => $current_post,]); ?>
 <div class="hero-model" style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
     <?php if (get_field('model_hero_video', get_the_ID())) : ?>
-        <video class="hero-model-video" autoplay="true" loop style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
+        <video class="hero-model-video" autoplay muted loop style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
             <?php if (get_field('model_hero_video', get_the_ID())['mp4']) : ?>
                 <source src="<?= get_field('model_hero_video', get_the_ID())['mp4'] ?>">
             <?php endif; ?>
@@ -100,7 +100,7 @@ $current_post = get_post(); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 d-none">
+                                <div class="col-12 col-md-6">
                                     <div class="model-sections-colors-interior colorpicker">
                                         <div class="description-list">
                                             <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
