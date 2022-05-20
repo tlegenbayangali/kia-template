@@ -527,6 +527,9 @@ select {
             justify-content: flex-start;
         }
     }
+    .model {
+        width: 416px;
+    }
 }
 
 // CREDIT OFFER
@@ -907,7 +910,7 @@ select {
 
 // MODEL
 .model {
-    width: 465px;
+    width: 265px;
     height: unset;
     cursor: pointer;
 
