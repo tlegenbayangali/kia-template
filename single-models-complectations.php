@@ -624,6 +624,202 @@
                                         <!-- ONE SECTION CAROUSEL ITEM-->
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
+                                            Проекционные полностью светодиодные фары
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['proekczionnye_polnostyu_svetodiodnye_fary']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                            Легкосплавные диски 19" с шинами 235/55 R19
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['legkosplavnye_diski_19_s_shinami_23555_r19']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                            Линия остекления с отделкой темным хромом
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['liniya_ostekleniya_s_otdelkoj_temnym_hromom']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                            Черные корпуса боковых зеркал
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['chernye_korpusa_bokovyh_zerkal']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                            Внедорожный дизайн внешних элементов отделки (накладки на бамперы, боковые модинги)
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['vnedorozhnyj_dizajn_vneshnih_elementov_otdelki_nakladki_na_bampery_bokovye_modingi']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                            Передний и задний бамперы дизайна X-Line
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['perednij_i_zadnij_bampery_dizajna_x-line']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Глянцевая чёрная решётка
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($exterior['glyanczevaya_chyornaya_reshyotka']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
                                                 Легкосплавные диски 14'' с шинами 175/65R14
                                             </div>
                                             <div class="equip-config-section-item-carousel">
@@ -3821,6 +4017,62 @@
                                     <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
                                     <div class="equip-config-section-items">
                                         <!-- ONE SECTION CAROUSEL ITEM-->
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                            Система предотвращения столкновения при повороте на перекрестке (FCA-JX)
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $security = get_field('security_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($security['sistema_predotvrashheniya_stolknoveniya_pri_povorote_na_perekrestke_fca-jx']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                            Монитор кругового обзора (AVM)
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $security = get_field('security_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($security['monitor_krugovogo_obzora_avm']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
                                                 Боковые подушки и шторки безопасности
@@ -8740,6 +8992,64 @@
                                     <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
                                     <div class="equip-config-section-items">
                                         <!-- ONE SECTION CAROUSEL ITEM-->
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Премиум-аудиосистема Harman Kardon с 8 динамиками
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($multimedia['premium-audiosistema_harman_kardon_s_8_dinamikami']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="equip-config-section-items">
+                                        <!-- ONE SECTION CAROUSEL ITEM-->
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Мультимедиа с 12.3" цветным дисплеем, с поддержкой Android Auto и Apple Carplay и навигацией Navitel
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                        
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div> 
+                                                                    <?php if ($multimedia['multimedia_s_123_czvetnym_displeem_s_podderzhkoj_android_auto_i_apple_carplay_i_navigacziej_navitel']) : ?>
+                                                                    <svg>
+                                                                        <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                    </svg>
+                                                                    <?php else : ?>
+                                                                    <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
                                                 4 динамика
