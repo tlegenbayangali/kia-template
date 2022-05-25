@@ -1781,6 +1781,36 @@ hr {
     }
 }
 
+// Widgets
+.widget {
+    &-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        z-index: 10;
+
+        a {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 100%;
+            background: $black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            svg {
+                fill: $white;
+            }
+        }
+    }
+}
+
 @import "user1";
 @import "user2";
 @import "zhaslan";
