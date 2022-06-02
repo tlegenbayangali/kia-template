@@ -513,7 +513,9 @@ endif; ?>
                                                     Завершено
                                                 </p>
                                             <?php else : ?>
-                                                Постоянная акция
+                                                <p class="c-disabled mt-10">
+                                                    Постоянная акция
+                                                </p>
                                             <?php endif; ?>
                                             <p class="offers-desc">
                                                 <?= get_field('short_description', $offer->ID) ?>
