@@ -62,7 +62,7 @@ $configs = new WP_Query([
                     </ul>
                 </div>
                 <?php if (get_field('is_advantages', get_the_ID())) : ?>
-                    <div class="col-lg-7 offer-advantages">
+                    <div class="col-lg-7 offer-advantages mt-60">
                         <h2 class="fz-35 mb-30">Преимущества программы</h2>
                         <?php if (get_field('advantages', get_the_ID())) : ?>
                             <p>
