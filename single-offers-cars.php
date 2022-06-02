@@ -45,7 +45,7 @@ $configs = new WP_Query([
                 </div>
             </div>
 
-            <div class="row mt-20 justify-content-center mb-60">
+            <div class="row mt-20 justify-content-center">
                 <div class="col-lg-7 offer-conditions">
                     <h2 class="fz-35 mb-30">Условия участия</h2>
                     <ul class="check">
