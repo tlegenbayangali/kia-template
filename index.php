@@ -508,6 +508,11 @@ endif; ?>
                                                     <?= $offer->post_title ?>
                                                 </span>
                                             </a>
+                                            <?php if (get_field('finish')) : ?>
+                                                <p class="c-disabled mt-10">
+                                                    Завершено
+                                                </p>
+                                            <?php endif; ?>
                                             <p class="offers-desc">
                                                 <?= get_field('short_description', $offer->ID) ?>
                                             </p>
