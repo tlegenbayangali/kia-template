@@ -508,7 +508,7 @@ endif; ?>
                                                     <?= $offer->post_title ?>
                                                 </span>
                                             </a>
-                                            <?php if (get_field('finish')) : ?>
+                                            <?php if (get_field('finish', $offer->ID)) : ?>
                                                 <p class="c-disabled mt-10">
                                                     Завершено
                                                 </p>
