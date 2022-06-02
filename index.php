@@ -27,32 +27,61 @@ if (get_field('main_slider_slides', 'options')) : ?>
                 <?php
                 foreach (get_field('main_slider_slides', 'options') as $slide) : ?>
                     <div class="swiper-slide">
-                        <div class="hero-slider-item">
-                            <div class="img">
-                                <?php
-                                echo wp_get_attachment_image($slide['main_slider_slide_image'], 'full'); ?>
-                            </div>
-                            <div class="info d-flex justify-content-between flex-column">
-                                <div class="info-top">
-                                    <div class="slider-heading">
-                                        <?php
-                                        echo $slide['main_slider_slide_heading'] ?>
-                                    </div>
-                                    <span class="slider-description">
-                                        <?php
-                                        echo $slide['main_slider_slide_description'] ?>
-                                    </span>
+                        <?php if ($slide['position_content']) : ?>
+                            <div class="hero-slider-item">
+                                <div class="img">
+                                    <?php
+                                    echo wp_get_attachment_image($slide['main_slider_slide_image'], 'full'); ?>
                                 </div>
-                                <div class="info-bottom">
-                                    <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                        <a href="<?= $slide['main_slider_slide_button']['main_slider_slide_button_link'] ?>" class="btn">
+                                <div class="info d-flex justify-content-between flex-column">
+                                    <div class="info-top">
+                                        <div class="slider-heading">
                                             <?php
-                                            echo $slide['main_slider_slide_button']['main_slider_slide_button_text'] ?>
-                                        </a>
+                                            echo $slide['main_slider_slide_heading'] ?>
+                                        </div>
+                                        <span class="slider-description">
+                                            <?php
+                                            echo $slide['main_slider_slide_description'] ?>
+                                        </span>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
+                                            <a href="<?= $slide['main_slider_slide_button']['main_slider_slide_button_link'] ?>" class="btn">
+                                                <?php
+                                                echo $slide['main_slider_slide_button']['main_slider_slide_button_text'] ?>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php else : ?>
+                            <div class="hero-slider-item_right">
+                                <div class="img">
+                                    <?php
+                                    echo wp_get_attachment_image($slide['main_slider_slide_image'], 'full'); ?>
+                                </div>
+                                <div class="info d-flex justify-content-between flex-column">
+                                    <div class="info-top d-flex flex-column ">
+                                        <div class="slider-heading">
+                                            <?php
+                                            echo $slide['main_slider_slide_heading'] ?>
+                                        </div>
+                                        <span class="slider-description">
+                                            <?php
+                                            echo $slide['main_slider_slide_description'] ?>
+                                        </span>
+                                    </div>
+                                    <div class="info-bottom">
+                                        <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
+                                            <a href="<?= $slide['main_slider_slide_button']['main_slider_slide_button_link'] ?>" class="btn">
+                                                <?php
+                                                echo $slide['main_slider_slide_button']['main_slider_slide_button_text'] ?>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 <?php
                 endforeach; ?>
@@ -158,29 +187,29 @@ if (get_field('is_models_slider', 'options')) : ?>
                                             endif; ?>
                                         </div>
                                     </div>
-                                    <div class="model-row">
-                                        <div class="d-flex">
-                                            <?php if (get_field('starting_price', $model->ID)) : ?>
-                                                <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
-                                            <?php endif; ?>
-                                            <?php
-                                            if (get_field('car_price_conditions', $model->ID)) : ?>
-                                                <svg class="info-additional conditions">
-                                                    <use xlink:href="<?php
-                                                                        echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
-                                                </svg>
-                                            <?php
-                                            endif; ?>
+                                    <?php if (get_field('show_or_hide_price_models', $model->ID)) : ?>
+                                        <div class="model-row">
+                                            <div class="d-flex">
+                                                <?php if (get_field('starting_price', $model->ID)) : ?>
+                                                    <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
+                                                <?php endif; ?>
+                                                <?php
+                                                if (get_field('car_price_conditions', $model->ID)) : ?>
+                                                    <svg class="info-additional conditions">
+                                                        <use xlink:href="<?php
+                                                                            echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
+                                                    </svg>
+                                                <?php
+                                                endif; ?>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php endif; ?>
                                     <?php
                                     if (get_field('every_month_price', $model->ID)) : ?>
                                         <div class="model-row">
                                             <div class="d-flex">
-                                                <span class="mr-2 price-sm"><?= get_field(
-                                                                                'every_month_price',
-                                                                                $model->ID
-                                                                            ) ?> ₸/мес</span>
+                                                <span class="mr-2 price-sm">
+                                                    <?= get_field('every_month_price', $model->ID) ?> ₸/мес</span>
                                                 <?php
                                                 if (get_field('car_credit_calc', $model->ID)) : ?>
                                                     <svg class="info-additional credit">
@@ -479,6 +508,15 @@ endif; ?>
                                                     <?= $offer->post_title ?>
                                                 </span>
                                             </a>
+                                            <?php if (get_field('finish', $offer->ID)) : ?>
+                                                <p class="c-disabled mt-10">
+                                                    Завершено
+                                                </p>
+                                            <?php else : ?>
+                                                <p class="c-disabled mt-10">
+                                                    Постоянная акция
+                                                </p>
+                                            <?php endif; ?>
                                             <p class="offers-desc">
                                                 <?= get_field('short_description', $offer->ID) ?>
                                             </p>

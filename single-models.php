@@ -257,32 +257,34 @@ $current_post = get_post(); ?>
                         if (have_rows('useful_links', get_the_ID()) || have_rows('useful_docs', get_the_ID())) :
                             $useful_links = get_field('useful_links', get_the_ID());
                             $useful_docs = get_field('useful_docs', get_the_ID()); ?>
-                            <div class="model-sections-bottom-block-links">
-                                <?php
-                                foreach ($useful_links as $link) {
-                                    $link_text =  $link['useful_link']['useful_link_text'];
-                                    $link_link = $link['useful_link']['useful_link_link'];
-                                ?>
-                                    <a href="<?php echo esc_url($link_link) ?>" class="model-sections-bottom-block-links-item">
-                                        <img src="<?php echo esc_url($link['choose_link_icon']) ?>" alt="icon">
-                                        <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
-                                            <?php echo esc_html($link_text) ?>
-                                        </span>
-                                    </a>
-                                <?php }
+                            <?php if (get_field('show_complectations')) : ?>
+                                <div class="model-sections-bottom-block-links">
+                                    <?php
+                                    foreach ($useful_links as $link) {
+                                        $link_text =  $link['useful_link']['useful_link_text'];
+                                        $link_link = $link['useful_link']['useful_link_link'];
+                                    ?>
+                                        <a href="<?php echo esc_url($link_link) ?>" class="model-sections-bottom-block-links-item">
+                                            <img src="<?php echo esc_url($link['choose_link_icon']) ?>" alt="icon">
+                                            <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
+                                                <?php echo esc_html($link_text) ?>
+                                            </span>
+                                        </a>
+                                    <?php }
 
-                                foreach ($useful_docs as $doc) {
-                                    $doc_text =  $doc['useful_doc']['useful_doc_text'];
-                                    $doc_link = $doc['useful_doc']['useful_doc_link'];
-                                ?>
-                                    <a href="<?php echo esc_url($doc_link) ?>" class="model-sections-bottom-block-links-item">
-                                        <img src="<?php echo esc_url($doc['choose_doc_icon']) ?>" alt="icon">
-                                        <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
-                                            <?php echo esc_html($doc_text) ?>
-                                        </span>
-                                    </a>
-                                <?php } ?>
-                            </div>
+                                    foreach ($useful_docs as $doc) {
+                                        $doc_text =  $doc['useful_doc']['useful_doc_text'];
+                                        $doc_link = $doc['useful_doc']['useful_doc_link'];
+                                    ?>
+                                        <a href="<?php echo esc_url($doc_link) ?>" class="model-sections-bottom-block-links-item">
+                                            <img src="<?php echo esc_url($doc['choose_doc_icon']) ?>" alt="icon">
+                                            <span class="underlined underlined-black model-sections-bottom-block-more d-flex align-items-center">
+                                                <?php echo esc_html($doc_text) ?>
+                                            </span>
+                                        </a>
+                                    <?php } ?>
+                                </div>
+                            <?php endif; ?>
                         <?php endif; ?>
                     </div>
                 </div>
