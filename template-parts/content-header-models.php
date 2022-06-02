@@ -39,8 +39,10 @@
                             </a>-->
                             <div class="header-model-price align-items-center d-xl-flex d-none">
                                 <!-- Edit Sagyndyk -->
-                                <?php if (get_field('starting_price', $args['parent_post']->ID)) : ?>
-                                    <span class="d-block"> от <?= get_field('starting_price', $args['parent_post']->ID) ?> ₸ </span>
+                                <?php if (get_field('show_or_hide_price_models', $model->ID)) : ?>
+                                    <?php if (get_field('starting_price', $args['parent_post']->ID)) : ?>
+                                        <span class="d-block"> от <?= get_field('starting_price', $args['parent_post']->ID) ?> ₸ </span>
+                                    <?php endif ?>
                                 <?php endif ?>
                                 <?php if (get_field('car_price_conditions', $args['parent_post']->ID)) : ?>
                                     <svg class="ml-10 info-additional conditions">

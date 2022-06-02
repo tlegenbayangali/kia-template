@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $models = new WP_Query([
     'post_type' => 'models',
@@ -52,38 +52,38 @@ $models = new WP_Query([
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <?php foreach ($models->posts as $model) : ?>
-                    <div class="swiper-slide model">
-                        <div class="d-flex p-10 flex-column justify-content-between">
-                            <div class="top">
-                                <div class="img">
-                                    <?= get_the_post_thumbnail( $model->ID, 'full' ) ?>
-                                </div>
-                                <div class="title">
-                                    <div class="d-flex">
-                                        <span class="underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
+                        <div class="swiper-slide model">
+                            <div class="d-flex p-10 flex-column justify-content-between">
+                                <div class="top">
+                                    <div class="img">
+                                        <?= get_the_post_thumbnail($model->ID, 'full') ?>
                                     </div>
-                                </div>
-                                <div class="model-row">
-                                    <div class="d-flex">
-                                        <span class="price">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
+                                    <div class="title">
+                                        <div class="d-flex">
+                                            <span class="underlined-black fz-18 fw-700"><?= $model->post_title ?></span>
+                                        </div>
                                     </div>
+                                    <?php if (get_field('show_or_hide_price_models', $model->ID)) : ?>
+                                        <div class="model-row">
+                                            <div class="d-flex">
+                                                <span class="price">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     <?php endforeach; ?>
                 </div>
 
                 <!-- If we need navigation buttons -->
                 <button class="arrow arrow-prev swiper-button-prev">
-                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
                         <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5"></path>
                     </svg>
                 </button>
                 <button class="arrow arrow-next swiper-button-next">
-                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
                         <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5"></path>
                     </svg>
                 </button>
@@ -95,28 +95,26 @@ $models = new WP_Query([
                     <div class="pos-r models-lg-container">
                         <div class="swiper-wrapper">
                             <?php foreach ($models->posts as $model) : ?>
-                            <div data-hash="<?= $model->post_name ?>" class="swiper-slide model">
-                                <div class="top">
-                                    <div class="title">
-                                        <span><?= $model->post_title ?></span>
-                                    </div>
-                                    <div class="img">
-                                        <?= get_the_post_thumbnail( $model->ID, 'full' ) ?>
+                                <div data-hash="<?= $model->post_name ?>" class="swiper-slide model">
+                                    <div class="top">
+                                        <div class="title">
+                                            <span><?= $model->post_title ?></span>
+                                        </div>
+                                        <div class="img">
+                                            <?= get_the_post_thumbnail($model->ID, 'full') ?>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             <?php endforeach; ?>
                         </div>
                         <!-- If we need navigation buttons -->
                         <button class="arrow arrow-prev swiper-button-prev">
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
                                 <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5"></path>
                             </svg>
                         </button>
                         <button class="arrow arrow-next swiper-button-next">
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
                                 <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5"></path>
                             </svg>
                         </button>
