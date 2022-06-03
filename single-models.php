@@ -203,19 +203,19 @@ $current_post = get_post(); ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="variations-button-prev model-sections-swiper-arrow-prev model-sections-swiper-arrow arrow">
-                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                                    <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5">
-                                                    </path>
-                                                </svg>
-                                            </button>
-                                            <button class="variations-button-next model-sections-swiper-arrow-next model-sections-swiper-arrow arrow">
-                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                                    <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5">
-                                                    </path>
-                                                </svg>
-                                            </button>
                                         <?php endforeach; ?>
+                                        <button class="variations-button-prev model-sections-swiper-arrow-prev model-sections-swiper-arrow arrow">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                                                <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <button class="variations-button-next model-sections-swiper-arrow-next model-sections-swiper-arrow arrow">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                                                <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5">
+                                                </path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
