@@ -1,9 +1,10 @@
 <?php
 add_action('acf/init', 'my_acf_blocks_init');
-function my_acf_blocks_init() {
+function my_acf_blocks_init()
+{
 
     // Check function exists.
-    if( function_exists('acf_register_block_type') ) {
+    if (function_exists('acf_register_block_type')) {
 
         // Register a testimonial block.
         acf_register_block_type(array(
@@ -67,6 +68,12 @@ function my_acf_blocks_init() {
             'category'          => 'formatting',
             'render_template'   => 'blocks/block-bg-video.php',
         ));
-        
+        acf_register_block_type(array(
+            'name'              => 'image-margin-block',
+            'title'             => __('Блок с изображения и отступом.'),
+            'description'       => __('Блок с изображения и отступом.'),
+            'category'          => 'formatting',
+            'render_template'   => 'blocks/block-without-description-and-img.php',
+        ));
     }
 }
