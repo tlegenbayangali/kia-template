@@ -8,8 +8,6 @@ $current_post = get_post(); ?>
             <?php if (get_field('model_hero_video', get_the_ID())['mp4']) : ?>
                 <source src="<?= get_field('model_hero_video', get_the_ID())['mp4'] ?>">
             <?php endif; ?>
-
-
             <?php if (get_field('model_hero_video', get_the_ID())['webm']) : ?>
                 <source src="<?= get_field('model_hero_video', get_the_ID())['webm'] ?>">
             <?php endif; ?>

@@ -25,6 +25,9 @@ $(() => {
     $('#form-email').dalacodeInput({
         'required': true,
     });
+    $('.select-form').dalacodeInput({
+        'required': true,
+    });
     if ($('input.input-phone').length) {
         // eslint-disable-next-line no-unused-vars
         const cleave = new Cleave('input.input-phone', {
