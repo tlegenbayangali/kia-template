@@ -75,5 +75,19 @@ function my_acf_blocks_init()
             'category'          => 'formatting',
             'render_template'   => 'blocks/block-without-description-and-img.php',
         ));
+        acf_register_block_type(array(
+            'name'              => 'repeater-block-border',
+            'title'             => __('Блок с границей.'),
+            'description'       => __('Блок с границей.'),
+            'category'          => 'formatting',
+            'render_template'   => 'blocks/block-repeater-block-border.php',
+        ));
+        acf_register_block_type(array(
+            'name'              => 'block-qr',
+            'title'             => __('Блок с qr.'),
+            'description'       => __('Блок с qr.'),
+            'category'          => 'formatting',
+            'render_template'   => 'blocks/block-qr.php',
+        ));
     }
 }

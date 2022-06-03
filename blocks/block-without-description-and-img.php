@@ -1,5 +1,5 @@
 <?php
-$id = 'without-list-' . $block['id'];
+$id = 'without-list-img-' . $block['id'];
 ?>
 <div class="model-sections" id="<?php echo $id; ?>">
     <div class="model-sections-inner-new  

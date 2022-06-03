@@ -180,3 +180,63 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
     padding-left: 180px;
     padding-right: 180px;
 }
+
+.model-sections-title-headers {
+    font-size: 35px;
+}
+
+.model-sections-ul-list {
+    margin-top: 30px;
+    border-top: 1px solid #cdd0d2;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        border-bottom: 1px solid #cdd0d2;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        .model-sections-ul-list-left {
+            display: flex;
+            flex: 0 0 40%;
+
+            .model-sections-ul-list-left-number {
+                font-size: 18px;
+                line-height: 139%;
+                color: #5d7d2b;
+                margin-right: 20px;
+                font-weight: 700;
+            }
+
+            .model-sections-ul-list-left-title {
+                font-size: 18px;
+                line-height: 139%;
+                font-weight: 700;
+            }
+        }
+
+        .model-sections-ul-list-right {
+            flex: 0 0 60%;
+            font-family: KiaSignatureRegular, sans-serif;
+            font-size: 15px;
+        }
+    }
+}
+
+.model-sections-two-first-img {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.model-sections-two-second-block {
+    img {
+        width: 180px;
+        height: 53px;
+
+        &:last-child {
+            margin-top: 15px;
+        }
+    }
+}
