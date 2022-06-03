@@ -231,12 +231,14 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
 }
 
 .model-sections-two-second-block {
-    img {
+    a {
+        display: block;
         width: 180px;
         height: 53px;
+        margin-bottom: 15px;
 
         &:last-child {
-            margin-top: 15px;
+            margin-bottom: 0;
         }
     }
 }
