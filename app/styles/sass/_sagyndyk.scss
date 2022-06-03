@@ -81,6 +81,7 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
 .hero-slider-item_right {
     position: relative;
     color: $white;
+
     &::before {
         content: "";
         position: absolute;
@@ -89,12 +90,14 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
         right: 0;
         bottom: 0;
         width: 50%;
-        background: linear-gradient(-90deg,rgba(0,0,0,.75),transparent);
+        background: linear-gradient(-90deg, rgba(0, 0, 0, .75), transparent);
         z-index: 1;
+
         @media screen and (max-width: 1199px) {
             display: none;
         }
     }
+
     .info {
         position: absolute;
         height: 100%;
@@ -103,13 +106,17 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
         left: 0;
         padding: 50px 160px;
         z-index: 2;
+
         &-top {
             align-items: end;
+
             @media screen and (max-width: 1199px) {
                 align-items: flex-start;
             }
         }
+
         align-items: end;
+
         .slider-heading {
             font-size: 50px;
             font-weight: 700;
@@ -117,10 +124,12 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
             color: #fff;
             margin-bottom: 20px;
         }
+
         .slider-description {
             font-size: 18px;
             display: inline-block;
             color: #fff;
+
             @media screen and (max-width: 1199px) {
                 margin-bottom: 40px;
             }
@@ -133,4 +142,28 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
         }
     }
 
+}
+
+.callback-form-row {
+    .select-form {
+        display: block;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 0;
+        font-size: 14px;
+        color: #666;
+        transition: .3s ease;
+        width: 290px;
+
+        option {
+            font-family: 'KIA';
+            color: #666;
+            background-color: white;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        // pointer-events: none;
+    }
 }
