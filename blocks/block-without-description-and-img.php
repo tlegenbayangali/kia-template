@@ -7,10 +7,10 @@ $id = 'without-list-img-' . $block['id'];
             echo 'dark';
         endif;
         ?>" style="background-color:<?php the_field('block-color') ?>;">
-        <div class="model-sections-list align-items-center">
+        <div class="model-sections-list-block align-items-center">
             <div class="model-sections-list-left">
                 <div class="model-sections-title">
-                    <h3 class="model-sections-title-header">
+                    <h3 class="model-sections-title-headers">
                         <?php the_field('items-title') ?>
                     </h3>
                 </div>
@@ -22,8 +22,8 @@ $id = 'without-list-img-' . $block['id'];
                     </div>
                 <?php } ?>
             </div>
-            <div class="model-sections-list-smallimage d-flex justify-content-end">
-                <div class="model-sections-list-smallimage-item d-block">
+            <div class="model-sections-list-image d-flex">
+                <div class="model-sections-list-image-item d-block">
                     <img src="<?php the_field('items-image'); ?>" alt="small-image">
                 </div>
             </div>

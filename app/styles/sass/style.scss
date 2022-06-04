@@ -7,6 +7,7 @@
 @import "mixin";
 @import "cf7";
 @import "sagyndyk";
+
 // SPECIFICATION
 .bred {
     border: 1px solid red;
@@ -1800,6 +1801,7 @@ hr {
             display: flex;
             align-items: center;
             justify-content: center;
+
             &:last-child {
                 margin-bottom: 0;
             }

@@ -6,6 +6,7 @@ Template Name: Страница Промо
 get_header();
 
 ?>
+
 <div class="hero-model" style="background: url(<?= get_field('page_hero_img', get_the_ID()) ?>) no-repeat center center /cover gray;">
     <?php if (get_field('page_hero_video', get_the_ID())) : ?>
         <video class="hero-model-video" autoplay loop muted style="background: url(<?= get_field('page_hero_img', get_the_ID()) ?>) no-repeat center center /cover gray;">
@@ -57,7 +58,7 @@ get_header();
                                 </ul>
                             </div>
                         <?php else : ?>
-                            <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
+                            <div class="hero-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
                                 <a href="<?= get_field('page_hero_link', get_the_ID()) ?>" class="btn">
                                     <?= get_field('page_hero_button', get_the_ID()) ?>
                                 </a>
@@ -69,6 +70,7 @@ get_header();
         </div>
     </div>
 </div>
+<div class="hero-model-padding"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">

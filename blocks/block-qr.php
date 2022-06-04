@@ -9,7 +9,7 @@ $id = 'qr-block-' . $block['id'];
         endif;
         ?>" style="background-color:<?php the_field('block-color') ?> ;">
         <!-- TEXT BLOCK-->
-        <div class="model-sections-text-block">
+        <div class="model-sections-texts-block">
             <div class="model-sections-title">
                 <span class="model-sections-title-sub">
                     <?php the_field('items-sub-title') ?>
