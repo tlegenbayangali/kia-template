@@ -30,7 +30,7 @@ get_header();
                             <span class=""> <?= get_field('page_text_up_logo', get_the_ID()); ?> </span>
                             <div class="hero-model-title-name">
                                 <?php if (get_field('page_hero_logo_img')) : ?>
-                                    <img src="<?= get_field('page_hero_logo_img', get_the_ID()); ?>" alt="<?= get_the_title(get_the_ID()) ?>" style="width:594px">
+                                    <img src="<?= get_field('page_hero_logo_img', get_the_ID()); ?>" alt="<?= get_the_title(get_the_ID()) ?>">
                                 <?php endif ?>
                                 <h3 class=hero-model-promo-title><?= get_field('page_hero_title', get_the_ID()); ?></h3>
                             </div>
@@ -59,7 +59,7 @@ get_header();
                             </div>
                         <?php else : ?>
                             <div class="hero-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                <a href="<?= get_field('page_hero_link', get_the_ID()) ?>" class="btn">
+                                <a href="#<?= get_field('page_hero_link', get_the_ID()) ?>" class="btn">
                                     <?= get_field('page_hero_button', get_the_ID()) ?>
                                 </a>
                             </div>

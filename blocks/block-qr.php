@@ -2,7 +2,7 @@
 $id = 'qr-block-' . $block['id'];
 ?>
 
-<div class="model-sections" id="<?php echo $id; ?>">
+<div class="model-sections <?= $id ?>" id="<?= get_field('id_block') ?>">
     <div class="model-sections-inner  
         <?php if (get_field('dark-mode') == 1) :
             echo 'dark';
