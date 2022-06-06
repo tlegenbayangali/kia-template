@@ -168,8 +168,14 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
     }
 }
 
+.hero-btn {
+    @media screen and (max-width:991px) {
+        margin-top: 30px;
+    }
+}
+
 .page-hero-title-sub {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 15px;
     font-weight: 400;
     color: #fff;
@@ -290,5 +296,9 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
 
     @media screen and (max-width:1105px) {
         grid-template-columns: 1fr;
+
+        .model-sections-list-image {
+            justify-content: center;
+        }
     }
 }
