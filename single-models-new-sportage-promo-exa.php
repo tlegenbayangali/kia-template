@@ -148,7 +148,7 @@ $current_post = get_post(); ?>
                 <div class="callback-form" id="offer-form">
                     <h5 class="mb-2">Подписаться на новости о новом Kia Sportage</h5>
                     <p class="mb-2">После отправки заявки, дилер свяжется с Вами для уточнения деталей.</p>
-                    <p class="fz-12 mt-10 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
+                    <p class="mb-2 fz-12 mt-10 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
                     <?= do_shortcode('[contact-form-7 id="4581" title="Подписаться на новости о новом Kia Sportage"]') ?>
                 </div>
             </div>

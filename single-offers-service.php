@@ -92,7 +92,7 @@ get_header(); ?>
                         <div class="callback-form" id="offer-form">
                             <h5 class="mb-2">Отправить заявку дилеру</h5>
                             <p class="mb-2">После отправки заявки, дилер свяжется с Вами для уточнения деталей.</p>
-                            <p class="fz-12 mt-10 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
+                            <p class="mb-2 fz-12 mt-10 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
                             <?php if (get_field('foreign_form', 'options')) : ?>
                                 <?= get_field('foreign_form', 'options') ?>
                             <?php else : ?>
