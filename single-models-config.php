@@ -185,11 +185,16 @@ if (isset($_POST['config-step'])) {
                     <div class="callback-form">
                         <h5 class="mb-2" id="result-form">Ваши контакты</h5>
                         <p class="mb-2">Поля, отмеченные *, обязательны для заполнения</p>
-                        <?php if (get_field('foreign_form', 'options')) : ?>
-                            <?= get_field('foreign_form', 'options') ?>
-                        <?php else : ?>
-                            <?php echo do_shortcode('[contact-form-7 id="2552" title="Форма конфигуратора"]'); ?>
-                        <?php endif; ?>
+                        <?php //if (get_field('foreign_form', 'options')) : 
+                        ?>
+                        <? //= get_field('foreign_form', 'options') 
+                        ?>
+                        <?php //else : 
+                        ?>
+
+                        <?php //endif; 
+                        ?>
+                        <?php echo do_shortcode('[contact-form-7 id="2552" title="Форма конфигуратора"]'); ?>
                     </div>
                 </div>
             </div>

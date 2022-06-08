@@ -81,11 +81,15 @@ $current_model = $model->posts[0];
                     <div class="callback-form">
                         <h5 class="mb-2">Ваши контакты</h5>
                         <p>Поля, отмеченные *, обязательны для заполнения</p>
-                        <?php if (get_field('foreign_form', 'options')) : ?>
-                            <?= get_field('foreign_form', 'options') ?>
-                        <?php else : ?>
-                            <?= do_shortcode('[contact-form-7 id="96" title="Тест-драйв"]') ?>
-                        <?php endif; ?>
+                        <?php //if (get_field('foreign_form', 'options')) : 
+                        ?>
+                        <!-- <//?//= //get_field('foreign_form', 'options') ?> -->
+                        <?php //else : 
+                        ?>
+
+                        <?php //endif; 
+                        ?>
+                        <?= do_shortcode('[contact-form-7 id="96" title="Тест-драйв"]') ?>
                     </div>
                 </div>
             </div>
