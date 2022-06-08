@@ -29,7 +29,7 @@ $configs = new WP_Query([
                     </div>
                     <div class="post-title d-none">
                         <h1>
-                            <?php the_title();?>
+                            <?php the_title(); ?>
                         </h1>
                     </div>
                     <div class="post-thumbnail">
@@ -289,9 +289,13 @@ $configs = new WP_Query([
                 <div class="d-flex callback-col justify-content-center">
                     <div class="callback-form" id="offer-form">
                         <h5 class="mb-2">Отправить заявку дилеру</h5>
-                        <p>После отправки заявки, дилер свяжется с Вами для уточнения деталей бронирования.</p>
+                        <p class="mb-2">После отправки заявки, дилер свяжется с Вами для уточнения деталей бронирования.</p>
                         <p class="mt-10 fz-12 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
-                        <?= do_shortcode('[contact-form-7 id="4077" title="Форма заявки со страницы спецпредложения"]') ?>
+                        <?php if (get_field('foreign_form', 'options')) : ?>
+                            <?= get_field('foreign_form', 'options') ?>
+                        <?php else : ?>
+                            <?= do_shortcode('[contact-form-7 id="4077" title="Форма заявки со страницы спецпредложения"]') ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
