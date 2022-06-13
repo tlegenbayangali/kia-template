@@ -330,6 +330,10 @@
         }
 
         &-price {
+            @media screen and (max-width:1190px) {
+                display: block !important;
+            }
+
             span {
                 width: max-content;
             }

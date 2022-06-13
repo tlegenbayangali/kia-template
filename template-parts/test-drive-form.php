@@ -1,12 +1,12 @@
-<?php 
-    $current_model_slug = $_POST['selected_model'];
+<?php
+$current_model_slug = $_POST['selected_model'];
 
-    $model = new WP_Query([
-        'name' => $current_model_slug,
-        'post_type' => 'models'
-    ]);
+$model = new WP_Query([
+    'name' => $current_model_slug,
+    'post_type' => 'models'
+]);
 
-    $current_model = $model->posts[0];
+$current_model = $model->posts[0];
 ?>
 <div class="steps mt-40 mb-30 test-drive-form">
     <div class="container">
@@ -45,33 +45,33 @@
                             <?= $current_model->post_title ?>
                         </h1>
                         <div class="model-info-image d-flex justify-content-center">
-                            <?= get_the_post_thumbnail( $current_model->ID, 'full' ) ?>
+                            <?= get_the_post_thumbnail($current_model->ID, 'full') ?>
                         </div>
                         <div class="model-info-price d-flex justify-content-between">
                             <span>Стоимость</span>
                             <span class="fw-700 fz-18">от <?= get_field('starting_price', $current_model->ID) ?> ₸</span>
                         </div>
                         <?php if (get_field('dealer_info', 'options')) : ?>
-                        <div class="model-info-dealer mt-20">
-                            <span class="model-info-dealer-title mb-10 fw-700 d-block">
-                                <?= get_field('dealer_info', 'options')['dealer_name'] ?>
-                            </span>
-                            <span class="model-info-dealer-address mb-10 d-block">
-                                <?= get_field('dealer_info', 'options')['dealer_address'] ?>
-                            </span>
-                            <span class="model-info-dealer-address mb-10 d-block">
-                                <?= get_field('dealer_info', 'options')['dealer_schedule'] ?>
-                            </span>
-                            <?php if (get_field('dealer_info', 'options')['dealer_phones']) : ?>
-                                <div class="model-info-dealer-phones d-flex align-items-start flex-column">
-                                    <?php foreach (get_field('dealer_info', 'options')['dealer_phones'] as $phone) : ?>
-                                    <a href="tel:<?php echo cleanPhone($phone['dealer_phone']) ?>" class="mb-10 underlined underlined-black d-inline-block model-info-dealer-phone fw-700">
-                                        <?= $phone['dealer_phone'] ?>
-                                    </a>
-                                    <?php endforeach; ?>
-                                </div>
-                            <?php endif; ?>
-                        </div>
+                            <div class="model-info-dealer mt-20">
+                                <span class="model-info-dealer-title mb-10 fw-700 d-block">
+                                    <?= get_field('dealer_info', 'options')['dealer_name'] ?>
+                                </span>
+                                <span class="model-info-dealer-address mb-10 d-block">
+                                    <?= get_field('dealer_info', 'options')['dealer_address'] ?>
+                                </span>
+                                <span class="model-info-dealer-address mb-10 d-block">
+                                    <?= get_field('dealer_info', 'options')['dealer_schedule'] ?>
+                                </span>
+                                <?php if (get_field('dealer_info', 'options')['dealer_phones']) : ?>
+                                    <div class="model-info-dealer-phones d-flex align-items-start flex-column">
+                                        <?php foreach (get_field('dealer_info', 'options')['dealer_phones'] as $phone) : ?>
+                                            <a href="tel:<?php echo cleanPhone($phone['dealer_phone']) ?>" class="mb-10 underlined underlined-black d-inline-block model-info-dealer-phone fw-700">
+                                                <?= $phone['dealer_phone'] ?>
+                                            </a>
+                                        <?php endforeach; ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
                         <?php endif; ?>
                     </div>
                 </aside>
@@ -81,6 +81,14 @@
                     <div class="callback-form">
                         <h5 class="mb-2">Ваши контакты</h5>
                         <p>Поля, отмеченные *, обязательны для заполнения</p>
+                        <?php //if (get_field('foreign_form', 'options')) : 
+                        ?>
+                        <!-- <//?//= //get_field('foreign_form', 'options') ?> -->
+                        <?php //else : 
+                        ?>
+
+                        <?php //endif; 
+                        ?>
                         <?= do_shortcode('[contact-form-7 id="96" title="Тест-драйв"]') ?>
                     </div>
                 </div>
