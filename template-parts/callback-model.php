@@ -44,7 +44,7 @@
                     <div class="callback-form">
                         <h5 class="mb-2">Ваши контакты</h5>
                         <p>Поля, отмеченные *, обязательны для заполнения</p>
-                        <?= do_shortcode('[contact-form-7 id="3786" title="Форма заявки от определенное модели"]') ?>
+                        <?= do_shortcode('[contact-form-7]') ?>
                     </div>
                 </div>
             </div>
