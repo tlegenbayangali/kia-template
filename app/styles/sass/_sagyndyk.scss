@@ -163,8 +163,23 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
             outline: none;
             font-size: 14px;
         }
+    }
 
-        // pointer-events: none;
+    .input-email {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: inherit;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    .textarea-form {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: inherit;
+        padding: 5px 0;
+        font-size: 14px;
+        width: 100%;
     }
 }
 
