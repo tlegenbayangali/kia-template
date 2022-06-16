@@ -23,7 +23,7 @@ $(() => {
         'required': true,
     });
     $('#form-email').dalacodeInput({
-        'required': true,
+        'required': false,
     });
     $('.select-form').dalacodeInput({
         'required': true,
@@ -48,7 +48,7 @@ $(() => {
     $('textarea.input-message').dalacodeTextarea({
         'required': false,
         'limits': {
-            'minimum': 0,
+            'minimum': 1,
         },
     });
 
