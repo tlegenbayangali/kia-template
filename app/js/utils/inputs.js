@@ -46,9 +46,9 @@ $(() => {
     });
 
     $('textarea.input-message').dalacodeTextarea({
-        'required': true,
+        'required': false,
         'limits': {
-            'minimum': 25,
+            'minimum': 0,
         },
     });
 
