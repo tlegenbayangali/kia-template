@@ -26,6 +26,9 @@
                         ?>
                         <div class="header-model-left model d-flex align-items-center">
                             <h1 class="header-model-name d-flex align-items-center"><?php echo esc_html(get_the_title($args['parent_post']->ID)); ?></h1>
+
+
+
                             <!--<a href="#" class="header-model-name d-flex align-items-center">
                                 <?php // echo esc_html( get_the_title($args['parent_post']->ID) );
                                 ?>
@@ -37,6 +40,9 @@
                                     </svg>
                                 </button>
                             </a>-->
+
+
+                            
                             <div class="header-model-price align-items-center d-xl-flex d-none">
                                 <!-- Edit Sagyndyk -->
                                 <?php if (get_field('show_or_hide_price_models', $post->ID)) : ?>
