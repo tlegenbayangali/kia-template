@@ -81,18 +81,12 @@ $current_model = $model->posts[0];
             <div class="col-xl-8 col-lg-12">
                 <div class="content callback-col pt-60 pb-60 pl-80">
                     <div class="callback-form">
-                        <h5 class="mb-2">Ваши контакты</h5>
-                        <p>Поля, отмеченные *, обязательны для заполнения</p>
-                        <?php //if (get_field('foreign_form', 'options')) : 
-                        ?>
-                        <!-- <//?//= //get_field('foreign_form', 'options') ?> -->
-                        <?php //else : 
-                        ?>
-
-                        <?php //endif; 
-                        ?>
                         <?php if (get_field('show_or_hide_price_models', $current_model->ID)) : ?>
+                            <h5 class="mb-2">Ваши контакты</h5>
+                            <p>Поля, отмеченные *, обязательны для заполнения</p>
                             <?= do_shortcode('[contact-form-7 id="96" title="Тест-драйв"]') ?>
+                        <?php else : ?>
+                            <h5 class="mb-2">Автомобиль недоступен для тест-драйва</h5>
                         <?php endif; ?>
                     </div>
                 </div>
