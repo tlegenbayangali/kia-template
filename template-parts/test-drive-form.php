@@ -47,10 +47,12 @@ $current_model = $model->posts[0];
                         <div class="model-info-image d-flex justify-content-center">
                             <?= get_the_post_thumbnail($current_model->ID, 'full') ?>
                         </div>
-                        <div class="model-info-price d-flex justify-content-between">
-                            <span>Стоимость</span>
-                            <span class="fw-700 fz-18">от <?= get_field('starting_price', $current_model->ID) ?> ₸</span>
-                        </div>
+                        <?php if (get_field('show_or_hide_price_models', $current_model->ID)) : ?>
+                            <div class="model-info-price d-flex justify-content-between">
+                                <span>Стоимость</span>
+                                <span class="fw-700 fz-18">от <?= get_field('starting_price', $current_model->ID) ?> ₸</span>
+                            </div>
+                        <?php endif; ?>
                         <?php if (get_field('dealer_info', 'options')) : ?>
                             <div class="model-info-dealer mt-20">
                                 <span class="model-info-dealer-title mb-10 fw-700 d-block">
@@ -89,7 +91,9 @@ $current_model = $model->posts[0];
 
                         <?php //endif; 
                         ?>
-                        <?= do_shortcode('[contact-form-7 id="96" title="Тест-драйв"]') ?>
+                        <?php if (get_field('show_or_hide_price_models', $current_model->ID)) : ?>
+                            <?= do_shortcode('[contact-form-7 id="96" title="Тест-драйв"]') ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
