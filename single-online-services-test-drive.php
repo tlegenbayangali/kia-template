@@ -9,7 +9,7 @@ get_header();
 <!-- </?php get_template_part('template-parts/test-drive', 'form'); ?> -->
 <!-- </?php endif; ?> -->
 <!-- </?php else : ?> -->
-<?php get_template_part('template-parts/test-drive-new-form', 'form'); ?>
+<?php get_template_part('template-parts/test-drive-new-form'); ?>
 <!-- </?phpendif; ?> -->
 
 
