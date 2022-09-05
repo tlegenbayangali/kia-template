@@ -48,3 +48,15 @@ if ($('.test-drive-form').length) {
         modelInput.val(modelName);
     });
 }
+
+
+// Sagyndyk select
+
+let selectFormFirstOptions = document.querySelectorAll('select.first-disabled')
+
+if (selectFormFirstOptions) {
+    selectFormFirstOptions.forEach(item => {
+        item.options[0].setAttribute('disabled', 'disabled')
+        item.options[0].setAttribute('selected', 'selected')
+    })
+}
