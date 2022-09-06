@@ -11,10 +11,10 @@ get_header();
     <?php endif; ?>
 <?php else : ?>
     <div class="section section-divided pos-r">
-        <?php if (get_field('form-maps', 'options')) : ?>
-            <?= get_field('form-maps', 'options') ?>
-        <?php endif; ?>
         <div class="container">
+            <?php if (get_field('form-maps', 'options')) : ?>
+                <?= get_field('form-maps', 'options') ?>
+            <?php endif; ?>
             <div class="col-xl-8 col-lg-12">
                 <div class="content callback-col pt-60 pb-60">
                     <div class="callback-form" style="margin: 0;">
