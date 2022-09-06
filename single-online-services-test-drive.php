@@ -18,7 +18,7 @@ get_header();
             <div class="col-xl-8 col-lg-12">
                 <div class="content callback-col pt-60 pb-60">
                     <div class="callback-form" style="margin: 0;">
-                        <h5 class="mb-2">Ваши контакты</h5>
+                        <h5 class="mb-2">Записаться</h5>
                         <p>Поля, отмеченные *, обязательны для заполнения</p>
                         <?= do_shortcode('[contact-form-7 id="96" title="Тест-драйв"]') ?>
                     </div>
