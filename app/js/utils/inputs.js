@@ -61,7 +61,7 @@ $(() => {
         },
     });
     $('input.input-checkbox-2').dalacodeCheckbox({
-        'required': true,
+        'required': false,
         'content': {
             'active': true,
             'text': 'Я хочу, чтобы мне перезвонили и уточнили дату и время',
