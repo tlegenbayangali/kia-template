@@ -48,7 +48,16 @@ $(() => {
             'minimum': 18,
         },
     });
-
+    if ($('input.input-phone-test-drive').length) {
+        // eslint-disable-next-line no-unused-vars
+        const testDriveInputPhone = new Cleave('input.input-phone-test-drive', {
+            'prefix': '+',
+            'blocks': [1, 1, 3, 3, 2, 2],
+            'delimiters': ['', ' (', ') ', '-', '-'],
+            'uppercase': true,
+            'numericOnly': true,
+        });
+    }
     $('textarea.input-message').dalacodeTextarea({
         'required': false,
     });

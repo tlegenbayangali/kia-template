@@ -3,9 +3,12 @@ let rangeLabel = document.querySelector('.uacf7-slider-label')
 let rangeDate = document.querySelector('.form-range-value.uacf7-value')
 let rangeInputValue = document.querySelector('#form-range-value')
 
+const minRangeValue = range.getAttribute('Min')
+const maxRangeValue = range.getAttribute('Max')
+
 if (rangeLabel) {
     rangeDate.innerHTML = '15:00 - 16:00'
-    rangeLabel.innerHTML = "Время тест-драйва с 08:00 до 21:00"
+    rangeLabel.innerHTML = `Время тест-драйва с ${parseInt(minRangeValue) - 1}:00 до ${maxRangeValue}:00`
     range.addEventListener('input', (event) => {
         let time = parseInt(event.target.value)
         let resultTime =  rangeDate.innerHTML = `${time - 1}:00 - ${time}:00`
