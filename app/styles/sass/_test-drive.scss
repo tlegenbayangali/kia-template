@@ -45,7 +45,7 @@
         height: 2px;
         border-radius: 5px;
         cursor: pointer;
-        &::-webkit-slider-thumb {
+        &::-webkit-slider-thumb,&::-moz-range-thumb,&::-ms-range-thumb {
             appearance: none;
             width: 12px;
             height:12px;
