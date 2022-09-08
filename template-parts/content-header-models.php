@@ -6,6 +6,9 @@
                     <div class="header-model-inner d-flex justify-content-between">
                         <?php
                         $current_m = $args['parent_post']->post_name;
+
+                        $parent_post = get_post($post->post_parent);
+                        $parent_post_id = get_post()->post_parent;
                         $config_s = new WP_Query([
                             'post_type' => 'configs',
                             'model' => $current_m,
@@ -42,7 +45,7 @@
                             </a>-->
 
 
-                            
+
                             <div class="header-model-price align-items-center d-xl-flex d-none">
                                 <!-- Edit Sagyndyk -->
                                 <?php if (get_field('show_or_hide_price_models', $post->ID)) : ?>
@@ -92,12 +95,19 @@
                                         Заявка дилеру
                                     </a>
                                 </li>
+                                <?php if (get_field('brochure', $parent_post_id)) : ?>
+                                    <li>
+                                        <a class="underlined underlined-white" href="<?= get_field('brochure', $parent_post_id)['url'] ?>"">
+                                            Брошюра
+                                        </a>
+                                    </li>
+                                <?php endif; ?>
                                 <!-- <li>
-                                    <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/credit/'; ?>">
-                                        Рассчитать кредит
-                                    </a>
-                                </li> -->
-                                <!-- <li class="has-sub d-xl-flex d-none header-model-menu-main-button">
+                                    <a class=" underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/credit/'; ?>">
+                                            Рассчитать кредит
+                                        </a>
+                                    </li> -->
+                                    <!-- <li class="has-sub d-xl-flex d-none header-model-menu-main-button">
                                     <button type="button"
                                         class="button-dots d-flex align-items-center justify-content-center">
                                         <svg class="dots">
