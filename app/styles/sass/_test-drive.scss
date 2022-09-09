@@ -1,5 +1,13 @@
 @import './var';
 
+.contact {
+    iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+    }
+}
+
 .test-drive-section {
     iframe {
         width: 100%;
