@@ -4,8 +4,9 @@
     .test-drive-field {
         display: flex;
         flex-direction: column;
-        label {
+        label, p {
             font-size: 15px;
+            line-height: 165%;
         }
         select, input {
             width: 100%;
@@ -21,6 +22,12 @@
             border: 1px solid $gray;
             &:focus {
                 border: 1px solid $black;
+            }
+        }
+        p {
+            margin-bottom: 7px;
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -45,7 +52,20 @@
         height: 2px;
         border-radius: 5px;
         cursor: pointer;
-        &::-webkit-slider-thumb,&::-moz-range-thumb {
+        &::-webkit-slider-thumb {
+            appearance: none;
+            width: 12px;
+            height:12px;
+            border-radius: 50%;
+            background: $black;
+            cursor: pointer;
+            transition: .3s all ease;
+            &:hover {
+                cursor: pointer;
+                outline: 10px solid rgba(0,0,0,0.3)
+            }
+        }
+        &::-moz-range-thumb {
             appearance: none;
             width: 12px;
             height:12px;

@@ -60,3 +60,29 @@ if (selectFormFirstOptions) {
         item.options[0].setAttribute('selected', 'selected')
     })
 }
+
+
+// Test drive new form validation
+let inputs = document.querySelectorAll('.test-drive-field input')
+let btn = document.querySelector('#btn-test-drive')
+
+if (inputs && btn) {
+    btn.addEventListener('click', (e)  => {
+        e.preventDefault()
+    
+        inputs.forEach(item => {
+            if (item.value.length <= 3 || item.value == '') {
+                item.style.border = '1px solid #BF0C0D'
+            } else {
+                item.style.border = '1px solid #5D7D2B'
+            }
+        })
+        selectFormFirstOptions.forEach(item => {
+            if (item.options[0].value == 'Выбрать') {
+                item.style.border = '1px solid #BF0C0D'
+            } else {
+                item.style.border = '1px solid #5D7D2B'
+            }
+        })
+    })
+}
