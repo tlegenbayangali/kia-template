@@ -10,7 +10,7 @@ get_header();
         <?php get_template_part('template-parts/test-drive', 'form'); ?>
     <?php endif; ?>
 <?php else : ?>
-    <div class="section section-divided pos-r">
+    <div class="section section-divided pos-r test-drive-section">
         <div class="container">
             <div class="pt-40 pb-40">
                 <h5 class="section-heading mb-4">Тест-драйв</h5>
