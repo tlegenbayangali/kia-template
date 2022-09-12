@@ -1181,18 +1181,6 @@ select {
             z-index: 2;
         }
 
-        .post-title {
-
-            h1 {
-                font-size: 70px;
-                line-height: 1;
-
-                @media screen and (max-width: 991px) {
-                    font-size: 35px;
-                }
-            }
-        }
-
         .breadcrumbs-container {
 
             .breadcrumbs {
@@ -1239,6 +1227,19 @@ select {
 
         img {
             min-height: 520px;
+        }
+    }
+
+    .post-title {
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            line-height: 1;
+
+            @media screen and (max-width: 991px) {
+                font-size: 20px;
+            }
         }
     }
 }
