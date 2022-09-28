@@ -518,7 +518,7 @@ h5 {
 
 // Article Styles
 .article {
-    &>* {
+    & > * {
         margin-bottom: 20px;
 
         &:last-child {
@@ -650,7 +650,7 @@ hr {
 
 .row {
     &-divided {
-        &>div:first-child {
+        & > div:first-child {
             border-right: 1px solid $lgray;
         }
     }
@@ -673,9 +673,11 @@ hr {
         &-2 {
             margin-bottom: 10px;
         }
+
         &-4 {
             margin-bottom: 20px;
         }
+
         &-8 {
             margin-bottom: 40px;
         }
@@ -786,9 +788,11 @@ hr {
         &-30 {
             padding-bottom: 30px;
         }
+
         &-40 {
             padding-bottom: 40px;
         }
+
         &-20 {
             padding-bottom: 20px;
         }
@@ -865,7 +869,7 @@ hr {
     &-1 {
         margin-bottom: -1px;
 
-        &>* {
+        & > * {
             margin-bottom: 1px;
         }
     }
@@ -873,7 +877,7 @@ hr {
     &-30 {
         margin-bottom: -30px;
 
-        &>* {
+        & > * {
             margin-bottom: 30px;
         }
     }
@@ -934,7 +938,7 @@ hr {
 .offer {
 
     &-info {
-        &>* {
+        & > * {
             margin-right: 60px;
 
             &:last-child {
@@ -962,7 +966,7 @@ hr {
 .aside {
     position: relative;
 
-    &>* {
+    & > * {
         z-index: 2;
         position: relative;
     }
@@ -1000,7 +1004,7 @@ hr {
             display: flex;
             flex-direction: column;
 
-            &>* {
+            & > * {
                 margin-left: 0;
                 margin-bottom: 10px;
 
@@ -1478,13 +1482,13 @@ hr {
         &-slide {
             width: 200px;
 
-            &>div {
+            & > div {
                 border: 1px dotted transparent;
                 padding: 30px;
             }
 
             &:hover {
-                &>div {
+                & > div {
                     border: 1px dotted $dgray;
                 }
             }
@@ -1557,7 +1561,7 @@ hr {
 
         @media screen and (max-width: 767px) {
             &-slide {
-                &>div {
+                & > div {
                     padding: 20px 10px;
                 }
             }
@@ -1603,8 +1607,7 @@ hr {
 
         &-min-price {
             margin-top: 5px;
-            color: $disabled;
-            ;
+            color: $disabled;;
 
             &-info {
                 width: 20px;
@@ -1726,7 +1729,7 @@ hr {
                 &-carousel-slide {
                     width: 200px;
 
-                    &>div {
+                    & > div {
                         padding: 0 30px;
                         font-weight: 700;
                     }
@@ -1753,7 +1756,7 @@ hr {
 
                 &-item {
                     &-carousel-slide {
-                        &>div {
+                        & > div {
                             padding: 0 10px;
                         }
                     }

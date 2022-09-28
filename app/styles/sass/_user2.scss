@@ -69,7 +69,7 @@
         @media screen and (max-width: 991px) {
             display: none;
 
-            &.current+.steps-item {
+            &.current + .steps-item {
                 display: block;
             }
 
@@ -309,7 +309,7 @@
             @media screen and (max-width: 767px) {
                 flex-direction: column;
 
-                &>* {
+                & > * {
                     width: 100% !important;
                     margin-bottom: 30px;
 
@@ -324,7 +324,7 @@
             @media screen and (max-width: 767px) {
                 flex-direction: column;
 
-                &>* {
+                & > * {
                     margin-bottom: 10px !important;
                     margin-right: 0 !important;
 
@@ -566,7 +566,7 @@ select {
             }
 
             .article {
-                &>* {
+                & > * {
                     margin-bottom: 10px;
                 }
 
@@ -598,7 +598,7 @@ select {
                 .top {
                     margin-bottom: 0;
 
-                    &>* {
+                    & > * {
                         margin-bottom: 0;
                     }
                 }
@@ -768,7 +768,7 @@ select {
         @media screen and (max-width: 991px) {
             flex-direction: column;
 
-            &>.left {
+            & > .left {
                 width: 100%;
                 margin-bottom: 30px;
 
@@ -777,7 +777,7 @@ select {
                 }
             }
 
-            &>.right {
+            & > .right {
                 width: 100%;
 
                 .config-details-table {
@@ -982,7 +982,7 @@ select {
             height: auto;
         }
 
-        &>* {
+        & > * {
             margin-bottom: 10px;
 
             &:last-child {
@@ -1007,7 +1007,7 @@ select {
             }
         }
 
-        &>* {
+        & > * {
             margin-bottom: 10px;
 
             &:last-child {
@@ -1140,7 +1140,7 @@ select {
 // INFO
 .info {
     &-block {
-        &>* {
+        & > * {
             margin-bottom: 10px;
 
             &:last-child {
@@ -1176,20 +1176,9 @@ select {
         min-height: 520px;
         position: relative;
 
-        &>* {
+        & > * {
             position: relative;
             z-index: 2;
-        }
-
-        .post-title {
-            h1 {
-                font-size: 70px;
-                line-height: 1;
-
-                @media screen and (max-width: 991px) {
-                    font-size: 35px;
-                }
-            }
         }
 
         .breadcrumbs-container {
@@ -1238,6 +1227,19 @@ select {
 
         img {
             min-height: 520px;
+        }
+    }
+
+    .post-title {
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            line-height: 1;
+
+            @media screen and (max-width: 991px) {
+                font-size: 20px;
+            }
         }
     }
 }
