@@ -141,8 +141,8 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                         <div class="bottom">
                                             <div class="model-row justify-content-end">
                                                 <div class="d-flex links">
-                                                    <a href="<?= get_post_permalink($model->ID) ?>" class="underlined underlined-black readmore">
-                                                        О модели
+                                                    <a href="<?= get_post_permalink($model->ID) . 'complectations' ?>" class="underlined underlined-black readmore">
+                                                        Цены
                                                     </a>
                                                 </div>
                                             </div>
