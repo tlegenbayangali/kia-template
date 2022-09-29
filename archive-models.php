@@ -141,7 +141,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                         <div class="bottom">
                                             <div class="model-row justify-content-end">
                                                 <div class="d-flex links">
-                                                    <?php if (get_field('starting_price', $model->ID)) : ?>
+                                                    <?php if (get_field('show_or_hide_price_models', $model->ID)) : ?>
                                                         <a href="<?= get_post_permalink($model->ID) . 'complectations' ?>" class="underlined underlined-black readmore">
                                                             Цены
                                                         </a>
