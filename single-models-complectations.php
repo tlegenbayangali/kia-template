@@ -9407,7 +9407,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div>
-                                                                    <?php if ($comfort['legkosplavnye_diski_16_s_shinami_195_45_r16']) : ?>
+                                                                    <?php if ($comfort['legkosplavnye_diski_17_s_shinami_21555r17']) : ?>
                                                                         <svg>
                                                                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
                                                                         </svg>
