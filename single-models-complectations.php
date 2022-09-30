@@ -5959,7 +5959,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div>
-                                                                    <?php if ($drive_options['sistema_distanczionnogo_upravleniya_parkovkoj_rspa-jx']) : ?>
+                                                                    <?php if ($drive_options['sistema_distanczionnogo_upravleniya_parkovkoj_rspa']) : ?>
                                                                         <svg>
                                                                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
                                                                         </svg>
