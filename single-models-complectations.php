@@ -3913,7 +3913,6 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div>
                                                                     <?php if ($exterior['svetodiodnaya_podsvetka_makiyazhnogo_zerkala_voditelya']) : ?>
-                                                                        <?php var_dump($exterior) ?>
                                                                         <svg>
                                                                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
                                                                         </svg>
