@@ -40,22 +40,22 @@ import jQuery from 'jquery';
                 e.stopPropagation();
             });
         }
-        if ($(window).width() < 1200) {
-            // BINDING HANDLER TO THE MODEL NAME ARROW BUTTON
-            $(headerModelName).on('click', function headerModelNameHandler(e) {
-                e.preventDefault();
-                $(this).toggleClass('opened');
-                $(modelMenuSub).toggleClass('opened');
-                e.stopPropagation();
-            });
-            // MOVING SUBMENU UP THE DOM TREE
-            $(modelMenuSub).appendTo(headerModelMenu);
-            // MOVING MAIN MENU ELEMENT TO THE SUB MENU
-            for (const liElement of headerModelMenuLi) {
-                $(liElement).prependTo(modelMenuSubUl);
-            }
-            $('.header-model-menu-main').addClass('d-none');
-        }
+        // if ($(window).width() < 1200) {
+        //     // BINDING HANDLER TO THE MODEL NAME ARROW BUTTON
+        //     $(headerModelName).on('click', function headerModelNameHandler(e) {
+        //         e.preventDefault();
+        //         $(this).toggleClass('opened');
+        //         $(modelMenuSub).toggleClass('opened');
+        //         e.stopPropagation();
+        //     });
+        //     // MOVING SUBMENU UP THE DOM TREE
+        //     $(modelMenuSub).appendTo(headerModelMenu);
+        //     // MOVING MAIN MENU ELEMENT TO THE SUB MENU
+        //     for (const liElement of headerModelMenuLi) {
+        //         $(liElement).prependTo(modelMenuSubUl);
+        //     }
+        //     $('.header-model-menu-main').addClass('d-none');
+        // }
         // SUB MENU LI A
         $('.header-model-menu-sub li a').addClass('underline');
         // SUB MENU
