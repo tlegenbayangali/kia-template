@@ -2695,6 +2695,62 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                         </div>
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
+                                                Интерьер с комбинированной отделкой искусственной кожей и тканью
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('interior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($exterior['interer_s_kombinirovannoj_otdelkoj_iskusstvennoj_kozhej_i_tkanyu']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Система складывания 2-ого ряда сидений 40/20/40
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('interior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($exterior['sistema_skladyvaniya_2-ogo_ryada_sidenij_402040']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
                                                 2 отдельных сиденья второго ряда с подлокотниками и поддержкой для ног
                                             </div>
                                             <div class="equip-config-section-item-carousel">
@@ -6061,6 +6117,34 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div>
                                                                     <?php if ($comfort['rozetka_220v_v_czentralnoj_konsoli']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Функция "Эскорт" (Задержка выключения фар при закрывании замков)
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $comfort = get_field('comfort_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($comfort['funkcziya_eskort_zaderzhka_vyklyucheniya_far_pri_zakryvanii_zamkov']) : ?>
                                                                         <svg>
                                                                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
                                                                         </svg>
