@@ -2679,7 +2679,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div>
-                                                                    <?php if ($exterior['3_otdelnyh_sidenya_vtorogo_ryada_semnye_s_vozmozhnostyu_ustanovki_protiv_hoda_dvizheniya']) : ?>
+                                                                    <?php if ($exterior['salonnoe_zerkalo_zadnego_vida_s_avtomaticheskim_zatemneniem']) : ?>
                                                                         <svg>
                                                                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
                                                                         </svg>
