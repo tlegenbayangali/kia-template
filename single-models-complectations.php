@@ -2679,7 +2679,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                             <!-- SWIPER ITEMS START-->
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div>
-                                                                    <?php if ($exterior['salonnoe_zerkalo_zadnego_vida_s_avtomaticheskim_zatemneniem']) : ?>
+                                                                    <?php if ($exterior['3_otdelnyh_sidenya_vtorogo_ryada_semnye_s_vozmozhnostyu_ustanovki_protiv_hoda_dvizheniya']) : ?>
                                                                         <svg>
                                                                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
                                                                         </svg>
@@ -10791,428 +10791,428 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                         </div>
                                 </section>
                             </div>
-                            <div class="equip-config not-bool">
-                                <!-- ONE SECTION -->
-                                <section class="equip-config-section">
-                                    <!-- MAIN TITLE-->
-                                    <h2 class="equip-config-section-title">
-                                        Цвета кузова
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
-                                        </svg>
-                                    </h2>
-                                    <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
-                                    <div class="equip-config-section-items">
-                                        <!-- ONE SECTION CAROUSEL ITEM-->
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $exterior_colors = get_field('exterior_colors', $post->ID); ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div class="model-colors">
-                                                                    <?php foreach ((array)$exterior_colors as $color) : ?>
-                                                                        <span class="model-colors-item" style="<?php if ($color['is_second_color']) : ?>background: linear-gradient(to bottom, <?= $color['color_hex'] ?> 50%, <?= $color['second_color'] ?> 50%)<?php else : ?>background: <?= $color['color_hex'] ?><?php endif; ?>">
-                                                                            <span class="model-colors-item-name">
-                                                                                <span class="model-colors-item-name-inner">
-                                                                                    <?= $color['color_name'] ?>
-                                                                                </span>
-                                                                            </span>
-                                                                        </span>
-                                                                    <?php endforeach; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="equip-config not-bool">
-                                <!-- ONE SECTION -->
-                                <section class="equip-config-section">
-                                    <!-- MAIN TITLE-->
-                                    <h2 class="equip-config-section-title">
-                                        Варианты интерьера
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
-                                        </svg>
-                                    </h2>
-                                    <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
-                                    <div class="equip-config-section-items">
-                                        <!-- ONE SECTION CAROUSEL ITEM-->
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $interior_variants = get_field('interior_variants', $post->ID); ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div class="model-colors">
-                                                                    <?php foreach ((array)$interior_variants as $color) : ?>
-                                                                        <?php if ($color) : ?>
-                                                                            <span class="model-colors-item" style="<?php if ($color['is_second_color']) : ?>background: linear-gradient(to bottom, <?= $color['color_hex'] ?> 50%, <?= $color['second_color'] ?> 50%)<?php else : ?>background: <?= $color['color_hex'] ?><?php endif; ?>">
-                                                                                <span class="model-colors-item-name">
-                                                                                    <span class="model-colors-item-name-inner">
-                                                                                        <?= $color['color_name'] ?>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </span>
-                                                                        <?php else : ?>
-                                                                            —
-                                                                        <?php endif; ?>
-                                                                    <?php endforeach; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="equip-config not-bool">
-                                <!-- ONE SECTION -->
-                                <section class="equip-config-section">
-                                    <!-- MAIN TITLE-->
-                                    <h2 class="equip-config-section-title">
-                                        Технические характеристики
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
-                                        </svg>
-                                    </h2>
-                                    <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
-                                    <div class="equip-config-section-items">
-                                        <!-- ONE SECTION CAROUSEL ITEM-->
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Двигатель
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $engine = $common_chars['engine']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($engine) : ?>
-                                                                        <?= $engine ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Мощность, л.с.
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $power = $common_chars['power']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($power) : ?>
-                                                                        <?= $power ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Крутящий момент, Н·м
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $rotate_moment = $common_chars['rotate_moment']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($rotate_moment) : ?>
-                                                                        <?= $rotate_moment ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Тип двигателя
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $engine_type = $common_chars['engine_type']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($engine_type) : ?>
-                                                                        <?= $engine_type ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Коробка передач
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $transmission = $common_chars['transmission']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($transmission) : ?>
-                                                                        <?= $transmission ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Привод
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $drive_wheels = $common_chars['drive_wheels']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($drive_wheels) : ?>
-                                                                        <?= $drive_wheels ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Время разгона 0-100 км/ч, с
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $zero_hundred = $common_chars['zero_hundred']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($zero_hundred) : ?>
-                                                                        <?= $zero_hundred ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Расход топлива комбинированный, л/100 км
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $consumption = $common_chars['consumption']; ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($consumption) : ?>
-                                                                        <?= $consumption ?>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="equip-config not-bool">
-                                <!-- ONE SECTION -->
-                                <section class="equip-config-section">
-                                    <!-- MAIN TITLE-->
-                                    <h2 class="equip-config-section-title">
-                                        Спецификация
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
-                                        </svg>
-                                    </h2>
-                                    <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
-                                    <div class="equip-config-section-items">
-                                        <!-- ONE SECTION CAROUSEL ITEM-->
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Код модели
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $model_code = get_field('model_code', $post->ID); ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($model_code) : ?>
-                                                                        <?= $model_code ?>
-                                                                    <?php else : ?>
-                                                                        —
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                OCN
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $ocn = get_field('ocn', $post->ID); ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($ocn) : ?>
-                                                                        <?= $ocn ?>
-                                                                    <?php else : ?>
-                                                                        —
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Год производства
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $production_year = get_field('production_year', $post->ID); ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($production_year) : ?>
-                                                                        <?= $production_year ?>
-                                                                    <?php else : ?>
-                                                                        —
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Модельный год
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $model_year = get_field('model_year', $post->ID); ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($model_year) : ?>
-                                                                        <?= $model_year ?>
-                                                                    <?php else : ?>
-                                                                        —
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
+                            <!-- <div class="equip-config not-bool"> -->
+                            <!-- ONE SECTION -->
+                            <!-- <section class="equip-config-section"> -->
+                            <!-- MAIN TITLE-->
+                            <!-- <h2 class="equip-config-section-title"> -->
+                            <!-- Цвета кузова -->
+                            <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class=""> -->
+                            <!-- <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path> -->
+                            <!-- </svg> -->
+                            <!-- </h2> -->
+                            <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
+                            <!-- <div class="equip-config-section-items"> -->
+                            <!-- ONE SECTION CAROUSEL ITEM-->
+                            <!-- <div class="equip-config-section-item"> -->
+                            <!-- <div class="equip-config-section-item-carousel"> -->
+                            <!-- SWIPER STARTS-->
+                            <!-- <div class="swiper-container equip-config-section-item-carousel-container"> -->
+                            <!-- <div class="swiper-wrapper equip-config-section-item-carousel-wrapper"> -->
+                            <!-- <//?//php foreach ($configs->posts as $post) : ?> -->
+                            <!-- <//?//php $exterior_colors = get_field('exterior_colors', $post->ID); ?> -->
+                            <!-- SWIPER ITEMS START-->
+                            <!-- <div class="swiper-slide equip-config-section-item-carousel-slide"> -->
+                            <!-- <div class="model-colors"> -->
+                            <!-- <//?//php foreach ((array)$exterior_colors as $color) : ?> -->
+                            <!-- <span class="model-colors-item" style="</?php if ($color['is_second_color']) : ?>background: linear-gradient(to bottom, </?= $color['color_hex'] ?> 50%, </?= $color['second_color'] ?> 50%)</?php else : ?>background: </?= $color['color_hex'] ?></?php endif; ?>"> -->
+                            <!-- <span class="model-colors-item-name"> -->
+                            <!-- <span class="model-colors-item-name-inner"> -->
+                            <!-- </?= $color['color_name'] ?> -->
+                            <!-- </span> -->
+                            <!-- </span> -->
+                            <!-- </span> -->
+                            <!-- </?php endforeach; ?> -->
+                            <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- </?php endforeach; ?> -->
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
             </div>
+            </section>
+        </div>
+        <div class="equip-config not-bool">
+            <!-- ONE SECTION -->
+            <section class="equip-config-section">
+                <!-- MAIN TITLE-->
+                <h2 class="equip-config-section-title">
+                    Варианты интерьера
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                        <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </h2>
+                <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
+                <div class="equip-config-section-items">
+                    <!-- ONE SECTION CAROUSEL ITEM-->
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $interior_variants = get_field('interior_variants', $post->ID); ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div class="model-colors">
+                                                <?php foreach ((array)$interior_variants as $color) : ?>
+                                                    <?php if ($color) : ?>
+                                                        <span class="model-colors-item" style="<?php if ($color['is_second_color']) : ?>background: linear-gradient(to bottom, <?= $color['color_hex'] ?> 50%, <?= $color['second_color'] ?> 50%)<?php else : ?>background: <?= $color['color_hex'] ?><?php endif; ?>">
+                                                            <span class="model-colors-item-name">
+                                                                <span class="model-colors-item-name-inner">
+                                                                    <?= $color['color_name'] ?>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    <?php else : ?>
+                                                        —
+                                                    <?php endif; ?>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="equip-config not-bool">
+            <!-- ONE SECTION -->
+            <section class="equip-config-section">
+                <!-- MAIN TITLE-->
+                <h2 class="equip-config-section-title">
+                    Технические характеристики
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                        <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </h2>
+                <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
+                <div class="equip-config-section-items">
+                    <!-- ONE SECTION CAROUSEL ITEM-->
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Двигатель
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $engine = $common_chars['engine']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($engine) : ?>
+                                                    <?= $engine ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Мощность, л.с.
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $power = $common_chars['power']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($power) : ?>
+                                                    <?= $power ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Крутящий момент, Н·м
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $rotate_moment = $common_chars['rotate_moment']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($rotate_moment) : ?>
+                                                    <?= $rotate_moment ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Тип двигателя
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $engine_type = $common_chars['engine_type']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($engine_type) : ?>
+                                                    <?= $engine_type ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Коробка передач
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $transmission = $common_chars['transmission']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($transmission) : ?>
+                                                    <?= $transmission ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Привод
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $drive_wheels = $common_chars['drive_wheels']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($drive_wheels) : ?>
+                                                    <?= $drive_wheels ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Время разгона 0-100 км/ч, с
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $zero_hundred = $common_chars['zero_hundred']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($zero_hundred) : ?>
+                                                    <?= $zero_hundred ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Расход топлива комбинированный, л/100 км
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $consumption = $common_chars['consumption']; ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($consumption) : ?>
+                                                    <?= $consumption ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="equip-config not-bool">
+            <!-- ONE SECTION -->
+            <section class="equip-config-section">
+                <!-- MAIN TITLE-->
+                <h2 class="equip-config-section-title">
+                    Спецификация
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                        <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
+                    </svg>
+                </h2>
+                <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
+                <div class="equip-config-section-items">
+                    <!-- ONE SECTION CAROUSEL ITEM-->
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Код модели
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $model_code = get_field('model_code', $post->ID); ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($model_code) : ?>
+                                                    <?= $model_code ?>
+                                                <?php else : ?>
+                                                    —
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            OCN
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $ocn = get_field('ocn', $post->ID); ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($ocn) : ?>
+                                                    <?= $ocn ?>
+                                                <?php else : ?>
+                                                    —
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Год производства
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $production_year = get_field('production_year', $post->ID); ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($production_year) : ?>
+                                                    <?= $production_year ?>
+                                                <?php else : ?>
+                                                    —
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equip-config-section-item">
+                        <div class="equip-config-section-item-header">
+                            Модельный год
+                        </div>
+                        <div class="equip-config-section-item-carousel">
+                            <!-- SWIPER STARTS-->
+                            <div class="swiper-container equip-config-section-item-carousel-container">
+                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                    <?php foreach ($configs->posts as $post) : ?>
+                                        <?php $model_year = get_field('model_year', $post->ID); ?>
+                                        <!-- SWIPER ITEMS START-->
+                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                            <div>
+                                                <?php if ($model_year) : ?>
+                                                    <?= $model_year ?>
+                                                <?php else : ?>
+                                                    —
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <?php get_footer(); ?>
