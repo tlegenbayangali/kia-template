@@ -11054,7 +11054,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config not-bool">
+                            <div class="equip-config not-bool d-none">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
