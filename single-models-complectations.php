@@ -689,6 +689,34 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                         </div>
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
+                                                Легкосплавные диски 16" с шинами 205/60 R16
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($exterior['legkosplavnye_diski_16_s_shinami_20560_r16']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
                                                 Легкосплавные диски 17" с шинами 215/55 R17
                                             </div>
                                             <div class="equip-config-section-item-carousel">
