@@ -10673,341 +10673,338 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="equip-config-section-items">
-                                            <!-- ONE SECTION CAROUSEL ITEM-->
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Мультимедиа с 12.3" цветным дисплеем, с поддержкой Android Auto и Apple Carplay и навигацией Navitel
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Мультимедиа с 12.3" цветным дисплеем, с поддержкой Android Auto и Apple Carplay и навигацией Navitel
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['multimedia_s_123_czvetnym_displeem_s_podderzhkoj_android_auto_i_apple_carplay_i_navigacziej_navitel']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['multimedia_s_123_czvetnym_displeem_s_podderzhkoj_android_auto_i_apple_carplay_i_navigacziej_navitel']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    4 динамика
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                4 динамика
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['4_dinamika']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['4_dinamika']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Управление аудиосистемой на руле
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Управление аудиосистемой на руле
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['upravlenie_audiosistemoj_na_rule']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['upravlenie_audiosistemoj_na_rule']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    6 динамиков
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                6 динамиков
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['6_dinamikov']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['6_dinamikov']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Аудиосистема с радио и USB входом
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Аудиосистема с радио и USB входом
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['audiosistema_s_radio_i_usb_vhodom']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['audiosistema_s_radio_i_usb_vhodom']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Мультимедийная система с 8'' дисплеем с поддержкой Android Auto и Apple Carplay
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Мультимедийная система с 8'' дисплеем с поддержкой Android Auto и Apple Carplay
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['multimedijnaya_sistema_s_8_displeem_s_podderzhkoj_android_auto_i_apple_carplay']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['multimedijnaya_sistema_s_8_displeem_s_podderzhkoj_android_auto_i_apple_carplay']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Навигационная система с 10.25" цветным дисплеем, с поддержкой пробок, Android Auto и Apple Carplay
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Навигационная система с 10.25" цветным дисплеем, с поддержкой пробок, Android Auto и Apple Carplay
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['navigaczionnaya_sistema_s_1025_czvetnym_displeem_s_podderzhkoj_probok_android_auto_i_apple_carplay']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['navigaczionnaya_sistema_s_1025_czvetnym_displeem_s_podderzhkoj_probok_android_auto_i_apple_carplay']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    USB-зарядка для пассажиров второго ряда
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                USB-зарядка для пассажиров второго ряда
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['usb-zaryadka_dlya_passazhirov_vtorogo_ryada']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['usb-zaryadka_dlya_passazhirov_vtorogo_ryada']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Bluetooth для подключения мобильного телефона
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Bluetooth для подключения мобильного телефона
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['bluetooth_dlya_podklyucheniya_mobilnogo_telefona']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['bluetooth_dlya_podklyucheniya_mobilnogo_telefona']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Аудиосистема BOSE с 12 динамиками, включая сабвуфер
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Аудиосистема BOSE с 12 динамиками, включая сабвуфер
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['audiosistema_bose_s_12_dinamikami_vklyuchaya_sabvufer']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['audiosistema_bose_s_12_dinamikami_vklyuchaya_sabvufer']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    2 USB разьема для зарядки мобильных устройств для пассажиров второго ряда
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                2 USB разьема для зарядки мобильных устройств для пассажиров второго ряда
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['2_usb_razema_dlya_zaryadki_mobilnyh_ustrojstv_dlya_passazhirov_vtorogo_ryada']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['2_usb_razema_dlya_zaryadki_mobilnyh_ustrojstv_dlya_passazhirov_vtorogo_ryada']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-header">
-                                                    Беспроводная зарядка мобильного телефона
-                                                </div>
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Беспроводная зарядка мобильного телефона
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
 
-                                                            <?php foreach ($configs->posts as $post) : ?>
-                                                                <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div>
-                                                                        <?php if ($multimedia['besprovodnaya_zaryadka_mobilnogo_telefona']) : ?>
-                                                                            <svg>
-                                                                                <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                            </svg>
-                                                                        <?php else : ?>
-                                                                            <span class="d-block"> — </span>
-                                                                        <?php endif; ?>
-                                                                    </div>
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $multimedia = get_field('multimedia_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($multimedia['besprovodnaya_zaryadka_mobilnogo_telefona']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
                                                                 </div>
-                                                            <?php endforeach; ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
                                                     </div>
                                                 </div>
                                             </div>
