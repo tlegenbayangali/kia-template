@@ -689,6 +689,34 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                         </div>
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
+                                                Легкосплавные диски 17" с шинами 215/55 R17
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $exterior = get_field('exterior_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($exterior['legkosplavnye_diski_17_s_shinami_21555r17']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
                                                 Легкосплавные диски 17", с шинами 225 / 45 R17
                                             </div>
                                             <div class="equip-config-section-item-carousel">
@@ -9604,34 +9632,6 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                             <div class="swiper-slide equip-config-section-item-carousel-slide">
                                                                 <div>
                                                                     <?php if ($comfort['legkosplavnye_diski_18_s_shinami_23545r18']) : ?>
-                                                                        <svg>
-                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                        </svg>
-                                                                    <?php else : ?>
-                                                                        <span class="d-block"> — </span>
-                                                                    <?php endif; ?>
-                                                                </div>
-                                                            </div>
-                                                        <?php endforeach; ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="equip-config-section-item">
-                                            <div class="equip-config-section-item-header">
-                                                Легкосплавные диски 17" с шинами 215/55R17
-                                            </div>
-                                            <div class="equip-config-section-item-carousel">
-                                                <!-- SWIPER STARTS-->
-                                                <div class="swiper-container equip-config-section-item-carousel-container">
-                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                        <?php foreach ($configs->posts as $post) : ?>
-                                                            <?php $comfort = get_field('gt_line_options', $post->ID); ?>
-                                                            <!-- SWIPER ITEMS START-->
-                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                <div>
-                                                                    <?php if ($comfort['legkosplavnye_diski_17_s_shinami_21555r17']) : ?>
                                                                         <svg>
                                                                             <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
                                                                         </svg>
