@@ -124,6 +124,7 @@ jQuery(($) => {
 
     $(selectorOptions).on('click', function filterCars() {
         $(this).parents('.dalacode-selector').find('.current span').text($.trim($(this).text()));
+        console.log($(this).parents('.dalacode-selector').find('.current span').text())
         // $(selectorInput).val(translit($.trim($(option).text())));
 
         const models = $(this).parents('.section').find('.model');
