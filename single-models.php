@@ -141,7 +141,7 @@ $current_post = get_post(); ?>
                         <div class="model-sections-variations">
                             <div class="model-sections-title-centered model-sections-title">
                                 <span class="model-sections-title-sub">
-                                    Комплектации ыы
+                                    Комплектации
                                 </span>
                                 <h3 class="model-sections-title-header">
                                     Варианты <?php the_title(); ?>
