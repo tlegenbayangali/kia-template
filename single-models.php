@@ -149,7 +149,11 @@ $current_post = get_post(); ?>
                             </div>
                             <div class="model-sections-variations-bottom">
                                 <div class="model-sections-variations-bottom-sub">
-                                    <?php echo count($configs->posts) . ' '; ?> доступных комплектаций
+                                    <?php if (count($configs->posts) < 5) : ?>
+                                        <?php echo count($configs->posts) . ' '; ?> доступные комплектации
+                                    <?php else: ?>
+                                        <?php echo count($configs->posts) . ' '; ?> доступных комплектаций
+                                    <?php endif; ?>
                                 </div>
                                 <!-- MORE BUTTON TO ANOTHER PAGE-->
                                 <a href="/models/<?= $current_model ?>/complectations/" class="model-sections-variations-bottom-more model-sections-desc-more underlined underlined-black">
