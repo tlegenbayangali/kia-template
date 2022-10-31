@@ -16,13 +16,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="row mt-20">
-					<div class="col-lg-6">
-						<p>
-							<?= get_field('short_description', get_the_ID()) ?>
-						</p>
+				<?php if (get_field('short_description', get_the_ID())) : ?>
+					<div class="row mt-20">
+						<div class="col-lg-6">
+							<p>
+								<?= get_field('short_description', get_the_ID()) ?>
+							</p>
+						</div>
 					</div>
-				</div>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>
