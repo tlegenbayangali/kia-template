@@ -145,6 +145,7 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
 }
 
 .callback-form-row {
+    width: 100%;
     .input-date[type="date"] {
         &::before {
             content: attr(placeholder);
