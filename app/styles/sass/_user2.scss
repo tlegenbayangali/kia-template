@@ -423,13 +423,11 @@
 }
 
 select {
-    border: none;
-    border-bottom: 1px solid $gray;
+    border: 1px solid $gray;
     width: inherit;
     padding: 5px 0;
     font-size: 14px;
     width: 100%;
-    appearance: none;
 
     option {
         font-family: 'KIA';
