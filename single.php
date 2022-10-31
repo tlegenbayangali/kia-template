@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="page">
-	<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
+	<?php get_template_part( 'template-parts/breadcrumbs_center' ); ?>
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-7">
