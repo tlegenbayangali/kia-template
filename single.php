@@ -15,7 +15,7 @@
 				</div>
 			</div>
 			<div class="col-lg-10">
-				<div class="post-image mt-20">
+				<div class="post-image mt-60">
 					<?php the_post_thumbnail( 'full' ); ?>
 				</div>
 			</div>
