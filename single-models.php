@@ -149,7 +149,8 @@ $current_post = get_post(); ?>
                             </div>
                             <div class="model-sections-variations-bottom">
                                 <div class="model-sections-variations-bottom-sub">
-                                    <?php echo count($configs->posts) . ' '; ?> доступных комплектаций
+                                    <?php echo count($configs->posts) . ' '; ?>
+                                    доступных комплектаций
                                 </div>
                                 <!-- MORE BUTTON TO ANOTHER PAGE-->
                                 <a href="/models/<?= $current_model ?>/complectations/" class="model-sections-variations-bottom-more model-sections-desc-more underlined underlined-black">
@@ -177,6 +178,11 @@ $current_post = get_post(); ?>
                                                     </div>
                                                     <div class="content">
                                                         <ul>
+                                                            <?php if (get_field('model_year')) : ?>
+                                                                <li>
+                                                                    <span>Год выпуска <?php echo get_field('model_year'); ?></span>
+                                                                </li>
+                                                            <?php endif; ?>
                                                             <li>
                                                                 <span class="content-header">Двигатель и трансмиссия</span>
                                                                 <p>
