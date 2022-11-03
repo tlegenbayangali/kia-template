@@ -11,18 +11,24 @@
 								<?php the_title(); ?> 
 							</h1>
 						</div>
-						<div class="post-image mt-20">
-							<?php the_post_thumbnail( 'full' ); ?>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-10">
+				<div class="post-image mt-60">
+					<?php the_post_thumbnail( 'full' ); ?>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<?php if (get_field('short_description', get_the_ID())) : ?>
+					<div class="row mt-20">
+						<div class="col-lg-6">
+							<p>
+								<?= get_field('short_description', get_the_ID()) ?>
+							</p>
 						</div>
 					</div>
-				</div>
-				<div class="row mt-20">
-					<div class="col-lg-6">
-						<p>
-							<?= get_field('short_description', get_the_ID()) ?>
-						</p>
-					</div>
-				</div>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>

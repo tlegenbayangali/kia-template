@@ -145,6 +145,7 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
 }
 
 .callback-form-row {
+    width: 100%;
     .input-date[type="date"] {
         &::before {
             content: attr(placeholder);
@@ -152,20 +153,16 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
     }
     .select-form {
         display: block;
-        border: none;
-        border-bottom: 1px solid #ccc;
-        padding: 5px 0;
+        border: 1px solid #ccc;
+        padding: 5px;
         font-size: 14px;
         color: #666;
         transition: .3s ease;
-        width: 290px;
 
         option {
             font-family: 'KIA';
             color: #666;
             background-color: white;
-            border: none;
-            outline: none;
             font-size: 14px;
         }
     }
@@ -178,10 +175,9 @@ button.arrow.arrow-prev.swiper-button-prev.swiper-button-slider-block.swiper-but
         font-size: 14px;
     }
     .textarea-form {
-        border: none;
-        border-bottom: 1px solid #ccc;
+        border: 1px solid #ccc;
         width: inherit;
-        padding: 5px 0;
+        padding: 10px;
         font-size: 14px;
         width: 100%;
     }

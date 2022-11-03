@@ -339,7 +339,7 @@
     &-input,
     &-textarea {
         position: relative;
-        width: 290px;
+        width: 100%;
 
         span.after {
             width: 0;
@@ -423,14 +423,11 @@
 }
 
 select {
-    border: none;
-    border-bottom: 1px solid $gray;
+    border: 1px solid $gray;
     width: inherit;
     padding: 5px 0;
     font-size: 14px;
     width: 100%;
-    width: 290px;
-    appearance: none;
 
     option {
         font-family: 'KIA';
