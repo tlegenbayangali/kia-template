@@ -95,7 +95,11 @@ $current_post = get_post(); ?>
                                             $current_model_colors = get_field('body_colors');
                                             ?>
                                             <?php foreach ($current_model_colors as $color) : ?>
-                                                <span data-text="<?= $color['body_color_name'] ?>" data-src="<?= $color['body_color_image'] ?>" class="color-list-item" data-color="<?= $color['body_colors_group']['body_colors_first'] ?>" style="background: <?= $color['body_colors_group']['body_colors_first'] ?>;"></span>
+                                                <?php if ($color['two_colors']) : ?>
+                                                    <span data-text="<?= $color['body_color_name'] ?>" data-src="<?= $color['body_color_image'] ?>" class="color-list-item" data-color="<?= $color['body_colors_group']['body_colors_first'] ?>" style="background-image: linear-gradient(180deg, <?= $color['body_colors_group']['body_colors_first'] ?> 50%, <?= $color['body_colors_group']['body_colors_second'] ?> 50%);"></span>
+                                                <?php else : ?>
+                                                    <span data-text="<?= $color['body_color_name'] ?>" data-src="<?= $color['body_color_image'] ?>" class="color-list-item" data-color="<?= $color['body_colors_group']['body_colors_first'] ?>" style="background:<?= $color['body_colors_group']['body_colors_first'] ?>;"></span>
+                                                <?php endif; ?>
                                             <?php endforeach; ?>
                                         </div>
                                     </div>
@@ -115,7 +119,14 @@ $current_post = get_post(); ?>
                                             <!-- COLORS LIST INTERIOR-->
                                             <div class="color-list">
                                                 <?php foreach ((array)$current_model_interiors as $interior) : ?>
-                                                    <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background: <?= $interior['interior_color_rgb'] ?>"></span>
+
+                                                    <?php if ($interior['interior_two_colors']) : ?>
+                                                        <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background-image: 
+                                                        linear-gradient(180deg, <?= $interior['interior_colors_group']['interior_colors_group_first'] ?> 50%, 
+                                                        <?= $interior['interior_colors_group']['interior_colors_group_two'] ?> 50%);"></span>
+                                                    <?php else : ?>
+                                                        <span id="model-sections-colors-interior-0" data-color="<?= $interior['interior_color_rgb'] ?>" data-text="<?= $interior['interior_color_name'] ?>" class="color-list-item" style="background: <?= $interior['interior_color_rgb'] ?>"></span>
+                                                    <?php endif; ?>
                                                 <?php endforeach; ?>
                                             </div>
                                         <?php endif; ?>
