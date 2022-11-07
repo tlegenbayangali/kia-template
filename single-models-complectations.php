@@ -6274,6 +6274,64 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--  -->
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Раздельный климат-контроль для водителя и переднего пассажира
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $comfort = get_field('comfort_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($comfort['razdelnyj_klimat-kontrol_dlya_voditelya_i_perednego_passazhira']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="equip-config-section-item">
+                                            <div class="equip-config-section-item-header">
+                                                Климат-контроль для второго ряда сидений
+                                            </div>
+                                            <div class="equip-config-section-item-carousel">
+                                                <!-- SWIPER STARTS-->
+                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+
+                                                        <?php foreach ($configs->posts as $post) : ?>
+                                                            <?php $comfort = get_field('comfort_options', $post->ID); ?>
+                                                            <!-- SWIPER ITEMS START-->
+                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                <div>
+                                                                    <?php if ($comfort['klimat-kontrol_dlya_vtorogo_ryada_sidenij']) : ?>
+                                                                        <svg>
+                                                                            <use xlink:href="<?php echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                        </svg>
+                                                                    <?php else : ?>
+                                                                        <span class="d-block"> — </span>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
                                         <div class="equip-config-section-item">
                                             <div class="equip-config-section-item-header">
                                                 Система выбора режима вождения (Drive Mode Select)
