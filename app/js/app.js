@@ -138,3 +138,9 @@ if ($("#offer-form").length) {
     formOfferName.val(offerName);
   }, 5000);
 }
+
+
+
+$('#single-model-car-button').on('click', () => {
+  $('.header-single-model-mobile').toggleClass('open')
+})

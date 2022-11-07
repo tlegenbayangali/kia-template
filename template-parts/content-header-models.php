@@ -72,7 +72,7 @@
                         $offers_cars = new WP_Query($arguments);
                         ?>
                         <div class="header-model-menu d-flex align-items-center">
-                            <ul class="header-model-menu-main d-flex">
+                            <ul class="header-model-menu-main d-none d-xl-flex">
                                 <li>
                                     <a class="underlined underlined-white" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name; ?>/">
                                         Обзор
@@ -142,9 +142,44 @@
                                     </div>
                                 </li> -->
                             </ul>
-                            <!-- <a class="underlined underlined-white d-block conf" href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/config'; ?>">
-                                Конфигуратор
-                            </a> -->
+                            <button id="single-model-car-button" type="button" class="d-flex d-xl-none align-items-center justify-content-center">
+                                <svg class="d-block">
+                                    <use xlink:href="<?= get_template_directory_uri() ?>/dist/images/dist/sprite.svg#dots"></use>
+                                </svg>
+                            </button>
+                            <nav class="header-single-model-mobile">
+                                <ul class="header-model-menu-main-mobile">
+                                    <li>
+                                        <a class="underlined " href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name; ?>/">
+                                            Обзор
+                                        </a>
+                                    </li>
+                                    <?php if (get_field('show_complectations')) : ?>
+                                        <li>
+                                            <a class=" " href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/complectations/'; ?>">
+                                                Комплектации и цены
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class=" " href="<?php echo get_home_url(null, '/models') . '/' . $args['parent_post']->post_name . '/characteristics/'; ?>">
+                                                Характеристики
+                                            </a>
+                                        </li>
+                                    <?php endif; ?>
+                                    <li>
+                                        <a class=" " href="/callback?current_model=<?= $args['parent_post']->post_name ?>">
+                                            Заявка дилеру
+                                        </a>
+                                    </li>
+                                    <?php if (get_field('brochure', $parent_post_id)) : ?>
+                                        <li>
+                                            <a class=" " href="<?= get_field('brochure', $parent_post_id)['url'] ?>"">
+                                            Брошюра
+                                        </a>
+                                    </li>
+                                <?php endif; ?>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
