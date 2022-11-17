@@ -559,8 +559,8 @@ endif; ?>
         <div class="row">
             <div class="col-lg-12 callback-col d-flex justify-content-center">
                 <div class="callback-form">
-                    <h5 class="mb-2">Закажите звонок</h5>
-                    <p class="mb-2">Поля, отмеченные *, обязательны для заполнения</p>
+                    <h5 class="mb-2">Обратная связь</h5>
+                    <!--<p class="mb-2">Поля, отмеченные *, обязательны для заполнения</p>-->
                     <?php if (get_field('foreign_form', 'options')) : ?>
                         <?= get_field('foreign_form', 'options') ?>
                     <?php else : ?>
