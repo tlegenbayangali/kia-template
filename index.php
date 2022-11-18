@@ -560,7 +560,7 @@ endif; ?>
             <div class="col-lg-12 callback-col d-flex justify-content-center">
                 <div class="callback-form">
                     <h5 class="mb-2">Обратная связь</h5>
-                    <!--<p class="mb-2">Поля, отмеченные *, обязательны для заполнения</p>-->
+                    <p class="mb-2">Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.</p>
                     <?php if (get_field('foreign_form', 'options')) : ?>
                         <?= get_field('foreign_form', 'options') ?>
                     <?php else : ?>
