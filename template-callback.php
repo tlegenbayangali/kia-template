@@ -33,7 +33,7 @@ if (isset($_GET['current_model'])) {
             <div class="row justify-content-center">
                 <div class="col-12 col-md-7 callback-col">
                     <div class="callback-form">
-                        <h5 class="mb-2">Обратная связь</h5>
+                        <!-- <h5 class="mb-2">Обратная связь</h5> -->
                         <p class="mb-2">Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.</p>
                         <?php if (get_field('foreign_form', 'options')) : ?>
                             <?= get_field('foreign_form', 'options') ?>
