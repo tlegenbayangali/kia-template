@@ -117,7 +117,7 @@
 					<div class="footer-btn d-flex justify-content-center align-items-center col-lg-3">
 						<div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
 							<a href="<?= get_site_url() ?>/callback/" class="btn btn-black btn-lg">
-								Заказать звонок
+								Обратная связь
 							</a>
 						</div>
 					</div>
