@@ -15,7 +15,7 @@
                             </span>
                         </a>
                     <?php endif; ?>
-                    <p class="c-disabled mt-10">
+                    <p class="c-disabled mt-10 hidden">
                         <?php
                         $now = new DateTime('Asia/Oral');
 
