@@ -47,12 +47,12 @@ get_header(); ?>
                                 ?>
                                 <?php if ($date_start && $date_end) : ?>
                                     <?php if ($date_start < $date_end) : ?>
-                                        <?php if ($duration->d == 0 || $duration->d >= 5) : ?>
-                                            <?= $duration->d ?> дней
-                                        <?php elseif ($duration->d == 1) : ?>
-                                            <?= $duration->d ?> день
-                                        <?php elseif ($duration->d >= 2 && $duration->d <= 4) : ?>
-                                            <?= $duration->d ?> дня
+                                        <?php if ($duration->days == 0 || $duration->days >= 5) : ?>
+                                            <?= $duration->days ?> дней
+                                        <?php elseif ($duration->days == 1) : ?>
+                                            <?= $duration->days ?> день
+                                        <?php elseif ($duration->days >= 2 && $duration->days <= 4) : ?>
+                                            <?= $duration->days ?> дня
                                         <?php endif; ?>
                                     <?php else : ?>
                                         Дата начала позднее даты окончания
@@ -67,12 +67,12 @@ get_header(); ?>
                                 <span class="d-block mb-10">До завершения</span>
                                 <span class="lg d-block">
                                     <?php if ($now <= $date_end) : ?>
-                                        <?php if ($left->d == 0 || $left->d >= 5) : ?>
-                                            <?= $left->d ?> дней
-                                        <?php elseif ($left->d == 1) : ?>
-                                            <?= $left->d ?> день
-                                        <?php elseif ($left->d >= 2 && $left->d <= 4) : ?>
-                                            <?= $left->d ?> дня
+                                        <?php if ($left->days == 0 || $left->days >= 5) : ?>
+                                            <?= $left->days ?> дней
+                                        <?php elseif ($left->days == 1) : ?>
+                                            <?= $left->days ?> день
+                                        <?php elseif ($left->days >= 2 && $left->days <= 4) : ?>
+                                            <?= $left->days ?> дня
                                         <?php endif; ?>
                                     <?php else : ?>
                                         Завершено

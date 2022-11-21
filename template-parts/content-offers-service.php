@@ -15,13 +15,14 @@
                             </span>
                         </a>
                     <?php endif; ?>
-                    <p class="c-disabled mt-10 hidden">
+                    <p class="c-disabled mt-10">
                         <?php
                         $now = new DateTime('Asia/Oral');
 
                         $period = get_field('period', get_the_ID());
                         $date_start = DateTime::createFromFormat('Y-m-d', $period['period_start']);
                         $date_end = DateTime::createFromFormat('Y-m-d', $period['period_end']);
+
                         if ($date_start && $date_end) {
                             $duration = $date_end->diff($date_start);
                             $left = $date_end->diff($now);
@@ -30,12 +31,12 @@
                         <?php if ($date_start && $date_end) : ?>
                             <?php if ($now >= $date_start && $now <= $date_end) : ?>
                                 Осталось:
-                                <?php if ($left->d == 0 || $left->d >= 5) : ?>
-                                    <?= $left->d ?> дней
-                                <?php elseif ($left->d == 1) : ?>
-                                    <?= $left->d ?> день
-                                <?php elseif ($left->d >= 2 && $left->d <= 4) : ?>
-                                    <?= $left->d ?> дня
+                                <?php if ($left->days == 0 || $left->days >= 5) : ?>
+                                    <?= $left->days ?> дней
+                                <?php elseif ($left->days == 1) : ?>
+                                    <?= $left->days ?> день
+                                <?php elseif ($left->days >= 2 && $left->days <= 4) : ?>
+                                    <?= $left->days ?> дня
                                 <?php endif; ?>
                             <?php elseif ($now < $date_start) : ?>
                                 Начало акции: <?= $date_start->format('d.m.Y') ?>
