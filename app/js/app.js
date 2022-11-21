@@ -72,7 +72,7 @@ if (cfForm.length) {
         <div class="mt-40 mb-40">
             <span class="fz-25 fw-700">Ваша заявка успешно отправлена!</span>
             <p class="mt-20">Сотрудник дилерского центра Kia свяжется с Вами в ближайшее время.</p>
-            <a href="/" class="btn-wrapper btn-wrapper-lg btn-wrapper-black">На главную</a>
+            <a href="/" class="mt-30 d-block">На главную</a>
         </div>
         `);
     $(this).parents('.callback-form').remove();
