@@ -17,7 +17,7 @@ if (isset($_GET['current_model'])) {
     <div class="row">
         <div class="col-lg-12">
             <h1 class="fz-35">
-                Обратный звонок
+                Обратная связь
             </h1>
         </div>
     </div>

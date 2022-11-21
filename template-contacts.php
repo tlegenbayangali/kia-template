@@ -29,7 +29,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
                     the_field('site_description', 'options'); ?>
                 </p>
                 <div class="mt-20 btn-wrapper btn-wrapper-lg btn-wrapper-black">
-                    <a href="/callback/" class="btn">Обратный звонок</a>
+                    <a href="/callback/" class="btn">Обратная связь</a>
                 </div>
                 <hr>
                 <div class="row">

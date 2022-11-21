@@ -1,233 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><!--#echo var="title" --></title>
-    <link rel="stylesheet" href="css/style.min.css">
-	<link rel="icon" type="image/png" href="images/dist/favicon32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/dist/favicon16x16.png" sizes="16x16">
-</head>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/dist/favicon32x32.png"
+      sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/dist/favicon16x16.png"
+      sizes="16x16" />
+  </head>
 
-<body class="is-loading">
-    <div class="loader">
-
+  <body class="is-loading">
+    <div class="loader"></div>
+    <div class="main-section">
+      <!-- MAIN SECTION-->
+      <!--HEADER SECTION-->
+      <header class="header" id="header">
+        <div class="header-top pos-r">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="header-top-inner d-flex justify-content-between align-items-center">
+                  <div class="left d-flex align-items-center">
+                    <svg class="left-icon d-block">
+                      <use
+                        xlink:href="images/dist/sprite.svg#kia-header-logo"></use>
+                    </svg>
+                    <a href="/" class="left-text pos-r">
+                      Урал Кров Авто
+                      <div class="bottom">Официальный дилер KIA</div>
+                    </a>
+                  </div>
+                  <a href="#" class="hamburger d-xl-none d-block">
+                    <div class="hamburger-inner">
+                      <span class="d-block hamburger-stick top"></span>
+                      <span class="d-block hamburger-stick bottom"></span>
+                    </div>
+                  </a>
+                  <div class="right">
+                    <div class="right-adress">
+                      г. Уральск, ул. Шолохова, 15А
+                    </div>
+                    <a href="" class="right-number pos-r d-block">
+                      +7 (777) 123-45-67
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom pos-r">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- MAIN MENU-->
+                <div class="menu">
+                  <div class="menu-wrapper">
+                    <ul class="">
+                      <!-- MAIN LI ITEM-->
+                      <li class="m_menu-item">
+                        <!-- LI ITEM'S LINK-->
+                        <a href="/models.html">Модели</a>
+                      </li>
+                      <!-- MAIN LI ITEM-->
+                      <li class="m_menu-item">
+                        <!-- LI ITEM'S LINK-->
+                        <a href="/models-available.html">Авто в наличии</a>
+                      </li>
+                      <li>
+                        <a href="cars.html">Авто с пробегом</a>
+                      </li>
+                      <li class="m_menu-item">
+                        <a href="#">Спецпредложения</a>
+                        <!-- LI ITEM'S MEGA MENU STARTS(WILL BE SIDEBAR)-->
+                        <div class="m_menu-item-container-wr">
+                          <!-- LI ITEM'S MEGA MENU CONTAINER-->
+                          <div class="m_menu-item-container">
+                            <!-- <div class="m_menu-item-title">Модели</div> -->
+                            <!-- MEGA MENU ITEM __> (LINKS WIDJET) -->
+                            <div class="m_menu-item-links-wr">
+                              <div
+                                class="m_menu-item-links d-flex justify-content-between">
+                                <div class="m_menu-item-links-inn">
+                                  <!-- LINKS WIDJET'S ITEM -->
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Отдел сервиса</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Отдел продаж</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="m_menu-item">
+                        <a href="#">Покупателям</a>
+                        <!-- LI ITEM'S MEGA MENU STARTS(WILL BE SIDEBAR)-->
+                        <div class="m_menu-item-container-wr">
+                          <!-- LI ITEM'S MEGA MENU CONTAINER-->
+                          <div class="m_menu-item-container d-flex flex-column">
+                            <!-- MEGA MENU ITEM __> (LINKS WIDJET) -->
+                            <div class="m_menu-item-links-wr">
+                              <div
+                                class="m_menu-item-links d-flex justify-content-between">
+                                <div class="m_menu-item-links-inn">
+                                  <!-- LINKS WIDJET'S ITEM -->
+                                  <div class="m_menu-item-link">
+                                    <a href="/test-drive.html"
+                                      >Запись на тест-Драйв</a
+                                    >
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Рассчитать кредит</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Все спецпредложения</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Каталог новых авто</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Каталог авто с пробегом</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Корпаративный автомобиль</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="#">Корпоративные продажи</a>
+                                  </div>
+                                </div>
+                                <div class="m_menu-item-link-banner">
+                                  <a href="#" class="#">
+                                    <div
+                                      class="top"
+                                      style="
+                                        background: url(/images/dist/mega-menu/link-image.jpeg)
+                                          no-repeat center center/cover;
+                                      "></div>
+                                    <div class="bottom">Авто в наличии</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- MEGA MENU ITEM __> (BANNERS WIDJET) -->
+                            <div class="m_menu-item-banners">
+                              <a
+                                href=""
+                                class="m_menu-item-banners-item"
+                                data-image-url="/images/dist/mega-menu/quick-link-image-1.jpeg"
+                                style="
+                                  background-image: url(/images/dist/mega-menu/quick-link-image-1.jpeg);
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                  background-size: cover;
+                                ">
+                                Тест-Драйв
+                              </a>
+                              <a
+                                href=""
+                                class="m_menu-item-banners-item"
+                                data-image-url="/images/dist/mega-menu/quick-link-image-2.jpeg"
+                                style="
+                                  background-image: url(/images/dist/mega-menu/quick-link-image-2.jpeg);
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                  background-size: cover;
+                                ">
+                                Спецпредложения
+                              </a>
+                              <a
+                                href=""
+                                class="m_menu-item-banners-item"
+                                data-image-url="/images/dist/mega-menu/quick-link-image-3.jpeg"
+                                style="
+                                  background-image: url(/images/dist/mega-menu/quick-link-image-3.jpeg);
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                  background-size: cover;
+                                ">
+                                Расчет кредита
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="m_menu-item">
+                        <a href="#">Владельцам</a>
+                        <!-- LI ITEM'S MEGA MENU STARTS(WILL BE SIDEBAR)-->
+                        <div class="m_menu-item-container-wr">
+                          <!-- LI ITEM'S MEGA MENU CONTAINER-->
+                          <div class="m_menu-item-container d-flex flex-column">
+                            <!-- MEGA MENU ITEM __> (LINKS WIDJET) -->
+                            <div class="m_menu-item-links-wr">
+                              <div
+                                class="m_menu-item-links d-flex justify-content-between">
+                                <div class="m_menu-item-links-inn">
+                                  <!-- LINKS WIDJET'S ITEM -->
+                                  <div class="m_menu-item-link">
+                                    <a href="">Запись на сервис</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="">Руководства по эксплуатации</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="">Сервисные инспекции</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="">Автомобиль на время ремонта</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="">Бонусная программа</a>
+                                  </div>
+                                  <div class="m_menu-item-link">
+                                    <a href="">Спецпредложения</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- MEGA MENU ITEM __> (BANNERS WIDJET) -->
+                            <div class="m_menu-item-banners">
+                              <a
+                                href=""
+                                class="m_menu-item-banners-item"
+                                data-image-url="/images/dist/mega-menu/quick-link-image-1.jpeg"
+                                style="
+                                  background-image: url(/images/dist/mega-menu/quick-link-image-1.jpeg);
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                  background-size: cover;
+                                ">
+                                Запись на сервис
+                              </a>
+                              <a
+                                href=""
+                                class="m_menu-item-banners-item"
+                                data-image-url="/images/dist/mega-menu/quick-link-image-2.jpeg"
+                                style="
+                                  background-image: url(/images/dist/mega-menu/quick-link-image-2.jpeg);
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                  background-size: cover;
+                                ">
+                                Обратная связь
+                              </a>
+                              <a
+                                href=""
+                                class="m_menu-item-banners-item"
+                                data-image-url="/images/dist/mega-menu/quick-link-image-3.jpeg"
+                                style="
+                                  background-image: url(/images/dist/mega-menu/quick-link-image-3.jpeg);
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                  background-size: cover;
+                                ">
+                                Спецпредложения
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">О Дилере</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
-    <div class="main-section"> 
-        <!-- MAIN SECTION-->
-        <!--HEADER SECTION-->
-        <header class="header" id="header">
-            <div class="header-top pos-r">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="header-top-inner d-flex justify-content-between align-items-center">
-                                <div class="left d-flex align-items-center">
-                                    <svg class="left-icon d-block">
-                                        <use xlink:href="images/dist/sprite.svg#kia-header-logo"></use>
-                                    </svg>
-                                    <a href="/" class="left-text pos-r">
-                                        Урал Кров Авто
-                                        <div class="bottom">
-                                            Официальный дилер KIA
-                                        </div>
-                                    </a>
-                                </div>
-                                <a href="#" class="hamburger d-xl-none d-block">
-                                    <div class="hamburger-inner">
-                                        <span class="d-block hamburger-stick top"></span>
-                                        <span class="d-block hamburger-stick bottom"></span>
-                                    </div>
-                                </a>
-                                <div class="right">
-                                    <div class="right-adress">
-                                        г. Уральск, ул. Шолохова, 15А
-                                    </div>
-                                    <a href="" class="right-number pos-r d-block">
-                                        +7 (777) 123-45-67
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-bottom pos-r">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!-- MAIN MENU-->
-                            <div class="menu">
-                                <div class="menu-wrapper">
-                                    <ul class="">
-                                        <!-- MAIN LI ITEM-->
-                                        <li class="m_menu-item">
-                                            <!-- LI ITEM'S LINK-->
-                                            <a href="/models.html">Модели</a>
-                                        </li>
-                                        <!-- MAIN LI ITEM-->
-                                        <li class="m_menu-item">
-                                            <!-- LI ITEM'S LINK-->
-                                            <a href="/models-available.html">Авто в наличии</a>
-                                        </li>
-                                        <li>
-                                            <a href="cars.html">Авто с пробегом</a>
-                                        </li>
-                                        <li class="m_menu-item">
-                                            <a href="#">Спецпредложения</a>
-                                            <!-- LI ITEM'S MEGA MENU STARTS(WILL BE SIDEBAR)-->
-                                            <div class="m_menu-item-container-wr">
-                                                <!-- LI ITEM'S MEGA MENU CONTAINER-->
-                                                <div class="m_menu-item-container">
-                                                    <!-- <div class="m_menu-item-title">Модели</div> -->
-                                                    <!-- MEGA MENU ITEM __> (LINKS WIDJET) -->
-                                                    <div class="m_menu-item-links-wr">
-                                                        <div class="m_menu-item-links d-flex justify-content-between">
-                                                            <div class="m_menu-item-links-inn">
-                                                                <!-- LINKS WIDJET'S ITEM -->
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Отдел сервиса</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Отдел продаж</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="m_menu-item">
-                                            <a href="#">Покупателям</a>
-                                            <!-- LI ITEM'S MEGA MENU STARTS(WILL BE SIDEBAR)-->
-                                            <div class="m_menu-item-container-wr">
-                                                <!-- LI ITEM'S MEGA MENU CONTAINER-->
-                                                <div class="m_menu-item-container d-flex flex-column">
-                                                    <!-- MEGA MENU ITEM __> (LINKS WIDJET) -->
-                                                    <div class="m_menu-item-links-wr">
-                                                        <div class="m_menu-item-links d-flex justify-content-between">
-                                                            <div class="m_menu-item-links-inn">
-                                                                <!-- LINKS WIDJET'S ITEM -->
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="/test-drive.html">Запись на тест-Драйв</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Рассчитать кредит</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Все спецпредложения</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Каталог новых авто</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Каталог авто с пробегом</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Корпаративный автомобиль</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="#">Корпоративные продажи</a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="m_menu-item-link-banner">
-                                                                <a href="#" class="#">
-                                                                    <div class="top"
-                                                                        style="background: url(/images/dist/mega-menu/link-image.jpeg) no-repeat center center/cover;">
-                                                                    </div>
-                                                                    <div class="bottom">
-                                                                        Авто в наличии
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- MEGA MENU ITEM __> (BANNERS WIDJET) -->
-                                                    <div class="m_menu-item-banners">
-                                                        <a href="" class="m_menu-item-banners-item" data-image-url = "/images/dist/mega-menu/quick-link-image-1.jpeg"
-                                                            style="background-image: url(/images/dist/mega-menu/quick-link-image-1.jpeg);
-                                                        background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                                            Тест-Драйв
-                                                        </a>
-                                                        <a href="" class="m_menu-item-banners-item" data-image-url = "/images/dist/mega-menu/quick-link-image-2.jpeg"
-                                                            style="background-image: url(/images/dist/mega-menu/quick-link-image-2.jpeg);
-                                                        background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                                            Спецпредложения
-                                                        </a>
-                                                        <a href="" class="m_menu-item-banners-item" data-image-url = "/images/dist/mega-menu/quick-link-image-3.jpeg"
-                                                            style="background-image: url(/images/dist/mega-menu/quick-link-image-3.jpeg);
-                                                        background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                                            Расчет кредита
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="m_menu-item">
-                                            <a href="#">Владельцам</a>
-                                            <!-- LI ITEM'S MEGA MENU STARTS(WILL BE SIDEBAR)-->
-                                            <div class="m_menu-item-container-wr">
-                                                <!-- LI ITEM'S MEGA MENU CONTAINER-->
-                                                <div class="m_menu-item-container d-flex flex-column">
-                                                    <!-- MEGA MENU ITEM __> (LINKS WIDJET) -->
-                                                    <div class="m_menu-item-links-wr">
-                                                        <div class="m_menu-item-links d-flex justify-content-between">
-                                                            <div class="m_menu-item-links-inn">
-                                                                <!-- LINKS WIDJET'S ITEM -->
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="">Запись на сервис</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="">Руководства по эксплуатации</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="">Сервисные инспекции</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="">Автомобиль на время ремонта</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="">Бонусная программа</a>
-                                                                </div>
-                                                                <div class="m_menu-item-link">
-                                                                    <a href="">Спецпредложения</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- MEGA MENU ITEM __> (BANNERS WIDJET) -->
-                                                    <div class="m_menu-item-banners">
-                                                        <a href="" class="m_menu-item-banners-item" data-image-url = "/images/dist/mega-menu/quick-link-image-1.jpeg"
-                                                            style="background-image: url(/images/dist/mega-menu/quick-link-image-1.jpeg);
-                                                        background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                                            Запись на сервис
-                                                        </a>
-                                                        <a href="" class="m_menu-item-banners-item" data-image-url = "/images/dist/mega-menu/quick-link-image-2.jpeg"
-                                                            style="background-image: url(/images/dist/mega-menu/quick-link-image-2.jpeg);
-                                                        background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                                            Обратный звонок
-                                                        </a>
-                                                        <a href="" class="m_menu-item-banners-item" data-image-url = "/images/dist/mega-menu/quick-link-image-3.jpeg"
-                                                            style="background-image: url(/images/dist/mega-menu/quick-link-image-3.jpeg);
-                                                        background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                                            Спецпредложения
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <a href="#">О Дилере</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Контакты</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+  </body>
+</html>
