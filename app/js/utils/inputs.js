@@ -19,7 +19,11 @@ $(() => {
   });
 
   $('#form-model').dalacodeInput({
-    required: true,
+    required: false,
+    limits: {
+      minimum: 2,
+      maximum: 20,
+    },
   });
 
   $('#form-year').dalacodeInput({
