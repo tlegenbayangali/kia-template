@@ -131,7 +131,10 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                                     </a>
                                                     <div class="equip-variants-slide-desc">
                                                         <span class="d-block equip-variants-slide-param">
-                                                            <?php echo get_field('model_year'); ?> года выпуска
+                                                            <?php echo get_field('model_year'); ?> модельный год
+                                                        </span>
+                                                        <span class="d-block equip-variants-slide-param">
+                                                            <?php echo get_field('production_year'); ?> года выпуска
                                                         </span>
                                                         <span class="d-block equip-variants-slide-param">
                                                             <?php $common_chars = get_field('common_chars', $current_post_ID); ?>
