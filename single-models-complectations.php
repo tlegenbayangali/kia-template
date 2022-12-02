@@ -181,7 +181,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                         <!-- TOP PADDING-->
                         <div class="equip-header-top-padding" data-height="">
                         </div>
-                        <div class="equip-content-inner d-none">
+                        <div class="equip-content-inner">
                             <div class="equip-config not-bool">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
@@ -216,7 +216,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -652,7 +652,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -2713,7 +2713,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -4973,7 +4973,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -5746,7 +5746,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -6321,7 +6321,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -9559,7 +9559,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -10501,7 +10501,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -10685,7 +10685,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -10870,7 +10870,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config">
+                            <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -11305,7 +11305,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                         </div>
                                 </section>
                             </div>
-                            <div class="equip-config not-bool" style="display:none">
+                            <div class="d-none equip-config not-bool" style="display:none">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -11347,7 +11347,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config not-bool d-none">
+                            <div class="d-none equip-config not-bool d-none">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -11394,7 +11394,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config not-bool">
+                            <div class="d-none equip-config not-bool">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
@@ -11602,7 +11602,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
-                            <div class="equip-config not-bool">
+                            <div class="d-none equip-config not-bool">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
                                     <!-- MAIN TITLE-->
