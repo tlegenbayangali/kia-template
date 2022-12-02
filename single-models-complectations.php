@@ -216,6 +216,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                                     </div>
                                 </section>
                             </div>
+                            <div class="sorry-message mt-30">Подробное описание всех опций будет доступно в ближайшее время...</div>
                             <div class="d-none equip-config">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
