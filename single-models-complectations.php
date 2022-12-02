@@ -181,7 +181,7 @@ $GLOBALS['model_min_price'] = $model_min_price;
                         <!-- TOP PADDING-->
                         <div class="equip-header-top-padding" data-height="">
                         </div>
-                        <div class="equip-content-inner">
+                        <div class="equip-content-inner d-none">
                             <div class="equip-config not-bool">
                                 <!-- ONE SECTION -->
                                 <section class="equip-config-section">
