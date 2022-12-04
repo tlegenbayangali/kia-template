@@ -139,46 +139,32 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                     <div class="equip-variants-container swiper-container">
                                         <div class="equip-variants-wrapper swiper-wrapper">
                                             <?php
-                                            foreach ($configs->posts as $post) {
-                                                $current_post_ID = $post->ID; ?>
+                                            $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_details.json')) ?>
+                                            <?php
+                                            foreach ($configs as $config) : ?>
                                                 <div class="equip-variants-slide swiper-slide d-flex flex-column justify-content-between">
                                                     <div>
                                                         <a class="equip-variants-slide-title d-flex align-items-center" href="#">
-                                                            <span><?php
-                                                                echo esc_html(get_the_title($current_post_ID)); ?></span>
+                                                            <span><?= $config->title ?></span>
                                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
                                                                 <path d="M8.5 14l4-4-4-4" stroke="currentColor" stroke-width="2"></path>
                                                             </svg>
                                                         </a>
                                                         <div class="equip-variants-slide-desc">
-                                                        <span class="d-block equip-variants-slide-param">
-                                                            <?php
-                                                            echo get_field('model_year'); ?> модельный год
-                                                        </span>
                                                             <span class="d-block equip-variants-slide-param">
-                                                            <?php
-                                                            echo get_field('production_year'); ?> года выпуска
-                                                        </span>
+                                                                <?= $config->years->model_year ?>
+                                                            </span>
                                                             <span class="d-block equip-variants-slide-param">
-                                                            <?php
-                                                            $common_chars = get_field('common_chars', $current_post_ID); ?>
-                                                            <?php
-                                                            echo $common_chars[ 'engine' ] . ' / ' .
-                                                                $common_chars[ 'power' ] . ' л.с / ' .
-                                                                $common_chars[ 'engine_type' ] . ' / ' .
-                                                                $common_chars[ 'transmission' ] . ' / ' .
-                                                                $common_chars[ 'drive_wheels' ];
-                                                            ?>
-                                                        </span>
+                                                                <?= $config->years->manufacture_year ?>
+                                                            </span>
                                                             <span class="d-block equip-variants-slide-price">
-                                                            <?php
-                                                            echo esc_html(get_field('price', $current_post_ID)); ?> ₸
-                                                        </span>
+                                                                <?= $config->price ?>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <?php
-                                            } ?>
+                                            <?php
+                                            endforeach; ?>
                                         </div>
                                     </div>
                                     <!-- SWIPER ARROWS-->
@@ -313,63 +299,67 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                 <?php
                                 endforeach; ?>
                                 <!-- ВАРИАНТЫ ИНТЕРЬЕРА -->
-                                <div class="equip-config not-bool d-none">
-                                    <section class=" equip-config-section">
-                                        <!-- MAIN TITLE-->
-                                        <h2 class="equip-config-section-title">
-                                            Варианты интерьера
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
-                                            </svg>
-                                        </h2>
-                                        <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
-                                        <div class="equip-config-section-items">
-                                            <!-- ONE SECTION CAROUSEL ITEM-->
-                                            <div class="equip-config-section-item">
-                                                <div class="equip-config-section-item-carousel">
-                                                    <!-- SWIPER STARTS-->
-                                                    <div class="swiper-container equip-config-section-item-carousel-container">
-                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-
-                                                            <?php
-                                                            foreach ($configs->posts as $post) : ?>
-                                                                <?php
-                                                                $interior_variants = get_field('interior_variants', $post->ID); ?>
-                                                                <!-- SWIPER ITEMS START-->
-                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                    <div class="model-colors">
-                                                                        <?php
-                                                                        foreach ((array) $interior_variants as $color) : ?>
-                                                                            <?php
-                                                                            if ($color) : ?>
-                                                                                <span class="model-colors-item" style="<?php
-                                                                                if ($color[ 'is_second_color' ]) : ?>background: linear-gradient(to bottom, <?= $color['color_hex'] ?> 50%, <?= $color['second_color'] ?> 50%)<?php
-                                                                                else : ?>background: <?= $color[ 'color_hex' ] ?><?php
-                                                                                endif; ?>">
-                                                                                <span class="model-colors-item-name">
-                                                                                    <span class="model-colors-item-name-inner">
-                                                                                        <?= $color[ 'color_name' ] ?>
-                                                                                    </span>
-                                                                                </span>
-                                                                            </span>
-                                                                            <?php
-                                                                            else : ?>
-                                                                                —
-                                                                            <?php
-                                                                            endif; ?>
-                                                                        <?php
-                                                                        endforeach; ?>
-                                                                    </div>
-                                                                </div>
-                                                            <?php
-                                                            endforeach; ?>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
+                                <!--                                <div class="equip-config not-bool d-none">-->
+                                <!--                                    <section class=" equip-config-section">-->
+                                <!--                                        <!-- MAIN TITLE-->-->
+                                <!--                                        <h2 class="equip-config-section-title">-->
+                                <!--                                            Варианты интерьера-->
+                                <!--                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">-->
+                                <!--                                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>-->
+                                <!--                                            </svg>-->
+                                <!--                                        </h2>-->
+                                <!--                                        <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->-->
+                                <!--                                        <div class="equip-config-section-items">-->
+                                <!--                                            <!-- ONE SECTION CAROUSEL ITEM-->-->
+                                <!--                                            <div class="equip-config-section-item">-->
+                                <!--                                                <div class="equip-config-section-item-carousel">-->
+                                <!--                                                    <!-- SWIPER STARTS-->-->
+                                <!--                                                    <div class="swiper-container equip-config-section-item-carousel-container">-->
+                                <!--                                                        <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">-->
+                                <!---->
+                                <!--                                                            --><?php
+                                //                                                            foreach ($configs->posts as $post) : ?>
+                                <!--                                                                --><?php
+                                //                                                                $interior_variants = get_field('interior_variants', $post->ID); ?>
+                                <!--                                                                <!-- SWIPER ITEMS START-->-->
+                                <!--                                                                <div class="swiper-slide equip-config-section-item-carousel-slide">-->
+                                <!--                                                                    <div class="model-colors">-->
+                                <!--                                                                        --><?php
+                                //                                                                        foreach ((array) $interior_variants as $color) : ?>
+                                <!--                                                                            --><?php
+                                //                                                                            if ($color) : ?>
+                                <!--                                                                                <span class="model-colors-item" style="--><?php
+                                //                                                                                if ($color[ 'is_second_color' ]) : ?>/*background: linear-gradient(to bottom, */<?
+                                //= $color['color_hex'] ?>/* 50%, */<?
+                                //= $color['second_color'] ?>/* 50%)*/<?php
+                                //                                                                                else : ?>/*background: */<?
+                                //= $color[ 'color_hex' ] ?><!----><?php
+                                //                                                                                endif; ?><!--">-->
+                                <!--                                                                                <span class="model-colors-item-name">-->
+                                <!--                                                                                    <span class="model-colors-item-name-inner">-->
+                                <!--                                                                                        --><?
+                                //= $color[ 'color_name' ] ?>
+                                <!--                                                                                    </span>-->
+                                <!--                                                                                </span>-->
+                                <!--                                                                            </span>-->
+                                <!--                                                                            --><?php
+                                //                                                                            else : ?>
+                                <!--                                                                                —-->
+                                <!--                                                                            --><?php
+                                //                                                                            endif; ?>
+                                <!--                                                                        --><?php
+                                //                                                                        endforeach; ?>
+                                <!--                                                                    </div>-->
+                                <!--                                                                </div>-->
+                                <!--                                                            --><?php
+                                //                                                            endforeach; ?>
+                                <!--                                                        </div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </section>-->
+                                <!--                                </div>-->
                             </div>
                         </div>
                     </div>
