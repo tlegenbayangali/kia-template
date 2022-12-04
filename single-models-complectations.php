@@ -14,10 +14,6 @@ $link .= "://";
 // Append the host(domain name, ip) to the URL.
 $link .= $_SERVER[ 'HTTP_HOST' ];
 
-echo '<pre>';
-print_r($link);
-echo '</pre>';
-
 ?>
 <?php
 get_template_part('template-parts/content', 'header-models', ['parent_post' => $parent_post,]); ?>
@@ -73,6 +69,10 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
 <?php
 $post_data = get_post($post->post_parent);
 $parent_slug = $post_data->post_name;
+
+echo '<pre>';
+print_r($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '.json');
+echo '</pre>';
 
 $configs = new WP_Query([
     'post_type'      => 'configs',
