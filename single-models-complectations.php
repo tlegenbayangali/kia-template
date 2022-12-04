@@ -70,10 +70,6 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
 $post_data = get_post($post->post_parent);
 $parent_slug = $post_data->post_name;
 
-echo '<pre>';
-print_r($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '.json');
-echo '</pre>';
-
 $configs = new WP_Query([
     'post_type'      => 'configs',
     'model'          => $parent_slug,
