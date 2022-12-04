@@ -2,7 +2,18 @@
 get_header();
 $parent_post = get_post($post->post_parent);
 $parent_post_id = get_post()->post_parent;
-$domain = $_SERVER[ 'HTTP_X_FORWARDED_PROTO' ] . '://' . $_SERVER[ 'HTTP_HOST' ];
+
+// Program to display URL of current page.
+if (isset($_SERVER[ 'HTTPS' ]) && $_SERVER[ 'HTTPS' ] === 'on')
+    $link = "https";
+else $link = "http";
+
+// Here append the common URL characters.
+$link .= "://";
+
+// Append the host(domain name, ip) to the URL.
+$link .= $_SERVER[ 'HTTP_HOST' ];
+
 ?>
 <?php
 get_template_part('template-parts/content', 'header-models', ['parent_post' => $parent_post,]); ?>
