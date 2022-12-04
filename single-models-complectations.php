@@ -56,6 +56,11 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
         </div>
     </div>
 <?php
+echo '<pre>';
+print_r($domain);
+echo '</pre>';
+?>
+<?php
 $post_data = get_post($post->post_parent);
 $parent_slug = $post_data->post_name;
 
