@@ -14,6 +14,10 @@ $link .= "://";
 // Append the host(domain name, ip) to the URL.
 $link .= $_SERVER[ 'HTTP_HOST' ];
 
+echo '<pre>';
+print_r($link);
+echo '</pre>';
+
 ?>
 <?php
 get_template_part('template-parts/content', 'header-models', ['parent_post' => $parent_post,]); ?>
@@ -66,11 +70,6 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
             </div>
         </div>
     </div>
-<?php
-echo '<pre>';
-print_r($domain);
-echo '</pre>';
-?>
 <?php
 $post_data = get_post($post->post_parent);
 $parent_slug = $post_data->post_name;
@@ -252,7 +251,7 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                     </section>
                                 </div>
                                 <?php
-                                $options = json_decode(file_get_contents($domain . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '.json'));
+                                $options = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '.json'));
                                 ?>
 
                                 <?php
