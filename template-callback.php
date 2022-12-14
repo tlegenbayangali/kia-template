@@ -3,30 +3,34 @@
 Template Name: Заказать звонок
 */
 get_header();
-if (isset($_GET['current_model'])) {
+if (isset($_GET[ 'current_model' ])) {
     $model = new WP_Query([
-        'post_type' => 'models',
+        'post_type'   => 'models',
         'post_parent' => 0,
-        'name' => $_GET['current_model']
+        'name'        => $_GET[ 'current_model' ]
     ]);
-    $current_model = $model->posts[0];
+    $current_model = $model->posts[ 0 ];
 }
 ?>
-<?php get_template_part('template-parts/breadcrumbs'); ?>
-<div class="container mt-4 mt-lg-0 mb-30">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="fz-35">
-                Обратная связь
-            </h1>
+<?php
+get_template_part('template-parts/breadcrumbs'); ?>
+    <div class="container mt-4 mt-lg-0 mb-30">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="fz-35">
+                    Обратная связь
+                </h1>
+            </div>
         </div>
     </div>
-</div>
-<?php if (isset($_GET['current_model'])) : ?>
-    <?php get_template_part('template-parts/callback', 'model', [
+<?php
+if (isset($_GET[ 'current_model' ])) : ?>
+    <?php
+    get_template_part('template-parts/callback', 'model', [
         'current_model' => $current_model
     ]); ?>
-<?php else : ?>
+<?php
+else : ?>
     <hr>
     <div class="pb-60 pt-60">
         <div class="container">
@@ -35,17 +39,21 @@ if (isset($_GET['current_model'])) {
                     <div class="callback-form">
                         <!-- <h5 class="mb-2">Обратная связь</h5> -->
                         <p class="mb-2">Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.</p>
-                        <?php if (get_field('foreign_form', 'options')) : ?>
+                        <?php
+                        if (get_field('foreign_form', 'options')) : ?>
                             <?= get_field('foreign_form', 'options') ?>
-                        <?php else : ?>
+                        <?php
+                        else : ?>
                             <?= do_shortcode('[contact-form-7 id="139" title="Форма заявки"]') ?>
-                        <?php endif; ?>
+                        <?php
+                        endif; ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<?php endif; ?>
+<?php
+endif; ?>
 
 <?php
 get_footer();
