@@ -68,6 +68,13 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                     </ul>
                                 </div>
                             <?php
+                            else: ?>
+                                <div class="model-sections-bottom-block-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
+                                    <a href="/callback/?current_model=<?= $current_post->post_name ?>" class="btn">
+                                        Заказать звонок дилера
+                                    </a>
+                                </div>
+                            <?php
                             endif; ?>
                         </div>
                     </div>
