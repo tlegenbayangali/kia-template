@@ -105,6 +105,18 @@ if (!function_exists('kia_setup')) :
 endif;
 add_action('after_setup_theme', 'kia_setup');
 
+function vue3_script()
+{
+    if (is_post_type_archive(['accessories'])) {
+        ?>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="<?= get_template_directory_uri() . '/vue/accessories.js' ?>"></script>
+        <?php
+    }
+}
+
+add_action('wp_footer', 'vue3_script');
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
