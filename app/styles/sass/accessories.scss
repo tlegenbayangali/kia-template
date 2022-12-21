@@ -3,6 +3,26 @@
         .img {
             img {
                 height: 310px;
+                width: 310px;
+                object-fit: cover;
+            }
+        }
+
+        &-wrapper {
+            border-bottom: 1px solid #cdd0d2;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &-list-mode {
+            display: flex;
+            align-items: center;
+            padding-bottom: 30px;
+
+            .img {
+                margin-right: 60px;
             }
         }
     }
@@ -14,4 +34,21 @@
     line-height: 100%;
     height: 40px;
     text-transform: uppercase;
+}
+
+.view-selector {
+    ul {
+        li {
+            &.active, &:hover {
+                svg {
+                    fill: #05141f;
+                }
+            }
+
+            svg {
+                transition: .3s ease-out fill;
+                fill: #9ba1a5;
+            }
+        }
+    }
 }

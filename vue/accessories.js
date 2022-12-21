@@ -4,13 +4,17 @@ createApp({
 	data() {
 		return {
 			goods: [],
-			search_query: ''
+			search_query: '',
+			view_mode: 'grid'
 		}
 	},
 	methods: {
 		async fetchGoods() {
 			this.goods = await fetch('/wp-json/dlcd/v1/accessories')
 				.then(res => res.json())
+		},
+		changeViewMode($viewMode) {
+			this.view_mode = $viewMode
 		}
 	},
 	computed: {
