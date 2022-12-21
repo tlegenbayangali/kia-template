@@ -176,11 +176,14 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                 endif; ?>
                 <?php
                 $current_model = $current_post->post_name;
-                $configs = new WP_Query([
-                    'post_type' => 'configs',
-                    'model'     => $current_model,
-                    'order'     => 'asc'
-                ]);
+                //                $configs = new WP_Query([
+                //                    'post_type' => 'configs',
+                //                    'model'     => $current_model,
+                //                    'order'     => 'asc'
+                //                ]);
+                ?>
+                <?php
+                $configs = json_decode(file_get_contents("wp-content/themes/kia/model_config_data/$current_model" . "_configs.json"))
                 ?>
                 <?php
                 if (get_field('show_complectations')) : ?>
@@ -200,13 +203,14 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                 <div class="model-sections-variations-bottom">
                                     <div class="model-sections-variations-bottom-sub">
                                         <?php
-                                        if (count($configs->posts) < 5) : ?>
-                                            <?php
-                                            echo count($configs->posts) . ' '; ?> доступные комплектации
+                                        if (count($configs) === 1): ?>
+                                            <?= count($configs) . ' '; ?> доступная комплектация
                                         <?php
-                                        else : ?>
-                                            <?php
-                                            echo count($configs->posts) . ' '; ?> доступных комплектаций
+                                        elseif (count($configs) < 5): ?>
+                                            <?= count($configs) . ' '; ?> доступные комплектации
+                                        <?php
+                                        else: ?>
+                                            <?= count($configs) . ' '; ?> доступных комплектаций
                                         <?php
                                         endif; ?>
                                     </div>
@@ -222,50 +226,38 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                         <!-- ADDITIONAL REQUIRED WRAPPER -->
                                         <div class="swiper-wrapper model-sections-variations-wrapper">
                                             <?php
-                                            foreach ($configs->posts as $post) : ?>
-                                                <?php
-                                                $current_post_ID = $post->ID;
-                                                ?>
+                                            foreach ($configs as $config) : ?>
                                                 <!-- SLIDES -->
                                                 <div class="swiper-slide model-sections-variations-slide">
                                                     <div class="model-sections-variations-slide-inner">
                                                         <div class="title">
-                                                            <h5><?php
-                                                                echo esc_html(get_the_title($current_post_ID)); ?></h5>
+                                                            <h5><?= $config->title ?></h5>
                                                             <span class="price">
-                                                            <span><?php
-                                                                echo esc_attr(the_field('price', $current_post_ID)) ?></span> ₸
+                                                            <span><?= $config->price ?></span>
                                                         </span>
                                                         </div>
                                                         <div class="content">
                                                             <ul>
                                                                 <?php
-                                                                if (get_field('model_year')) : ?>
+                                                                if ($config->year) : ?>
                                                                     <li>
-                                                                        <span>Год выпуска <?php
-                                                                            echo get_field('model_year'); ?></span>
+                                                                        <span><?= $config->year ?></span>
                                                                     </li>
                                                                 <?php
                                                                 endif; ?>
                                                                 <li>
                                                                     <span class="content-header">Двигатель и трансмиссия</span>
                                                                     <p>
-                                                                        <?php
-                                                                        echo get_field('common_chars', $current_post_ID)[ 'engine' ] . ' / ' .
-                                                                            get_field('common_chars', $current_post_ID)[ 'power' ] . ' л.с / ' .
-                                                                            get_field('common_chars', $current_post_ID)[ 'engine_type' ] . ' / ' .
-                                                                            get_field('common_chars', $current_post_ID)[ 'transmission' ] . ' / ' .
-                                                                            get_field('common_chars', $current_post_ID)[ 'drive_wheels' ]; ?>
+                                                                        <?= $config->characteristics ?>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <span class="content-header">Основные опции</span>
                                                                     <?php
-                                                                    while (have_rows('main_options', $current_post_ID)) : the_row(); ?>
-                                                                        <p><?php
-                                                                            the_sub_field('options_item'); ?></p>
+                                                                    foreach ($config->options as $option) : ?>
+                                                                        <p><?= $option ?></p>
                                                                     <?php
-                                                                    endwhile; ?>
+                                                                    endforeach; ?>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -300,7 +292,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                     </div>
                 <?php
                 endif ?>
-                <!-- BOTTOM SECTION-->
+
                 <div class="model-sections">
                     <div class="model-sections-bottom-block">
                         <div class="model-sections-bottom-block-bg">
