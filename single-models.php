@@ -325,9 +325,15 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                         </a>
                                     </div>
                                 </div>
-                                <div class="model-sections-bottom-block-image">
-                                    <img src="<?= get_field('bottom_section_car_image_medium', get_the_ID()) ?>" alt="">
-                                </div>
+                                <?php
+                                if (the_field('bottom_section_car_image_small', get_the_ID())) : ?>
+                                    <?php
+                                    wp_reset_query(); ?>
+                                    <div class="model-sections-bottom-block-image">
+                                        <img src="<?= get_field('bottom_section_car_image_medium', get_the_ID()) ?>" alt="">
+                                    </div>
+                                <?php
+                                endif; ?>
                             </div>
                             <?php
                             if (have_rows('useful_links', get_the_ID()) || have_rows('useful_docs', get_the_ID())) :
