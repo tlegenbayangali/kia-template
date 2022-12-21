@@ -326,14 +326,18 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                         </a>
                                     </div>
                                 </div>
-                                <div class="model-sections-bottom-block-image">
-                                    <picture>
-                                        <source media="(max-width: 524px)" srcset="<?php
-                                        the_field('bottom_section_car_image_small', get_the_ID()); ?>">
-                                        <img src="<?php
-                                        the_field('bottom_section_car_image_medium', get_the_ID()); ?>" alt="model">
-                                    </picture>
-                                </div>
+                                <?php
+                                if (get_field('bottom_section_car_image_small', get_the_ID())) : ?>
+                                    <div class="model-sections-bottom-block-image">
+                                        <picture>
+                                            <source media="(max-width: 524px)" srcset="<?php
+                                            the_field('bottom_section_car_image_small', get_the_ID()); ?>">
+                                            <img src="<?php
+                                            the_field('bottom_section_car_image_medium', get_the_ID()); ?>" alt="model">
+                                        </picture>
+                                    </div>
+                                <?php
+                                endif; ?>
                             </div>
                             <?php
                             if (have_rows('useful_links', get_the_ID()) || have_rows('useful_docs', get_the_ID())) :
