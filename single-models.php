@@ -312,28 +312,28 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                         <div class="model-sections-inner-wide">
                             <div class="model-sections-bottom-block-inner">
                                 <div class="model-sections-title-centered">
-                                    <span class="model-sections-title-sub model-sections-bottom-block-sub">
-                                        Консультация
-                                    </span>
+                                <span class="model-sections-title-sub model-sections-bottom-block-sub">
+                                    Консультация
+                                </span>
                                     <h3 class="model-sections-title-header model-sections-bottom-block-header">
                                         Узнайте больше о <?php
                                         the_title(); ?>
                                     </h3>
+
                                     <div class="model-sections-bottom-block-btn btn-wrapper btn-wrapper-lg btn-wrapper-white">
                                         <a href="/callback/?current_model=<?= $current_post->post_name ?>" class="btn">
                                             Заказать звонок дилера
                                         </a>
                                     </div>
                                 </div>
-                                <?php
-                                if (the_field('bottom_section_car_image_small', get_the_ID())) : ?>
-                                    <?php
-                                    wp_reset_query(); ?>
-                                    <div class="model-sections-bottom-block-image">
-                                        <img src="<?= get_field('bottom_section_car_image_medium', get_the_ID()) ?>" alt="">
-                                    </div>
-                                <?php
-                                endif; ?>
+                                <div class="model-sections-bottom-block-image">
+                                    <picture>
+                                        <source media="(max-width: 524px)" srcset="<?php
+                                        the_field('bottom_section_car_image_small', get_the_ID()); ?>">
+                                        <img src="<?php
+                                        the_field('bottom_section_car_image_medium', get_the_ID()); ?>" alt="model">
+                                    </picture>
+                                </div>
                             </div>
                             <?php
                             if (have_rows('useful_links', get_the_ID()) || have_rows('useful_docs', get_the_ID())) :
