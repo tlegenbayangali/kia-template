@@ -56,7 +56,7 @@
                         <h5 class="mb-2">Ваши контакты</h5>
                         <p class="mb-2">Поля, отмеченные *, обязательны для заполнения</p>
                         <?php if ($_GET[ 'current_accessory' ]): ?>
-                            <?= do_shortcode('[contact-form-7 id="5281" title="Заявка по определенному аксессуару"]') ?>
+                            <?= do_shortcode(get_field('accessory_form', 'options')) ?>
                         <?php else: ?>
                             <?php if (get_field('foreign_form', 'options')) : ?>
                                 <?= get_field('foreign_form', 'options') ?>
