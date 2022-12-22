@@ -10,7 +10,7 @@ createApp({
 	},
 	methods: {
 		async fetchGoods() {
-			this.goods = await fetch('/wp-json/dlcd/v1/accessories')
+			this.goods = await fetch('http://localhost:8000/api/accessories')
 				.then(res => res.json())
 		},
 		changeViewMode($viewMode) {
