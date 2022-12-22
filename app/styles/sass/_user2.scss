@@ -174,7 +174,24 @@
         overflow: hidden;
         position: relative;
 
+        .slider-item {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+        }
+
         &.small {
+            img {
+                width: 115px;
+                height: 115px;
+                object-fit: cover;
+            }
+
             .swiper-slide-thumb-active {
                 opacity: .6;
             }
