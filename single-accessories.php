@@ -57,7 +57,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                 <div class="config-info-item">
                                     <span class="c-dgray">Комплект:</span>
                                     <span id="engine-field">
-                                        <?= get_field('kit', get_the_ID()) ?>
+                                        <?= get_field('complect', get_the_ID()) ?>
                                     </span>
                                 </div>
                                 <div class="config-info-item">
