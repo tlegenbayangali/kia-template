@@ -30,11 +30,13 @@ get_template_part('template-parts/breadcrumbs'); ?>
                 <div class="col-lg-4">
                     <aside class="py-30 pr-60">
                         <div class="config-single-price">
-                            <!--                            <div class="mt-30">-->
-                            <!--                                <a href="/callback/" class="w-100-p tac btn btn-black btn-md">-->
-                            <!--                                    Забронировать автомобиль-->
-                            <!--                                </a>-->
-                            <!--                            </div>-->
+                            <div class="mt-30">
+                                <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black d-block">
+                                    <a href="/callback/?current_accessory=<?= get_the_ID(); ?>" class="btn">
+                                        Заявка на аксессуар
+                                    </a>
+                                </div>
+                            </div>
                             <div class="config-info mt-30">
                                 <div class="config-info-item">
                                     <span class="c-dgray">Артикул:</span>

@@ -11,6 +11,14 @@ if (isset($_GET[ 'current_model' ])) {
     ]);
     $current_model = $model->posts[ 0 ];
 }
+
+if (isset($_GET[ 'current_accessory' ])) {
+    $accessory = new WP_Query([
+        'post_type' => 'accessories',
+        'ID'        => $_GET[ 'current_accessory' ]
+    ]);
+    $current_accessory = $accessory->posts[ 0 ];
+}
 ?>
 <?php
 get_template_part('template-parts/breadcrumbs'); ?>
@@ -28,6 +36,12 @@ if (isset($_GET[ 'current_model' ])) : ?>
     <?php
     get_template_part('template-parts/callback', 'model', [
         'current_model' => $current_model
+    ]); ?>
+<?php
+elseif (isset($_GET[ 'current_accessory' ])): ?>
+    <?php
+    get_template_part('template-parts/callback', 'accessory', [
+        'current_accessory' => $current_accessory
     ]); ?>
 <?php
 else : ?>

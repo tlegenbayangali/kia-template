@@ -89,7 +89,7 @@
                                 <?php
                                 endif; ?>
                                 <li>
-                                    <a class="underlined underlined-white" href="/callback?current_model=<?= $args[ 'parent_post' ]->post_name ?>">
+                                    <a class="underlined underlined-white" href="/callback/?current_model=<?= $args[ 'parent_post' ]->post_name ?>">
                                         Заявка дилеру
                                     </a>
                                 </li>
