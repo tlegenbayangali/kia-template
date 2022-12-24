@@ -1,10 +1,6 @@
 <?php
 get_header();
 get_template_part('template-parts/breadcrumbs');
-$data = json_decode(file_get_contents("https://kia-bridge.dlcd.kz/api/cars/models"));
-echo '<pre>';
-print_r($data);
-echo '</pre>';
 ?>
     <div id="accessories-app">
         <div class="container">
