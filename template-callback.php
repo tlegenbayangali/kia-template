@@ -15,7 +15,7 @@ if (isset($_GET[ 'current_model' ])) {
 if (isset($_GET[ 'current_accessory' ])) {
     $accessory = new WP_Query([
         'post_type' => 'accessories',
-        'ID'        => $_GET[ 'current_accessory' ]
+        'p'         => $_GET[ 'current_accessory' ]
     ]);
     $current_accessory = $accessory->posts[ 0 ];
 }
