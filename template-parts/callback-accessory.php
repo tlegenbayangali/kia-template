@@ -5,7 +5,7 @@
                 <aside class="pt-60 pb-60 h-100-p" data-sticky-container>
                     <div class="model-info" data-sticky-for="1200" data-margin-top="30" data-sticky-wrap="true">
                         <div class="model-info-title">
-                            <span id="current-accessory-title"><?= $args[ 'current_accessory' ]->post_title ?></span> <span id="current-accessory-sku">[<?= get_field('sku', $args[ 'current_accessory' ]->ID) ?>]</span>
+                            <span id="current-accessory-title"><?= $args[ 'current_accessory' ]->post_title ?></span> <span id="current-accessory-sku">[<?= trim(get_field('sku', $args[ 'current_accessory' ]->ID)) ?>]</span>
                         </div>
                         <div class="model-info-image d-flex justify-content-center">
                             <?= get_the_post_thumbnail($args[ 'current_accessory' ]->ID, 'full') ?>
