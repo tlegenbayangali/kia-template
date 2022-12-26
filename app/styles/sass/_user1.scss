@@ -323,6 +323,10 @@
                     transform: translateY(-50%);
                     background: $gray;
                     cursor: initial;
+
+                    @media screen and (max-width: 991px) {
+                        display: none;
+                    }
                 }
             }
 
