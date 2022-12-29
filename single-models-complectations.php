@@ -157,6 +157,9 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                                             <span class="d-block equip-variants-slide-param">
                                                                 <?= $config->years->manufacture_year ?>
                                                             </span>
+                                                            <span class="d-block equip-variants-slide-param">
+                                                                <?= $config->tech_characteristics ?>
+                                                            </span>
                                                             <span class="d-block equip-variants-slide-price">
                                                                 <?= $config->price ?>
                                                             </span>
