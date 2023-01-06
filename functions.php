@@ -380,7 +380,7 @@ add_filter('wpcf7_form_elements', function ($content) {
 // CF7 Filters
 
 // Contact Form + Bitrix
-if (BITRIX_WEBHOOK) {
+if (defined(BITRIX_WEBHOOK)) {
     add_action('wpcf7_mail_sent', 'from_cf_to_bitrix_sender');
     function from_cf_to_bitrix_sender($contact_form)
     {
