@@ -432,7 +432,7 @@ if (get_field('bitrix_webhook', 'options')) {
 
             if (array_key_exists('error', $contact_result)) echo "Ошибка при сохранении контакта: " . $contact_result[ 'error_description' ] . "<br/>";
 
-            $crm_lead_add_query = get_field('bitrix_webhook', 'options') . 'crm.lead.add.json';
+            $crm_lead_add_query = get_field('bitrix_webhook', 'options') . 'crm.deal.add.json';
 
             switch ($posted_data[ 'form-question' ]) {
                 case 'Покупка автомобиля Kia':
