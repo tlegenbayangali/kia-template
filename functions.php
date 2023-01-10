@@ -380,8 +380,8 @@ add_filter('wpcf7_form_elements', function ($content) {
 // CF7 Filters
 
 // Contact Form + Bitrix
-if (defined(BITRIX_WEBHOOK)) {
-    add_action('wpcf7_mail_sent', 'from_cf_to_bitrix_sender');
+add_action('wpcf7_mail_sent', 'from_cf_to_bitrix_sender');
+if (get_field('bitrix_webhook', 'options')) {
     function from_cf_to_bitrix_sender($contact_form)
     {
         // Перехватываем данные из Contact Form 7
@@ -398,7 +398,7 @@ if (defined(BITRIX_WEBHOOK)) {
 
             // Формируем URL в переменной $queryUrl для отправки сообщений в лиды Битрикс24, где
             // указываем [ваше_название], [идентификатор_пользователя] и [код_вебхука]
-            $crm_contact_add_query = BITRIX_WEBHOOK . 'crm.contact.add.json';
+            $crm_contact_add_query = get_field('bitrix_webhook', 'options') . 'crm.contact.add.json';
 
             // Формируем параметры для создания лида в переменной $queryData
             $crm_contact_add_query_data = http_build_query([
@@ -432,7 +432,7 @@ if (defined(BITRIX_WEBHOOK)) {
 
             if (array_key_exists('error', $contact_result)) echo "Ошибка при сохранении контакта: " . $contact_result[ 'error_description' ] . "<br/>";
 
-            $crm_lead_add_query = BITRIX_WEBHOOK . 'crm.lead.add.json';
+            $crm_lead_add_query = get_field('bitrix_webhook', 'options') . 'crm.lead.add.json';
 
             switch ($posted_data[ 'form-question' ]) {
                 case 'Покупка автомобиля Kia':
@@ -493,7 +493,7 @@ if (defined(BITRIX_WEBHOOK)) {
 
             $crm_lead_add_query_data = http_build_query([
                 'FIELDS' => [
-                    'TITLE'             => BITRIX_DEAL_TITLE,
+                    'TITLE'             => get_field('bitrix_deal_title', 'options'),
                     'UF_CRM_1615817578' => 221,
                     'CATEGORY_ID'       => 71,
                     'STAGE_ID'          => 'C71:NEW',
@@ -501,11 +501,11 @@ if (defined(BITRIX_WEBHOOK)) {
                     'UF_CRM_1590070364' => 5537,
                     'SOURCE_ID'         => 'WEBFORM',
                     'UF_CRM_1613979771' => (int) $form_type,
-                    'UF_CRM_1615486685' => BITRIX_DEAL_DESCRIPTION,
-                    'UF_CRM_1619692115' => BITRIX_DEAL_FIRST_REGISTER,
+                    'UF_CRM_1615486685' => get_field('bitrix_deal_description', 'options'),
+                    'UF_CRM_1619692115' => get_field('bitrix_deal_first_register', 'options'),
                     'UF_CRM_1586840541' => 3033,
-                    'UF_CRM_1609922283' => BITRIX_DEAL_CITY,
-                    'UF_CRM_1634038284' => BITRIX_DEAL_SITE,
+                    'UF_CRM_1609922283' => get_field('bitrix_deal_city', 'options'),
+                    'UF_CRM_1634038284' => get_field('bitrix_deal_site', 'options'),
                     'UF_CRM_1611565554' => (int) $form_model,
                     'COMMENTS'          => $posted_data[ 'form-comments' ],
                     'CONTACT_ID'        => $contact_result[ 'result' ],
@@ -530,6 +530,7 @@ if (defined(BITRIX_WEBHOOK)) {
         }
     }
 }
+
 // Contact Form + Bitrix
 
 // Columns for configs list
