@@ -432,24 +432,24 @@ if (get_field('bitrix_webhook', 'options')) {
 
             if (array_key_exists('error', $contact_result)) echo "Ошибка при сохранении контакта: " . $contact_result[ 'error_description' ] . "<br/>";
 
-            $crm_lead_add_query = get_field('bitrix_webhook', 'options') . 'crm.deal.add.json';
+            $crm_deal_add_query = get_field('bitrix_webhook', 'options') . 'crm.deal.add.json';
 
-            switch ($posted_data[ 'form-question' ]) {
+            switch ($posted_data[ 'form-question' ][ 0 ]) {
                 case 'Покупка автомобиля Kia':
-                    $form_type = 3051;
+                    $form_question = 3051;
                     break;
                 case 'Сервисное обслуживание':
-                    $form_type = 3055;
+                    $form_question = 3055;
                     break;
                 case 'Гарантийное обслуживание':
-                    $form_type = 3055;
+                    $form_question = 3055;
                     break;
                 case 'Другое':
-                    $form_type = 9883;
+                    $form_question = 9883;
                     break;
             }
 
-            switch ($posted_data[ 'form-model' ]) {
+            switch ($posted_data[ 'form-model' ][ 0 ]) {
                 case 'Soul':
                     $form_model = 2655;
                     break;
@@ -491,8 +491,8 @@ if (get_field('bitrix_webhook', 'options')) {
                     break;
             }
 
-            $crm_lead_add_query_data = http_build_query([
-                'FIELDS' => [
+            $crm_deal_add_query_data = http_build_query([
+                'fields' => [
                     'TITLE'             => get_field('bitrix_deal_title', 'options'),
                     'UF_CRM_1615817578' => 221,
                     'CATEGORY_ID'       => 71,
@@ -500,7 +500,7 @@ if (get_field('bitrix_webhook', 'options')) {
                     'UF_CRM_1612504156' => 2909,
                     'UF_CRM_1590070364' => 5537,
                     'SOURCE_ID'         => 'WEBFORM',
-                    'UF_CRM_1613979771' => (int) $form_type,
+                    'UF_CRM_1613979771' => (int) $form_question,
                     'UF_CRM_1615486685' => get_field('bitrix_deal_description', 'options'),
                     'UF_CRM_1619692115' => get_field('bitrix_deal_first_register', 'options'),
                     'UF_CRM_1586840541' => 3033,
@@ -510,6 +510,9 @@ if (get_field('bitrix_webhook', 'options')) {
                     'COMMENTS'          => $posted_data[ 'form-comments' ],
                     'CONTACT_ID'        => $contact_result[ 'result' ],
                 ],
+                'params' => [
+                    'REGISTER_SONET_EVENT' => 'Y'
+                ]
             ]);
 
             // Обращаемся к Битрикс24 при помощи функции curl_exec
@@ -519,8 +522,8 @@ if (get_field('bitrix_webhook', 'options')) {
                 CURLOPT_POST           => 1,
                 CURLOPT_HEADER         => 0,
                 CURLOPT_RETURNTRANSFER => 1,
-                CURLOPT_URL            => $crm_lead_add_query,
-                CURLOPT_POSTFIELDS     => $crm_lead_add_query_data,
+                CURLOPT_URL            => $crm_deal_add_query,
+                CURLOPT_POSTFIELDS     => $crm_deal_add_query_data,
             ));
             $result = curl_exec($curl);
             curl_close($curl);
