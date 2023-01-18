@@ -578,7 +578,7 @@ if (get_field('bitrix_webhook', 'options')) {
 
             $crm_deal_add_query = get_field('bitrix_webhook', 'options') . 'crm.deal.add.json';
 
-            $form_question = 3055;
+            $form_question = 3051;
             $recall = $posted_data[ 'form-agreement-2' ] ? 'Да' : 'Нет';
 
             switch ($posted_data[ 'form-model' ][ 0 ]) {
@@ -666,7 +666,7 @@ if (get_field('bitrix_webhook', 'options')) {
             if (array_key_exists('error', $lead_result)) echo "Ошибка при сохранении лида: " . $lead_result[ 'error_description' ] . "<br/>";
         }
 
-        // Форма заявки с тест-драйва
+        // Форма заявки с записи на сервис
         if ('Запись на сервис' == $title) {
             $submission = WPCF7_Submission::get_instance();
             $posted_data = $submission->get_posted_data();
@@ -712,7 +712,7 @@ if (get_field('bitrix_webhook', 'options')) {
 
             $crm_deal_add_query = get_field('bitrix_webhook', 'options') . 'crm.deal.add.json';
 
-            $form_question = 3051;
+            $form_question = 3055;
 
             $form_model = $posted_data[ 'form-model' ];
 
