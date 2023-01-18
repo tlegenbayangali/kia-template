@@ -758,6 +758,137 @@ if (get_field('bitrix_webhook', 'options')) {
 
             if (array_key_exists('error', $lead_result)) echo "Ошибка при сохранении лида: " . $lead_result[ 'error_description' ] . "<br/>";
         }
+
+        // Форма заявки со страницы определенной модели
+        if ('Форма заявки от определенной модели' == $title) {
+            $submission = WPCF7_Submission::get_instance();
+            $posted_data = $submission->get_posted_data();
+            // Далее перехватываем введенные данные в полях Contact Form 7:
+            $name = $posted_data[ 'form-name' ];
+            $phone = $posted_data[ 'form-phone' ];
+
+            // Формируем URL в переменной $queryUrl для отправки сообщений в лиды Битрикс24, где
+            // указываем [ваше_название], [идентификатор_пользователя] и [код_вебхука]
+            $crm_contact_add_query = get_field('bitrix_webhook', 'options') . 'crm.contact.add.json';
+
+            // Формируем параметры для создания лида в переменной $queryData
+            $crm_contact_add_query_data = http_build_query([
+                'fields' => [
+                    'NAME'  => $name,
+                    'PHONE' => [
+                        [
+                            'VALUE'      => $phone,
+                            'VALUE_TYPE' => 'WORK',
+                        ],
+                    ],
+                ],
+                'params' => [
+                    'REGISTER_SONET_EVENT' => 'Y'
+                ]
+            ]);
+
+            // Обращаемся к Битрикс24 при помощи функции curl_exec
+            $curl = curl_init();
+            curl_setopt_array($curl, array (
+                CURLOPT_SSL_VERIFYPEER => 0,
+                CURLOPT_POST           => 1,
+                CURLOPT_HEADER         => 0,
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_URL            => $crm_contact_add_query,
+                CURLOPT_POSTFIELDS     => $crm_contact_add_query_data,
+            ));
+            $result = curl_exec($curl);
+            curl_close($curl);
+            $contact_result = json_decode($result, 1);
+
+            if (array_key_exists('error', $contact_result)) echo "Ошибка при сохранении контакта: " . $contact_result[ 'error_description' ] . "<br/>";
+
+            $crm_deal_add_query = get_field('bitrix_webhook', 'options') . 'crm.deal.add.json';
+
+            $form_question = 3051;
+
+            switch ($posted_data[ 'hidden-input-model' ]) {
+                case 'Soul':
+                    $form_model = 2655;
+                    break;
+                case 'K9':
+                    $form_model = 9398;
+                    break;
+                case 'Carnival':
+                    $form_model = 9399;
+                    break;
+                case 'Ceed':
+                    $form_model = 9977;
+                    break;
+                case 'Ceed SW':
+                    $form_model = 9978;
+                    break;
+                case 'Picanto':
+                    $form_model = 2645;
+                    break;
+                case 'Rio':
+                    $form_model = 2647;
+                    break;
+                case 'Rio X':
+                    $form_model = 2649;
+                    break;
+                case 'Cerato':
+                    $form_model = 2651;
+                    break;
+                case 'K5':
+                    $form_model = 2653;
+                    break;
+                case 'Seltos':
+                    $form_model = 2657;
+                    break;
+                case 'Sportage':
+                    $form_model = 2659;
+                    break;
+                case 'Sorento':
+                    $form_model = 2661;
+                    break;
+            }
+
+            $crm_deal_add_query_data = http_build_query([
+                'fields' => [
+                    'TITLE'             => get_field('bitrix_deal_title', 'options') . ' [' . $posted_data[ 'hidden-input-model' ] . ']',
+                    'UF_CRM_1615817578' => 221,
+                    'CATEGORY_ID'       => 71,
+                    'STAGE_ID'          => 'C71:NEW',
+                    'UF_CRM_1612504156' => 2909,
+                    'UF_CRM_1590070364' => 5537,
+                    'SOURCE_ID'         => 'WEBFORM',
+                    'UF_CRM_1613979771' => (int) $form_question,
+                    'UF_CRM_1615486685' => get_field('bitrix_deal_description', 'options'),
+                    'UF_CRM_1619692115' => get_field('bitrix_deal_first_register', 'options'),
+                    'UF_CRM_1586840541' => 3033,
+                    'UF_CRM_1609922283' => get_field('bitrix_deal_city', 'options'),
+                    'UF_CRM_1634038284' => get_field('bitrix_deal_site', 'options'),
+                    'UF_CRM_1611565554' => (int) $form_model,
+                    'COMMENTS'          => 'Обращение по определенной модели: ' . $posted_data[ 'hidden-input-model' ],
+                    'CONTACT_ID'        => $contact_result[ 'result' ],
+                ],
+                'params' => [
+                    'REGISTER_SONET_EVENT' => 'Y'
+                ]
+            ]);
+
+            // Обращаемся к Битрикс24 при помощи функции curl_exec
+            $curl = curl_init();
+            curl_setopt_array($curl, array (
+                CURLOPT_SSL_VERIFYPEER => 0,
+                CURLOPT_POST           => 1,
+                CURLOPT_HEADER         => 0,
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_URL            => $crm_deal_add_query,
+                CURLOPT_POSTFIELDS     => $crm_deal_add_query_data,
+            ));
+            $result = curl_exec($curl);
+            curl_close($curl);
+            $lead_result = json_decode($result, 1);
+
+            if (array_key_exists('error', $lead_result)) echo "Ошибка при сохранении лида: " . $lead_result[ 'error_description' ] . "<br/>";
+        }
     }
 }
 
