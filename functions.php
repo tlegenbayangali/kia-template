@@ -712,7 +712,7 @@ if (get_field('bitrix_webhook', 'options')) {
 
             $crm_deal_add_query = get_field('bitrix_webhook', 'options') . 'crm.deal.add.json';
 
-            $form_question = 3055;
+            $form_question = 3051;
 
             $form_model = $posted_data[ 'form-model' ];
 
