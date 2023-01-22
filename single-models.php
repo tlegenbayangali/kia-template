@@ -133,41 +133,43 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="model-sections-colors-interior colorpicker">
-                                            <div class="description-list">
-                                                <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
-                                                    Интерьер:
-                                                    <span id="interior-color-name">Черный, Искусственная кожа с серой прострочкой (WK)</span>
+                                    <?php if (get_field('interior_colors')): ?>
+                                        <div class="col-12 col-md-6">
+                                            <div class="model-sections-colors-interior colorpicker">
+                                                <div class="description-list">
+                                                    <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-interior-desc">
+                                                        Интерьер:
+                                                        <span id="interior-color-name">Черный, Искусственная кожа с серой прострочкой (WK)</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <?php
-                                            $current_model_interiors = get_field('interior_colors');
-                                            ?>
-                                            <?php
-                                            if ($current_model_interiors) : ?>
-                                                <!-- COLORS LIST INTERIOR-->
-                                                <div class="color-list">
-                                                    <?php
-                                                    foreach ((array) $current_model_interiors as $interior) : ?>
+                                                <?php
+                                                $current_model_interiors = get_field('interior_colors');
+                                                ?>
+                                                <?php
+                                                if ($current_model_interiors) : ?>
+                                                    <!-- COLORS LIST INTERIOR-->
+                                                    <div class="color-list">
+                                                        <?php
+                                                        foreach ((array) $current_model_interiors as $interior) : ?>
 
+                                                            <?php
+                                                            if ($interior[ 'interior_two_colors' ]) : ?>
+                                                                <span id="model-sections-colors-interior-0" data-color="<?= $interior[ 'interior_color_rgb' ] ?>" data-text="<?= $interior[ 'interior_color_name' ] ?>" class="color-list-item" style="background-image:
+                                                                        linear-gradient(180deg, <?= $interior[ 'interior_colors_group' ][ 'interior_colors_group_first' ] ?> 50%,
+                                                                <?= $interior[ 'interior_colors_group' ][ 'interior_colors_group_two' ] ?> 50%);"></span>
+                                                            <?php
+                                                            else : ?>
+                                                                <span id="model-sections-colors-interior-0" data-color="<?= $interior[ 'interior_color_rgb' ] ?>" data-text="<?= $interior[ 'interior_color_name' ] ?>" class="color-list-item" style="background: <?= $interior[ 'interior_color_rgb' ] ?>"></span>
+                                                            <?php
+                                                            endif; ?>
                                                         <?php
-                                                        if ($interior[ 'interior_two_colors' ]) : ?>
-                                                            <span id="model-sections-colors-interior-0" data-color="<?= $interior[ 'interior_color_rgb' ] ?>" data-text="<?= $interior[ 'interior_color_name' ] ?>" class="color-list-item" style="background-image:
-                                                                    linear-gradient(180deg, <?= $interior[ 'interior_colors_group' ][ 'interior_colors_group_first' ] ?> 50%,
-                                                            <?= $interior[ 'interior_colors_group' ][ 'interior_colors_group_two' ] ?> 50%);"></span>
-                                                        <?php
-                                                        else : ?>
-                                                            <span id="model-sections-colors-interior-0" data-color="<?= $interior[ 'interior_color_rgb' ] ?>" data-text="<?= $interior[ 'interior_color_name' ] ?>" class="color-list-item" style="background: <?= $interior[ 'interior_color_rgb' ] ?>"></span>
-                                                        <?php
-                                                        endif; ?>
-                                                    <?php
-                                                    endforeach; ?>
-                                                </div>
-                                            <?php
-                                            endif; ?>
+                                                        endforeach; ?>
+                                                    </div>
+                                                <?php
+                                                endif; ?>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
