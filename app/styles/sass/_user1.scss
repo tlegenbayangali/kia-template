@@ -1085,6 +1085,12 @@
             margin: 0 -30px;
         }
 
+        .popup {
+            .model-sections-desc-text {
+                margin-top: 0;
+            }
+        }
+
         .background-gray {
             background: $lgray;
         }
