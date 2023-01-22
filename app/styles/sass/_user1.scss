@@ -1075,6 +1075,11 @@
     &-sections {
         margin: 0 -80px;
 
+        &.popup {
+            .model-sections-desc-text {
+                margin-top: 0;
+            }
+        }
 
         @media screen and (max-width: 767px) {
             margin: 0 -55px;
@@ -1083,12 +1088,6 @@
 
         @media screen and (max-width: 524px) {
             margin: 0 -30px;
-        }
-
-        .popup {
-            .model-sections-desc-text {
-                margin-top: 0;
-            }
         }
 
         .background-gray {
