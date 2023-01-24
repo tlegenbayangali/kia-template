@@ -185,7 +185,9 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                 //                ]);
                 ?>
                 <?php
-                $configs = json_decode(file_get_contents("wp-content/themes/kia/model_config_data/$current_model" . "_configs.json"))
+                if (file_get_contents("wp-content/themes/kia/model_config_data/$current_model" . "_configs.json")) :
+                    $configs = json_decode(file_get_contents("wp-content/themes/kia/model_config_data/$current_model" . "_configs.json"));
+                endif;
                 ?>
                 <?php
                 if (get_field('show_complectations')) : ?>
