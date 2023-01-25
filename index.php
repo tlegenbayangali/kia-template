@@ -476,7 +476,7 @@ if (get_field('is_available_cars', 'options')) : ?>
 endif; ?>
 <?php
 $offers_cars = new WP_Query([
-    'post_type' => 'offers-service'
+    'post_type' => 'offers-cars'
 ]);
 if ($offers_cars->posts):
     ?>
