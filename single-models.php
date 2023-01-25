@@ -242,7 +242,6 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                         </div>
                                                         <div class="content">
                                                             <ul>
-                                                                <li><?= $config->price ?></li>
                                                                 <?php
                                                                 if ($config->year) : ?>
                                                                     <li>
