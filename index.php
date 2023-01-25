@@ -474,7 +474,12 @@ if (get_field('is_available_cars', 'options')) : ?>
     </section>
 <?php
 endif; ?>
-<?php if ($offers_service->posts): ?>
+<?php
+$offers_cars = new WP_Query([
+    'post_type' => 'offers-service'
+]);
+if ($offers_cars->posts):
+    ?>
     <section class="offers section pt-80 pb-80">
         <div class="container">
             <div class="row">
