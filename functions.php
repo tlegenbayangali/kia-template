@@ -379,6 +379,19 @@ add_filter('wpcf7_form_elements', function ($content) {
 });
 // CF7 Filters
 
+// 360
+function three_d()
+{
+    if (is_singular('models')) {
+        ?>
+        <script src="https://scaleflex.cloudimg.io/v7/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js?func=proxy"></script>
+        <?php
+    }
+}
+
+add_action('wp_footer', 'three_d');
+// 360
+
 // Contact Form + Bitrix
 add_action('wpcf7_mail_sent', 'from_cf_to_bitrix_sender');
 if (get_field('bitrix_webhook', 'options')) {

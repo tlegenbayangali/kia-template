@@ -27,28 +27,28 @@ if (get_field('main_slider_slides', 'options')) : ?>
                 <?php
                 foreach (get_field('main_slider_slides', 'options') as $slide) : ?>
                     <div class="swiper-slide">
-                        <?php if ($slide['position_content']) : ?>
+                        <?php if ($slide[ 'position_content' ]) : ?>
                             <div class="hero-slider-item">
                                 <div class="img">
                                     <?php
-                                    echo wp_get_attachment_image($slide['main_slider_slide_image'], 'full'); ?>
+                                    echo wp_get_attachment_image($slide[ 'main_slider_slide_image' ], 'full'); ?>
                                 </div>
                                 <div class="info d-flex justify-content-between flex-column">
                                     <div class="info-top">
                                         <div class="slider-heading">
                                             <?php
-                                            echo $slide['main_slider_slide_heading'] ?>
+                                            echo $slide[ 'main_slider_slide_heading' ] ?>
                                         </div>
                                         <span class="slider-description">
                                             <?php
-                                            echo $slide['main_slider_slide_description'] ?>
+                                            echo $slide[ 'main_slider_slide_description' ] ?>
                                         </span>
                                     </div>
                                     <div class="info-bottom">
                                         <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                            <a href="<?= $slide['main_slider_slide_button']['main_slider_slide_button_link'] ?>" class="btn">
+                                            <a href="<?= $slide[ 'main_slider_slide_button' ][ 'main_slider_slide_button_link' ] ?>" class="btn">
                                                 <?php
-                                                echo $slide['main_slider_slide_button']['main_slider_slide_button_text'] ?>
+                                                echo $slide[ 'main_slider_slide_button' ][ 'main_slider_slide_button_text' ] ?>
                                             </a>
                                         </div>
                                     </div>
@@ -58,24 +58,24 @@ if (get_field('main_slider_slides', 'options')) : ?>
                             <div class="hero-slider-item_right">
                                 <div class="img">
                                     <?php
-                                    echo wp_get_attachment_image($slide['main_slider_slide_image'], 'full'); ?>
+                                    echo wp_get_attachment_image($slide[ 'main_slider_slide_image' ], 'full'); ?>
                                 </div>
                                 <div class="info d-flex justify-content-between flex-column">
                                     <div class="info-top d-flex flex-column ">
                                         <div class="slider-heading">
                                             <?php
-                                            echo $slide['main_slider_slide_heading'] ?>
+                                            echo $slide[ 'main_slider_slide_heading' ] ?>
                                         </div>
                                         <span class="slider-description">
                                             <?php
-                                            echo $slide['main_slider_slide_description'] ?>
+                                            echo $slide[ 'main_slider_slide_description' ] ?>
                                         </span>
                                     </div>
                                     <div class="info-bottom">
                                         <div class="btn-wrapper btn-wrapper-lg btn-wrapper-white">
-                                            <a href="<?= $slide['main_slider_slide_button']['main_slider_slide_button_link'] ?>" class="btn">
+                                            <a href="<?= $slide[ 'main_slider_slide_button' ][ 'main_slider_slide_button_link' ] ?>" class="btn">
                                                 <?php
-                                                echo $slide['main_slider_slide_button']['main_slider_slide_button_text'] ?>
+                                                echo $slide[ 'main_slider_slide_button' ][ 'main_slider_slide_button_text' ] ?>
                                             </a>
                                         </div>
                                     </div>
@@ -121,7 +121,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="section-heading"><?php
-                                                    the_field('models_slider_heading', 'options') ?></h1>
+                            the_field('models_slider_heading', 'options') ?></h1>
                     </div>
                 </div>
 
@@ -135,7 +135,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                                     <span></span>
                                     <svg>
                                         <use xlink:href="<?php
-                                                            echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#arrow-right"></use>
+                                        echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#arrow-right"></use>
                                     </svg>
                                 </div>
                                 <div class="options">
@@ -197,7 +197,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                                                 if (get_field('car_price_conditions', $model->ID)) : ?>
                                                     <svg class="info-additional conditions">
                                                         <use xlink:href="<?php
-                                                                            echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
+                                                        echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
                                                     </svg>
                                                 <?php
                                                 endif; ?>
@@ -214,7 +214,7 @@ if (get_field('is_models_slider', 'options')) : ?>
                                                 if (get_field('car_credit_calc', $model->ID)) : ?>
                                                     <svg class="info-additional credit">
                                                         <use xlink:href="<?php
-                                                                            echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
+                                                        echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
                                                     </svg>
                                                 <?php
                                                 endif; ?>
@@ -303,7 +303,7 @@ if (get_field('is_online_services', 'options')) : ?>
 
                             foreach ($online_services->posts as $service) :
 
-                            ?>
+                                ?>
                                 <div class="swiper-slide d-flex flex-column justify-content-between services-item">
                                     <a href="<?= get_post_permalink($service->ID) ?>" class="service-block">
                                         <span class="service-img">
@@ -369,7 +369,7 @@ if (get_field('is_available_cars', 'options')) : ?>
                             <span></span>
                             <svg class="info-aditional">
                                 <use xlink:href="<?php
-                                                    echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#arrow-right"></use>
+                                echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#arrow-right"></use>
                             </svg>
                         </div>
                         <div class="options">
@@ -381,12 +381,12 @@ if (get_field('is_available_cars', 'options')) : ?>
                                 $models = [];
                                 foreach ($available_cars as $car) :
                                     $terms = wp_get_post_terms($car->ID, 'model');
-                                ?>
+                                    ?>
                                     <?php
-                                    if (!in_array($terms[0]->name, $models)) :
-                                        array_push($models, $terms[0]->name); ?>
-                                        <li data-option="<?= $terms[0]->slug ?>">
-                                            <?= $terms[0]->name ?>
+                                    if (!in_array($terms[ 0 ]->name, $models)) :
+                                        array_push($models, $terms[ 0 ]->name); ?>
+                                        <li data-option="<?= $terms[ 0 ]->slug ?>">
+                                            <?= $terms[ 0 ]->name ?>
                                         </li>
                                     <?php
                                     endif; ?>
@@ -407,8 +407,8 @@ if (get_field('is_available_cars', 'options')) : ?>
                     <?php
                     foreach ($available_cars as $car) :
                         $terms = wp_get_post_terms($car->ID, 'model');
-                    ?>
-                        <div class="swiper-slide d-flex flex-column justify-content-between model model-wide" data-option="<?= $terms[0]->slug ?>">
+                        ?>
+                        <div class="swiper-slide d-flex flex-column justify-content-between model model-wide" data-option="<?= $terms[ 0 ]->slug ?>">
                             <div class="top">
                                 <div class="img">
                                     <a class="d-block" href="<?= get_the_permalink($car->ID) ?>">
@@ -418,7 +418,7 @@ if (get_field('is_available_cars', 'options')) : ?>
                                 <div class="title">
                                     <div class="d-flex">
                                         <a href="<?= get_the_permalink($car->ID) ?>">
-                                            <span class="mr-2 underlined underlined-black fz-18 fw-700"><?= $terms[0]->name ?> <?= $car->post_title ?></span>
+                                            <span class="mr-2 underlined underlined-black fz-18 fw-700"><?= $terms[ 0 ]->name ?> <?= $car->post_title ?></span>
                                         </a>
                                     </div>
                                 </div>
@@ -434,10 +434,10 @@ if (get_field('is_available_cars', 'options')) : ?>
                                     <div class="mt-2 price">
                                         <?= get_field('price', $car->ID) ?> ₸
                                         <span class="price-sm"><?= price_for_month(
-                                                                    'price',
-                                                                    $car->ID,
-                                                                    36
-                                                                ) ?> ₸/мес.</span>
+                                                'price',
+                                                $car->ID,
+                                                36
+                                            ) ?> ₸/мес.</span>
                                     </div>
                                 <?php
                                 endif; ?>
@@ -474,104 +474,106 @@ if (get_field('is_available_cars', 'options')) : ?>
     </section>
 <?php
 endif; ?>
-<section class="offers section pt-80 pb-80">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h4 class="section-heading">
-                    Акции и спецпредложения на автомобили Kia
-                </h4>
-                <div class="pos-r dalacode-slider">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <?php
+<?php if ($offers_service->posts): ?>
+    <section class="offers section pt-80 pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="section-heading">
+                        Акции и спецпредложения на автомобили Kia
+                    </h4>
+                    <div class="pos-r dalacode-slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <?php
 
-                        $offers_cars = new WP_Query([
-                            'post_type' => 'offers-cars'
-                        ]);
+                            $offers_cars = new WP_Query([
+                                'post_type' => 'offers-cars'
+                            ]);
 
-                        ?>
-                        <?php
-                        foreach ($offers_cars->posts as $offer) : ?>
-                            <div class="swiper-slide d-flex flex-column justify-content-between model">
-                                <div class="offers-card">
-                                    <div class="img">
-                                        <a href="<?= get_the_permalink($offer->ID) ?>">
-                                            <?= get_the_post_thumbnail($offer->ID, 'full') ?>
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <div class="d-flex flex-column">
+                            ?>
+                            <?php
+                            foreach ($offers_cars->posts as $offer) : ?>
+                                <div class="swiper-slide d-flex flex-column justify-content-between model">
+                                    <div class="offers-card">
+                                        <div class="img">
                                             <a href="<?= get_the_permalink($offer->ID) ?>">
+                                                <?= get_the_post_thumbnail($offer->ID, 'full') ?>
+                                            </a>
+                                        </div>
+                                        <div class="title">
+                                            <div class="d-flex flex-column">
+                                                <a href="<?= get_the_permalink($offer->ID) ?>">
                                                 <span class="mr-2 underlined-black fz-15 fw-700">
                                                     <?= $offer->post_title ?>
                                                 </span>
-                                            </a>
-                                            <?php if (get_field('finish', $offer->ID)) : ?>
-                                                <p class="c-disabled mt-10">
-                                                    Завершено
+                                                </a>
+                                                <?php if (get_field('finish', $offer->ID)) : ?>
+                                                    <p class="c-disabled mt-10">
+                                                        Завершено
+                                                    </p>
+                                                <?php else : ?>
+                                                    <p class="c-disabled mt-10">
+                                                        Постоянная акция
+                                                    </p>
+                                                <?php endif; ?>
+                                                <p class="offers-desc">
+                                                    <?= get_field('short_description', $offer->ID) ?>
                                                 </p>
-                                            <?php else : ?>
-                                                <p class="c-disabled mt-10">
-                                                    Постоянная акция
-                                                </p>
-                                            <?php endif; ?>
-                                            <p class="offers-desc">
-                                                <?= get_field('short_description', $offer->ID) ?>
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        <?php
-                        endforeach; ?>
+                            <?php
+                            endforeach; ?>
+                        </div>
+                        <button class="arrow arrow-prev swiper-button-prev">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                                <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                        <button class="arrow arrow-next swiper-button-next">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                                <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <button class="arrow arrow-prev swiper-button-prev">
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                            <path d="M8 4l-6 6 6 6M2.5 10H21" stroke="currentColor" stroke-width="1.5"></path>
-                        </svg>
-                    </button>
-                    <button class="arrow arrow-next swiper-button-next">
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                            <path d="M13 16l6-6-6-6M18.5 10H0" stroke="currentColor" stroke-width="1.5"></path>
-                        </svg>
-                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container mt-40">
-        <div class="row">
-            <div class="col-lg-12 d-flex">
-                <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
-                    <a href="<?= get_site_url() ?>/offers-cars/" class="btn">
-                        Все предложения
-                    </a>
+        <div class="container mt-40">
+            <div class="row">
+                <div class="col-lg-12 d-flex">
+                    <div class="btn-wrapper btn-wrapper-lg btn-wrapper-black">
+                        <a href="<?= get_site_url() ?>/offers-cars/" class="btn">
+                            Все предложения
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<hr class="separator">
-<section class="callback pt-80 pb-80" id="callback">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 callback-col d-flex justify-content-center">
-                <div class="callback-form">
-                    <h5 class="mb-2">Обратная связь</h5>
-                    <p class="mb-2">Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.</p>
-                    <?php if (get_field('foreign_form', 'options')) : ?>
-                        <?= get_field('foreign_form', 'options') ?>
-                    <?php else : ?>
-                        <?= do_shortcode('[contact-form-7 id="139" title="Форма заявки"]') ?>
-                    <?php endif; ?>
+    </section>
+<?php endif; ?>
+    <hr class="separator">
+    <section class="callback pt-80 pb-80" id="callback">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 callback-col d-flex justify-content-center">
+                    <div class="callback-form">
+                        <h5 class="mb-2">Обратная связь</h5>
+                        <p class="mb-2">Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.</p>
+                        <?php if (get_field('foreign_form', 'options')) : ?>
+                            <?= get_field('foreign_form', 'options') ?>
+                        <?php else : ?>
+                            <?= do_shortcode('[contact-form-7 id="139" title="Форма заявки"]') ?>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<hr class="separator">
+    </section>
+    <hr class="separator">
 <?php
 if (false) : ?>
     <section class="offers section pt-80 pb-80">
@@ -721,6 +723,6 @@ if ($company_news->posts) : ?>
     </section>
 <?php
 endif; ?>
-<div style="height:52px"></div>
+    <div style="height:52px"></div>
 <?php
 get_footer();

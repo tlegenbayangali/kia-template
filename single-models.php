@@ -3,6 +3,15 @@ get_header();
 $current_post = get_post(); ?>
 <?php
 get_template_part('template-parts/content', 'header-models', ['parent_post' => $current_post,]); ?>
+    <div class="360-wrapper" style="width: 600px;">
+        <div
+                class="cloudimage-360"
+                id="gurkha-suv"
+                data-folder="https://scaleflex.cloudimg.io/v7/demo/suv-orange-car-360/"
+                data-filename-x="orange-{index}.jpg"
+                data-amount-x="73"
+        ></div>
+    </div>
     <div class="hero-model" style="background: url(<?= get_field('model_hero_bg', get_the_ID()) ?>) no-repeat center center /cover gray;">
         <?php
         if (get_field('model_hero_video', get_the_ID())) : ?>
