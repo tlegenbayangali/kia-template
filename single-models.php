@@ -237,7 +237,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                         <div class="title">
                                                             <h5><?= $config->title ?></h5>
                                                             <div class="model-sections-variations-slide-inner-price">
-                                                                <span><?= $config->price ?></span>
+                                                                <span><?= $config->title ?></span>
                                                             </div>
                                                         </div>
                                                         <div class="content">
