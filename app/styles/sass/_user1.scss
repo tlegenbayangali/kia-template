@@ -1852,7 +1852,7 @@
                 width: 435px;
                 height: auto;
                 background: $white;
-                box-shadow: 0 0 10px 0.5;
+                box-shadow: 0 0 10px 0.5px;
 
                 &-inner {
                     height: 100%;
@@ -1870,8 +1870,7 @@
                     }
 
                     .price {
-                        display: block;
-                        color: $white;
+                        color: yellow;
                         margin-top: 5px;
                         font-size: 15px;
                         font-weight: 400;
