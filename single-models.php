@@ -234,13 +234,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                 <!-- SLIDES -->
                                                 <div class="swiper-slide model-sections-variations-slide">
                                                     <div class="model-sections-variations-slide-inner">
-                                                        <!--                                                        <div class="title">-->
-                                                        <!--                                                            <h5>--><?//= $config->title ?><!--</h5>-->
-                                                        <!--                                                            <div class="model-sections-variations-slide-inner-price">-->
-                                                        <!--                                                                --><?//= $config->price ?>
-                                                        <!--                                                            </div>-->
-                                                        <!--                                                        </div>-->
-                                                        <div class="model-sections-variations-slide-inner-title">
+                                                        <div class="title">
                                                             <h5><?= $config->title ?></h5>
                                                             <div class="model-sections-variations-slide-inner-price">
                                                                 <?= $config->price ?>
