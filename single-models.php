@@ -237,6 +237,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                         <div class="title">
                                                             <h5><?= $config->title ?></h5>
                                                             <div class="price">
+                                                                5775558
                                                                 <?= $config->price ?>
                                                             </div>
                                                         </div>
