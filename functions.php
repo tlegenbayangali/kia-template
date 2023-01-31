@@ -966,6 +966,7 @@ if (get_field('bitrix_webhook', 'options')) {
                     'UF_CRM_1586840541' => 3033,
                     'UF_CRM_1609922283' => get_field('bitrix_deal_city', 'options'),
                     'UF_CRM_1634038284' => get_field('bitrix_deal_site', 'options'),
+                    'UF_CRM_1611565554' => 'Нет данных...',
                     'COMMENTS'          => 'Обращение по определенному аксессуару: ' . $posted_data[ 'hidden-input-title' ] . ' [' . $posted_data[ 'hidden-input-sku' ] . ']',
                     'CONTACT_ID'        => $contact_result[ 'result' ],
                 ],
