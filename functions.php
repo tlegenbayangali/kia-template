@@ -653,8 +653,8 @@ if (get_field('bitrix_webhook', 'options')) {
                     'UF_CRM_1634038284' => get_field('bitrix_deal_site', 'options'),
                     'UF_CRM_1611565554' => (int) $form_model,
                     'COMMENTS'          => "Дата тест-драйва: " . $posted_data[ 'form-date' ]
-                        . " Время тест-драйва " . $posted_data[ 'form-date-time' ][ 0 ]
-                        . " Ждет звонка: " . $recall,
+                        . ". Время тест-драйва " . $posted_data[ 'form-date-time' ]
+                        . ". Ждет звонка: " . $recall,
                     'CONTACT_ID'        => $contact_result[ 'result' ],
                 ],
                 'params' => [
