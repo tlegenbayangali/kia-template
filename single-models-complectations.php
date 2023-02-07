@@ -27,7 +27,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                         <?php
                         if (get_field('model_price_list', $parent_post_id)) : ?>
                             <div class="equip-breadcrumbs-right-price">
-                                <a class="d-flex align-items-center underlined underlined-black" href="<?= get_field('model_price_list', $parent_post_id)[ 'url' ] ?>">
+                                <a target="_blank" class="d-flex align-items-center underlined underlined-black" href="<?= get_field('model_price_list', $parent_post_id)[ 'url' ] ?>">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="mr-1" data-v-bee0cc60="">
                                         <path d="M2.75.75h9.94l4.56 4.56v13.94H2.75V.75z" stroke="currentColor" stroke-width="1.5" data-v-bee0cc60=""></path>
                                         <path d="M12.5 1v5h4" stroke="currentColor" stroke-width="1.5" data-v-bee0cc60="">
