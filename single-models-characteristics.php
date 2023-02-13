@@ -99,7 +99,7 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                     <div class="equip-hero-inner">
                         <div class="equip-hero-title">
                         <span class="d-block">
-                            Комплектации и цены <?php
+                            Характеристики <?php
                             echo esc_html(get_the_title($parent_post_id)); ?>
                         </span>
                         </div>
