@@ -98,8 +98,18 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                 <!-- MAIN BLOCK FOR COLORS-->
                                 <div class="model-sections-colors-image-wrapper d-flex justify-content-center">
                                     <!-- COLORS IMAGE-->
-                                    <div class="model-sections-colors-image" id="model-sections-colors-image-0">
-                                        <img src="" alt="model"> <!-- COLOR IMAGE-->
+                                    <div class="model-sections-colors-image ">
+                                        <?php
+                                        $first_color = get_field('body_colors')[ 0 ][ 't60' ];
+                                        ?>
+                                        <div
+                                                class="cloudimage-360"
+                                                id="model-t60"
+                                                data-folder="<?= $first_color ?>"
+                                                data-filename-x="{index}.png"
+                                                data-amount-x="72"
+                                                data-spin-reverse="true"
+                                        ></div>
                                     </div> <!-- REQUIRED CLASS MODEL SECTION COLORS IMAGE-->
                                 </div>
                                 <div class="row mt-30">
@@ -109,8 +119,8 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                 <div id="model-sections-colors-exterior-desc-0" class="model-sections-colors-exterior-desc">
                                                     Цвет:
                                                     <span>
-                                                    <!-- COLOR NAME-->
-                                                </span>
+                                                        <!-- COLOR NAME-->
+                                                    </span>
                                                 </div>
                                             </div>
                                             <!-- COLORS LIST EXTERIOR-->
@@ -118,18 +128,9 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                 <?php
                                                 $current_model_colors = get_field('body_colors');
                                                 ?>
-                                                <?php
-                                                foreach ($current_model_colors as $color) : ?>
-                                                    <?php
-                                                    if ($color[ 'two_colors' ]) : ?>
-                                                        <span data-text="<?= $color[ 'body_color_name' ] ?>" data-src="<?= $color[ 'body_color_image' ] ?>" class="color-list-item" data-color="<?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?>" style="background-image: linear-gradient(180deg, <?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?> 50%, <?= $color[ 'body_colors_group' ][ 'body_colors_second' ] ?> 50%);"></span>
-                                                    <?php
-                                                    else : ?>
-                                                        <span data-text="<?= $color[ 'body_color_name' ] ?>" data-src="<?= $color[ 'body_color_image' ] ?>" class="color-list-item" data-color="<?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?>" style="background:<?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?>;"></span>
-                                                    <?php
-                                                    endif; ?>
-                                                <?php
-                                                endforeach; ?>
+                                                <?php foreach ($current_model_colors as $color) : ?>
+                                                    <span data-text="<?= $color[ 'body_color_name' ] ?>" data-src="<?= $color[ 't60' ] ?>" class="color-list-item" data-color="<?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?>" style="background:<?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?>;"></span>
+                                                <?php endforeach; ?>
                                             </div>
                                         </div>
                                     </div>
