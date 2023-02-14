@@ -1343,9 +1343,13 @@
                 height: auto;
 
                 &-excerpt {
-                    line-height: 1.6em;
+                    line-height: 165%;
                     margin-top: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
                     display: block;
+                    color: $d_white;
+                    max-width: 600px;
                 }
 
                 &-item {
@@ -1459,7 +1463,6 @@
 
                     li {
                         position: relative;
-                        margin-left: 20px;
                         display: inline-block;
 
                         &:not(:first-child) {
@@ -1467,19 +1470,6 @@
                         }
 
                         &.active {
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                width: 5px;
-                                height: 5px;
-                                display: block;
-                                transform: translateY(-50%);
-                                left: -20px;
-                                top: 50%;
-                                border-radius: 50%;
-                                background: $dark;
-                            }
-
                             a {
                                 font-weight: 700;
                             }
@@ -1606,6 +1596,7 @@
                 margin-bottom: 40px;
                 text-align: left;
                 margin-top: 36px;
+                color: $d_white;
             }
 
             &-button {
