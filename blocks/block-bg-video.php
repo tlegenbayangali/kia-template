@@ -1,26 +1,28 @@
 <?php
-    $id = 'text-block-with-youtube-' . $block['id'];
+$id = 'text-block-with-youtube-' . $block[ 'id' ];
 ?>
-<div class="model-sections" id="<?php echo $id;?>">
+<div class="model-sections" id="<?php echo $id; ?>">
     <div class="model-sections-inner model-sections-inner-video
-        <?php if( get_field('dark-mode') == 1 ) :
-                echo 'dark';
-            endif;
-        ?>"
-        style="background-color:<?php the_field('block-color')?> ;">
+        <?php if (get_field('dark-mode') == 1) :
+        echo 'dark';
+    endif;
+    ?>"
+         style="background-color:<?php the_field('block-color') ?> ;">
         <!-- TEXT BLOCK-->
         <div class="model-sections-text-block">
             <div class="model-sections-title">
-                <span class="model-sections-title-sub">
-                    <?php the_field('model-video-sub-title')?>
-                </span>
+                <?php if (get_field('model-video-sub-title')) : ?>
+                    <span class="model-sections-title-sub">
+                        <?php the_field('model-video-sub-title') ?>
+                    </span>
+                <?php endif; ?>
                 <div class="model-sections-title-header">
-                    <?php the_field('model-video-title')?>
+                    <?php the_field('model-video-title') ?>
                 </div>
             </div>
             <div class="model-sections-desc">
                 <p class="model-sections-desc-text">
-                    <?php the_field('model-video-description')?>
+                    <?php the_field('model-video-description') ?>
                 </p>
             </div>
         </div>

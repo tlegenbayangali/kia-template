@@ -15,9 +15,11 @@ $id = 'without-list-' . $block[ 'id' ];
             </div>
             <div class="model-sections-list-right">
                 <div class="model-sections-title">
-                    <span class="model-sections-title-sub">
-                        <?php the_field('items-sub-title') ?>
-                    </span>
+                    <?php if (get_field('items-sub-title')) : ?>
+                        <span class="model-sections-title-sub">
+                            <?php the_field('items-sub-title') ?>
+                        </span>
+                    <?php endif; ?>
                     <h3 class="model-sections-title-header">
                         <?php the_field('items-title') ?>
                     </h3>

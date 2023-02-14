@@ -1,18 +1,20 @@
 <?php
-$id = 'text-block-with-carousel-' . $block['id'];
+$id = 'text-block-with-carousel-' . $block[ 'id' ];
 ?>
 <div class="model-sections model-sections-margin" id="<?php echo $id; ?>">
     <div class="model-sections-inner  
         <?php if (get_field('dark-mode') == 1) :
-            echo 'dark';
-        endif;
-        ?>" style="background-color:<?php the_field('block-color') ?> ;">
+        echo 'dark';
+    endif;
+    ?>" style="background-color:<?php the_field('block-color') ?> ;">
         <!-- TEXT BLOCK-->
         <div class="model-sections-text-block">
             <div class="model-sections-title">
-                <span class="model-sections-title-sub">
-                    <?php the_field('carousel-sub-title') ?>
-                </span>
+                <?php if (get_field('carousel-sub-title')) : ?>
+                    <span class="model-sections-title-sub">
+                        <?php the_field('carousel-sub-title') ?>
+                    </span>
+                <?php endif; ?>
                 <h3 class="model-sections-title-header">
                     <?php the_field('carousel-title') ?>
                 </h3>
@@ -32,7 +34,7 @@ $id = 'text-block-with-carousel-' . $block['id'];
                             <!-- Slides -->
                             <?php while (have_rows('carousel-list')) : the_row();
                                 $image = get_sub_field('carousel-list-img');
-                            ?>
+                                ?>
                                 <div class="swiper-slide swiper-slider-block-slide">
                                     <img class="image-full" src="<?php echo $image; ?>" alt="full-image">
                                 </div>
