@@ -11,9 +11,11 @@ $id = 'text-block-with-popup-' . $block[ 'id' ];
         <!-- TEXT BLOCK-->
         <div class="model-sections-text-block">
             <div class="model-sections-title">
-                <span class="model-sections-title-sub">
-                    <?php the_field('popup-sub-title') ?>
-                </span>
+                <?php if (get_field('popup-sub-title')) : ?>
+                    <span class="model-sections-title-sub">
+                            <?php the_field('popup-sub-title') ?>
+                        </span>
+                <?php endif; ?>
                 <h3 class="model-sections-title-header">
                     <?php the_field('popup-title') ?>
                 </h3>
