@@ -297,6 +297,38 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                 <?php
                 endif ?>
 
+                <!--5 YEARS-->
+                <div class="model-sections">
+                    <div class="model-sections-inner">
+                        <div class="model-sections-list">
+                            <div class="model-sections-list-smallimage">
+                                <div class="model-sections-list-smallimage-item d-block">
+                                    <img src="<?php echo get_template_directory_uri() . '/app/images/dist/5years.svg' ?>" alt="small-image">
+                                    <!--                                    <span class="model-sections-list-smallimage-excerpt">-->
+                                    <!---->
+                                    <!--                                    </span>-->
+                                </div>
+                            </div>
+                            <div class="model-sections-list-right">
+                                <div class="model-sections-title">
+                                    <span class="model-sections-title-sub">
+                                        Обслуживание
+                                    </span>
+                                    <h3 class="model-sections-title-header">
+                                        Гарантия и сервис
+                                    </h3>
+                                </div>
+                                <div class="model-sections-desc">
+                                    <p class="model-sections-desc-text">
+                                        Автомобили Kia произведены по самым высоким стандартам автомобильной промышленности. Именно это исключительное качество позволяет Kia предложить уникальные условия гарантии.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--5 YEARS-->
+
                 <div class="model-sections">
                     <div class="model-sections-bottom-block">
                         <div class="model-sections-bottom-block-bg">
