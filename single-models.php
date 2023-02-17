@@ -90,7 +90,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                 the_content(); ?>
                 <!-- BODY COLORS SECTIONS-->
                 <?php
-                if (have_rows('body_colors')) : ?>
+                if (get_field('t60_is_active')) : ?>
                     <div class="model-sections">
                         <!-- COLORS SECTION-->
                         <div class="model-sections-inner-wide">
