@@ -392,6 +392,10 @@ function three_d()
 add_action('wp_footer', 'three_d');
 // 360
 
+// Lazy Loading
+
+// Lazy Loading
+
 // Contact Form + Bitrix
 add_action('wpcf7_mail_sent', 'from_cf_to_bitrix_sender');
 if (get_field('bitrix_webhook', 'options')) {

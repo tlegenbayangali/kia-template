@@ -1,0 +1,25 @@
+.cloudimage-360-view-360-icon {
+    display: none;
+}
+
+.cloudimage-360-loader {
+    display: none;
+}
+
+.t60 {
+    &-description {
+        max-width: 510px;
+        font-size: 12px;
+        text-align: center;
+
+        &-image {
+            margin-bottom: 5px;
+        }
+
+        &-disclaimer {
+            color: #9ba1a5;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
