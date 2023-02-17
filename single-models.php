@@ -96,7 +96,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                         <div class="model-sections-inner-wide">
                             <div class="model-sections-colors">
                                 <!-- MAIN BLOCK FOR COLORS-->
-                                <div class="model-sections-colors-image-wrapper d-flex justify-content-center">
+                                <div class="model-sections-colors-image-wrapper d-flex flex-column align-items-center justify-content-center">
                                     <!-- COLORS IMAGE-->
                                     <div class="model-sections-colors-image ">
                                         <?php
@@ -111,6 +111,13 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                 data-spin-reverse="true"
                                         ></div>
                                     </div> <!-- REQUIRED CLASS MODEL SECTION COLORS IMAGE-->
+                                    <div class="t60-description d-flex flex-column align-items-center">
+                                        <div class="t60-description-image">
+                                            <img src="<?= get_template_directory_uri() . '/app/images/dist/t60.svg' ?>" alt="Обзор 360">
+                                        </div>
+                                        <span class="d-block">Просмотр в 360°</span>
+                                        <span class="d-block t60-description-disclaimer">Изображение может не соответствовать выбранной комплектации. Цвет автомобиля может отличаться от представленного на данном сайте.</span>
+                                    </div>
                                 </div>
                                 <div class="row mt-30">
                                     <div class="col-12 col-md-6">
