@@ -103,9 +103,11 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                             echo esc_html(get_the_title($parent_post_id)); ?>
                         </span>
                         </div>
-                        <div class="equip-hero-min-price">
-                            Минимальная цена
-                        </div>
+                        <?php if (get_field('starting_price', $post_data->ID)) : ?>
+                            <div class="equip-hero-min-price">
+                                Минимальная цена
+                            </div>
+                        <?php endif; ?>
                         <div class="equip-hero-min-price-val d-flex align-items-center">
                         <span class="val">
                             <?= get_field('starting_price', $post_data->ID) ?> ₸
