@@ -103,11 +103,6 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                             echo esc_html(get_the_title($parent_post_id)); ?>
                         </span>
                         </div>
-                        <?php
-                        echo '<pre>';
-                        print_r($post_data->ID);
-                        echo '</pre>';
-                        ?>
                         <?php if (get_field('starting_price', $post_data->ID)) : ?>
                         <div class="equip-hero-min-price">
                             Минимальная цена
