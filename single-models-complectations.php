@@ -104,14 +104,14 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                         </span>
                         </div>
                         <?php if (get_field('starting_price', $post_data->ID)) : ?>
-                            <div class="equip-hero-min-price">
-                                Минимальная цена
-                            </div>
-                        <?php endif; ?>
+                        <div class="equip-hero-min-price">
+                            Минимальная цена
+                        </div>
                         <div class="equip-hero-min-price-val d-flex align-items-center">
-                        <span class="val">
-                            <?= get_field('starting_price', $post_data->ID) ?> ₸
-                        </span>
+                                <span class="val">
+                                    <?= get_field('starting_price', $post_data->ID) ?> ₸
+                                </span>
+                            <?php endif; ?>
                             <span class="equip-hero-min-price-info d-block">
                             <svg class="info">
                                 <use xlink:href="images/dist/sprite.svg#info"></use>
