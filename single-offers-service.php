@@ -41,18 +41,18 @@ get_header(); ?>
                                 $date_start = DateTime::createFromFormat('Y-m-d', $period[ 'period_start' ]);
                                 $date_end = DateTime::createFromFormat('Y-m-d', $period[ 'period_end' ]);
                                 if ($date_start && $date_end) {
-                                    $duration = $date_end->diff($date_start) + 1;
+                                    $duration = $date_end->diff($date_start);
                                     $left = $date_end->diff($now);
                                 }
                                 ?>
                                     <?php if ($date_start && $date_end) : ?>
                                         <?php if ($date_start < $date_end) : ?>
-                                            <?php if ($duration->days == 0 || $duration->days >= 5) : ?>
-                                                <?= $duration->days ?> дней
-                                            <?php elseif ($duration->days == 1) : ?>
-                                                <?= $duration->days ?> день
-                                            <?php elseif ($duration->days >= 2 && $duration->days <= 4) : ?>
-                                                <?= $duration->days ?> дня
+                                            <?php if ($duration->days + 1 == 0 || $duration->days + 1 >= 5) : ?>
+                                                <?= $duration->days + 1 ?> дней
+                                            <?php elseif ($duration->days + 1 == 1) : ?>
+                                                <?= $duration->days + 1 ?> день
+                                            <?php elseif ($duration->days + 1 >= 2 && $duration->days + 1 <= 4) : ?>
+                                                <?= $duration->days + 1 ?> дня
                                             <?php endif; ?>
                                         <?php else : ?>
                                             Дата начала позднее даты окончания
@@ -67,12 +67,12 @@ get_header(); ?>
                                     <span class="d-block mb-10">До завершения</span>
                                     <span class="lg d-block">
                                     <?php if ($now <= $date_end) : ?>
-                                        <?php if ($left->days == 0 || $left->days >= 5) : ?>
-                                            <?= $left->days ?> дней
-                                        <?php elseif ($left->days == 1) : ?>
-                                            <?= $left->days ?> день
-                                        <?php elseif ($left->days >= 2 && $left->days <= 4) : ?>
-                                            <?= $left->days ?> дня
+                                        <?php if ($left->days + 1 == 0 || $left->days + 1 >= 5) : ?>
+                                            <?= $left->days + 1 ?> дней
+                                        <?php elseif ($left->days + 1 == 1) : ?>
+                                            <?= $left->days + 1 ?> день
+                                        <?php elseif ($left->days + 1 >= 2 && $left->days + 1 <= 4) : ?>
+                                            <?= $left->days + 1 ?> дня
                                         <?php endif; ?>
                                     <?php else : ?>
                                         Завершено
