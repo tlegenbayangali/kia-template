@@ -263,6 +263,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                                         <?= $config->characteristics ?>
                                                                     </p>
                                                                 </li>
+                                                                <?php if ($config->options): ?>
                                                                 <li>
                                                                     <span class="content-header">Основные опции</span>
                                                                     <?php
@@ -271,6 +272,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                                     <?php
                                                                     endforeach; ?>
                                                                 </li>
+                                                <?php endif; ?>
                                                             </ul>
                                                         </div>
                                                         <!-- MORE BUTTON TO ANOTHER PAGE-->
