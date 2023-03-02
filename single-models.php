@@ -266,11 +266,9 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                                 <?php if ($config->options): ?>
                                                                 <li>
                                                                     <span class="content-header">Основные опции</span>
-                                                                    <?php
-                                                                    foreach ($config->options as $option) : ?>
+                                                                    <?php foreach ($config->options as $option) : ?>
                                                                         <p><?= $option ?></p>
-                                                                    <?php
-                                                                    endforeach; ?>
+                                                                    <?php endforeach; ?>
                                                                 </li>
                                                 <?php endif; ?>
                                                             </ul>
