@@ -191,83 +191,87 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                         </div>
                     </div>
                 </div>
-                <div class="equip-content">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!-- TOP PADDING-->
-                            <div class="equip-header-top-padding">
-                            </div>
-                            <div class="equip-content-inner">
-                                <?php
-                                $options = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_props.json'));
-                                ?>
+                <?php if (false): ?>
+                    <div class="equip-content">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- TOP PADDING-->
+                                <div class="equip-header-top-padding">
+                                </div>
+                                <div class="equip-content-inner">
+                                    <?php
+                                    $options = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_props.json'));
+                                    ?>
 
-                                <?php
-                                foreach ($options as $option_type) : ?>
-                                    <div class="equip-config">
-                                        <!-- ONE SECTION -->
-                                        <section class="equip-config-section">
-                                            <!-- MAIN TITLE-->
-                                            <h2 class="equip-config-section-title">
-                                                <?= $option_type->options_category ?>
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
-                                                    <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
-                                                </svg>
-                                            </h2>
-                                            <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
-                                            <div class="equip-config-section-items">
-                                                <!-- ONE SECTION CAROUSEL ITEM-->
-                                                <?php
-                                                foreach ($option_type->options as $option) : ?>
-                                                    <div class="equip-config-section-item">
-                                                        <div class="equip-config-section-item-header">
-                                                            <?= $option->option_title ?>
-                                                        </div>
-                                                        <div class="equip-config-section-item-carousel">
-                                                            <!-- SWIPER STARTS-->
-                                                            <div class="swiper-container equip-config-section-item-carousel-container">
-                                                                <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
-                                                                    <?php
-                                                                    foreach ($option->available_on_config as $config) : ?>
-                                                                        <div class="swiper-slide equip-config-section-item-carousel-slide">
-                                                                            <div>
-                                                                                <?php
-                                                                                if ($config) : ?>
+                                    <?php
+                                    foreach ($options as $option_type) : ?>
+                                        <div class="equip-config">
+                                            <!-- ONE SECTION -->
+                                            <section class="equip-config-section">
+                                                <!-- MAIN TITLE-->
+                                                <h2 class="equip-config-section-title">
+                                                    <?= $option_type->options_category ?>
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="">
+                                                        <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2"></path>
+                                                    </svg>
+                                                </h2>
+                                                <!-- ONE SECTION CAROUSEL ITEMS WRAPPER-->
+                                                <div class="equip-config-section-items">
+                                                    <!-- ONE SECTION CAROUSEL ITEM-->
+                                                    <?php
+                                                    foreach ($option_type->options as $option) : ?>
+                                                        <div class="equip-config-section-item">
+                                                            <div class="equip-config-section-item-header">
+                                                                <?= $option->option_title ?>
+                                                            </div>
+                                                            <div class="equip-config-section-item-carousel">
+                                                                <!-- SWIPER STARTS-->
+                                                                <div class="swiper-container equip-config-section-item-carousel-container">
+                                                                    <div class="swiper-wrapper equip-config-section-item-carousel-wrapper">
+                                                                        <?php
+                                                                        foreach ($option->available_on_config as $config) : ?>
+                                                                            <div class="swiper-slide equip-config-section-item-carousel-slide">
+                                                                                <div>
                                                                                     <?php
-                                                                                    if (is_bool($config)): ?>
-                                                                                        <svg>
-                                                                                            <use xlink:href="<?php
-                                                                                            echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
-                                                                                        </svg>
+                                                                                    if ($config) : ?>
+                                                                                        <?php
+                                                                                        if (is_bool($config)): ?>
+                                                                                            <svg>
+                                                                                                <use xlink:href="<?php
+                                                                                                echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#check"></use>
+                                                                                            </svg>
+                                                                                        <?php
+                                                                                        else: ?>
+                                                                                            <?= $config ?>
+                                                                                        <?php
+                                                                                        endif; ?>
                                                                                     <?php
-                                                                                    else: ?>
-                                                                                        <?= $config ?>
+                                                                                    else : ?>
+                                                                                        <span class="d-block"> — </span>
                                                                                     <?php
                                                                                     endif; ?>
-                                                                                <?php
-                                                                                else : ?>
-                                                                                    <span class="d-block"> — </span>
-                                                                                <?php
-                                                                                endif; ?>
+                                                                                </div>
                                                                             </div>
-                                                                        </div>
-                                                                    <?php
-                                                                    endforeach; ?>
+                                                                        <?php
+                                                                        endforeach; ?>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                <?php
-                                                endforeach; ?>
-                                            </div>
-                                        </section>
-                                    </div>
-                                <?php
-                                endforeach; ?>
+                                                    <?php
+                                                    endforeach; ?>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    <?php
+                                    endforeach; ?>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                <?php else: ?>
+                    <p>Информация в разработке...</p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
