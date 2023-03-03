@@ -1,1 +1,190 @@
-[{"options_category":"Тормоза","options":[{"option_title":"Размер передних тормозных дисков","available_on_config":["305 × 25","305 × 25","305 × 25","305 × 25","305 × 25","305 × 25","305 × 25"]},{"option_title":"Размер задних тормозных дисков","available_on_config":["300 × 10","","300 × 10","300 × 10","300 × 10","300 × 10","300 × 10"]}]},{"options_category":"Двигатель","options":[{"option_title":"Макс. Мощность (л.с [email protected] об\/мин)","available_on_config":["150","150","150","150","150","150","150"]},{"option_title":"Макс. Крутящий момент (Нм @ об\/мин)","available_on_config":["192","192","192","192","192","192","192"]}]},{"options_category":"Двигатель и трансмиссия","options":[{"option_title":"Объём двигателя","available_on_config":["2.0 Smartstream MPI","2.0 Smartstream MPI","2.0 Smartstream MPI","2.0 Smartstream MPI","2.0 Smartstream MPI","2.0 Smartstream MPI","2.0 Smartstream MPI"]},{"option_title":"Мощность, л.с.","available_on_config":["150","150","150","150","150","150","150"]},{"option_title":"Крутящий момент, Н·м","available_on_config":["192","192","192","192","192","192","192"]},{"option_title":"Коробка передач","available_on_config":["Автомат","Автомат","Автомат","Автомат","Автомат","Автомат","Автомат"]},{"option_title":"Привод","available_on_config":["Передний","Передний","Полный","Передний","Полный","Полный","Полный"]},{"option_title":"Время разгона 0-100 км\/ч, с","available_on_config":["10,6","10,6","10,6","10,6","10,6","10,6","10,6"]},{"option_title":"Тип топлива","available_on_config":["Бензин","Бензин","Бензин","Бензин","Бензин","Бензин","Бензин"]}]},{"options_category":"Выбросы CO2","options":[{"option_title":"Город, г\/км","available_on_config":["220","","","","","",""]},{"option_title":"Трасса, г\/км","available_on_config":["149","","","","","",""]},{"option_title":"В комбинированном цикле, г\/км","available_on_config":["175","","","","","",""]}]}]
+[
+  {
+    "options_category": "Тормоза",
+    "options": [
+      {
+        "option_title": "Размер передних тормозных дисков",
+        "available_on_config": [
+          "305 × 25",
+          "305 × 25",
+          "305 × 25",
+          "305 × 25",
+          "305 × 25",
+          "305 × 25",
+          "305 × 25"
+        ]
+      },
+      {
+        "option_title": "Размер задних тормозных дисков",
+        "available_on_config": [
+          "300 × 10",
+          "",
+          "300 × 10",
+          "300 × 10",
+          "300 × 10",
+          "300 × 10",
+          "300 × 10"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Двигатель",
+    "options": [
+      {
+        "option_title": "Макс. Мощность (л.с [email protected] об\/мин)",
+        "available_on_config": [
+          "150",
+          "150",
+          "150",
+          "150",
+          "150",
+          "150",
+          "150"
+        ]
+      },
+      {
+        "option_title": "Макс. Крутящий момент (Нм @ об\/мин)",
+        "available_on_config": [
+          "192",
+          "192",
+          "192",
+          "192",
+          "192",
+          "192",
+          "192"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Двигатель и трансмиссия",
+    "options": [
+      {
+        "option_title": "Объём двигателя",
+        "available_on_config": [
+          "2.0 Smartstream MPI",
+          "2.0 Smartstream MPI",
+          "2.0 Smartstream MPI",
+          "2.0 Smartstream MPI",
+          "2.0 Smartstream MPI",
+          "2.0 Smartstream MPI",
+          "2.0 Smartstream MPI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "150",
+          "150",
+          "150",
+          "150",
+          "150",
+          "150",
+          "150"
+        ]
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": [
+          "192",
+          "192",
+          "192",
+          "192",
+          "192",
+          "192",
+          "192"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Автомат",
+          "Автомат",
+          "Автомат",
+          "Автомат",
+          "Автомат",
+          "Автомат",
+          "Автомат"
+        ]
+      },
+      {
+        "option_title": "Привод",
+        "available_on_config": [
+          "Передний",
+          "Передний",
+          "Полный",
+          "Передний",
+          "Полный",
+          "Полный",
+          "Полный"
+        ]
+      },
+      {
+        "option_title": "Время разгона 0-100 км\/ч, с",
+        "available_on_config": [
+          "10,6",
+          "10,6",
+          "10,6",
+          "10,6",
+          "10,6",
+          "10,6",
+          "10,6"
+        ]
+      },
+      {
+        "option_title": "Тип топлива",
+        "available_on_config": [
+          "Бензин",
+          "Бензин",
+          "Бензин",
+          "Бензин",
+          "Бензин",
+          "Бензин",
+          "Бензин"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Выбросы CO2",
+    "options": [
+      {
+        "option_title": "Город, г\/км",
+        "available_on_config": [
+          "220",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "option_title": "Трасса, г\/км",
+        "available_on_config": [
+          "149",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "option_title": "В комбинированном цикле, г\/км",
+        "available_on_config": [
+          "175",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ]
+  }
+]
