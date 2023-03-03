@@ -270,7 +270,7 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                         </div>
                     </div>
                 <?php else: ?>
-                    <p>Информация в разработке...</p>
+                    <p style="display: block; padding: 30px 0;">Информация в разработке...</p>
                 <?php endif; ?>
             </div>
         </div>
