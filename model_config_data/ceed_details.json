@@ -1,1 +1,29 @@
-[{"title":"Comfort","price":"10 290 000 ₸","years":{"model_year":"2023 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"1.6 \/ 128 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"},{"title":"Luxe","price":"11 090 000 ₸","years":{"model_year":"2023 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"1.6 \/ 128 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"},{"title":"Prestige","price":"11 990 000 ₸","years":{"model_year":"2023 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"1.6 \/ 128 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"}]
+[
+  {
+    "title": "Comfort",
+    "price": "10 290 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "1.6 \/ 128 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "Luxe",
+    "price": "11 090 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "1.6 \/ 128 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "Prestige",
+    "price": "11 990 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "1.6 \/ 128 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  }
+]
