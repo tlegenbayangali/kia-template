@@ -514,14 +514,21 @@ if ($offers_cars->posts):
                                                     <?= $offer->post_title ?>
                                                 </span>
                                                 </a>
-                                                <?php if (get_field('finish', $offer->ID)) : ?>
+                                                <?php if (get_field('period', $offer->ID)) : ?>
                                                     <p class="c-disabled mt-10">
-                                                        Завершено
+                                                        Завершение: <?= get_field('period', $offer->ID)[ 'period_end' ] ?>
                                                     </p>
-                                                <?php else : ?>
-                                                    <p class="c-disabled mt-10">
-                                                        Постоянная акция
-                                                    </p>
+                                                <?php endif; ?>
+                                                <?php if (false) : ?>
+                                                    <?php if (get_field('finish', $offer->ID)) : ?>
+                                                        <p class="c-disabled mt-10">
+                                                            Завершено
+                                                        </p>
+                                                    <?php else : ?>
+                                                        <p class="c-disabled mt-10">
+                                                            Постоянная акция
+                                                        </p>
+                                                    <?php endif; ?>
                                                 <?php endif; ?>
                                                 <p class="offers-desc">
                                                     <?= get_field('short_description', $offer->ID) ?>
