@@ -94,16 +94,17 @@ $configs = new WP_Query([
                 <?php endif; ?>
             </div>
         </section>
-        <section>
-            <hr>
-            <!--Data time start -->
-            <div class="container">
-                <div class="row mt-20 justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="offer-info d-flex">
-                            <div class="period">
-                                <span class="d-block mb-10">Длительность</span>
-                                <span class="lg d-block">
+        <?php if (false) : ?>
+            <section>
+                <hr>
+                <!--Data time start -->
+                <div class="container">
+                    <div class="row mt-20 justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="offer-info d-flex">
+                                <div class="period">
+                                    <span class="d-block mb-10">Длительность</span>
+                                    <span class="lg d-block">
                                 <?php
                                 $now = new DateTime('Asia/Oral');
                                 $period = get_field('period', get_the_ID());
@@ -114,38 +115,38 @@ $configs = new WP_Query([
                                     $left = $date_end->diff($now);
                                 }
                                 ?>
-                                    <?php
-                                    if ($date_start && $date_end) : ?>
                                         <?php
-                                        if ($date_start < $date_end) : ?>
+                                        if ($date_start && $date_end) : ?>
                                             <?php
-                                            if ($duration->d == 0 || $duration->d >= 5) : ?>
-                                                <?= $duration->d ?> дней
+                                            if ($date_start < $date_end) : ?>
+                                                <?php
+                                                if ($duration->d == 0 || $duration->d >= 5) : ?>
+                                                    <?= $duration->d ?> дней
+                                                <?php
+                                                elseif ($duration->d == 1) : ?>
+                                                    <?= $duration->d ?> день
+                                                <?php
+                                                elseif ($duration->d >= 2 && $duration->d <= 4) : ?>
+                                                    <?= $duration->d ?> дня
+                                                <?php
+                                                endif; ?>
                                             <?php
-                                            elseif ($duration->d == 1) : ?>
-                                                <?= $duration->d ?> день
-                                            <?php
-                                            elseif ($duration->d >= 2 && $duration->d <= 4) : ?>
-                                                <?= $duration->d ?> дня
+                                            else : ?>
+                                                Дата начала позднее даты окончания
                                             <?php
                                             endif; ?>
                                         <?php
                                         else : ?>
-                                            Дата начала позднее даты окончания
+                                            Постоянная акция
                                         <?php
                                         endif; ?>
-                                    <?php
-                                    else : ?>
-                                        Постоянная акция
-                                    <?php
-                                    endif; ?>
                             </span>
-                            </div>
-                            <?php
-                            if ($date_start && $date_end) : ?>
-                                <div class="period">
-                                    <span class="d-block mb-10">До завершения</span>
-                                    <span class="lg d-block">
+                                </div>
+                                <?php
+                                if ($date_start && $date_end) : ?>
+                                    <div class="period">
+                                        <span class="d-block mb-10">До завершения</span>
+                                        <span class="lg d-block">
                                     <?php
                                     if ($now <= $date_end) : ?>
                                         <?php
@@ -165,15 +166,16 @@ $configs = new WP_Query([
                                     <?php
                                     endif; ?>
                                 </span>
-                                </div>
-                            <?php
-                            endif; ?>
+                                    </div>
+                                <?php
+                                endif; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Data time end -->
-        </section>
+                <!--Data time end -->
+            </section>
+        <?php endif; ?>
         <?php
         if (isset($models)) : ?>
             <hr>
