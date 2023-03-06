@@ -514,7 +514,7 @@ if ($offers_cars->posts):
                                                     <?= $offer->post_title ?>
                                                 </span>
                                                 </a>
-                                                <?php if (get_field('period', $offer->ID)) : ?>
+                                                <?php if (get_field('period', $offer->ID)[ 'period_end' ]) : ?>
                                                     <p class="c-disabled mt-10">
                                                         Завершение: <?= get_field('period', $offer->ID)[ 'period_end' ] ?>
                                                     </p>
