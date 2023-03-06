@@ -516,7 +516,10 @@ if ($offers_cars->posts):
                                                 </a>
                                                 <?php if (get_field('period', $offer->ID)[ 'period_end' ]) : ?>
                                                     <p class="c-disabled mt-10">
-                                                        Завершение: <?= get_field('period', $offer->ID)[ 'period_end' ] ?>
+                                                        <?php
+                                                        $date = date_create(get_field('period', $offer->ID)[ 'period_end' ]);
+                                                        ?>
+                                                        Завершение: <?= date_format($date, 'd/m/Y') ?>
                                                     </p>
                                                 <?php endif; ?>
                                                 <?php if (false) : ?>
