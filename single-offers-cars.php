@@ -51,45 +51,47 @@ $configs = new WP_Query([
                     </div>
                 </div>
 
-                <div class="row mt-20 justify-content-center">
-                    <div class="col-lg-7 offer-conditions">
-                        <h2 class="fz-35 mb-30">Условия участия</h2>
-                        <ul class="check">
-                            <?php
-                            $conditions = get_field('conditions', get_the_ID());
-                            if ($conditions) :
-                                foreach ($conditions as $condition) :
-                                    ?>
-                                    <li><?= $condition[ 'condition_item' ] ?></li>
+                <?php if (false) : ?>
+                    <div class="row mt-20 justify-content-center">
+                        <div class="col-lg-7 offer-conditions">
+                            <h2 class="fz-35 mb-30">Условия участия</h2>
+                            <ul class="check">
                                 <?php
-                                endforeach; ?>
-                            <?php
-                            else : ?>
-                                <li>Нет данных...</li>
-                            <?php
-                            endif; ?>
-                        </ul>
-                    </div>
-                    <?php
-                    if (get_field('is_advantages', get_the_ID())) : ?>
-                        <div class="col-lg-7 offer-advantages mt-60">
-                            <h2 class="fz-35 mb-30">Преимущества программы</h2>
-                            <?php
-                            if (get_field('advantages', get_the_ID())) : ?>
-                                <p>
-                                    <?= get_field('advantages', get_the_ID()) ?>
-                                </p>
-                            <?php
-                            else : ?>
-                                <p>
-                                    Нет данных...
-                                </p>
-                            <?php
-                            endif; ?>
+                                $conditions = get_field('conditions', get_the_ID());
+                                if ($conditions) :
+                                    foreach ($conditions as $condition) :
+                                        ?>
+                                        <li><?= $condition[ 'condition_item' ] ?></li>
+                                    <?php
+                                    endforeach; ?>
+                                <?php
+                                else : ?>
+                                    <li>Нет данных...</li>
+                                <?php
+                                endif; ?>
+                            </ul>
                         </div>
-                    <?php
-                    endif; ?>
-                </div>
+                        <?php
+                        if (get_field('is_advantages', get_the_ID())) : ?>
+                            <div class="col-lg-7 offer-advantages mt-60">
+                                <h2 class="fz-35 mb-30">Преимущества программы</h2>
+                                <?php
+                                if (get_field('advantages', get_the_ID())) : ?>
+                                    <p>
+                                        <?= get_field('advantages', get_the_ID()) ?>
+                                    </p>
+                                <?php
+                                else : ?>
+                                    <p>
+                                        Нет данных...
+                                    </p>
+                                <?php
+                                endif; ?>
+                            </div>
+                        <?php
+                        endif; ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </section>
         <section>
