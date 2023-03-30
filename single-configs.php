@@ -38,7 +38,7 @@ $credit_offers = new WP_Query([
                             <a href="/callback/" class="w-100-p tac btn btn-black btn-md">
                                 Забронировать автомобиль
                             </a>
-                            <a href="/models/<?= $current_model[0]->slug ?>/credit" class="w-100-p mt-10 tac btn btn-white-outline btn-md">
+                            <a href="/models/<?= $current_model[0]->slug ?>/credit/" class="w-100-p mt-10 tac btn btn-white-outline btn-md">
                                 Расчитать кредит
                             </a>
                         </div>

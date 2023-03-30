@@ -120,7 +120,7 @@
                                 if ($offers_cars->post_count > 0) { ?>
                                             <li>
                                                 <a class="underlined underlined-white" href="<?php
-                                    echo get_home_url(null, '/models') . '/' . $args[ 'parent_post' ]->post_name . '/specials'; ?>">
+                                    echo get_home_url(null, '/models') . '/' . $args[ 'parent_post' ]->post_name . '/specials/'; ?>">
                                                     Спецпредложения
                                                 </a>
                                             </li>
