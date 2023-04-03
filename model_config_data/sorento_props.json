@@ -1,1 +1,330 @@
-[{"options_category":"Двигатель и трансмиссия","options":[{"option_title":"Рабочий объем, см3","available_on_config":["2497","2497","2497"]},{"option_title":"Объём двигателя","available_on_config":["2.5 MPI","2.5 MPI","2.5 MPI"]},{"option_title":"Мощность, л.с.","available_on_config":["179","179","179"]},{"option_title":"Крутящий момент, Н·м","available_on_config":["225","225","225"]},{"option_title":"Коробка передач","available_on_config":["Автомат (6AT)","Автомат (6AT)","Автомат (6AT)"]},{"option_title":"Привод","available_on_config":["Полный","Полный","Полный"]},{"option_title":"Время разгона 0-100 км\/ч, с","available_on_config":["10,3","10,3","10,3"]},{"option_title":"Расход топлива комбинированный, л\/100 км","available_on_config":["8,9","8,9","8,9"]},{"option_title":"Тип топлива","available_on_config":["Бензин, АИ 95","Бензин, АИ 95","Бензин, АИ 95"]},{"option_title":"Рабочий объем, л","available_on_config":["2.5","2.5","2.5"]},{"option_title":"Экологический класс","available_on_config":["Евро-5","Евро-5","Евро-5"]}]},{"options_category":"Тормоза","options":[{"option_title":"Размер передних тормозных дисков","available_on_config":["325 × 30","325 × 30","325 × 30"]},{"option_title":"Размер задних тормозных дисков","available_on_config":["325 × 20","325 × 20","325 × 20"]}]},{"options_category":"Рулевое управление","options":[{"option_title":"Тип","available_on_config":["Рулевое управление с электроусилителем","Рулевое управление с электроусилителем","Рулевое управление с электроусилителем"]},{"option_title":"Передаточное число рулевого управления","available_on_config":["13,72","13,72","13,72"]},{"option_title":"Число оборотов руля между крайними положениями","available_on_config":["2,62","2,62","2,62"]},{"option_title":"Минимальный радиус разворота (м)","available_on_config":["5,78","5,78","5,78"]}]},{"options_category":"Динамические характеристики","options":[{"option_title":"Максимальная скорость (км\/ч)","available_on_config":["195","195","195"]},{"option_title":"Ускорение (сек) 0->100 (км\/ч)","available_on_config":["10,3","10,3","10,3"]},{"option_title":"Ускорение (сек) 80->120 (км\/ч)","available_on_config":["7,1","7,1","7,1"]},{"option_title":"Ускорение (сек) 60->100 (км\/ч)","available_on_config":["5,9","5,9","5,9"]},{"option_title":"Преодоление с места дистанции 400м","available_on_config":["17,1","17,1","17,1"]},{"option_title":"Путь при торможении со 100 до 0 км\/ч (м)","available_on_config":["34,41","34,41","34,41"]}]},{"options_category":"Расход топлива","options":[{"option_title":"Объем топливного бака (л.)","available_on_config":["67","67","67"]},{"option_title":"В загородном цикле (л. \/ 100 км)","available_on_config":["7,0","7,0","7,0"]},{"option_title":"В городском цикле (л. \/ 100 км)","available_on_config":["12,3","12,3","12,3"]},{"option_title":"В комбинированном цикле (л. \/ 100 км)","available_on_config":["8,9","8,9","8,9"]}]},{"options_category":"Размеры","options":[{"option_title":"Габариты (длина\/ширина\/высота), мм","available_on_config":["4810 \/ 1900 \/ 1690","4810 \/ 1900 \/ 1690","4810 \/ 1900 \/ 1690"]},{"option_title":"Тип кузова","available_on_config":["Кроссовер","Кроссовер","Кроссовер"]},{"option_title":"Колесная база, мм","available_on_config":["2815","2815","2815"]},{"option_title":"Дорожный просвет, мм","available_on_config":["176","176","176"]},{"option_title":"Объём багажника (VDA), л","available_on_config":["705-910","705-910","705-910"]}]},{"options_category":"Спецификация","options":[{"option_title":"Код модели","available_on_config":["GZW5L961G","GZW5L961G","GZW5L961G"]}]},{"options_category":"Выбросы CO2","options":[{"option_title":"Город, г\/км","available_on_config":["267","267","267"]},{"option_title":"Трасса, г\/км","available_on_config":["160","160","160"]},{"option_title":"В комбинированном цикле, г\/км","available_on_config":["202","202","202"]}]}]
+[
+  {
+    "options_category": "Двигатель и трансмиссия",
+    "options": [
+      {
+        "option_title": "Рабочий объем, см3",
+        "available_on_config": [
+          "2497",
+          "2497",
+          "2497"
+        ]
+      },
+      {
+        "option_title": "Объём двигателя",
+        "available_on_config": [
+          "2.5 MPI",
+          "2.5 MPI",
+          "2.5 MPI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "179",
+          "179",
+          "179"
+        ]
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": [
+          "225",
+          "225",
+          "225"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Автомат (6AT)",
+          "Автомат (6AT)",
+          "Автомат (6AT)"
+        ]
+      },
+      {
+        "option_title": "Привод",
+        "available_on_config": [
+          "Полный",
+          "Полный",
+          "Полный"
+        ]
+      },
+      {
+        "option_title": "Время разгона 0-100 км\/ч, с",
+        "available_on_config": [
+          "10,3",
+          "10,3",
+          "10,3"
+        ]
+      },
+      {
+        "option_title": "Расход топлива комбинированный, л\/100 км",
+        "available_on_config": [
+          "8,9",
+          "8,9",
+          "8,9"
+        ]
+      },
+      {
+        "option_title": "Тип топлива",
+        "available_on_config": [
+          "Бензин, АИ 95",
+          "Бензин, АИ 95",
+          "Бензин, АИ 95"
+        ]
+      },
+      {
+        "option_title": "Рабочий объем, л",
+        "available_on_config": [
+          "2.5",
+          "2.5",
+          "2.5"
+        ]
+      },
+      {
+        "option_title": "Экологический класс",
+        "available_on_config": [
+          "Евро-5",
+          "Евро-5",
+          "Евро-5"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Тормоза",
+    "options": [
+      {
+        "option_title": "Размер передних тормозных дисков",
+        "available_on_config": [
+          "325 × 30",
+          "325 × 30",
+          "325 × 30"
+        ]
+      },
+      {
+        "option_title": "Размер задних тормозных дисков",
+        "available_on_config": [
+          "325 × 20",
+          "325 × 20",
+          "325 × 20"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Рулевое управление",
+    "options": [
+      {
+        "option_title": "Тип",
+        "available_on_config": [
+          "Рулевое управление с электроусилителем",
+          "Рулевое управление с электроусилителем",
+          "Рулевое управление с электроусилителем"
+        ]
+      },
+      {
+        "option_title": "Передаточное число рулевого управления",
+        "available_on_config": [
+          "13,72",
+          "13,72",
+          "13,72"
+        ]
+      },
+      {
+        "option_title": "Число оборотов руля между крайними положениями",
+        "available_on_config": [
+          "2,62",
+          "2,62",
+          "2,62"
+        ]
+      },
+      {
+        "option_title": "Минимальный радиус разворота (м)",
+        "available_on_config": [
+          "5,78",
+          "5,78",
+          "5,78"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Динамические характеристики",
+    "options": [
+      {
+        "option_title": "Максимальная скорость (км\/ч)",
+        "available_on_config": [
+          "195",
+          "195",
+          "195"
+        ]
+      },
+      {
+        "option_title": "Ускорение (сек) 0->100 (км\/ч)",
+        "available_on_config": [
+          "10,3",
+          "10,3",
+          "10,3"
+        ]
+      },
+      {
+        "option_title": "Ускорение (сек) 80->120 (км\/ч)",
+        "available_on_config": [
+          "7,1",
+          "7,1",
+          "7,1"
+        ]
+      },
+      {
+        "option_title": "Ускорение (сек) 60->100 (км\/ч)",
+        "available_on_config": [
+          "5,9",
+          "5,9",
+          "5,9"
+        ]
+      },
+      {
+        "option_title": "Преодоление с места дистанции 400м",
+        "available_on_config": [
+          "17,1",
+          "17,1",
+          "17,1"
+        ]
+      },
+      {
+        "option_title": "Путь при торможении со 100 до 0 км\/ч (м)",
+        "available_on_config": [
+          "34,41",
+          "34,41",
+          "34,41"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Расход топлива",
+    "options": [
+      {
+        "option_title": "Объем топливного бака (л.)",
+        "available_on_config": [
+          "67",
+          "67",
+          "67"
+        ]
+      },
+      {
+        "option_title": "В загородном цикле (л. \/ 100 км)",
+        "available_on_config": [
+          "7,0",
+          "7,0",
+          "7,0"
+        ]
+      },
+      {
+        "option_title": "В городском цикле (л. \/ 100 км)",
+        "available_on_config": [
+          "12,3",
+          "12,3",
+          "12,3"
+        ]
+      },
+      {
+        "option_title": "В комбинированном цикле (л. \/ 100 км)",
+        "available_on_config": [
+          "8,9",
+          "8,9",
+          "8,9"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Размеры",
+    "options": [
+      {
+        "option_title": "Габариты (длина\/ширина\/высота), мм",
+        "available_on_config": [
+          "4810 \/ 1900 \/ 1690",
+          "4810 \/ 1900 \/ 1690",
+          "4810 \/ 1900 \/ 1690"
+        ]
+      },
+      {
+        "option_title": "Тип кузова",
+        "available_on_config": [
+          "Кроссовер",
+          "Кроссовер",
+          "Кроссовер"
+        ]
+      },
+      {
+        "option_title": "Колесная база, мм",
+        "available_on_config": [
+          "2815",
+          "2815",
+          "2815"
+        ]
+      },
+      {
+        "option_title": "Дорожный просвет, мм",
+        "available_on_config": [
+          "176",
+          "176",
+          "176"
+        ]
+      },
+      {
+        "option_title": "Объём багажника (VDA), л",
+        "available_on_config": [
+          "705-910",
+          "705-910",
+          "705-910"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Код модели",
+        "available_on_config": [
+          "GZW5L961G",
+          "GZW5L961G",
+          "GZW5L961G"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Выбросы CO2",
+    "options": [
+      {
+        "option_title": "Город, г\/км",
+        "available_on_config": [
+          "267",
+          "267",
+          "267"
+        ]
+      },
+      {
+        "option_title": "Трасса, г\/км",
+        "available_on_config": [
+          "160",
+          "160",
+          "160"
+        ]
+      },
+      {
+        "option_title": "В комбинированном цикле, г\/км",
+        "available_on_config": [
+          "202",
+          "202",
+          "202"
+        ]
+      }
+    ]
+  }
+]
