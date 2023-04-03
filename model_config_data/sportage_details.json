@@ -1,43 +1,16 @@
 [
   {
-    "title": "Classic",
-    "price": "13 190 000 ₸",
+    "title": "Luxe",
+    "price": "16 990 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nПередний"
-  },
-  {
-    "title": "Comfort",
-    "price": "13 790 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "Автомат\n\n\/\n\nПередний"
-  },
-  {
-    "title": "Comfort",
-    "price": "14 490 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
+    "tech_characteristics": "Автомат\n\n\/\n\nЗадний"
   },
   {
     "title": "Luxe",
-    "price": "14 490 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "Автомат\n\n\/\n\nПередний"
-  },
-  {
-    "title": "Luxe",
-    "price": "15 190 000 ₸",
+    "price": "17 990 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
@@ -46,16 +19,7 @@
   },
   {
     "title": "Prestige",
-    "price": "16 190 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
-  },
-  {
-    "title": "Prestige",
-    "price": "17 390 000 ₸",
+    "price": "18 590 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
@@ -64,7 +28,7 @@
   },
   {
     "title": "Style",
-    "price": "16 790 000 ₸",
+    "price": "19 290 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
@@ -72,8 +36,8 @@
     "tech_characteristics": "Автомат\n\n\/\n\nПолный"
   },
   {
-    "title": "X-Line",
-    "price": "19 390 000 ₸",
+    "title": "GT Line",
+    "price": "20 890 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
@@ -81,8 +45,8 @@
     "tech_characteristics": "Автомат\n\n\/\n\nПолный"
   },
   {
-    "title": "X-Line+",
-    "price": "19 890 000 ₸",
+    "title": "GT Line Suede",
+    "price": "21 390 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
