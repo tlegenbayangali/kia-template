@@ -1,1 +1,615 @@
-[{"options_category":"\u0422\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043a\u0438","options":[{"option_title":"\u041e\u0431\u044a\u0451\u043c \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f","available_on_config":["2.0 T-GDI, \u0431\u0435\u043d\u0437\u0438\u043d","2.0 T-GDI, \u0431\u0435\u043d\u0437\u0438\u043d","2.0 T-GDI, \u0431\u0435\u043d\u0437\u0438\u043d","2.0 T-GDI, \u0431\u0435\u043d\u0437\u0438\u043d","2.0 T-GDI, \u0431\u0435\u043d\u0437\u0438\u043d","2.0 T-GDI, \u0431\u0435\u043d\u0437\u0438\u043d"]},{"option_title":"\u041c\u043e\u0449\u043d\u043e\u0441\u0442\u044c, \u043b.\u0441.","available_on_config":["197","197","247","247","247","247"]},{"option_title":"\u041a\u0440\u0443\u0442\u044f\u0449\u0438\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u041d\u00b7\u043c","available_on_config":["353","353","353","353","353","353"]},{"option_title":"\u0412\u0440\u0435\u043c\u044f \u0440\u0430\u0437\u0433\u043e\u043d\u0430 0-100 \u043a\u043c\/\u0447, \u0441","available_on_config":["8,0","8,0","6,8","6,8","6,8","6,8"]},{"option_title":"\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u043f\u0435\u0440\u0435\u0434\u0430\u0447","available_on_config":["\u0410\u0432\u0442\u043e\u043c\u0430\u0442","\u0410\u0432\u0442\u043e\u043c\u0430\u0442","\u0410\u0432\u0442\u043e\u043c\u0430\u0442","\u0410\u0432\u0442\u043e\u043c\u0430\u0442","\u0410\u0432\u0442\u043e\u043c\u0430\u0442"]}]}]
+[
+  {
+    "options_category": "Пакет \"Теплые опции\"",
+    "options": [
+      {
+        "option_title": "Подогрев передних сидений",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев задних сидений",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев рулевого колеса",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Боковые зеркала с электроприводом и подогревом",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Экстерьер",
+    "options": [
+      {
+        "option_title": "Легкосплавные диски 18\" с шинами: 225/45R18",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Легкосплавные диски 19\" (дизайн GT) с шинами: передние 225/40R19, задние 255/35R19",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодные фары ближнего и дальнего света (LED)",
+        "available_on_config": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Проекционные светодиодные фары ближнего и дальнего света (LED)",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Корпуса боковых зеркал заднего вида окрашены в цвет кузова",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Корпуса боковых зеркал заднего вида покрыты темным хромом, линия остекления с отделкой темным хромом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Решетка радиатора и передний бампер с отделкой темным хромом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Декоративные вставки на переднем и заднем бамперах",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Панорамная крыша и люк с электроприводом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Интерьер",
+    "options": [
+      {
+        "option_title": "Сиденья с отделкой искусственной кожей",
+        "available_on_config": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Сиденья с комбинированной кожаной отделкой",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Сиденья и двери с комбинированной кожаной отделкой и алькантарой с красной прострочкой",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Дизайнерская прострочка дверей",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Центральная консоль с отделкой черным глянцем",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Центральная консоль с отделкой алюминием",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Обивка потолка тканью",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Обивка потолка алькантарой",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Металлические накладки на педали",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Металлические накладки на дверях",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Металлическая накладка на порог багажника",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Трехспицевый руль с перфорированной кожей и металлическими вставками",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Современные системы помощи водителю DRIVE WISE",
+    "options": [
+      {
+        "option_title": "Система контроля слепых зон (BCW)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предупреждения при выезде с парковки задним ходом (RCCW)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Комфорт",
+    "options": [
+      {
+        "option_title": "Электронное управление трансмиссией (Shift by Wire)",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулируемое сиденье водителя в 8-ми направлениях",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Электрорегулируемое сиденье переднего пассажира в 8-ми направлениях",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулируемое сиденье водителя в 10-ти направлениях с функцией памяти",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Электрорегулируемое сиденье водителя в 12-ти направлениях с функцией памяти",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулируемая рулевая колонка с функцией памяти",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Вентиляция передних сидений",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Передние и задние стеклоподъёмники с электроприводом с функцией Auto и Safety",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Круиз-контроль",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Монитор контроля слепых зон (BVM)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрохромные боковые зеркала заднего вида",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Аудиосистема с радио, USB и AUX входы + 6 динамиков",
+        "available_on_config": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Аудиосистема с радио, USB и AUX входы + 9 динамиков",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Аудиосистема премиум класса Harman/Kardon, AUX/USB входы + 15 динамиков",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система активного звукового сопровождения (ASD)",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Мультимедийная система с 8'' цветным дисплеем с беспроводной поддержкой Android Auto и Apple Carplay",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Мультимедийная система с 10,25'' с цветным дисплеем с поддержкой Android Auto и Apple Carplay",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Приборная панель Supervision с дисплеем 4.2''",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Приборная панель Supervision c дисплеем 7''",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Проекционный дисплей на лобовое стекло",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электропривод двери багажника с индивидуальной настройкой",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Камера заднего вида c динамической разметкой",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Система кругового обзора с 4 камерами",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Беспроводная зарядка мобильного телефона в центральной консоли",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Драйв",
+    "options": [
+      {
+        "option_title": "Дифференциал повышенного трения (2WD)",
+        "available_on_config": [
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Система динамического контроля вектора тяги (DTVC)",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  }
+]
