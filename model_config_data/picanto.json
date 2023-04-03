@@ -1,1 +1,532 @@
-[{"options_category":"\u041f\u0430\u043a\u0435\u0442 \"\u0422\u0435\u043f\u043b\u044b\u0435 \u043e\u043f\u0446\u0438\u0438\"","options":[{"option_title":"\u041f\u043e\u0434\u043e\u0433\u0440\u0435\u0432 \u043f\u0435\u0440\u0435\u0434\u043d\u0438\u0445 \u0441\u0438\u0434\u0435\u043d\u0438\u0439","available_on_config":[false,true,true,true,true]},{"option_title":"\u0417\u0435\u0440\u043a\u0430\u043b\u0430 \u0437\u0430\u0434\u043d\u0435\u0433\u043e \u0432\u0438\u0434\u0430 \u0441 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0440\u0438\u0432\u043e\u0434\u043e\u043c \u0438 \u043f\u043e\u0434\u043e\u0433\u0440\u0435\u0432\u043e\u043c","available_on_config":[false,true,true,true,true]},{"option_title":"\u041f\u043e\u0434\u043e\u0433\u0440\u0435\u0432 \u0440\u0443\u043b\u0435\u0432\u043e\u0433\u043e \u043a\u043e\u043b\u0435\u0441\u0430","available_on_config":[false,true,true,true,true]},{"option_title":"\u041f\u043e\u0434\u043e\u0433\u0440\u0435\u0432 \u0444\u043e\u0440\u0441\u0443\u043d\u043e\u043a \u0441\u0442\u0435\u043a\u043b\u043e\u043e\u043c\u044b\u0432\u0430\u0442\u0435\u043b\u044f","available_on_config":[true,true,true,true,true]}]},{"options_category":"\u042d\u043a\u0441\u0442\u0435\u0440\u044c\u0435\u0440","options":[{"option_title":"\u041b\u0435\u0433\u043a\u043e\u0441\u043f\u043b\u0430\u0432\u043d\u044b\u0435 \u0434\u0438\u0441\u043a\u0438 14'' \u0441 \u0448\u0438\u043d\u0430\u043c\u0438 175 \/ 65 R14","available_on_config":[false,false,true,false,false]},{"option_title":"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0440\u0438\u0432\u043e\u0434 \u0441\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u043d\u0438\u044f \u0437\u0435\u0440\u043a\u0430\u043b \u0437\u0430\u0434\u043d\u0435\u0433\u043e \u0432\u0438\u0434\u0430","available_on_config":[false,false,false,true,true]},{"option_title":"\u041f\u0435\u0440\u0435\u0434\u043d\u0438\u0435 \u0444\u0430\u0440\u044b \u043f\u0440\u043e\u0435\u043a\u0446\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0442\u0438\u043f\u0430 (\u043b\u0438\u043d\u0437\u043e\u0432\u0430\u043d\u043d\u044b\u0435)","available_on_config":[false,false,true,true,true]},{"option_title":"\u0421\u0432\u0435\u0442\u043e\u0434\u0438\u043e\u0434\u043d\u044b\u0435 \u0434\u043d\u0435\u0432\u043d\u044b\u0435 \u0445\u043e\u0434\u043e\u0432\u044b\u0435 \u043e\u0433\u043d\u0438 (LED DRL)","available_on_config":[false,false,true,true,true]},{"option_title":"\u0421\u0432\u0435\u0442\u043e\u0434\u0438\u043e\u0434\u043d\u044b\u0435 (LED) \u0437\u0430\u0434\u043d\u0438\u0435 \u0444\u043e\u043d\u0430\u0440\u0438","available_on_config":[false,false,true,true,true]},{"option_title":"\u041f\u0435\u0440\u0435\u0434\u043d\u0438\u0435 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0442\u0443\u043c\u0430\u043d\u043d\u044b\u0435 \u0444\u0430\u0440\u044b","available_on_config":[false,false,true,true,true]},{"option_title":"\u0420\u0443\u0447\u043a\u0438 \u0434\u0432\u0435\u0440\u0435\u0439, \u043e\u043a\u0440\u0430\u0448\u0435\u043d\u043d\u044b\u0435 \u0432 \u0446\u0432\u0435\u0442 \u043a\u0443\u0437\u043e\u0432\u0430","available_on_config":[true,true,true,false,false]},{"option_title":"\u0412\u043d\u0435\u0448\u043d\u0438\u0435 \u0434\u0432\u0435\u0440\u043d\u044b\u0435 \u0440\u0443\u0447\u043a\u0438 \u0441 \u043e\u0442\u0434\u0435\u043b\u043a\u043e\u0439 \u0445\u0440\u043e\u043c\u043e\u043c","available_on_config":[false,false,false,true,true]},{"option_title":"\u041b\u0435\u0433\u043a\u043e\u0441\u043f\u043b\u0430\u0432\u043d\u044b\u0435 \u0434\u0438\u0441\u043a\u0438 16'' \u0441 \u0448\u0438\u043d\u0430\u043c\u0438 195 \/ 45 R16","available_on_config":[false,false,false,true,false]},{"option_title":"\u0421\u0442\u0430\u043b\u044c\u043d\u044b\u0435 \u0434\u0438\u0441\u043a\u0438 14\" \u0441 \u043f\u043e\u043b\u043d\u043e\u0440\u0430\u0437\u043c\u0435\u0440\u043d\u044b\u043c\u0438 \u0434\u0435\u043a\u043e\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u043c\u0438 \u043a\u043e\u043b\u043f\u0430\u043a\u0430\u043c\u0438 \u0438 \u0448\u0438\u043d\u0430\u043c\u0438 175 \/ 65 R14","available_on_config":[true,true,false,false,false]}]},{"options_category":"\u0418\u043d\u0442\u0435\u0440\u044c\u0435\u0440","options":[{"option_title":"\u0420\u0443\u043b\u0435\u0432\u043e\u0435 \u043a\u043e\u043b\u0435\u0441\u043e \u0438 \u0440\u0443\u0447\u043a\u0430 \u0441\u0435\u043b\u0435\u043a\u0442\u043e\u0440\u0430 \u0442\u0440\u0430\u043d\u0441\u043c\u0438\u0441\u0438\u0438 \u0441 \u043e\u0442\u0434\u0435\u043b\u043a\u043e\u0439 \u043a\u043e\u0436\u0435\u0439","available_on_config":[false,true,true,true,false]},{"option_title":"\u0421\u0432\u0435\u0442\u043e\u0434\u0438\u043e\u0434\u043d\u0430\u044f \u043f\u043e\u0434\u0441\u0432\u0435\u0442\u043a\u0430 \u043c\u0430\u043a\u0438\u044f\u0436\u043d\u043e\u0433\u043e \u0437\u0435\u0440\u043a\u0430\u043b\u0430 \u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044f","available_on_config":[false,false,true,true,true]},{"option_title":"\u0421\u0438\u0434\u0435\u043d\u044c\u044f \u0441 \u043e\u0442\u0434\u0435\u043b\u043a\u043e\u0439 \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u043a\u043e\u0436\u0435\u0439","available_on_config":[false,false,false,true,false]},{"option_title":"\u0418\u043d\u0442\u0435\u0440\u044c\u0435\u0440 \u0441 \u043a\u043e\u043c\u0431\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0439 \u0442\u043a\u0430\u043d\u0435\u0432\u043e\u0439 \u043e\u0442\u0434\u0435\u043b\u043a\u043e\u0439","available_on_config":[false,false,true,false,false]}]},{"options_category":"\u0411\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c","options":[{"option_title":"\u0411\u043e\u043a\u043e\u0432\u044b\u0435 \u043f\u043e\u0434\u0443\u0448\u043a\u0438 \u0438 \u0448\u0442\u043e\u0440\u043a\u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438","available_on_config":[false,false,true,true,true]},{"option_title":"\u0417\u0430\u0434\u043d\u0438\u0435 \u0434\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0442\u043e\u0440\u043c\u043e\u0437\u0430","available_on_config":[false,false,false,true,true]},{"option_title":"\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044f \u0441\u043b\u0435\u043f\u044b\u0445 \u0437\u043e\u043d BCW","available_on_config":[false,false,false,false,true]},{"option_title":"\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u044f \u0431\u043e\u043a\u043e\u0432\u043e\u0433\u043e \u0441\u0442\u043e\u043b\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u044f \u043f\u0440\u0438 \u0432\u044b\u0435\u0437\u0434\u0435 \u0441 \u043f\u0430\u0440\u043a\u043e\u0432\u043a\u0438 \u0437\u0430\u0434\u043d\u0438\u043c \u0445\u043e\u0434\u043e\u043c (RCCW)","available_on_config":[false,false,false,false,true]},{"option_title":"\u0417\u0430\u0434\u043d\u0438\u0435 \u0434\u0430\u0442\u0447\u0438\u043a\u0438 \u043f\u0430\u0440\u043a\u043e\u0432\u043a\u0438","available_on_config":[false,false,false,true,true]}]},{"options_category":"\u041a\u043e\u043c\u0444\u043e\u0440\u0442","options":[{"option_title":"\u041a\u043e\u043d\u0434\u0438\u0446\u0438\u043e\u043d\u0435\u0440","available_on_config":[true,true,true,false,false]},{"option_title":"\u041a\u043b\u0438\u043c\u0430\u0442-\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044c","available_on_config":[false,false,false,true,true]},{"option_title":"\u0420\u0435\u0433\u0443\u043b\u0438\u0440\u043e\u0432\u043a\u0430 \u0441\u0438\u0434\u0435\u043d\u044c\u044f \u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044f \u043f\u043e \u0432\u044b\u0441\u043e\u0442\u0435","available_on_config":[false,true,true,true,true]},{"option_title":"\u041f\u0435\u0440\u0435\u0434\u043d\u0438\u0435 \u0438 \u0437\u0430\u0434\u043d\u0438\u0435 \u0441\u0442\u0435\u043a\u043b\u043e\u043f\u043e\u0434\u044a\u0451\u043c\u043d\u0438\u043a\u0438 \u0441 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0440\u0438\u0432\u043e\u0434\u043e\u043c","available_on_config":[false,true,true,true,true]},{"option_title":"\u0421\u0442\u0435\u043a\u043b\u043e\u043f\u043e\u0434\u044a\u0435\u043c\u043d\u0438\u043a \u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044f \u0441 \u0444\u0443\u043d\u043a\u0446\u0438\u0435\u0439 Auto","available_on_config":[false,false,true,true,true]},{"option_title":"\u041a\u043b\u044e\u0447 \u0441 \u0434\u0438\u0441\u0442\u0430\u043d\u0446\u0438\u043e\u043d\u043d\u044b\u043c \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435\u043c \u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u043c \u0437\u0430\u043c\u043a\u043e\u043c","available_on_config":[false,true,true,true,false]},{"option_title":"\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u0431\u0435\u0441\u043a\u043b\u044e\u0447\u0435\u0432\u043e\u0433\u043e \u0434\u043e\u0441\u0442\u0443\u043f\u0430 Smart Key \u0438 \u0437\u0430\u043f\u0443\u0441\u043a \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f \u043a\u043d\u043e\u043f\u043a\u043e\u0439","available_on_config":[false,false,false,false,true]},{"option_title":"\u041f\u0440\u0438\u0431\u043e\u0440\u043d\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c Supervision c \u0446\u0432\u0435\u0442\u043d\u044b\u043c \u0434\u0438\u0441\u043f\u043b\u0435\u0435\u043c TFT 4.2''","available_on_config":[false,false,false,true,true]},{"option_title":"\u041c\u0443\u043b\u044c\u0442\u0438\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0435 \u0440\u0443\u043b\u0435\u0432\u043e\u0435 \u043a\u043e\u043b\u0435\u0441\u043e","available_on_config":[false,false,true,true,true]},{"option_title":"\u041a\u0440\u0443\u0438\u0437-\u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044c \u0441 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0438\u0442\u0435\u043b\u0435\u043c \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u0438","available_on_config":[false,false,false,false,true]},{"option_title":"\u0410\u0443\u0434\u0438\u043e\u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 (2 \u0434\u0438\u043d\u0430\u043c\u0438\u043a\u0430)","available_on_config":[true,false,false,false,false]},{"option_title":"\u0410\u0443\u0434\u0438\u043e\u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0441 \u0440\u0430\u0434\u0438\u043e, USB (4 \u0434\u0438\u043d\u0430\u043c\u0438\u043a\u0430)","available_on_config":[false,true,false,false,false]},{"option_title":"\u0410\u0443\u0434\u0438\u043e\u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0441 \u0434\u0438\u0441\u043f\u043b\u0435\u0435\u043c 8\", \u0441 \u0440\u0430\u0434\u0438\u043e, USB \u0432\u0445\u043e\u0434, Android Auto \u0438 Apple Car Play (6 \u0434\u0438\u043d\u0430\u043c\u0438\u043a\u043e\u0432)","available_on_config":[false,false,true,true,true]},{"option_title":"Bluetooth \u0434\u043b\u044f \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430","available_on_config":[false,false,true,true,true]},{"option_title":"\u041a\u0430\u043c\u0435\u0440\u0430 \u0437\u0430\u0434\u043d\u0435\u0433\u043e \u0432\u0438\u0434\u0430 c \u0434\u0438\u043d\u0430\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0440\u0430\u0437\u043c\u0435\u0442\u043a\u043e\u0439","available_on_config":[false,false,true,true,true]},{"option_title":"\u041f\u043e\u0434\u0433\u043e\u043b\u043e\u0432\u043d\u0438\u043a\u0438 \u043f\u0435\u0440\u0435\u0434\u043d\u0438\u0445 \u0441\u0438\u0434\u0435\u043d\u0438\u0439, \u0440\u0435\u0433\u0443\u043b\u0438\u0440\u0443\u0435\u043c\u044b\u0435 \u0432\u043f\u0435\u0440\u0435\u0434\/\u043d\u0430\u0437\u0430\u0434","available_on_config":[false,false,false,true,true]}]},{"options_category":"\u041f\u0430\u043a\u0435\u0442 GT Line","options":[{"option_title":"\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u0439 \u0434\u0438\u0437\u0430\u0439\u043d \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0433\u043e \u0438 \u0437\u0430\u0434\u043d\u0435\u0433\u043e \u0431\u0430\u043c\u043f\u0435\u0440\u043e\u0432","available_on_config":[false,false,false,false,true]},{"option_title":"\u0411\u043e\u043a\u043e\u0432\u043e\u0439 \u043c\u043e\u043b\u0434\u0438\u043d\u0433 \u0438 \u0440\u0435\u0448\u0435\u0442\u043a\u0430 \u0440\u0430\u0434\u0438\u0430\u0442\u043e\u0440\u0430 \u0441\u043e \u0441\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u044b\u043c \u0430\u043a\u0446\u0435\u043d\u0442\u043e\u043c","available_on_config":[false,false,false,false,true]},{"option_title":"\u0414\u0432\u043e\u0439\u043d\u0430\u044f \u0445\u0440\u043e\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u043d\u0430\u0441\u0430\u0434\u043a\u0430 \u0433\u043b\u0443\u0448\u0438\u0442\u0435\u043b\u044f","available_on_config":[false,false,false,false,true]},{"option_title":"\u041b\u0435\u0433\u043a\u043e\u0441\u043f\u043b\u0430\u0432\u043d\u044b\u0435 \u0434\u0438\u0441\u043a\u0438 16'' \u0441 \u0448\u0438\u043d\u0430\u043c\u0438 195 \/ 45 R16","available_on_config":[false,false,false,false,true]},{"option_title":"\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u043e\u0435 \u0440\u0443\u043b\u0435\u0432\u043e\u0435 \u043a\u043e\u043b\u0435\u0441\u043e \"GT Line\"","available_on_config":[false,false,false,false,true]},{"option_title":"\u0410\u043b\u044e\u043c\u0438\u043d\u0438\u0435\u0432\u044b\u0435 \u043d\u0430\u043a\u043b\u0430\u0434\u043a\u0438 \u043d\u0430 \u043f\u0435\u0434\u0430\u043b\u0438","available_on_config":[false,false,false,true,true]},{"option_title":"\u0421\u0438\u0434\u0435\u043d\u044c\u044f \u0441 \u043e\u0442\u0434\u0435\u043b\u043a\u043e\u0439 \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u043a\u043e\u0436\u0435\u0439 \"GT Line\"","available_on_config":[false,false,false,false,true]}]},{"options_category":"\u0412\u0430\u0440\u0438\u0430\u043d\u0442\u044b \u0438\u043d\u0442\u0435\u0440\u044c\u0435\u0440\u0430","options":[]},{"options_category":"\u0422\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043a\u0438","options":[{"option_title":"\u041e\u0431\u044a\u0451\u043c \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f","available_on_config":["1 MPI","1 MPI","1 MPI","1 MPI","1 MPI"]},{"option_title":"\u041c\u043e\u0449\u043d\u043e\u0441\u0442\u044c, \u043b.\u0441.","available_on_config":["67","67","67","67","67"]},{"option_title":"\u041a\u0440\u0443\u0442\u044f\u0449\u0438\u0439 \u043c\u043e\u043c\u0435\u043d\u0442, \u041d\u00b7\u043c","available_on_config":["122","122","122","122","122"]},{"option_title":"\u0422\u0438\u043f \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f","available_on_config":["\u0411\u0435\u043d\u0437\u0438\u043d","\u0411\u0435\u043d\u0437\u0438\u043d","\u0411\u0435\u043d\u0437\u0438\u043d","\u0411\u0435\u043d\u0437\u0438\u043d","\u0411\u0435\u043d\u0437\u0438\u043d"]},{"option_title":"\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u043f\u0435\u0440\u0435\u0434\u0430\u0447","available_on_config":["\u0410\u0432\u0442\u043e\u043c\u0430\u0442 (4AT)","\u0410\u0432\u0442\u043e\u043c\u0430\u0442 (4AT)","\u0410\u0432\u0442\u043e\u043c\u0430\u0442 (4AT)","\u0410\u0432\u0442\u043e\u043c\u0430\u0442 (4AT)","\u0410\u0432\u0442\u043e\u043c\u0430\u0442 (4AT)"]},{"option_title":"\u0412\u0440\u0435\u043c\u044f \u0440\u0430\u0437\u0433\u043e\u043d\u0430 0-100 \u043a\u043c\/\u0447, \u0441","available_on_config":["13.7","13.7","13.7","13.7","13.7"]},{"option_title":"\u0420\u0430\u0441\u0445\u043e\u0434 \u0442\u043e\u043f\u043b\u0438\u0432\u0430 \u043a\u043e\u043c\u0431\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439, \u043b\/100 \u043a\u043c","available_on_config":["5.4","5.4","5.4","5.4","5.4"]}]},{"options_category":"\u0421\u043f\u0435\u0446\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u044f","options":[{"option_title":"\u041a\u043e\u0434 \u043c\u043e\u0434\u0435\u043b\u0438","available_on_config":["G6S6K261B","G6S6K261B","G6S6K261B","G6S6K261B","G6S6K261B"]},{"option_title":"OCN","available_on_config":["D0FG","D0FH","G15A","G15E","G15B"]},{"option_title":"\u041c\u043e\u0434\u0435\u043b\u044c\u043d\u044b\u0439 \u0433\u043e\u0434","available_on_config":["2023","2023","2023","2023","2023"]},{"option_title":"\u0413\u043e\u0434 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u0430","available_on_config":["2022","2022","2022","2022","2022"]}]}]
+[
+  {
+    "options_category": "Пакет \"Теплые опции\"",
+    "options": [
+      {
+        "option_title": "Подогрев передних сидений",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Зеркала заднего вида с электроприводом и подогревом",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев рулевого колеса",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев форсунок стеклоомывателя",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Экстерьер",
+    "options": [
+      {
+        "option_title": "Легкосплавные диски 14'' с шинами 175 \/ 65 R14",
+        "available_on_config": [
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Электропривод складывания зеркал заднего вида",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Передние фары проекционного типа (линзованные)",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодные дневные ходовые огни (LED DRL)",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодные (LED) задние фонари",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Передние противотуманные фары",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Ручки дверей, окрашенные в цвет кузова",
+        "available_on_config": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Внешние дверные ручки с отделкой хромом",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Легкосплавные диски 16'' с шинами 195 \/ 45 R16",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Стальные диски 14\" с полноразмерными декоративными колпаками и шинами 175 \/ 65 R14",
+        "available_on_config": [
+          true,
+          false,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Интерьер",
+    "options": [
+      {
+        "option_title": "Рулевое колесо и ручка селектора трансмисии с отделкой кожей",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодная подсветка макияжного зеркала водителя",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Сиденья с отделкой искусственной кожей",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Интерьер с комбинированной тканевой отделкой",
+        "available_on_config": [
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Безопасность",
+    "options": [
+      {
+        "option_title": "Боковые подушки и шторки безопасности",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Задние дисковые тормоза",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система контроля слепых зон BCW",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предупреждения бокового столкновения при выезде с парковки задним ходом (RCCW)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Задние датчики парковки",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Комфорт",
+    "options": [
+      {
+        "option_title": "Кондиционер",
+        "available_on_config": [
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Климат-контроль",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Регулировка сиденья водителя по высоте",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Передние и задние стеклоподъёмники с электроприводом",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Стеклоподъемник водителя с функцией Auto",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Ключ с дистанционным управлением центральным замком",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Система бесключевого доступа Smart Key и запуск двигателя кнопкой",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Приборная панель Supervision c цветным дисплеем TFT 4.2''",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Мультифункциональное рулевое колесо",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Круиз-контроль с ограничителем скорости",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Аудиоподготовка (2 динамика)",
+        "available_on_config": [
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Аудиосистема с дисплеем 8\", с радио, USB вход, Android Auto и Apple Car Play (6 динамиков)",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Bluetooth для подключения мобильного телефона",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Камера заднего вида c динамической разметкой",
+        "available_on_config": [
+          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подголовники передних сидений, регулируемые вперед\/назад",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Пакет GT Line",
+    "options": [
+      {
+        "option_title": "Спортивный дизайн переднего и заднего бамперов",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Боковой молдинг и решетка радиатора со спортивным акцентом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Двойная хромированная насадка глушителя",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Легкосплавные диски 16'' с шинами 195 \/ 45 R16",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Спортивное рулевое колесо \"GT Line\"",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Алюминиевые накладки на педали",
+        "available_on_config": [
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Сиденья с отделкой искусственной кожей \"GT Line\"",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Варианты интерьера",
+    "options": []
+  },
+  {
+    "options_category": "Технические характеристики",
+    "options": [
+      {
+        "option_title": "Объём двигателя",
+        "available_on_config": [
+          "1 MPI",
+          "1 MPI",
+          "1 MPI",
+          "1 MPI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "67",
+          "67",
+          "67",
+          "67"
+        ]
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": [
+          "122",
+          "122",
+          "122",
+          "122"
+        ]
+      },
+      {
+        "option_title": "Тип двигателя",
+        "available_on_config": [
+          "Бензин",
+          "Бензин",
+          "Бензин",
+          "Бензин"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Автомат (4AT)",
+          "Автомат (4AT)",
+          "Автомат (4AT)",
+          "Автомат (4AT)"
+        ]
+      },
+      {
+        "option_title": "Время разгона 0-100 км\/ч, с",
+        "available_on_config": [
+          "13.7",
+          "13.7",
+          "13.7",
+          "13.7"
+        ]
+      },
+      {
+        "option_title": "Расход топлива комбинированный, л\/100 км",
+        "available_on_config": [
+          "5.4",
+          "5.4",
+          "5.4",
+          "5.4"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Код модели",
+        "available_on_config": [
+          "G6S6K261B",
+          "G6S6K261B",
+          "G6S6K261B",
+          "G6S6K261B"
+        ]
+      },
+      {
+        "option_title": "OCN",
+        "available_on_config": [
+          "D0FG",
+          "G15A",
+          "G15E",
+          "G15B"
+        ]
+      }
+    ]
+  }
+]
