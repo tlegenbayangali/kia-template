@@ -1,1 +1,84 @@
-[{"options_category":"Двигатель и трансмиссия","options":[{"option_title":"Объём двигателя","available_on_config":["1.6 MPI","1.6 MPI","1.6 MPI","1.5T-GDI"]},{"option_title":"Мощность, л.с.","available_on_config":["128","128","128","150"]},{"option_title":"Крутящий момент, Н·м","available_on_config":["154,6","154,6","154,6","154,6"]},{"option_title":"Коробка передач","available_on_config":["Автомат","Автомат","Автомат","Робот"]},{"option_title":"Привод","available_on_config":["Передний","Передний","Передний","Передний"]},{"option_title":"Время разгона 0-100 км\/ч, с","available_on_config":["11,8","11,5","11,5","11,5"]},{"option_title":"Тип топлива","available_on_config":["Бензин","Бензин","Бензин","Бензин"]}]},{"options_category":"Спецификация","options":[{"option_title":"Код модели","available_on_config":["J7W5D261F","J7W5D261F","J7W5D261F","J7W5D261F"]}]}]
+[
+  {
+    "options_category": "Двигатель и трансмиссия",
+    "options": [
+      {
+        "option_title": "Объём двигателя",
+        "available_on_config": [
+          "1.6 MPI",
+          "1.6 MPI",
+          "1.6 MPI",
+          "1.5T-GDI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "128",
+          "128",
+          "128",
+          "150"
+        ]
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": [
+          "154,6",
+          "154,6",
+          "154,6",
+          "154,6"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Автомат",
+          "Автомат",
+          "Автомат",
+          "Робот"
+        ]
+      },
+      {
+        "option_title": "Привод",
+        "available_on_config": [
+          "Передний",
+          "Передний",
+          "Передний",
+          "Передний"
+        ]
+      },
+      {
+        "option_title": "Время разгона 0-100 км\/ч, с",
+        "available_on_config": [
+          "11,8",
+          "11,5",
+          "11,5",
+          "11,5"
+        ]
+      },
+      {
+        "option_title": "Тип топлива",
+        "available_on_config": [
+          "Бензин",
+          "Бензин",
+          "Бензин",
+          "Бензин"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Код модели",
+        "available_on_config": [
+          "J7W5D261F",
+          "J7W5D261F",
+          "J7W5D261F",
+          "J7W5D261F"
+        ]
+      }
+    ]
+  }
+]
