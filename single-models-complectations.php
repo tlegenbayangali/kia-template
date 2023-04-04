@@ -1,12 +1,15 @@
 <?php
+
 get_header();
 $parent_post = get_post($post->post_parent);
 $parent_post_id = get_post()->post_parent;
 
 // Program to display URL of current page.
-if (isset($_SERVER[ 'HTTPS' ]) && $_SERVER[ 'HTTPS' ] === 'on')
+if (isset($_SERVER[ 'HTTPS' ]) && $_SERVER[ 'HTTPS' ] === 'on') {
     $link = "https";
-else $link = "http";
+} else {
+    $link = "http";
+}
 
 // Here append the common URL characters.
 $link .= "://";
@@ -22,7 +25,9 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
             <div class="col-lg-12">
                 <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
                     <?php
-                    if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?>
+                    if (function_exists('kama_breadcrumbs')) {
+                        kama_breadcrumbs();
+                    } ?>
                     <div class="equip-breadcrumbs-right d-flex align-items-md-center">
                         <?php
                         if (get_field('model_price_list', $parent_post_id)) : ?>
@@ -70,14 +75,16 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
 $post_data = get_post($post->post_parent);
 $parent_slug = $post_data->post_name;
 
-$configs = new WP_Query([
-    'post_type'      => 'configs',
-    'model'          => $parent_slug,
-    'posts_per_page' => -1,
-    'meta_key'       => 'price',
-    'order'          => 'ASC',
-    'orderby'        => ['meta_value_num' => 'ASC'],
-]);
+$configs = new WP_Query(
+    [
+        'post_type'      => 'configs',
+        'model'          => $parent_slug,
+        'posts_per_page' => -1,
+        'meta_key'       => 'price',
+        'order'          => 'ASC',
+        'orderby'        => ['meta_value_num' => 'ASC'],
+    ]
+);
 
 $prices_array = [];
 
@@ -103,7 +110,8 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                             echo esc_html(get_the_title($parent_post_id)); ?>
                         </span>
                         </div>
-                        <?php if (get_field('starting_price', $post_data->ID)) : ?>
+                        <?php
+                        if (get_field('starting_price', $post_data->ID)) : ?>
                         <div class="equip-hero-min-price">
                             Минимальная цена
                         </div>
@@ -111,7 +119,8 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                 <span class="val">
                                     <?= get_field('starting_price', $post_data->ID) ?> ₸
                                 </span>
-                            <?php endif; ?>
+                            <?php
+                            endif; ?>
                             <span class="equip-hero-min-price-info d-block">
                             <svg class="info">
                                 <use xlink:href="images/dist/sprite.svg#info"></use>
@@ -162,11 +171,13 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                                             <span class="d-block equip-variants-slide-param">
                                                                 <?= $config->tech_characteristics ?>
                                                             </span>
-                                                            <?php if ($config->price) : ?>
+                                                            <?php
+                                                            if ($config->price) : ?>
                                                                 <span class="d-block equip-variants-slide-price">
                                                                 <?= $config->price ?>
                                                             </span>
-                                                            <?php endif; ?>
+                                                            <?php
+                                                            endif; ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -217,25 +228,29 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                             <!-- ONE SECTION CAROUSEL ITEM-->
                                             <?php
                                             $standart_equipment = get_field('standart_equipment', $parent_post_id);
+                                            $standard_options = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_standard.json'));
 
-                                            foreach ((array) $standart_equipment as $equipment) :
-                                                ?>
-                                                <div class="equip-config-section-item plain">
-                                                    <div class="equip-config-section-item-header">
-                                                        <?= $equipment[ 'heading' ] ?>
+                                            if ($standard_options && count($standard_options)) :
+                                                foreach ((array)$standard_options as $equipment) :
+                                                    ?>
+                                                    <div class="equip-config-section-item plain">
+                                                        <div class="equip-config-section-item-header">
+                                                            <?= $equipment->options_category ?>
+                                                        </div>
+                                                        <div class="mt-10 items">
+                                                            <ul class="check">
+                                                                <?php
+                                                                foreach ((array)$equipment->options as $option) : ?>
+                                                                    <li><?= $option ?></li>
+                                                                <?php
+                                                                endforeach; ?>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <div class="mt-10 items">
-                                                        <ul class="check">
-                                                            <?php
-                                                            foreach ((array) $equipment[ 'options_list' ] as $option) : ?>
-                                                                <li><?= $option[ 'options_list_item' ] ?></li>
-                                                            <?php
-                                                            endforeach; ?>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                                <?php
+                                                endforeach; ?>
                                             <?php
-                                            endforeach; ?>
+                                            endif; ?>
                                         </div>
                                     </section>
                                 </div>
