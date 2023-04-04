@@ -281,57 +281,5 @@
         ]
       }
     ]
-  },
-  {
-    "options_category": "Технические характеристики",
-    "options": [
-      {
-        "option_title": "Объём двигателя",
-        "available_on_config": [
-          "3.3 Lambda, GDI"
-        ]
-      },
-      {
-        "option_title": "Мощность, л.с.",
-        "available_on_config": [
-          "249"
-        ]
-      },
-      {
-        "option_title": "Крутящий момент, Н·м",
-        "available_on_config": [
-          "347"
-        ]
-      },
-      {
-        "option_title": "Коробка передач",
-        "available_on_config": [
-          "Автомат"
-        ]
-      },
-      {
-        "option_title": "Время разгона 0-100 км\/ч, с",
-        "available_on_config": [
-          "8,4"
-        ]
-      }
-    ]
-  },
-  {
-    "options_category": "Спецификация",
-    "options": [
-      {
-        "option_title": "Модельный год",
-        "available_on_config": [
-          "2022"
-        ]
-      },
-      {
-        "option_title": "Год производства",
-        "available_on_config": [
-          "2022"
-        ]
-      }
-    ]
   }
 ]
