@@ -1,12 +1,15 @@
 <?php
+
 get_header();
 $parent_post = get_post($post->post_parent);
 $parent_post_id = get_post()->post_parent;
 
 // Program to display URL of current page.
-if (isset($_SERVER[ 'HTTPS' ]) && $_SERVER[ 'HTTPS' ] === 'on')
+if (isset($_SERVER[ 'HTTPS' ]) && $_SERVER[ 'HTTPS' ] === 'on') {
     $link = "https";
-else $link = "http";
+} else {
+    $link = "http";
+}
 
 // Here append the common URL characters.
 $link .= "://";
@@ -22,7 +25,9 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
             <div class="col-lg-12">
                 <div class="breadcrumbs equip-breadcrumbs d-flex justify-content-between">
                     <?php
-                    if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?>
+                    if (function_exists('kama_breadcrumbs')) {
+                        kama_breadcrumbs();
+                    } ?>
                     <div class="equip-breadcrumbs-right d-flex align-items-md-center">
                         <?php
                         if (get_field('price_list_url', $parent_post_id)) : ?>
@@ -70,14 +75,16 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
 $post_data = get_post($post->post_parent);
 $parent_slug = $post_data->post_name;
 
-$configs = new WP_Query([
-    'post_type'      => 'configs',
-    'model'          => $parent_slug,
-    'posts_per_page' => -1,
-    'meta_key'       => 'price',
-    'order'          => 'ASC',
-    'orderby'        => ['meta_value_num' => 'ASC'],
-]);
+$configs = new WP_Query(
+    [
+        'post_type'      => 'configs',
+        'model'          => $parent_slug,
+        'posts_per_page' => -1,
+        'meta_key'       => 'price',
+        'order'          => 'ASC',
+        'orderby'        => ['meta_value_num' => 'ASC'],
+    ]
+);
 
 $prices_array = [];
 
@@ -191,7 +198,8 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                         </div>
                     </div>
                 </div>
-                <?php if (false): ?>
+                <?php
+                if (true): ?>
                     <div class="equip-content">
                         <div class="row">
                             <div class="col-lg-12">
@@ -269,9 +277,11 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                             </div>
                         </div>
                     </div>
-                <?php else: ?>
+                <?php
+                else: ?>
                     <p style="display: block; padding: 30px 0;">Информация в разработке...</p>
-                <?php endif; ?>
+                <?php
+                endif; ?>
             </div>
         </div>
     </div>
