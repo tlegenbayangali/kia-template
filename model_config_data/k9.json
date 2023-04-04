@@ -1,1 +1,337 @@
-[{"options_category":"Пакет \"Теплые опции\"","options":[{"option_title":"Подогрев передних сидений","available_on_config":[true]},{"option_title":"Подогрев задних сидений","available_on_config":[true]},{"option_title":"Подогрев рулевого колеса","available_on_config":[true]},{"option_title":"Боковые зеркала заднего вида с электроприводом и подогревом","available_on_config":[true]}]},{"options_category":"Экстерьер","options":[{"option_title":"Легкосплавные диски 18\" с шинами 245\/50 R18","available_on_config":[true]},{"option_title":"Люк с электроприводом","available_on_config":[true]}]},{"options_category":"Интерьер","options":[{"option_title":"Вставки из натурального дерева","available_on_config":[true]},{"option_title":"Сиденья и рулевое колесо с комбинированной отделкой премиальной кожей Nappa","available_on_config":[true]},{"option_title":"Интерьер с комбинированной отделкой премиальной кожей Nappa","available_on_config":[true]},{"option_title":"Потолок, стойки и солнцезащитные козырьки с отделкой замшей","available_on_config":[true]},{"option_title":"Двухсекционный центральный подлокотник передних сидений","available_on_config":[true]}]},{"options_category":"Комфорт","options":[{"option_title":"Проекционный дисплей на лобовое стекло","available_on_config":[true]},{"option_title":"Система кругового обзора с 4 камерами","available_on_config":[true]},{"option_title":"Аудиосистема Lexicon: 16 динамиков, сабвуфер и внешний усилитель","available_on_config":[true]},{"option_title":"Фоновая подсветка интерьера (64 оттенка)","available_on_config":[true]},{"option_title":"Электрорегулируемая рулевая колонка с функцией памяти","available_on_config":[true]},{"option_title":"Электрорегулировка сиденья водителя в 20 направлениях и сиденья переднего пассажира в 16 направлениях с памятью настроек","available_on_config":[true]},{"option_title":"Передние и задние стеклоподъёмники с функцией Auto","available_on_config":[true]},{"option_title":"Электрорегулировка задних сидений в 14 (справа) и 12 (слева) направлениях","available_on_config":[true]},{"option_title":"Вентиляция передних сидений","available_on_config":[true]},{"option_title":"Вентиляция задних сидений","available_on_config":[true]},{"option_title":"Беспроводная зарядка мобильного телефона в центральной консоли","available_on_config":[true]},{"option_title":"Мультимедийная система для пассажиров задних сидений","available_on_config":[true]},{"option_title":"Центральный подлокотник задних сидений с системой управления мультимедиа и климат-контролем","available_on_config":[true]},{"option_title":"Зеркала для задних пассажиров","available_on_config":[true]},{"option_title":"Приборная панель Supervision c цветным дисплеем TFT 12.3''","available_on_config":[true]},{"option_title":"Механическая шторка для задних боковых стекол","available_on_config":[true]},{"option_title":"Задняя шторка с электроприводом","available_on_config":[true]},{"option_title":"Передние и задние двери с доводчиком","available_on_config":[true]},{"option_title":"","available_on_config":[true]}]},{"options_category":"Современные системы помощи водителю DRIVE WISE","options":[{"option_title":"Интеллектуальный круиз-контроль (SCC) с функцией Stop&Go","available_on_config":[true]},{"option_title":"Система предотвращения фронтального столкновения (FCA) (уровень распознавания: автомобиль\/пешеход\/велосипед)","available_on_config":[true]},{"option_title":"Ассистент предотвращения столкновения спереди и при левом повороте (FCA-JX)","available_on_config":[true]},{"option_title":"Система предотвращения выезда из полосы движения (LKA)","available_on_config":[true]},{"option_title":"Ассистент движения в полосе (LFA)","available_on_config":[true]},{"option_title":"Система предотвращения столкновения с автомобилем в слепой зоне (BCA)","available_on_config":[true]},{"option_title":"Камеры контроля слепых зон (BVM)","available_on_config":[true]},{"option_title":"Система предупреждения бокового столкновения при выезде с парковки задним ходом (RCCA)","available_on_config":[true]},{"option_title":"Система безопасного выхода из автомобиля (SEA)","available_on_config":[true]},{"option_title":"Система контроля внимания водителя (DAW)","available_on_config":[true]},{"option_title":"Интелектуальная система управления головным светом (IFS)","available_on_config":[true]},{"option_title":"Система предотвращения столкновения при выезде с парковки задним ходом (PCA)","available_on_config":[true]},{"option_title":"","available_on_config":[true]}]},{"options_category":"Технические характеристики","options":[{"option_title":"Объём двигателя","available_on_config":["3.3 Lambda, GDI"]},{"option_title":"Мощность, л.с.","available_on_config":["249"]},{"option_title":"Крутящий момент, Н·м","available_on_config":["347"]},{"option_title":"Коробка передач","available_on_config":["Автомат"]},{"option_title":"Время разгона 0-100 км\/ч, с","available_on_config":["8,4"]}]},{"options_category":"Спецификация","options":[{"option_title":"Модельный год","available_on_config":["2022"]},{"option_title":"Год производства","available_on_config":["2022"]}]}]
+[
+  {
+    "options_category": "Пакет \"Теплые опции\"",
+    "options": [
+      {
+        "option_title": "Подогрев передних сидений",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев задних сидений",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев рулевого колеса",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Боковые зеркала заднего вида с электроприводом и подогревом",
+        "available_on_config": [
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Экстерьер",
+    "options": [
+      {
+        "option_title": "Легкосплавные диски 18\" с шинами 245\/50 R18",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Люк с электроприводом",
+        "available_on_config": [
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Интерьер",
+    "options": [
+      {
+        "option_title": "Вставки из натурального дерева",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Сиденья и рулевое колесо с комбинированной отделкой премиальной кожей Nappa",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Интерьер с комбинированной отделкой премиальной кожей Nappa",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Потолок, стойки и солнцезащитные козырьки с отделкой замшей",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Двухсекционный центральный подлокотник передних сидений",
+        "available_on_config": [
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Комфорт",
+    "options": [
+      {
+        "option_title": "Проекционный дисплей на лобовое стекло",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система кругового обзора с 4 камерами",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Аудиосистема Lexicon: 16 динамиков, сабвуфер и внешний усилитель",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Фоновая подсветка интерьера (64 оттенка)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулируемая рулевая колонка с функцией памяти",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировка сиденья водителя в 20 направлениях и сиденья переднего пассажира в 16 направлениях с памятью настроек",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Передние и задние стеклоподъёмники с функцией Auto",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировка задних сидений в 14 (справа) и 12 (слева) направлениях",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Вентиляция передних сидений",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Вентиляция задних сидений",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Беспроводная зарядка мобильного телефона в центральной консоли",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Мультимедийная система для пассажиров задних сидений",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Центральный подлокотник задних сидений с системой управления мультимедиа и климат-контролем",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Зеркала для задних пассажиров",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Приборная панель Supervision c цветным дисплеем TFT 12.3''",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Механическая шторка для задних боковых стекол",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Задняя шторка с электроприводом",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Передние и задние двери с доводчиком",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "",
+        "available_on_config": [
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Современные системы помощи водителю DRIVE WISE",
+    "options": [
+      {
+        "option_title": "Интеллектуальный круиз-контроль (SCC) с функцией Stop&Go",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения фронтального столкновения (FCA) (уровень распознавания: автомобиль\/пешеход\/велосипед)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Ассистент предотвращения столкновения спереди и при левом повороте (FCA-JX)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения выезда из полосы движения (LKA)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Ассистент движения в полосе (LFA)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения с автомобилем в слепой зоне (BCA)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Камеры контроля слепых зон (BVM)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система предупреждения бокового столкновения при выезде с парковки задним ходом (RCCA)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система безопасного выхода из автомобиля (SEA)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система контроля внимания водителя (DAW)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Интелектуальная система управления головным светом (IFS)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения при выезде с парковки задним ходом (PCA)",
+        "available_on_config": [
+          true
+        ]
+      },
+      {
+        "option_title": "",
+        "available_on_config": [
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Технические характеристики",
+    "options": [
+      {
+        "option_title": "Объём двигателя",
+        "available_on_config": [
+          "3.3 Lambda, GDI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "249"
+        ]
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": [
+          "347"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Автомат"
+        ]
+      },
+      {
+        "option_title": "Время разгона 0-100 км\/ч, с",
+        "available_on_config": [
+          "8,4"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Модельный год",
+        "available_on_config": [
+          "2022"
+        ]
+      },
+      {
+        "option_title": "Год производства",
+        "available_on_config": [
+          "2022"
+        ]
+      }
+    ]
+  }
+]
