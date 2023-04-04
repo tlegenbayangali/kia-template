@@ -3,14 +3,14 @@
     "options_category": "Двигатель",
     "options": [
       {
-        "option_title": "Макс. Мощность (л.с [email protected] об\/мин)",
+        "option_title": "Макс. Мощность (л.с.)",
         "available_on_config": [
           "325,4",
           ""
         ]
       },
       {
-        "option_title": "Макс. Крутящий момент (Нм @ об\/мин)",
+        "option_title": "Макс. Крутящий момент (Н·м)",
         "available_on_config": [
           "605",
           ""
