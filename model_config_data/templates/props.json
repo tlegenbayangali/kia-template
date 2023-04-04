@@ -3,7 +3,111 @@
     "options_category": "Двигатель и трансмиссия",
     "options": [
       {
-        "option_title": "Объём двигателя",
+        "option_title": "Двигатель",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Тип топлива",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Рабочий объем, л",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Рабочий объем, см3",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Экологический класс",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Привод",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Объем топливного бака (л.)",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Время разгона 0-100 км/ч, с",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Расход топлива комбинированный, л/100 км",
+        "available_on_config": []
+      }
+    ]
+  },
+  {
+    "options_category": "Размеры",
+    "options": [
+      {
+        "option_title": "Тип кузова",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Габариты (длина/ширина/высота), мм",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Колесная база, мм",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Дорожный просвет, мм",
+        "available_on_config": []
+      },
+      {
+        "option_title": " Объём багажника (VDA), л ",
+        "available_on_config": []
+      }
+    ]
+  },
+  {
+    "options_category": "Динамические характеристики",
+    "options": [
+      {
+        "option_title": "Максимальная скорость (км/ч)",
+        "available_on_config": []
+      },
+      {
+        "option_title": "Ускорение (сек) 80->120 (км/ч)",
+        "available_on_config": []
+      }
+    ]
+  },
+  {
+    "options_category": "Расход топлива",
+    "options": [
+      {
+        "option_title": "В городском цикле (л. / 100 км)",
+        "available_on_config": []
+      },
+      {
+        "option_title": "В загородном цикле (л. / 100 км)",
+        "available_on_config": []
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Код модели",
         "available_on_config": []
       }
     ]
