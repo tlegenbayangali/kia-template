@@ -1,1 +1,136 @@
-[]
+[
+  {
+    "options_category": "Двигатель и трансмиссия",
+    "options": [
+      {
+        "option_title": "Двигатель",
+        "available_on_config": [
+          "2.0 MPI",
+          "2.0 MPI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "149",
+          "149"
+        ]
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": [
+          "180",
+          "180"
+        ]
+      },
+      {
+        "option_title": "Тип топлива",
+        "available_on_config": [
+          "Бензин, АИ 92-95",
+          "Бензин, АИ 92-95"
+        ]
+      },
+      {
+        "option_title": "Рабочий объем, л",
+        "available_on_config": [
+          "2.0",
+          "2.0"
+        ]
+      },
+      {
+        "option_title": "Рабочий объем, см3",
+        "available_on_config": [
+          "1999",
+          "1999"
+        ]
+      },
+      {
+        "option_title": "Экологический класс",
+        "available_on_config": [
+          "Евро-5",
+          "Евро-5"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Вариатор (IVT)",
+          "Вариатор (IVT)"
+        ]
+      },
+      {
+        "option_title": "Привод",
+        "available_on_config": [
+          "Передний",
+          "Передний"
+        ]
+      },
+      {
+        "option_title": "Время разгона 0-100 км/ч, с",
+        "available_on_config": [
+          "9.6",
+          "9.6"
+        ]
+      },
+      {
+        "option_title": "Расход топлива комбинированный, л/100 км",
+        "available_on_config": [
+          "6.8",
+          "6.8"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Размеры",
+    "options": [
+      {
+        "option_title": "Тип кузова",
+        "available_on_config": [
+          "Кроссовер",
+          "Кроссовер"
+        ]
+      },
+      {
+        "option_title": "Габариты (длина/ширина/высота), мм",
+        "available_on_config": [
+          "4370 / 1800 / 1630",
+          "4370 / 1800 / 1630"
+        ]
+      },
+      {
+        "option_title": "Колесная база, мм",
+        "available_on_config": [
+          "2630",
+          "2630"
+        ]
+      },
+      {
+        "option_title": "Дорожный просвет, мм",
+        "available_on_config": [
+          "185",
+          "185"
+        ]
+      },
+      {
+        "option_title": " Объём багажника (VDA), л ",
+        "available_on_config": [
+          "468",
+          "468"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Код модели",
+        "available_on_config": [
+          "THW52G61V",
+          "THW52G61V"
+        ]
+      }
+    ]
+  }
+]
