@@ -64,7 +64,7 @@
         ]
       },
       {
-        "option_title": "Внешние дверные ручки с отделкой хромом",
+        "option_title": "Хромированные ручки дверей (внешние)",
         "available_on_config": [
           false,
           true,
@@ -285,26 +285,9 @@
           true,
           true
         ]
-      }
-    ]
-  },
-  {
-    "options_category": "Современные системы помощи водителю DRIVE WISE",
-    "options": []
-  },
-  {
-    "options_category": "Варианты интерьера",
-    "options": [
-      {
-        "option_title": "Черный, Тканевая отделка (WK)",
-        "available_on_config": [
-          true,
-          false,
-          false
-        ]
       },
       {
-        "option_title": "Черный, Натуральная кожа (WK)",
+        "option_title": "Дистанционное складывание сидений 2-го ряда со стороны багажника (для автомобилей с 6- и 7-местным салоном)",
         "available_on_config": [
           false,
           true,
@@ -312,109 +295,19 @@
         ]
       },
       {
-        "option_title": "Белый шёлк",
+        "option_title": "Складывание 50/50 сидений 3-го ряда (для автомобилей с 7-местным салоном)",
         "available_on_config": [
           false,
           true,
           true
         ]
-      }
-    ]
-  },
-  {
-    "options_category": "Технические характеристики",
-    "options": [
-      {
-        "option_title": "Объём двигателя",
-        "available_on_config": [
-          "2.5 MPI",
-          "2.5 MPI",
-          "2.5 MPI"
-        ]
       },
       {
-        "option_title": "Мощность, л.с.",
+        "option_title": "Кондиционер для третьего ряда сидений (для автомобилей с 7-местным салоном)",
         "available_on_config": [
-          "179",
-          "179",
-          "179"
-        ]
-      },
-      {
-        "option_title": "Крутящий момент, Н·м",
-        "available_on_config": [
-          "225",
-          "225",
-          "225"
-        ]
-      },
-      {
-        "option_title": "Тип двигателя",
-        "available_on_config": [
-          "Бензин",
-          "Бензин",
-          "Бензин"
-        ]
-      },
-      {
-        "option_title": "Коробка передач",
-        "available_on_config": [
-          "Автомат (6AT)",
-          "Автомат (6AT)",
-          "Автомат (6AT)"
-        ]
-      },
-      {
-        "option_title": "Время разгона 0-100 км\/ч, с",
-        "available_on_config": [
-          "10,3",
-          "10,3",
-          "10,3"
-        ]
-      },
-      {
-        "option_title": "Расход топлива комбинированный, л\/100 км",
-        "available_on_config": [
-          "8,9",
-          "8,9",
-          "8,9"
-        ]
-      }
-    ]
-  },
-  {
-    "options_category": "Спецификация",
-    "options": [
-      {
-        "option_title": "Код модели",
-        "available_on_config": [
-          "GZW5L961G",
-          "GZW5L961G",
-          "GZW5L961G"
-        ]
-      },
-      {
-        "option_title": "OCN",
-        "available_on_config": [
-          "G0M2",
-          "G0KV",
-          "G0KV"
-        ]
-      },
-      {
-        "option_title": "Модельный год",
-        "available_on_config": [
-          "2022",
-          "2022",
-          "2022"
-        ]
-      },
-      {
-        "option_title": "Год производства",
-        "available_on_config": [
-          "2022",
-          "2022",
-          "2022"
+          false,
+          true,
+          true
         ]
       }
     ]
