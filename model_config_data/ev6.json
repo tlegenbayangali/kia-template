@@ -1,1 +1,396 @@
-[{"options_category":"Пакет \"Теплые опции\"","options":[{"option_title":"Подогрев передних сидений","available_on_config":[true,false]},{"option_title":"Подогрев задних сидений","available_on_config":[true,false]},{"option_title":"Подогрев руля","available_on_config":[true,false]}]},{"options_category":"Современные системы помощи водителю DRIVE WISE","options":[{"option_title":"Интеллектуальный круиз-контроль (SCC) с функцией Stop&Go","available_on_config":[true,false]},{"option_title":"Система предотвращения фронтального столкновения (FCA)","available_on_config":[true,false]},{"option_title":"Система предотвращения столкновения при повороте на перекрестке (FCA-JX)","available_on_config":[true,false]},{"option_title":"Система предотвращения выезда из полосы движения (LKA)","available_on_config":[true,false]},{"option_title":"Ассистент движения в полосе (LFA)","available_on_config":[true,false]},{"option_title":"Ассистент контроля слепых зон (BCA)","available_on_config":[true,false]},{"option_title":"Монитор обзора слепых зон (BVM)","available_on_config":[true,false]},{"option_title":"Ручной ограничитель скорости (MSLA)","available_on_config":[true,false]},{"option_title":"Система предотвращения столкновения при выезде с парковки задним ходом (PCA)","available_on_config":[true,false]},{"option_title":"Система предотвращения столкновения с автомобилем в слепой зоне (BCA)","available_on_config":[true,false]},{"option_title":"Увеличенный объем батареи 77.4 килловат","available_on_config":[true,false]}]},{"options_category":"Экстерьер","options":[{"option_title":"Легкосплавные диски 20'' с шинами R20","available_on_config":[true,false]},{"option_title":"Люк с электроприводом","available_on_config":[true,false]},{"option_title":"Глубокая тонировка задних стекол","available_on_config":[true,false]},{"option_title":"Скрытые дверные ручки с электроприводом открывания","available_on_config":[true,false]},{"option_title":"Электропривод двери багажника","available_on_config":[true,false]},{"option_title":"Проекционные полностью светодиодные фары","available_on_config":[true,false]}]},{"options_category":"Интерьер","options":[{"option_title":"Шторка багажника","available_on_config":[true,false]},{"option_title":"Полка багажника","available_on_config":[true,false]},{"option_title":"Сиденья с отделкой кожей","available_on_config":[true,false]},{"option_title":"Атмосферная подсветка интерьера Mood lamp","available_on_config":[true,false]},{"option_title":"Металлические накладки на педали","available_on_config":[true,false]}]},{"options_category":"Комфорт","options":[{"option_title":"Передние датчики парковки","available_on_config":[true,false]},{"option_title":"Полностью автоматические стеклоподъемники с функцией Auto","available_on_config":[true,false]},{"option_title":"Розетка в багажнике","available_on_config":[true,false]},{"option_title":"Электрорегулировки передних сидений c памятью водительского сидения","available_on_config":[true,false]},{"option_title":"Электрорегулировка поясничного подпора сидения переднего пассажира","available_on_config":[true,false]},{"option_title":"Вентиляция передних сидений","available_on_config":[true,false]},{"option_title":"Премиум-аудиосистема Meridian","available_on_config":[true,false]},{"option_title":"Проекционный дисплей (HUD)","available_on_config":[true,false]},{"option_title":"Монитор кругового обзора (AVM)","available_on_config":[true,false]},{"option_title":"Автоматический детский замок Child Lock","available_on_config":[true,false]}]},{"options_category":"Технические характеристики","options":[{"option_title":"Объём двигателя","available_on_config":["Увеличенная батарея, полный привод","Увеличенная батарея, полный привод"]},{"option_title":"Мощность, л.с.","available_on_config":["325","325,4"]},{"option_title":"Крутящий момент, Н·м","available_on_config":["350","605"]},{"option_title":"Время разгона 0-100 км\/ч, с","available_on_config":["8.5","5,2"]}]}]
+[
+  {
+    "options_category": "Современные системы помощи водителю DRIVE WISE",
+    "options": [
+      {
+        "option_title": "Интеллектуальный круиз-контроль (SCC) с функцией Stop&Go",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Система предотвращения фронтального столкновения (FCA)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения при повороте на перекрестке (FCA-JX)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Система предотвращения выезда из полосы движения (LKA)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Ассистент движения в полосе (LFA)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Ассистент контроля слепых зон (BCA)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Монитор обзора слепых зон (BVM)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Ручной ограничитель скорости (MSLA)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения при выезде с парковки задним ходом (PCA)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения с автомобилем в слепой зоне (BCA)",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Увеличенный объем батареи 77.4 килловат",
+        "available_on_config": [
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Экстерьер",
+    "options": [
+      {
+        "option_title": "Легкосплавные диски 20\" с шинами 255\/45 R20",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодные (LED) адаптивные интеллектуальные матричные фары головного света (IFS)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Зеркала заднего вида с электроприводом регулировок и складывания",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Люк с электроприводом",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Глубокая тонировка задних стекол",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Проекционные полностью светодиодные фары",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Скрытые дверные ручки с электроприводом открывания",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электропривод двери багажника",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Накладки колесных арок черного цвета",
+        "available_on_config": [
+          true,
+          false
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Интерьер",
+    "options": [
+      {
+        "option_title": "Сиденья с отделкой искусственной кожей",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрохромное зеркало заднего вида",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Атмосферная подсветка интерьера Mood lamp",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Металлические накладки на педали",
+        "available_on_config": [
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Комфорт",
+    "options": [
+      {
+        "option_title": "Электронный селектор выбора режимов движения (SBW)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Передние датчики парковки",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Премиум-аудиосистема Meridian c 14 динамиками",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Проекционный дисплей на лобовом стекле (HUD)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировки передних сидений c памятью водительского сидения",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировка поясничного подпора передних сидений",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев руля",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев передних и задних сидений",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Вентиляция передних сидений",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Беспроводная зарядка для мобильного телефона",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подрулевые \"лепестки\" переключения передач",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Передние и задние стеклоподьемники с функциями Auto и Safety",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Монитор кругового обзора (AVM)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Автоматический детский замок Child Lock",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Дополнительная розетка в багажнике",
+        "available_on_config": [
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Современные системы помощи водителю DRIVE WISE",
+    "options": [
+      {
+        "option_title": "Интеллектуальный круиз-контроль (SCC) с функцией Stop&Go",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Ручной ограничитель скорости (MSLA)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения фронтального столкновения (FCA)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения при повороте на перекрестке (FCA-JX)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения выезда из полосы движения (LKA)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Ассистент движения в полосе (LFA)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения с автомобилем в слепой зоне (BCA)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Камеры обзора слепых зон с отображением на панели приборов (BVM)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Cистема предотвращения столкновения при выезде с парковки задним ходом (PCA)",
+        "available_on_config": [
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Пакет GT Line",
+    "options": [
+      {
+        "option_title": "Передний и задний бамперы дизайна GT Line",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Колесные арки, окрашенные в цвет кузова",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Спортивное рулевое колесо",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Передняя панель и центральный подлокотник дизайна GT Line из материала GEONIC",
+        "available_on_config": [
+          false,
+          true
+        ]
+      }
+    ]
+  }
+]
