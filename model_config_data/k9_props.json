@@ -1,1 +1,142 @@
-[{"options_category":"Трансмиссия","options":[{"option_title":"Тип привода","available_on_config":["Полный"]}]},{"options_category":"Двигатель и трансмиссия","options":[{"option_title":"Объём двигателя","available_on_config":["3.3 Lambda, GDI"]},{"option_title":"Мощность, л.с.","available_on_config":["249"]},{"option_title":"Крутящий момент, Н·м","available_on_config":["347"]},{"option_title":"Коробка передач","available_on_config":["Автомат"]},{"option_title":"Привод","available_on_config":["Полный"]},{"option_title":"Время разгона 0-100 км\/ч, с","available_on_config":["8,4"]},{"option_title":"Тип топлива","available_on_config":["Бензин"]}]}]
+[
+  {
+    "options_category": "Двигатель и трансмиссия",
+    "options": [
+      {
+        "option_title": "Двигатель",
+        "available_on_config": [
+          "3.3 Lambda GDI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "249"
+        ]
+      },
+      {
+        "option_title": "Крутящий момент, Н·м",
+        "available_on_config": [
+          "347"
+        ]
+      },
+      {
+        "option_title": "Тип топлива",
+        "available_on_config": [
+          "Бензин, АИ 95"
+        ]
+      },
+      {
+        "option_title": "Рабочий объем, л",
+        "available_on_config": [
+          "3.3"
+        ]
+      },
+      {
+        "option_title": "Рабочий объем, см3",
+        "available_on_config": [
+          "3 342"
+        ]
+      },
+      {
+        "option_title": "Экологический класс",
+        "available_on_config": [
+          "Евро-5"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Автомат (8AT) "
+        ]
+      },
+      {
+        "option_title": "Привод",
+        "available_on_config": [
+          "Полный"
+        ]
+      },
+      {
+        "option_title": "Объем топливного бака (л.)",
+        "available_on_config": [
+          "77"
+        ]
+      },
+      {
+        "option_title": "Время разгона 0-100 км/ч, с",
+        "available_on_config": [
+          "8,4"
+        ]
+      },
+      {
+        "option_title": "Расход топлива комбинированный, л/100 км",
+        "available_on_config": [
+          "10,8"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Размеры",
+    "options": [
+      {
+        "option_title": "Тип кузова",
+        "available_on_config": [
+          "Седан"
+        ]
+      },
+      {
+        "option_title": "Габариты (длина/ширина/высота), мм",
+        "available_on_config": [
+          "5140/1915/1505"
+        ]
+      },
+      {
+        "option_title": "Колесная база, мм",
+        "available_on_config": [
+          "3105"
+        ]
+      },
+      {
+        "option_title": "Дорожный просвет, мм",
+        "available_on_config": [
+          "150"
+        ]
+      },
+      {
+        "option_title": " Объём багажника (VDA), л ",
+        "available_on_config": [
+          "470"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Динамические характеристики",
+    "options": [
+      {
+        "option_title": "Максимальная скорость (км/ч)",
+        "available_on_config": [
+          "240"
+        ]
+      },
+      {
+        "option_title": "Ускорение (сек) 80->120 (км/ч)",
+        "available_on_config": [
+          "5.3"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Код модели",
+        "available_on_config": [
+          "J6S4J5A1K"
+        ]
+      }
+    ]
+  }
+]
