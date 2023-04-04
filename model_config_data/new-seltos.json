@@ -6,6 +6,7 @@
         "option_title": "Подогрев передних сидений",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
@@ -13,12 +14,14 @@
         "option_title": "Подогрев задних сидений",
         "available_on_config": [
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Подогрев рулевого колеса",
         "available_on_config": [
+          false,
           true,
           true
         ]
@@ -27,6 +30,7 @@
         "option_title": "Подогрев форсунок стеклоомывателя",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
@@ -34,12 +38,14 @@
         "option_title": "Боковые зеркала заднего вида с электроприводом и подогревом",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Воздуховоды для задних пассажиров",
         "available_on_config": [
+          true,
           true,
           true
         ]
@@ -50,8 +56,17 @@
     "options_category": "Экстерьер",
     "options": [
       {
+        "option_title": "Стальные диски с колпаками 16\" с шинами 205/60 R16",
+        "available_on_config": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
         "option_title": "Легкосплавные диски 16\" с шинами 205/60 R16",
         "available_on_config": [
+          false,
           true,
           true
         ]
@@ -60,13 +75,15 @@
         "option_title": "Галогенные фары проекционного типа",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Противотуманные фары",
         "available_on_config": [
-          false,
+          true,
+          true,
           true
         ]
       },
@@ -74,12 +91,14 @@
         "option_title": "Двухцветная окраска кузова (опционально)",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Рейлинги на крыше",
         "available_on_config": [
+          true,
           true,
           true
         ]
@@ -100,13 +119,15 @@
         "option_title": "Рулевое колесо с отделкой кожей",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Ручка селектора трансмиссии с отделкой кожей",
         "available_on_config": [
-          false,
+          true,
+          true,
           true
         ]
       },
@@ -114,13 +135,15 @@
         "option_title": "Сиденья с отделкой тканью",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Полка багажного отделения",
         "available_on_config": [
-          false,
+          true,
+          true,
           true
         ]
       }
@@ -133,6 +156,7 @@
         "option_title": "Фронтальные подушки безопасности",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
@@ -140,12 +164,14 @@
         "option_title": "Боковые подушки и шторки безопасности",
         "available_on_config": [
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Стальное запасное колесо временного использования",
         "available_on_config": [
+          true,
           true,
           true
         ]
@@ -159,12 +185,14 @@
         "option_title": "Датчик света",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Стеклоподъемник водителя с функцией Auto (вверх/вниз)",
         "available_on_config": [
+          false,
           true,
           true
         ]
@@ -173,6 +201,15 @@
         "option_title": "Система выбора режима движения Drive Mode Select",
         "available_on_config": [
           true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Система бесключевого доступа Smart Key и запуска двигателя кнопкой",
+        "available_on_config": [
+          false,
+          true,
           true
         ]
       },
@@ -180,6 +217,7 @@
         "option_title": "Кондиционер",
         "available_on_config": [
           true,
+          false,
           false
         ]
       },
@@ -187,13 +225,23 @@
         "option_title": "Климат-контроль",
         "available_on_config": [
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Задние датчики парковки",
         "available_on_config": [
-          false,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Передние датчики парковки",
+        "available_on_config": [
+          true,
+          true,
           true
         ]
       },
@@ -201,12 +249,14 @@
         "option_title": "Камера заднего вида с динамическими линиями парковки",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
-        "option_title": "Приборная панель с дисплеем 3.5\"",
+        "option_title": "Цветная приборная панель с дисплеем 4.2\"",
         "available_on_config": [
+          true,
           true,
           true
         ]
@@ -214,6 +264,7 @@
       {
         "option_title": "Круиз-контроль",
         "available_on_config": [
+          false,
           true,
           true
         ]
@@ -224,22 +275,9 @@
     "options_category": "Мультимедиа",
     "options": [
       {
-        "option_title": "Мультимедиа с 8\" цветным дисплеем, с поддержкой Android Auto и Apple Carplay",
-        "available_on_config": [
-          true,
-          true
-        ]
-      },
-      {
         "option_title": "Дополнительные разъемы зарядки USB",
         "available_on_config": [
           false,
-          true
-        ]
-      },
-      {
-        "option_title": "Bluetooth для подключения мобильных устройств",
-        "available_on_config": [
           true,
           true
         ]
