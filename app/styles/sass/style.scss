@@ -1482,7 +1482,7 @@ hr {
         }
 
         &-slide {
-            width: 200px;
+            width: 240px;
 
             & > div {
                 border: 1px dotted transparent;
@@ -1526,7 +1526,7 @@ hr {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                right: 0;
+                right: 10px;
                 z-index: 2;
             }
 
@@ -1729,7 +1729,7 @@ hr {
                 }
 
                 &-carousel-slide {
-                    width: 200px;
+                    width: 240px;
 
                     & > div {
                         padding: 0 30px;
