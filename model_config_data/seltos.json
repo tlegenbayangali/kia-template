@@ -186,8 +186,8 @@
       {
         "option_title": "Климат-контроль",
         "available_on_config": [
-          true,
-          false
+          false,
+          true
         ]
       },
       {
