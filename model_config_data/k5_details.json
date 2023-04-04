@@ -1,1 +1,65 @@
-[{"title":"Comfort","price":"13 990 000 ₸","years":{"model_year":"2023 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"},{"title":"Luxe","price":"14 990 000 ₸","years":{"model_year":"2023 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"},{"title":"Style","price":"16 090 000 ₸","years":{"model_year":"2023 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"},{"title":"Prestige","price":"16 190 000 ₸","years":{"model_year":"2023 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"}]
+[
+  {
+    "title": "Comfort",
+    "price": "13 990 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "Luxe",
+    "price": "14 990 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "Style",
+    "price": "16 090 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "Prestige",
+    "price": "16 190 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "Premium",
+    "price": "17 790 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "Premium",
+    "price": "18 790 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "2.5 MPI \/ 194 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  },
+  {
+    "title": "GT Line+",
+    "price": "19 990 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "2.5 MPI \/ 194 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
+  }
+]
