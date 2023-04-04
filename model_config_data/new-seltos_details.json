@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Comfort",
+    "price": "11 990 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2023 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI / 149 л.с. / Бензин / Вариатор / Передний привод"
+  },
+  {
+    "title": "Luxe",
+    "price": "12 890 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2023 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI / 149 л.с. / Бензин / Вариатор / Передний привод"
+  },
+  {
+    "title": "Luxe",
+    "price": "13 590 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2023 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI / 149 л.с. / Бензин / Вариатор / Полный привод"
+  }
+]
