@@ -19,6 +19,10 @@ $models = new WP_Query(
 
 $categories = [];
 
+echo '<pre>';
+print_r($models->posts);
+echo '</pre>';
+
 foreach ($models->posts as $model) {
     $category = get_field('category', $model->ID);
     if (!in_array($category, $categories)) {
