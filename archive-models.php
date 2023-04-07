@@ -51,14 +51,6 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                 foreach ($models->posts as $model) : ?>
                                     <?php
                                     if (get_field('category', $model->ID) === $category) : ?>
-                                        <?php
-                                        $configurations = new WP_Query(
-                                            [
-                                                'post_type' => 'configs',
-                                                'model'     => $model->post_name,
-                                            ]
-                                        );
-                                        ?>
                                         <div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
                                             <div class="top">
                                                 <div class="img">
