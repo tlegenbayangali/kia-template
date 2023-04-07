@@ -85,18 +85,6 @@ $configs = new WP_Query(
         'orderby'        => ['meta_value_num' => 'ASC'],
     ]
 );
-
-$prices_array = [];
-
-foreach ($configs->posts as $post) :
-    $prices_array[] = get_field('price', $post->ID);
-endforeach;
-if (count($prices_array) > 1) :
-    $model_min_price = min(...$prices_array);
-else :
-    $model_min_price = $prices_array[ 0 ];
-endif;
-$GLOBALS[ 'model_min_price' ] = $model_min_price;
 // wp_reset_query();
 ?>
     <div class="equip-hero">
