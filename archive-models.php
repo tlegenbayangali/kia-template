@@ -10,10 +10,12 @@
 
 get_header();
 
-$models = new WP_Query([
-    'post_type'   => 'models',
-    'post_parent' => 0
-]);
+$models = new WP_Query(
+    [
+        'post_type'   => 'models',
+        'post_parent' => 0
+    ]
+);
 
 $categories = [];
 
@@ -48,12 +50,14 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                 <?php
                                 foreach ($models->posts as $model) : ?>
                                     <?php
-                                    if (get_field('category', $model->ID) == $category) : ?>
+                                    if (get_field('category', $model->ID) === $category) : ?>
                                         <?php
-                                        $configurations = new WP_Query([
-                                            'post_type' => 'configs',
-                                            'model'     => $model->post_name,
-                                        ]);
+                                        $configurations = new WP_Query(
+                                            [
+                                                'post_type' => 'configs',
+                                                'model'     => $model->post_name,
+                                            ]
+                                        );
                                         ?>
                                         <div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
                                             <div class="top">
