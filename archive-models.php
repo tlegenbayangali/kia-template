@@ -12,8 +12,9 @@ get_header();
 
 $models = new WP_Query(
     [
-        'post_type'   => 'models',
-        'post_parent' => 0
+        'post_type'      => 'models',
+        'post_parent'    => 0,
+        'posts_per_page' => 20
     ]
 );
 
