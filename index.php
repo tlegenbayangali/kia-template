@@ -27,7 +27,8 @@ if (get_field('main_slider_slides', 'options')) : ?>
                 <?php
                 foreach (get_field('main_slider_slides', 'options') as $slide) : ?>
                     <div class="swiper-slide">
-                        <?php if ($slide[ 'position_content' ]) : ?>
+                        <?php
+                        if ($slide[ 'position_content' ]) : ?>
                             <div class="hero-slider-item">
                                 <div class="img">
                                     <?php
@@ -54,8 +55,9 @@ if (get_field('main_slider_slides', 'options')) : ?>
                                     </div>
                                 </div>
                             </div>
-                        <?php else : ?>
-                            <div class="hero-slider-item_right">
+                        <?php
+                        else : ?>
+                            <div class="hero-slider-item hero-slider-item_right">
                                 <div class="img">
                                     <?php
                                     echo wp_get_attachment_image($slide[ 'main_slider_slide_image' ], 'full'); ?>
@@ -81,7 +83,8 @@ if (get_field('main_slider_slides', 'options')) : ?>
                                     </div>
                                 </div>
                             </div>
-                        <?php endif; ?>
+                        <?php
+                        endif; ?>
                     </div>
                 <?php
                 endforeach; ?>
@@ -110,10 +113,12 @@ endif; ?>
 <?php
 if (get_field('is_models_slider', 'options')) : ?>
     <?php
-    $models = new WP_Query([
-        'post_type'   => 'models',
-        'post_parent' => 0
-    ]);
+    $models = new WP_Query(
+        [
+            'post_type'   => 'models',
+            'post_parent' => 0
+        ]
+    );
     ?>
     <section class="models section pt-80 pb-80">
         <div class="overflow-fix-y">
@@ -187,12 +192,15 @@ if (get_field('is_models_slider', 'options')) : ?>
                                             endif; ?>
                                         </div>
                                     </div>
-                                    <?php if (get_field('show_or_hide_price_models', $model->ID)) : ?>
+                                    <?php
+                                    if (get_field('show_or_hide_price_models', $model->ID)) : ?>
                                         <div class="model-row">
                                             <div class="d-flex">
-                                                <?php if (get_field('starting_price', $model->ID)) : ?>
+                                                <?php
+                                                if (get_field('starting_price', $model->ID)) : ?>
                                                     <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
-                                                <?php endif; ?>
+                                                <?php
+                                                endif; ?>
                                                 <?php
                                                 if (get_field('car_price_conditions', $model->ID)) : ?>
                                                     <svg class="info-additional conditions">
@@ -203,7 +211,8 @@ if (get_field('is_models_slider', 'options')) : ?>
                                                 endif; ?>
                                             </div>
                                         </div>
-                                    <?php endif; ?>
+                                    <?php
+                                    endif; ?>
                                     <?php
                                     if (get_field('every_month_price', $model->ID)) : ?>
                                         <div class="model-row">
@@ -295,11 +304,13 @@ if (get_field('is_online_services', 'options')) : ?>
                             <!-- Slides -->
                             <?php
 
-                            $online_services = new WP_Query([
-                                'post_type' => 'online-services',
-                                'order'     => 'ASC',
-                                'orderby'   => 'ID'
-                            ]);
+                            $online_services = new WP_Query(
+                                [
+                                    'post_type' => 'online-services',
+                                    'order'     => 'ASC',
+                                    'orderby'   => 'ID'
+                                ]
+                            );
 
                             foreach ($online_services->posts as $service) :
 
@@ -339,11 +350,13 @@ endif; ?>
 if (get_field('is_available_cars', 'options')) : ?>
     <?php
 
-    $cars = new WP_Query([
-        'post_type'      => 'configs',
-        'orderby'        => 'rand',
-        'posts_per_page' => 100
-    ]);
+    $cars = new WP_Query(
+        [
+            'post_type'      => 'configs',
+            'orderby'        => 'rand',
+            'posts_per_page' => 100
+        ]
+    );
 
     $available_cars = [];
 
@@ -475,9 +488,11 @@ if (get_field('is_available_cars', 'options')) : ?>
 <?php
 endif; ?>
 <?php
-$offers_cars = new WP_Query([
-    'post_type' => 'offers-cars'
-]);
+$offers_cars = new WP_Query(
+    [
+        'post_type' => 'offers-cars'
+    ]
+);
 if ($offers_cars->posts):
     ?>
     <section class="offers section pt-80 pb-80">
@@ -493,9 +508,11 @@ if ($offers_cars->posts):
                             <!-- Slides -->
                             <?php
 
-                            $offers_cars = new WP_Query([
-                                'post_type' => 'offers-cars'
-                            ]);
+                            $offers_cars = new WP_Query(
+                                [
+                                    'post_type' => 'offers-cars'
+                                ]
+                            );
 
                             ?>
                             <?php
@@ -514,25 +531,32 @@ if ($offers_cars->posts):
                                                     <?= $offer->post_title ?>
                                                 </span>
                                                 </a>
-                                                <?php if (get_field('period', $offer->ID)[ 'period_end' ]) : ?>
+                                                <?php
+                                                if (get_field('period', $offer->ID)[ 'period_end' ]) : ?>
                                                     <p class="c-disabled mt-10">
                                                         <?php
                                                         $date = date_create(get_field('period', $offer->ID)[ 'period_end' ]);
                                                         ?>
                                                         Завершение: <?= date_format($date, 'd/m/Y') ?>
                                                     </p>
-                                                <?php endif; ?>
-                                                <?php if (false) : ?>
-                                                    <?php if (get_field('finish', $offer->ID)) : ?>
+                                                <?php
+                                                endif; ?>
+                                                <?php
+                                                if (false) : ?>
+                                                    <?php
+                                                    if (get_field('finish', $offer->ID)) : ?>
                                                         <p class="c-disabled mt-10">
                                                             Завершено
                                                         </p>
-                                                    <?php else : ?>
+                                                    <?php
+                                                    else : ?>
                                                         <p class="c-disabled mt-10">
                                                             Постоянная акция
                                                         </p>
-                                                    <?php endif; ?>
-                                                <?php endif; ?>
+                                                    <?php
+                                                    endif; ?>
+                                                <?php
+                                                endif; ?>
                                                 <p class="offers-desc">
                                                     <?= get_field('short_description', $offer->ID) ?>
                                                 </p>
@@ -569,7 +593,8 @@ if ($offers_cars->posts):
             </div>
         </div>
     </section>
-<?php endif; ?>
+<?php
+endif; ?>
     <hr class="separator">
     <section class="callback pt-80 pb-80" id="callback">
         <div class="container">
@@ -578,11 +603,14 @@ if ($offers_cars->posts):
                     <div class="callback-form">
                         <h5 class="mb-2">Обратная связь</h5>
                         <p class="mb-2">Оставьте ваши контакты и уточните тему запроса, и мы свяжемся с вами.</p>
-                        <?php if (get_field('foreign_form', 'options')) : ?>
+                        <?php
+                        if (get_field('foreign_form', 'options')) : ?>
                             <?= get_field('foreign_form', 'options') ?>
-                        <?php else : ?>
+                        <?php
+                        else : ?>
                             <?= do_shortcode('[contact-form-7 id="139" title="Форма заявки"]') ?>
-                        <?php endif; ?>
+                        <?php
+                        endif; ?>
                     </div>
                 </div>
             </div>
@@ -604,9 +632,11 @@ if (false) : ?>
                             <!-- Slides -->
                             <?php
 
-                            $offers_service = new WP_Query([
-                                'post_type' => 'offers-service'
-                            ]);
+                            $offers_service = new WP_Query(
+                                [
+                                    'post_type' => 'offers-service'
+                                ]
+                            );
 
                             ?>
                             <?php
@@ -666,9 +696,11 @@ endif; ?>
 
 <?php
 
-$company_news = new WP_Query([
-    'category' => 'news'
-]);
+$company_news = new WP_Query(
+    [
+        'category' => 'news'
+    ]
+);
 
 ?>
 <?php
