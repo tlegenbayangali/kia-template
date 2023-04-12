@@ -72,9 +72,20 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                     <span class="info d-flex flex-column">
                                     <?php
                                     foreach (get_field('dealer_info', 'options')[ 'dealer_phones' ] as $phone) : ?>
-                                        <a href="tel:<?= cleanPhone($phone[ 'dealer_phone' ]) ?>" class="right-number pos-r d-block">
-                                            <span itemprop="telephone"><?= $phone[ 'dealer_phone' ] ?></span>
-                                        </a>
+                                        <?php
+                                        if ($phone[ 'is_whatsapp' ]): ?>
+                                            <a href="https://api.whatsapp.com/send?phone=<?= cleanPhone(
+                                                $phone[ 'dealer_phone' ]
+                                            ) ?>&text=%F0%9F%91%8B%20%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20..." class="right-number pos-r d-block">
+                                                <span itemprop="telephone"><?= $phone[ 'dealer_phone' ] ?></span>
+                                            </a>
+                                        <?php
+                                        else: ?>
+                                            <a href="tel:<?= cleanPhone($phone[ 'dealer_phone' ]) ?>" class="right-number pos-r d-block">
+                                                <span itemprop="telephone"><?= $phone[ 'dealer_phone' ] ?></span>
+                                            </a>
+                                        <?php
+                                        endif; ?>
                                     <?php
                                     endforeach; ?>
                                 </span>
@@ -141,9 +152,20 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                         <span class="info d-flex flex-column">
                                             <?php
                                             foreach (get_field('dealer_info', 'options')[ 'service_department' ][ 'phones' ] as $phone) : ?>
-                                                <a href="tel:<?= cleanPhone($phone[ 'phone' ]) ?>" class="right-number pos-r d-block">
-                                                    <span itemprop="telephone"><?= $phone[ 'phone' ] ?></span>
-                                                </a>
+                                                <?php
+                                                if ($phone[ 'is_whatsapp' ]): ?>
+                                                    <a href="https://api.whatsapp.com/send?phone=<?= cleanPhone(
+                                                        $phone[ 'phone' ]
+                                                    ) ?>&text=%F0%9F%91%8B%20%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%B8%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%B0..." class="right-number pos-r d-block">
+                                                            <span itemprop="telephone"><?= $phone[ 'phone' ] ?></span>
+                                                        </a>
+                                                <?php
+                                                else: ?>
+                                                    <a href="tel:<?= cleanPhone($phone[ 'phone' ]) ?>" class="right-number pos-r d-block">
+                                                        <span itemprop="telephone"><?= $phone[ 'phone' ] ?></span>
+                                                    </a>
+                                                <?php
+                                                endif; ?>
                                             <?php
                                             endforeach; ?>
                                         </span>
