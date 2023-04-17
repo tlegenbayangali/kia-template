@@ -16,6 +16,13 @@
     border: 1px solid red;
 }
 
+hr {
+    &.wp-block-separator {
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
