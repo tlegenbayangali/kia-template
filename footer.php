@@ -91,11 +91,11 @@
                                 the_field('address', 'options') ?>
                             </li>
                             <?php
-                            $phone = get_field('dealer_info', 'options')[ 'dealer_phones' ][ 0 ];
+                            $phone = get_field('dealer_info', 'options')[ 'dealer_phones' ][ 0 ][ 'dealer_phone' ];
                             ?>
                             <li>
                                 <a href="tel:<?= cleanPhone($phone) ?>" class="active">
-                                    <?= $phone ?>>
+                                    <?= $phone ?>
                                 </a>
                             </li>
                             <?php
