@@ -113,7 +113,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
                         </div>
                     </div>
                     <?php
-                    if (get_field('dealer_info', 'options')[ 'service_department_is_active' ] != false) : ?>
+                    if (isset(get_field('dealer_info', 'options')[ 'service_department_is_active' ])) : ?>
                         <h4 class="mb-2">Отдел сервиса</h4>
                         <div class="row mb-4">
                             <div class="col-md-6">
