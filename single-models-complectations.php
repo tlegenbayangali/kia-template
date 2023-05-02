@@ -30,9 +30,15 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                     } ?>
                     <div class="equip-breadcrumbs-right d-flex align-items-md-center">
                         <?php
-                        if (get_field('model_price_list', $parent_post_id)) : ?>
+                        $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $parent_post->post_name . '.pdf';
+
+                        // Remote file url
+                        $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
+                        ?>
+                        <?php
+                        if ($handle) : ?>
                             <div class="equip-breadcrumbs-right-price">
-                                <a target="_blank" class="d-flex align-items-center underlined underlined-black" href="<?= get_field('model_price_list', $parent_post_id)[ 'url' ] ?>">
+                                <a target="_blank" class="d-flex align-items-center underlined underlined-black" href="<?= $priceListFileUrl ?>">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" class="mr-1" data-v-bee0cc60="">
                                         <path d="M2.75.75h9.94l4.56 4.56v13.94H2.75V.75z" stroke="currentColor" stroke-width="1.5" data-v-bee0cc60=""></path>
                                         <path d="M12.5 1v5h4" stroke="currentColor" stroke-width="1.5" data-v-bee0cc60="">
@@ -99,14 +105,17 @@ $configs = new WP_Query(
                         </span>
                         </div>
                         <?php
-                        if (get_field('starting_price', $post_data->ID)) : ?>
+                        $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_details.json'));
+                        ?>
+                        <?php
+                        if (isset($configs[ 0 ]) && $configs[ 0 ]->price != 0) : ?>
                         <div class="equip-hero-min-price">
                             Минимальная цена
                         </div>
                         <div class="equip-hero-min-price-val d-flex align-items-center">
-                                <span class="val">
-                                    <?= get_field('starting_price', $post_data->ID) ?> ₸
-                                </span>
+                            <span class="val">
+                                <?= $configs[ 0 ]->price ?>
+                            </span>
                             <?php
                             endif; ?>
                             <span class="equip-hero-min-price-info d-block">
@@ -137,8 +146,6 @@ $configs = new WP_Query(
                                     <!-- SWIPER INNER CONTAINER-->
                                     <div class="equip-variants-container swiper-container">
                                         <div class="equip-variants-wrapper swiper-wrapper">
-                                            <?php
-                                            $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_details.json')) ?>
                                             <?php
                                             foreach ($configs as $config) : ?>
                                                 <div class="equip-variants-slide swiper-slide d-flex flex-column justify-content-between">

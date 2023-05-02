@@ -105,24 +105,31 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                 <div class="col-lg-12">
                     <div class="equip-hero-inner">
                         <div class="equip-hero-title">
-                        <span class="d-block">
-                            Характеристики <?php
-                            echo esc_html(get_the_title($parent_post_id)); ?>
-                        </span>
+                            <span class="d-block">
+                                Характеристики <?php
+                                echo esc_html(get_the_title($parent_post_id)); ?>
+                            </span>
                         </div>
-                        <div class="equip-hero-min-price">
-                            Минимальная цена
-                        </div>
-                        <div class="equip-hero-min-price-val d-flex align-items-center">
-                        <span class="val">
-                            <?= get_field('starting_price', $post_data->ID) ?> ₸
-                        </span>
-                            <span class="equip-hero-min-price-info d-block">
-                            <svg class="info">
-                                <use xlink:href="images/dist/sprite.svg#info"></use>
-                            </svg>
-                        </span>
-                        </div>
+                        <?php
+                        $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_details.json')) ?>
+
+                        <?php
+                        if (isset($configs[ 0 ]) && $configs[ 0 ]->price != 0) : ?>
+                            <div class="equip-hero-min-price">
+                                Минимальная цена
+                            </div>
+                            <div class="equip-hero-min-price-val d-flex align-items-center">
+                            <span class="val">
+                                <?= $configs[ 0 ]->price ?>
+                            </span>
+                                <span class="equip-hero-min-price-info d-block">
+                                <svg class="info">
+                                    <use xlink:href="images/dist/sprite.svg#info"></use>
+                                </svg>
+                            </span>
+                            </div>
+                        <?php
+                        endif; ?>
                         <div class="equip-hero-banner">
                             <img src="<?php
                             the_field('bottom_section_car_image_medium', $parent_post_id); ?>" alt="banner">
@@ -145,8 +152,6 @@ $GLOBALS[ 'model_min_price' ] = $model_min_price;
                                     <!-- SWIPER INNER CONTAINER-->
                                     <div class="equip-variants-container swiper-container">
                                         <div class="equip-variants-wrapper swiper-wrapper">
-                                            <?php
-                                            $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $parent_slug . '_details.json')) ?>
                                             <?php
                                             foreach ($configs as $config) : ?>
                                                 <div class="equip-variants-slide swiper-slide d-flex flex-column justify-content-between">

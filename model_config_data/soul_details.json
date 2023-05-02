@@ -1,23 +1,5 @@
 [
   {
-    "title": "Classic",
-    "price": "10 690 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2023 года выпуска"
-    },
-    "tech_characteristics": "1.6 MPI \/ 123 л.с. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
-  },
-  {
-    "title": "Comfort",
-    "price": "10 990 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2023 года выпуска"
-    },
-    "tech_characteristics": "1.6 MPI \/ 123 л.с. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
-  },
-  {
     "title": "Luxe",
     "price": "11 590 000 ₸",
     "years": {
