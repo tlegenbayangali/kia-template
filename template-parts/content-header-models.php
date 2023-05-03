@@ -9,10 +9,12 @@
 
                         $parent_post = get_post($post->post_parent);
                         $parent_post_id = get_post()->post_parent;
-                        $config_s = new WP_Query([
-                            'post_type' => 'configs',
-                            'model'     => $current_m,
-                        ]);
+                        $config_s = new WP_Query(
+                            [
+                                'post_type' => 'configs',
+                                'model'     => $current_m,
+                            ]
+                        );
                         wp_reset_query();
                         ?>
                         <div class="header-model-left model d-flex align-items-center">
@@ -21,14 +23,18 @@
                             endif; ?> d-flex align-items-center"><?php
                                 echo esc_html(get_the_title($args[ 'parent_post' ]->ID)); ?></h1>
                             <div class="header-model-price align-items-center d-xl-flex d-none">
+                                <?php
+                                $link = get_template_directory_uri() . '/model_config_data/' . $current_m . '_details.json';
+                                $configs = json_decode(file_get_contents($link));
+                                ?>
                                 <!-- Edit Sagyndyk -->
                                 <?php
                                 if (get_field('show_or_hide_price_models', $post->ID)) : ?>
                                     <?php
-                                    if (get_field('starting_price', $args[ 'parent_post' ]->ID)) : ?>
-                                        <span class="d-block"> от <?= get_field('starting_price', $args[ 'parent_post' ]->ID) ?> ₸ </span>
+                                    if (isset($configs[ 0 ]) && $configs[ 0 ]->price != 0) : ?>
+                                        <span class="d-block"> от <?= $configs[ 0 ]->price ?> </span>
                                     <?php
-                                    endif ?>
+                                    endif; ?>
                                 <?php
                                 endif ?>
                                 <?php
