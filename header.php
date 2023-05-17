@@ -9,8 +9,12 @@
  *
  * @package kia
  */
-if (defined(DLCD_SEO_ACTIVE) && DLCD_SEO_ACTIVE) {
-    $seo = true;
+if (defined(DLCD_SEO_ACTIVE)) {
+    if (DLCD_SEO_ACTIVE) {
+        $seo = true;
+    } else {
+        $seo = false;
+    }
 } else {
     $seo = false;
 }
