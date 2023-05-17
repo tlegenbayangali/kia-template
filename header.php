@@ -9,7 +9,7 @@
  *
  * @package kia
  */
-if (defined(DLCD_SEO_ACTIVE)) {
+if (defined('DLCD_SEO_ACTIVE')) {
     if (DLCD_SEO_ACTIVE) {
         $seo = true;
     } else {
