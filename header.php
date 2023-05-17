@@ -52,7 +52,7 @@ language_attributes(); ?>>
     bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php
-    if ($seo && get_post_type(get_queried_object()->ID) === 'models') : ?>
+    if ($seo && is_singular() && get_post_type(get_queried_object()->ID) === 'models') : ?>
         <meta name="description" content="<?= $description ?>">
         <title><?= $title ?></title>
     <?php
