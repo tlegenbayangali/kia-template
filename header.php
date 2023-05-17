@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -8,22 +9,58 @@
  *
  * @package kia
  */
+$seo = DLCD_SEO_ACTIVE;
+$title = '';
+$description = '';
 
+$template_slug = explode('/', get_single_template());
+$template_slug = $template_slug[ count($template_slug) - 1 ];
+
+$city = explode(',', get_field('dealer_info', 'options')[ 'dealer_address' ]);
+$city = $city[ 0 ];
+
+if (is_single()) {
+    switch ($template_slug) {
+        case 'single-models.php':
+            $title = 'Обзор Kia ' . get_the_title() . ' у официального дилера Kia в ' . $city . ' - ' . get_bloginfo('name');
+            $description = 'Купить новый автомобиль Kia ' . get_the_title() . ' в ' . $city . '. За подробной информацией обращайтесь по телефону: ' . get_field('dealer_info', 'options')[ 'dealer_phones' ][ 0 ][ 'dealer_phone' ];
+            break;
+        case 'single-models-complectations.php':
+            $title = 'Комплектации и цены Kia ' . get_the_title() . ' у официального дилера Kia в ' . $city . ' - ' . get_bloginfo('name');
+            $description = 'Ознакомьтесь с комплектациями и ценами на новый автомобиль Kia ' . get_the_title() . ' в ' . $city . '. За подробной информацией обращайтесь по телефону: ' . get_field('dealer_info', 'options')[ 'dealer_phones' ][ 0 ][ 'dealer_phone' ];
+            break;
+        case 'single-models-characteristics.php':
+            $title = 'Технические характеристики Kia ' . get_the_title() . ' у официального дилера Kia в ' . $city . ' - ' . get_bloginfo('name');
+            $description = 'Технические характеристики и с Kia ' . get_the_title() . ' в ' . $city . '. За подробной информацией обращайтесь по телефону: ' . get_field('dealer_info', 'options')[ 'dealer_phones' ][ 0 ][ 'dealer_phone' ];
+            break;
+    }
+}
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php
+language_attributes(); ?>>
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta charset="<?php
+    bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php
+    if ($seo && get_post_type(get_queried_object()->ID) === 'models') : ?>
+        <meta name="description" content="<?= $description ?>">
+        <title><?= $title ?></title>
+    <?php
+    endif; ?>
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <meta name="format-detection" content="telephone=no">
     <link rel="alternate" href="<?= get_site_url() ?>" hreflang="ru"/>
     <link rel="alternate" href="<?= get_site_url() ?>" hreflang="x-default"/>
-    <?php wp_head(); ?>
+    <?php
+    wp_head(); ?>
 </head>
 
-<body <?php body_class('is-loading'); ?>>
-<?php wp_body_open(); ?>
+<body <?php
+body_class('is-loading'); ?>>
+<?php
+wp_body_open(); ?>
 <div class="loader">
 </div>
 <div id="page" class="main-section">
@@ -37,12 +74,15 @@
                             <div class="left d-flex align-items-center">
                                 <a class="d-flex align-items-center" href="/">
                                     <svg class="left-icon d-block f-dark">
-                                        <use xlink:href="<?php echo get_template_directory_uri(); ?>/dist/images/dist/sprite.svg#kia-logo-new"></use>
+                                        <use xlink:href="<?php
+                                        echo get_template_directory_uri(); ?>/dist/images/dist/sprite.svg#kia-logo-new"></use>
                                     </svg>
                                     <div class="left-text pos-r">
-                                        <?php the_field('site_name', 'options'); ?>
+                                        <?php
+                                        the_field('site_name', 'options'); ?>
                                         <div class="bottom">
-                                            <?php the_field('site_description', 'options'); ?>
+                                            <?php
+                                            the_field('site_description', 'options'); ?>
                                         </div>
                                     </div>
                                 </a>
@@ -59,13 +99,16 @@
                                 </svg>
                                 <div class="right-adress-wrapper">
                                     <div class="right-adress">
-                                        <?php the_field('address', 'options') ?>
+                                        <?php
+                                        the_field('address', 'options') ?>
                                     </div>
                                     <div class="right-adress-desc">
                                         дилерский центр
                                     </div>
-                                    <!-- <a href="tel:<?php echo cleanPhone(get_field('phone', 'options')) ?>" class="right-number pos-r d-block">
-										<?php the_field('phone', 'options') ?>
+                                    <!-- <a href="tel:<?php
+                                    echo cleanPhone(get_field('phone', 'options')) ?>" class="right-number pos-r d-block">
+										<?php
+                                    the_field('phone', 'options') ?>
 									</a> -->
                                 </div>
                             </div>
@@ -82,17 +125,21 @@
                         <div class="menu">
                             <div class="menu-wrapper">
 
-                                <?php if (have_rows('menu-elements', 'option')): ?>
+                                <?php
+                                if (have_rows('menu-elements', 'option')): ?>
 
                                     <ul class="">
-                                        <?php while (have_rows('menu-elements', 'option')): the_row(); ?>
+                                        <?php
+                                        while (have_rows('menu-elements', 'option')): the_row(); ?>
 
                                             <!-- MAIN LI ITEM-->
                                             <li class="m_menu-item">
-                                                <a href="<?php if (get_sub_field('menu-element-link')) {
+                                                <a href="<?php
+                                                if (get_sub_field('menu-element-link')) {
                                                     the_sub_field('menu-element-link');
                                                 } else echo '#' ?>">
-                                                    <?php the_sub_field('menu-element-title'); ?>
+                                                    <?php
+                                                    the_sub_field('menu-element-title'); ?>
                                                 </a>
                                                 <!-- LI ITEM'S MEGA MENU STARTS(WILL BE SIDEBAR)-->
                                                 <?php
@@ -105,49 +152,69 @@
                                                                 <div class="m_menu-item-links d-flex justify-content-between">
                                                                     <div class="m_menu-item-links-inn">
                                                                         <!-- LINKS WIDJET'S ITEM -->
-                                                                        <?php while (have_rows('sub-menu-elements')): the_row(); ?>
+                                                                        <?php
+                                                                        while (have_rows('sub-menu-elements')): the_row(); ?>
                                                                             <div class="m_menu-item-link">
-                                                                                <a href="<?php the_sub_field('sub-menu-element-link'); ?>">
-                                                                                    <?php the_sub_field('sub-menu-element-title'); ?>
+                                                                                <a href="<?php
+                                                                                the_sub_field('sub-menu-element-link'); ?>">
+                                                                                    <?php
+                                                                                    the_sub_field('sub-menu-element-title'); ?>
                                                                                 </a>
                                                                             </div>
-                                                                        <?php endwhile; ?>
+                                                                        <?php
+                                                                        endwhile; ?>
                                                                     </div>
                                                                     <!-- MEGA MENU ITEM __> (LINKS WIDJET) -->
-                                                                    <?php $banner_info = get_sub_field('sub-menu-banner-element');
+                                                                    <?php
+                                                                    $banner_info = get_sub_field('sub-menu-banner-element');
                                                                     if ($banner_info[ 'sub-menu-banner-title' ]): ?>
                                                                         <div class="m_menu-item-link-banner">
-                                                                            <a href="<?php echo esc_url($banner_info[ 'sub-menu-banner-link' ]); ?>">
+                                                                            <a href="<?php
+                                                                            echo esc_url($banner_info[ 'sub-menu-banner-link' ]); ?>">
                                                                                 <div class="top"
-                                                                                     style="background: url(<?php echo esc_url($banner_info[ 'sub-menu-banner-image' ]); ?>) no-repeat center center/cover;">
+                                                                                     style="background: url(<?php
+                                                                                     echo esc_url($banner_info[ 'sub-menu-banner-image' ]); ?>) no-repeat center center/cover;">
                                                                                 </div>
                                                                                 <div class="bottom">
-                                                                                    <?php echo esc_html($banner_info[ 'sub-menu-banner-title' ]); ?>
+                                                                                    <?php
+                                                                                    echo esc_html($banner_info[ 'sub-menu-banner-title' ]); ?>
                                                                                 </div>
                                                                             </a>
                                                                         </div>
-                                                                    <?php endif; ?>
+                                                                    <?php
+                                                                    endif; ?>
                                                                 </div>
                                                             </div>
                                                             <!-- MEGA MENU ITEM __> (BANNERS WIDJET) -->
-                                                            <?php if (have_rows('banner-list')): ?>
+                                                            <?php
+                                                            if (have_rows('banner-list')): ?>
                                                                 <div class="m_menu-item-banners">
-                                                                    <?php while (have_rows('banner-list')): the_row(); ?>
-                                                                        <a href="<?php the_sub_field('banner-list-link'); ?>" class="m_menu-item-banners-item" data-image-url="<?php echo get_template_directory_uri() . '/assets/images/quick-link-image-1.jpeg' ?>"
-                                                                           style="background-image: url(<?php the_sub_field('banner-list-image'); ?>);
+                                                                    <?php
+                                                                    while (have_rows('banner-list')): the_row(); ?>
+                                                                        <a href="<?php
+                                                                        the_sub_field('banner-list-link'); ?>" class="m_menu-item-banners-item" data-image-url="<?php
+                                                                        echo get_template_directory_uri() . '/assets/images/quick-link-image-1.jpeg' ?>"
+                                                                           style="background-image: url(<?php
+                                                                           the_sub_field('banner-list-image'); ?>);
                                                                                    background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                                                            <?php the_sub_field('banner-list-title'); ?>
+                                                                            <?php
+                                                                            the_sub_field('banner-list-title'); ?>
                                                                         </a>
-                                                                    <?php endwhile; ?>
+                                                                    <?php
+                                                                    endwhile; ?>
                                                                 </div>
-                                                            <?php endif; ?>
+                                                            <?php
+                                                            endif; ?>
                                                         </div>
                                                     </div>
-                                                <?php } ?>
+                                                    <?php
+                                                } ?>
                                             </li>
-                                        <?php endwhile; ?>
+                                        <?php
+                                        endwhile; ?>
                                     </ul>
-                                <?php endif; ?>
+                                <?php
+                                endif; ?>
                             </div>
                         </div>
                     </div>

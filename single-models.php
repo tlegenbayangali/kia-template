@@ -1,4 +1,5 @@
 <?php
+
 get_header();
 $current_post = get_post(); ?>
 <?php
@@ -28,7 +29,9 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                     <div class="hero-model-inner d-flex">
                         <div class="breadcrumbs">
                             <?php
-                            if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?>
+                            if (function_exists('kama_breadcrumbs')) {
+                                kama_breadcrumbs();
+                            } ?>
                         </div>
                         <div class="hero-model-bottom d-flex">
                             <div class="hero-model-title">
@@ -135,13 +138,16 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                 <?php
                                                 $current_model_colors = get_field('body_colors');
                                                 ?>
-                                                <?php foreach ($current_model_colors as $color) : ?>
+                                                <?php
+                                                foreach ($current_model_colors as $color) : ?>
                                                     <span data-text="<?= $color[ 'body_color_name' ] ?>" data-src="<?= $color[ 't60' ] ?>" class="color-list-item" data-color="<?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?>" style="background:<?= $color[ 'body_colors_group' ][ 'body_colors_first' ] ?>;"></span>
-                                                <?php endforeach; ?>
+                                                <?php
+                                                endforeach; ?>
                                             </div>
                                         </div>
                                     </div>
-                                    <?php if (get_field('interior_colors')): ?>
+                                    <?php
+                                    if (get_field('interior_colors')): ?>
                                         <div class="col-12 col-md-6">
                                             <div class="model-sections-colors-interior colorpicker">
                                                 <div class="description-list">
@@ -158,7 +164,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                     <!-- COLORS LIST INTERIOR-->
                                                     <div class="color-list">
                                                         <?php
-                                                        foreach ((array) $current_model_interiors as $interior) : ?>
+                                                        foreach ((array)$current_model_interiors as $interior) : ?>
 
                                                             <?php
                                                             if ($interior[ 'interior_two_colors' ]) : ?>
@@ -177,7 +183,8 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                 endif; ?>
                                             </div>
                                         </div>
-                                    <?php endif; ?>
+                                    <?php
+                                    endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -263,14 +270,18 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                                                                         <?= $config->characteristics ?>
                                                                     </p>
                                                                 </li>
-                                                                <?php if ($config->options): ?>
-                                                                <li>
-                                                                    <span class="content-header">Основные опции</span>
-                                                                    <?php foreach ($config->options as $option) : ?>
-                                                                        <p><?= $option ?></p>
-                                                                    <?php endforeach; ?>
-                                                                </li>
-                                                <?php endif; ?>
+                                                                <?php
+                                                                if ($config->options): ?>
+                                                                    <li>
+                                                                        <span class="content-header">Основные опции</span>
+                                                                        <?php
+                                                                        foreach ($config->options as $option) : ?>
+                                                                            <p><?= $option ?></p>
+                                                                        <?php
+                                                                        endforeach; ?>
+                                                                    </li>
+                                                                <?php
+                                                                endif; ?>
                                                             </ul>
                                                         </div>
                                                         <!-- MORE BUTTON TO ANOTHER PAGE-->
@@ -311,7 +322,8 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                         <div class="model-sections-list">
                             <div class="model-sections-list-smallimage">
                                 <div class="model-sections-list-smallimage-item d-block">
-                                    <img src="<?php echo get_template_directory_uri() . '/app/images/dist/5years.svg' ?>" alt="small-image">
+                                    <img src="<?php
+                                    echo get_template_directory_uri() . '/app/images/dist/5years.svg' ?>" alt="small-image">
                                     <!--                                    <span class="model-sections-list-smallimage-excerpt">-->
                                     <!---->
                                     <!--                                    </span>-->
