@@ -5,7 +5,6 @@
       {
         "option_title": "Подогрев передних сидений",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -14,7 +13,6 @@
       {
         "option_title": "Зеркала заднего вида с электроприводом и подогревом",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -23,7 +21,6 @@
       {
         "option_title": "Подогрев рулевого колеса",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -32,7 +29,6 @@
       {
         "option_title": "Подогрев форсунок стеклоомывателя",
         "available_on_config": [
-          true,
           true,
           true,
           true
@@ -46,7 +42,6 @@
       {
         "option_title": "Легкосплавные диски 14'' с шинами 175 \/ 65 R14",
         "available_on_config": [
-          false,
           true,
           false,
           false
@@ -56,7 +51,6 @@
         "option_title": "Электропривод складывания зеркал заднего вида",
         "available_on_config": [
           false,
-          false,
           true,
           true
         ]
@@ -64,7 +58,6 @@
       {
         "option_title": "Передние фары проекционного типа (линзованные)",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -73,7 +66,6 @@
       {
         "option_title": "Светодиодные дневные ходовые огни (LED DRL)",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -82,7 +74,6 @@
       {
         "option_title": "Светодиодные (LED) задние фонари",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -91,7 +82,6 @@
       {
         "option_title": "Передние противотуманные фары",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -101,7 +91,6 @@
         "option_title": "Ручки дверей, окрашенные в цвет кузова",
         "available_on_config": [
           true,
-          true,
           false,
           false
         ]
@@ -109,7 +98,6 @@
       {
         "option_title": "Внешние дверные ручки с отделкой хромом",
         "available_on_config": [
-          false,
           false,
           true,
           true
@@ -119,7 +107,6 @@
         "option_title": "Легкосплавные диски 16'' с шинами 195 \/ 45 R16",
         "available_on_config": [
           false,
-          false,
           true,
           false
         ]
@@ -127,7 +114,6 @@
       {
         "option_title": "Стальные диски 14\" с полноразмерными декоративными колпаками и шинами 175 \/ 65 R14",
         "available_on_config": [
-          true,
           false,
           false,
           false
@@ -141,7 +127,6 @@
       {
         "option_title": "Рулевое колесо и ручка селектора трансмисии с отделкой кожей",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -150,7 +135,6 @@
       {
         "option_title": "Светодиодная подсветка макияжного зеркала водителя",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -160,7 +144,6 @@
         "option_title": "Сиденья с отделкой искусственной кожей",
         "available_on_config": [
           false,
-          false,
           true,
           false
         ]
@@ -168,7 +151,6 @@
       {
         "option_title": "Интерьер с комбинированной тканевой отделкой",
         "available_on_config": [
-          false,
           true,
           false,
           false
@@ -182,7 +164,6 @@
       {
         "option_title": "Боковые подушки и шторки безопасности",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -191,7 +172,6 @@
       {
         "option_title": "Задние дисковые тормоза",
         "available_on_config": [
-          false,
           false,
           true,
           true
@@ -202,7 +182,6 @@
         "available_on_config": [
           false,
           false,
-          false,
           true
         ]
       },
@@ -211,14 +190,12 @@
         "available_on_config": [
           false,
           false,
-          false,
           true
         ]
       },
       {
         "option_title": "Задние датчики парковки",
         "available_on_config": [
-          false,
           false,
           true,
           true
@@ -233,7 +210,6 @@
         "option_title": "Кондиционер",
         "available_on_config": [
           true,
-          true,
           false,
           false
         ]
@@ -242,7 +218,6 @@
         "option_title": "Климат-контроль",
         "available_on_config": [
           false,
-          false,
           true,
           true
         ]
@@ -250,7 +225,6 @@
       {
         "option_title": "Регулировка сиденья водителя по высоте",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -259,7 +233,6 @@
       {
         "option_title": "Передние и задние стеклоподъёмники с электроприводом",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -268,7 +241,6 @@
       {
         "option_title": "Стеклоподъемник водителя с функцией Auto",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -277,7 +249,6 @@
       {
         "option_title": "Ключ с дистанционным управлением центральным замком",
         "available_on_config": [
-          false,
           true,
           true,
           false
@@ -288,14 +259,12 @@
         "available_on_config": [
           false,
           false,
-          false,
           true
         ]
       },
       {
         "option_title": "Приборная панель Supervision c цветным дисплеем TFT 4.2''",
         "available_on_config": [
-          false,
           false,
           true,
           true
@@ -304,7 +273,6 @@
       {
         "option_title": "Мультифункциональное рулевое колесо",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -315,14 +283,12 @@
         "available_on_config": [
           false,
           false,
-          false,
           true
         ]
       },
       {
         "option_title": "Аудиоподготовка (2 динамика)",
         "available_on_config": [
-          true,
           false,
           false,
           false
@@ -331,7 +297,6 @@
       {
         "option_title": "Аудиосистема с дисплеем 8\", с радио, USB вход, Android Auto и Apple Car Play (6 динамиков)",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -340,7 +305,6 @@
       {
         "option_title": "Bluetooth для подключения мобильного телефона",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -349,7 +313,6 @@
       {
         "option_title": "Камера заднего вида c динамической разметкой",
         "available_on_config": [
-          false,
           true,
           true,
           true
@@ -358,7 +321,6 @@
       {
         "option_title": "Подголовники передних сидений, регулируемые вперед\/назад",
         "available_on_config": [
-          false,
           false,
           true,
           true
@@ -374,14 +336,12 @@
         "available_on_config": [
           false,
           false,
-          false,
           true
         ]
       },
       {
         "option_title": "Боковой молдинг и решетка радиатора со спортивным акцентом",
         "available_on_config": [
-          false,
           false,
           false,
           true
@@ -392,14 +352,12 @@
         "available_on_config": [
           false,
           false,
-          false,
           true
         ]
       },
       {
         "option_title": "Легкосплавные диски 16'' с шинами 195 \/ 45 R16",
         "available_on_config": [
-          false,
           false,
           false,
           true
@@ -410,14 +368,12 @@
         "available_on_config": [
           false,
           false,
-          false,
           true
         ]
       },
       {
         "option_title": "Алюминиевые накладки на педали",
         "available_on_config": [
-          false,
           false,
           true,
           true
@@ -426,7 +382,6 @@
       {
         "option_title": "Сиденья с отделкой искусственной кожей \"GT Line\"",
         "available_on_config": [
-          false,
           false,
           false,
           true
@@ -446,14 +401,12 @@
         "available_on_config": [
           "1 MPI",
           "1 MPI",
-          "1 MPI",
           "1 MPI"
         ]
       },
       {
         "option_title": "Мощность, л.с.",
         "available_on_config": [
-          "67",
           "67",
           "67",
           "67"
@@ -464,14 +417,12 @@
         "available_on_config": [
           "122",
           "122",
-          "122",
           "122"
         ]
       },
       {
         "option_title": "Тип двигателя",
         "available_on_config": [
-          "Бензин",
           "Бензин",
           "Бензин",
           "Бензин"
@@ -482,7 +433,6 @@
         "available_on_config": [
           "Автомат (4AT)",
           "Автомат (4AT)",
-          "Автомат (4AT)",
           "Автомат (4AT)"
         ]
       },
@@ -491,14 +441,12 @@
         "available_on_config": [
           "13.7",
           "13.7",
-          "13.7",
           "13.7"
         ]
       },
       {
         "option_title": "Расход топлива комбинированный, л\/100 км",
         "available_on_config": [
-          "5.4",
           "5.4",
           "5.4",
           "5.4"
@@ -514,14 +462,12 @@
         "available_on_config": [
           "G6S6K261B",
           "G6S6K261B",
-          "G6S6K261B",
           "G6S6K261B"
         ]
       },
       {
         "option_title": "OCN",
         "available_on_config": [
-          "D0FG",
           "G15A",
           "G15E",
           "G15B"

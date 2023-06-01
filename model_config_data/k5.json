@@ -8,12 +8,14 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Электрообогрев лобового стекла",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -26,12 +28,14 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Подогрев передних сидений",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -44,12 +48,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Подогрев рулевого колеса",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -65,6 +71,7 @@
         "option_title": "Легкосплавные диски 17\" с шинами Continental 215/55 R17",
         "available_on_config": [
           true,
+          true,
           false,
           false,
           false
@@ -76,12 +83,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Светодиодные (LED) фары ближнего и дальнего света проекционного типа",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -94,6 +103,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -101,6 +111,7 @@
         "option_title": "Светодиодные (LED) задние фонари",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true
@@ -117,6 +128,7 @@
           true,
           false,
           false,
+          false,
           false
         ]
       },
@@ -124,6 +136,7 @@
         "option_title": "Сиденья с отделкой кожей",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true
@@ -135,6 +148,7 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
@@ -144,6 +158,7 @@
           true,
           false,
           false,
+          false,
           false
         ]
       },
@@ -151,6 +166,7 @@
         "option_title": "Отделка передней панели и дверей вставками под текстуру дерева (Hydro Wood)",
         "available_on_config": [
           false,
+          true,
           false,
           false,
           false
@@ -159,6 +175,7 @@
       {
         "option_title": "Отделка передней панели и дверей вставками с изящным узором из тонких линий (Hairline Pad)",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -171,6 +188,7 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
@@ -180,12 +198,14 @@
           false,
           false,
           false,
+          false,
           true
         ]
       },
       {
         "option_title": "Динамическая подсветка интерьера Mood lamp с возможностью персонализации настроек (64 цвета)",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -203,12 +223,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Дефлекторы обдува для пассажиров второго ряда",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -221,6 +243,7 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
@@ -228,6 +251,7 @@
         "option_title": "Память настроек положения сиденья водителя",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true
@@ -239,12 +263,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Комфортное пассажирское сиденье с дополнительной настройкой положения релаксации \"Relaxation seat\"",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -254,6 +280,7 @@
       {
         "option_title": "Вентиляция передних сидений",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -266,12 +293,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Передние и задние датчики парковки",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -284,6 +313,7 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
@@ -291,6 +321,7 @@
         "option_title": "Система бесключевого доступа Smart Key и запуск двигателя кнопкой",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true
@@ -302,6 +333,7 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
@@ -311,12 +343,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Салонное зеркало с автоматическим затемнением (ECM)",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -329,6 +363,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -338,12 +373,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Приборная панель Supervision c цветным TFT дисплеем 4.2''",
         "available_on_config": [
+          true,
           true,
           false,
           false,
@@ -354,6 +391,7 @@
         "option_title": "Полностью цифровая приборная панель Supervision с цветным TFT дисплеем 12.3''",
         "available_on_config": [
           false,
+          false,
           true,
           true,
           true
@@ -362,6 +400,7 @@
       {
         "option_title": "Проекционный дисплей 8\" (HUD)",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -379,6 +418,7 @@
           true,
           false,
           false,
+          false,
           false
         ]
       },
@@ -388,12 +428,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Аудиосистема BOSE с 12 динамиками, включая сабвуфер",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -406,6 +448,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -413,6 +456,7 @@
         "option_title": "Беспроводная зарядка мобильного телефона",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true
@@ -429,6 +473,7 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
@@ -436,6 +481,7 @@
         "option_title": "Электронная система блокировки замков задних дверей от случайного открывания детьми",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true
@@ -450,6 +496,7 @@
         "option_title": "Интеллектуальный круиз-контроль (SCC) с функцией Stop&Go",
         "available_on_config": [
           false,
+          false,
           true,
           true,
           true
@@ -461,12 +508,14 @@
           false,
           false,
           false,
+          false,
           true
         ]
       },
       {
         "option_title": "Cистема предотвращения фронтального столконовения (FCA)\n(уровень распознавания: автомобиль/пешеход/велосипед)",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -476,6 +525,7 @@
       {
         "option_title": "Система предотвращения выезда из полосы движения (LKA)",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -488,12 +538,14 @@
           false,
           false,
           false,
+          false,
           true
         ]
       },
       {
         "option_title": "Система контроля слепых зон (BCW)",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -506,6 +558,7 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
@@ -515,12 +568,14 @@
           false,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Система предотвращения столкновения при выезде с парковки задним ходом (PCA)",
         "available_on_config": [
+          false,
           false,
           true,
           true,
@@ -536,6 +591,7 @@
         "option_title": "Легкосплавные диски 18\" с шинами 235/45 R18",
         "available_on_config": [
           false,
+          false,
           true,
           true,
           true
@@ -544,6 +600,7 @@
       {
         "option_title": "Решётка радиатора спортивного дизайна",
         "available_on_config": [
+          false,
           false,
           false,
           false,
@@ -556,12 +613,14 @@
           false,
           false,
           false,
+          false,
           true
         ]
       },
       {
         "option_title": "Отделка потолка и стоек кузова чёрного цвета",
         "available_on_config": [
+          false,
           false,
           false,
           false,
@@ -574,12 +633,14 @@
           false,
           false,
           false,
+          false,
           true
         ]
       },
       {
         "option_title": "Спойлер на крышке багажника (чёрного цвета)",
         "available_on_config": [
+          false,
           false,
           false,
           false,
@@ -592,6 +653,7 @@
           false,
           false,
           false,
+          false,
           true
         ]
       },
@@ -601,12 +663,14 @@
           false,
           false,
           false,
+          false,
           true
         ]
       },
       {
         "option_title": "Эмблема GT Line",
         "available_on_config": [
+          false,
           false,
           false,
           false,
