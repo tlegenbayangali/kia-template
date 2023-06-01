@@ -48,6 +48,14 @@
         ]
       },
       {
+        "option_title": "Легкосплавные диски 16'' с шинами 195 / 45 R16",
+        "available_on_config": [
+          false,
+          true,
+          false
+        ]
+      },
+      {
         "option_title": "Электропривод складывания зеркал заднего вида",
         "available_on_config": [
           false,
