@@ -13,6 +13,18 @@
  * @package kia
  */
 
+// Program to display URL of current page.
+if (isset($_SERVER[ 'HTTPS' ]) && $_SERVER[ 'HTTPS' ] === 'on') {
+    $link = "https";
+} else {
+    $link = "http";
+}
+
+// Here append the common URL characters.
+$link .= "://";
+
+// Append the host(domain name, ip) to the URL.
+$link .= $_SERVER[ 'HTTP_HOST' ];
 get_header();
 ?>
 
@@ -174,6 +186,9 @@ if (get_field('is_models_slider', 'options')) : ?>
                         foreach ($models->posts as $model) : ?>
                             <div class="swiper-slide d-flex flex-column justify-content-between model" data-option="<?= $model->post_name ?>">
                                 <div class="top">
+                                    <?php
+                                    $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $model->post_name . '_details.json'));
+                                    ?>
                                     <div class="img">
                                         <a href="<?= get_post_permalink($model->ID) ?>">
                                             <?= get_the_post_thumbnail($model->ID, 'large') ?>
@@ -197,8 +212,8 @@ if (get_field('is_models_slider', 'options')) : ?>
                                         <div class="model-row">
                                             <div class="d-flex">
                                                 <?php
-                                                if (get_field('starting_price', $model->ID)) : ?>
-                                                    <span class="mr-2 price-sm">от <?= get_field('starting_price', $model->ID) ?> ₸</span>
+                                                if (isset($configs[ 0 ]) && $configs[ 0 ]->price != 0) : ?>
+                                                    <span class="mr-2 price-sm">от <?= $configs[ 0 ]->price ?></span>
                                                 <?php
                                                 endif; ?>
                                                 <?php
