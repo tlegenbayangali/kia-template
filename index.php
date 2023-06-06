@@ -633,7 +633,7 @@ endif; ?>
     </section>
     <hr class="separator">
 <?php
-if (false) : ?>
+if (true) : ?>
     <section class="offers section pt-80 pb-80">
         <div class="container">
             <div class="row">
