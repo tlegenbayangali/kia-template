@@ -1,4 +1,5 @@
 <?php
+
 get_header(); ?>
 <?php
 
@@ -8,16 +9,20 @@ foreach ($current_models as $model) {
     array_push($current_models_slugs, $model->slug);
 }
 if ($current_models_slugs) {
-    $models = new WP_Query([
-        'post_type'     => 'models',
-        'post_name__in' => $current_models_slugs
-    ]);
+    $models = new WP_Query(
+        [
+            'post_type'     => 'models',
+            'post_name__in' => $current_models_slugs
+        ]
+    );
 }
 
-$configs = new WP_Query([
-    'post_type' => 'configs',
-    'model'     => $current_models_slugs
-]);
+$configs = new WP_Query(
+    [
+        'post_type' => 'configs',
+        'model'     => $current_models_slugs
+    ]
+);
 
 ?>
     <div class="page">
@@ -27,7 +32,9 @@ $configs = new WP_Query([
                     <div class="col-lg-8">
                         <div class="breadcrumbs">
                             <?php
-                            if (function_exists('kama_breadcrumbs')) kama_breadcrumbs(); ?>
+                            if (function_exists('kama_breadcrumbs')) {
+                                kama_breadcrumbs();
+                            } ?>
                         </div>
                         <div class="post-title mb-30">
                             <h1>
@@ -37,6 +44,28 @@ $configs = new WP_Query([
                         </div>
                         <div class="post-thumbnail">
                             <?= get_the_post_thumbnail(get_the_ID(), 'full') ?>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="callback-form" class="container pb-60 pt-30">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex callback-col justify-content-center">
+                                <div class="callback-form" id="offer-form">
+                                    <h5 class="mb-2">Отправить заявку дилеру</h5>
+                                    <p class="mb-2">После отправки заявки, дилер свяжется с Вами для уточнения деталей бронирования.</p>
+                                    <p class="mb-2 mt-10 fz-12 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
+                                    <?php
+                                    if (get_field('foreign_form', 'options')) : ?>
+                                        <?= get_field('foreign_form', 'options') ?>
+                                    <?php
+                                    else : ?>
+                                        <?= do_shortcode('[contact-form-7 id="4077" title="Форма заявки со страницы спецпредложения"]') ?>
+                                    <?php
+                                    endif; ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -51,7 +80,8 @@ $configs = new WP_Query([
                     </div>
                 </div>
 
-                <?php if (false) : ?>
+                <?php
+                if (false) : ?>
                     <div class="row mt-20 justify-content-center">
                         <div class="col-lg-7 offer-conditions">
                             <h2 class="fz-35 mb-30">Условия участия</h2>
@@ -91,10 +121,12 @@ $configs = new WP_Query([
                         <?php
                         endif; ?>
                     </div>
-                <?php endif; ?>
+                <?php
+                endif; ?>
             </div>
         </section>
-        <?php if (false) : ?>
+        <?php
+        if (false) : ?>
             <section>
                 <hr>
                 <!--Data time start -->
@@ -175,7 +207,8 @@ $configs = new WP_Query([
                 </div>
                 <!--Data time end -->
             </section>
-        <?php endif; ?>
+        <?php
+        endif; ?>
         <?php
         if (isset($models)) : ?>
             <hr>
@@ -237,9 +270,13 @@ $configs = new WP_Query([
                                 <?php
                                 foreach ($configs->posts as $config) : ?>
                                     <?php
-                                    $model_name = wp_get_post_terms($config->ID, 'model', [
-                                        'fields' => 'slugs'
-                                    ]);
+                                    $model_name = wp_get_post_terms(
+                                        $config->ID,
+                                        'model',
+                                        [
+                                            'fields' => 'slugs'
+                                        ]
+                                    );
                                     ?>
                                     <?php
                                     if ($model->post_name === $model_name[ 0 ]) : ?>
@@ -344,28 +381,6 @@ $configs = new WP_Query([
             </div>
         <?php
         endif; ?>
-        <hr>
-        <div id="callback-form" class="container pb-60 pt-30">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="d-flex callback-col justify-content-center">
-                        <div class="callback-form" id="offer-form">
-                            <h5 class="mb-2">Отправить заявку дилеру</h5>
-                            <p class="mb-2">После отправки заявки, дилер свяжется с Вами для уточнения деталей бронирования.</p>
-                            <p class="mb-2 mt-10 fz-12 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
-                            <?php
-                            if (get_field('foreign_form', 'options')) : ?>
-                                <?= get_field('foreign_form', 'options') ?>
-                            <?php
-                            else : ?>
-                                <?= do_shortcode('[contact-form-7 id="4077" title="Форма заявки со страницы спецпредложения"]') ?>
-                            <?php
-                            endif; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 <?php
 get_footer(); ?>
