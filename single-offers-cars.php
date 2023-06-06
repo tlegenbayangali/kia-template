@@ -47,28 +47,6 @@ $configs = new WP_Query(
                         </div>
                     </div>
                 </div>
-                <hr>
-                <div id="callback-form" class="container pb-60 pt-30">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="d-flex callback-col justify-content-center">
-                                <div class="callback-form" id="offer-form">
-                                    <h5 class="mb-2">Отправить заявку дилеру</h5>
-                                    <p class="mb-2">После отправки заявки, дилер свяжется с Вами для уточнения деталей бронирования.</p>
-                                    <p class="mb-2 mt-10 fz-12 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
-                                    <?php
-                                    if (get_field('foreign_form', 'options')) : ?>
-                                        <?= get_field('foreign_form', 'options') ?>
-                                    <?php
-                                    else : ?>
-                                        <?= do_shortcode('[contact-form-7 id="4077" title="Форма заявки со страницы спецпредложения"]') ?>
-                                    <?php
-                                    endif; ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row mt-20 justify-content-center mb-60">
                     <div class="col-lg-7">
                         <article id="post-<?php
@@ -381,6 +359,28 @@ $configs = new WP_Query(
             </div>
         <?php
         endif; ?>
+        <hr>
+        <div id="callback-form" class="container pb-60 pt-30">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex callback-col justify-content-center">
+                        <div class="callback-form" id="offer-form">
+                            <h5 class="mb-2">Отправить заявку дилеру</h5>
+                            <p class="mb-2">После отправки заявки, дилер свяжется с Вами для уточнения деталей бронирования.</p>
+                            <p class="mb-2 mt-10 fz-12 c-disabled">Поля, отмеченные *, обязательны для заполнения</p>
+                            <?php
+                            if (get_field('foreign_form', 'options')) : ?>
+                                <?= get_field('foreign_form', 'options') ?>
+                            <?php
+                            else : ?>
+                                <?= do_shortcode('[contact-form-7 id="4077" title="Форма заявки со страницы спецпредложения"]') ?>
+                            <?php
+                            endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 <?php
 get_footer(); ?>
