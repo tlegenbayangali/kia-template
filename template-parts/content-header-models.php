@@ -77,7 +77,7 @@
                                     </a>
                                 </li>
                                 <?php
-                                if (get_field('show_complectations') && $handle) : ?>
+                                if ($handle) : ?>
                                     <li>
                                         <a class="underlined underlined-white" href="<?php
                                         echo get_home_url(null, '/models') . '/' . $args[ 'parent_post' ]->post_name . '/complectations/'; ?>">

@@ -90,7 +90,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
 
                                                 // Remote file url
                                                 $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
-                                                if (get_field('show_or_hide_price_models', $model->ID) && $handle) : ?>
+                                                if ($handle) : ?>
                                                     <?php
                                                     $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $model->post_name . '_details.json'));
                                                     ?>
