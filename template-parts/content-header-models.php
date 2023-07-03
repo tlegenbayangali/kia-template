@@ -1,6 +1,6 @@
 <?php
 
-include_once get_template_directory() . '/currentMonth.php';
+require get_template_directory() . '/currentMonth.php';
 ?>
 <div class="header-model-wrapper">
     <div class="header-model" id="header-model">
