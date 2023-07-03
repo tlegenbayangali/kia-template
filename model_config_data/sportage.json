@@ -9,6 +9,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -16,6 +17,7 @@
         "option_title": "Подогрев задних сидений",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true,
@@ -29,6 +31,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -39,6 +42,7 @@
           false,
           false,
           true,
+          true,
           true
         ]
       },
@@ -46,6 +50,7 @@
         "option_title": "Подогрев форсунок стеклоомывателя",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true,
@@ -59,12 +64,14 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Боковые зеркала с электроприводом и подогревом",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -84,6 +91,7 @@
           true,
           true,
           false,
+          false,
           false
         ]
       },
@@ -94,12 +102,14 @@
           false,
           false,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Легкосплавные диски 19\" с шинами 235/55 R19",
         "available_on_config": [
+          false,
           false,
           false,
           false,
@@ -114,12 +124,14 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Светодиодные дневные ходовые огни",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -134,12 +146,14 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Полностью светодиодные фары",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -154,12 +168,14 @@
           false,
           false,
           false,
+          false,
           false
         ]
       },
       {
         "option_title": "Задние светодиодные фонари",
         "available_on_config": [
+          false,
           false,
           false,
           false,
@@ -173,6 +189,7 @@
           false,
           false,
           false,
+          true,
           true,
           true
         ]
@@ -189,6 +206,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -199,6 +217,7 @@
           false,
           false,
           false,
+          true,
           true
         ]
       },
@@ -206,6 +225,7 @@
         "option_title": "Рулевое колесо и селектор КПП с отделкой кожей",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true,
@@ -219,6 +239,7 @@
           true,
           true,
           true,
+          false,
           false
         ]
       },
@@ -229,12 +250,14 @@
           false,
           false,
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Искусственная кожа красного цвета с тиснением",
         "available_on_config": [
+          false,
           false,
           false,
           false,
@@ -249,6 +272,7 @@
           true,
           true,
           true,
+          false,
           false
         ]
       },
@@ -259,6 +283,7 @@
           false,
           false,
           false,
+          true,
           true
         ]
       }
@@ -270,6 +295,7 @@
       {
         "option_title": "Стальное запасное колесо временного использования",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -289,6 +315,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -296,6 +323,7 @@
         "option_title": "Электрорегулировка поясничного подпора сиденья водителя",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true,
@@ -309,6 +337,7 @@
           false,
           false,
           false,
+          true,
           true
         ]
       },
@@ -318,6 +347,7 @@
           false,
           false,
           false,
+          true,
           true,
           true
         ]
@@ -329,6 +359,7 @@
           false,
           false,
           false,
+          true,
           true
         ]
       },
@@ -339,6 +370,7 @@
           true,
           true,
           true,
+          false,
           false
         ]
       },
@@ -349,12 +381,14 @@
           false,
           false,
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Камера заднего вида с динамической линией разметки",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -369,6 +403,7 @@
           false,
           false,
           false,
+          true,
           true
         ]
       },
@@ -376,6 +411,7 @@
         "option_title": "Стеклоподъёмник водителя и переднего пасажира c функцией Auto",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true,
@@ -389,6 +425,7 @@
           false,
           false,
           true,
+          true,
           true
         ]
       },
@@ -399,12 +436,14 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Датчик дождя",
         "available_on_config": [
+          true,
           true,
           true,
           true,
@@ -419,6 +458,7 @@
           true,
           true,
           true,
+          true,
           true
         ]
       },
@@ -428,6 +468,7 @@
           false,
           false,
           false,
+          true,
           true,
           true
         ]
@@ -439,6 +480,7 @@
           false,
           false,
           true,
+          true,
           true
         ]
       },
@@ -446,6 +488,7 @@
         "option_title": "Задние датчики парковки",
         "available_on_config": [
           false,
+          true,
           true,
           true,
           true,
@@ -464,6 +507,7 @@
           false,
           false,
           false,
+          true,
           true
         ]
       },
@@ -474,6 +518,7 @@
           false,
           false,
           false,
+          true,
           true
         ]
       }
@@ -485,6 +530,7 @@
       {
         "option_title": "Спортивные металлические педали",
         "available_on_config": [
+          false,
           false,
           false,
           false,

@@ -6,14 +6,12 @@
         "option_title": "Подогрев передних сидений",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
       {
         "option_title": "Подогрев задних сидений",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -22,14 +20,12 @@
         "option_title": "Подогрев рулевого колеса",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
       {
         "option_title": "Боковые зеркала заднего вида с электроприводом и подогревом",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -38,14 +34,12 @@
         "option_title": "Воздуховоды для второго ряда сидений",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
       {
         "option_title": "Индикатор низкого уровня омывающей жидкости",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -59,7 +53,6 @@
         "option_title": "Электропривод складывания зеркал заднего вида",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
@@ -67,7 +60,6 @@
         "option_title": "Хромированные ручки дверей (внешние)",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -75,14 +67,12 @@
         "option_title": "Серебристая декоративная накладка на передний и задний бампер",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
       {
         "option_title": "Рейлинги на крыше",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -91,14 +81,12 @@
         "option_title": "Легкосплавные диски 18\" с шинами 235\/60R",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
       {
         "option_title": "Рефлекторные светодиодные (LED) фары",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -107,7 +95,6 @@
         "option_title": "Светодиодные (LED) противотуманные фары",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
@@ -115,7 +102,6 @@
         "option_title": "Глубокая тонировка стекол задних дверей и стекла пятой двери",
         "available_on_config": [
           false,
-          true,
           true
         ]
       }
@@ -128,7 +114,6 @@
         "option_title": "Сиденья с отделкой тканью",
         "available_on_config": [
           true,
-          false,
           false
         ]
       },
@@ -136,7 +121,6 @@
         "option_title": "Сиденья с отделкой кожей",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -144,7 +128,6 @@
         "option_title": "Элементы передней панели со вставками «под металлик»",
         "available_on_config": [
           true,
-          false,
           false
         ]
       },
@@ -152,7 +135,6 @@
         "option_title": "Элементы передней панели со вставками «под дерево»",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -160,7 +142,6 @@
         "option_title": "Сетка для крепления багажа",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -168,7 +149,6 @@
         "option_title": "Разъём USB зарядки для второго ряда",
         "available_on_config": [
           false,
-          true,
           true
         ]
       }
@@ -181,14 +161,12 @@
         "option_title": "Приборная панель с дисплеем TFT 4,2\"",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
       {
         "option_title": "Передние датчики парковки",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -197,7 +175,6 @@
         "option_title": "Полноразмерное легкосплавное запасное колесо",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
@@ -205,14 +182,12 @@
         "option_title": "Электрический Child Lock",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
       {
         "option_title": "Ножной стояночный тормоз",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -226,7 +201,6 @@
         "option_title": "Передние и задние стеклоподъёмники с функцией Auto",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -234,7 +208,6 @@
         "option_title": "Интеллектуальная система открывания багажника (Smart Tailgate)",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -242,7 +215,6 @@
         "option_title": "Система бесключевого доступа Smart Key и пуск двигателя кнопкой",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -250,14 +222,12 @@
         "option_title": "Дистанционный запуск двигателя с ключа",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
       {
         "option_title": "Мультимедийная система 8\" с Apple Carplay и Android Auto",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -266,7 +236,6 @@
         "option_title": "Аудиосистема с 6 динамиками",
         "available_on_config": [
           true,
-          true,
           true
         ]
       },
@@ -274,14 +243,12 @@
         "option_title": "Электрохромное зеркало заднего вида (ECM)",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
       {
         "option_title": "10 электрорегулировок сиденья водителя (включая 2 направления поясницы)",
         "available_on_config": [
-          true,
           true,
           true
         ]
@@ -290,7 +257,6 @@
         "option_title": "Дистанционное складывание сидений 2-го ряда со стороны багажника (для автомобилей с 6- и 7-местным салоном)",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -298,7 +264,6 @@
         "option_title": "Складывание 50/50 сидений 3-го ряда (для автомобилей с 7-местным салоном)",
         "available_on_config": [
           false,
-          true,
           true
         ]
       },
@@ -306,7 +271,6 @@
         "option_title": "Кондиционер для третьего ряда сидений (для автомобилей с 7-местным салоном)",
         "available_on_config": [
           false,
-          true,
           true
         ]
       }
