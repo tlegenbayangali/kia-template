@@ -26,10 +26,15 @@
                                 <?php
                                 $link = get_template_directory_uri() . '/model_config_data/' . $current_m . '_details.json';
                                 $configs = json_decode(file_get_contents($link));
+
+                                $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $post->post_name . '.pdf';
+
+                                // Remote file url
+                                $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
                                 ?>
                                 <!-- Edit Sagyndyk -->
                                 <?php
-                                if (get_field('show_or_hide_price_models', $post->ID)) : ?>
+                                if (get_field('show_or_hide_price_models', $post->ID) ?? $handle) : ?>
                                     <?php
                                     if (isset($configs[ 0 ]) && $configs[ 0 ]->price != 0) : ?>
                                         <span class="d-block"> от <?= $configs[ 0 ]->price ?> </span>
