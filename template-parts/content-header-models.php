@@ -1,6 +1,6 @@
 <?php
 
-include_once '../currentMonth.php';
+include_once 'currentMonth.php';
 ?>
 <div class="header-model-wrapper">
     <div class="header-model" id="header-model">
