@@ -7,12 +7,14 @@
         "available_on_config": [
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Подогрев форсунок стеклоомывателя",
         "available_on_config": [
+          true,
           true,
           true,
           true
@@ -23,12 +25,14 @@
         "available_on_config": [
           true,
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Подогрев передних сидений",
         "available_on_config": [
+          true,
           true,
           true,
           true
@@ -39,6 +43,7 @@
         "available_on_config": [
           true,
           true,
+          true,
           true
         ]
       },
@@ -47,6 +52,7 @@
         "available_on_config": [
           false,
           false,
+          true,
           true
         ]
       },
@@ -55,27 +61,7 @@
         "available_on_config": [
           false,
           false,
-          true
-        ]
-      }
-    ]
-  },
-  {
-    "options_category": "Современные системы помощи водителю DRIVE WISE",
-    "options": [
-      {
-        "option_title": "Система контроля слепых зон (BCW)",
-        "available_on_config": [
-          false,
-          false,
-          true
-        ]
-      },
-      {
-        "option_title": "Система предупреждения бокового столкновения при выезде с парковки задним ходом (RCCW)",
-        "available_on_config": [
-          false,
-          false,
+          true,
           true
         ]
       }
@@ -89,6 +75,7 @@
         "available_on_config": [
           true,
           false,
+          false,
           false
         ]
       },
@@ -97,13 +84,15 @@
         "available_on_config": [
           false,
           true,
-          true
+          true,
+          false
         ]
       },
       {
         "option_title": "Светодиодные дневные ходовые огни (LED DRL)",
         "available_on_config": [
           false,
+          true,
           true,
           true
         ]
@@ -113,6 +102,7 @@
         "available_on_config": [
           false,
           true,
+          true,
           true
         ]
       },
@@ -121,6 +111,7 @@
         "available_on_config": [
           false,
           false,
+          true,
           true
         ]
       },
@@ -129,12 +120,14 @@
         "available_on_config": [
           false,
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Электропривод складывания зеркал заднего вида",
         "available_on_config": [
+          false,
           false,
           false,
           true
@@ -150,6 +143,7 @@
         "available_on_config": [
           false,
           true,
+          true,
           true
         ]
       },
@@ -158,6 +152,7 @@
         "available_on_config": [
           true,
           true,
+          false,
           false
         ]
       },
@@ -166,6 +161,7 @@
         "available_on_config": [
           false,
           false,
+          true,
           true
         ]
       },
@@ -174,83 +170,57 @@
         "available_on_config": [
           false,
           false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Сетка для крепления багажа",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировка поясничного подпора сиденья водителя и переднего пассажира",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Динамическая подсветка интерьера Mood lamp",
+        "available_on_config": [
+          false,
+          false,
+          false,
           true
         ]
       }
     ]
   },
   {
-    "options_category": "Комфорт",
+    "options_category": "Современные системы помощи водителю DRIVE WISE",
     "options": [
       {
-        "option_title": "Система выбора режима движения Drive Mode Select",
-        "available_on_config": [
-          true,
-          true,
-          true
-        ]
-      },
-      {
-        "option_title": "Раздельный климат-контроль",
-        "available_on_config": [
-          false,
-          true,
-          true
-        ]
-      },
-      {
-        "option_title": "Подрулевые \"лепестки\" переключения передач",
-        "available_on_config": [
-          false,
-          true,
-          true
-        ]
-      },
-      {
-        "option_title": "Камера заднего вида",
-        "available_on_config": [
-          true,
-          true,
-          true
-        ]
-      },
-      {
-        "option_title": "Мультимедийная система 8\" с Apple Carplay и Android Auto",
-        "available_on_config": [
-          true,
-          true,
-          true
-        ]
-      },
-      {
-        "option_title": "Задние датчики парковки",
-        "available_on_config": [
-          false,
-          true,
-          true
-        ]
-      },
-      {
-        "option_title": "Приборная панель Supervision с дисплеем 4.2\"",
-        "available_on_config": [
-          true,
-          true,
-          true
-        ]
-      },
-      {
-        "option_title": "Датчик дождя",
+        "option_title": "Система контроля слепых зон (BCW)",
         "available_on_config": [
           false,
           false,
+          true,
           true
         ]
       },
       {
-        "option_title": "Система бесключевого доступа Smart Key и пуск двигателя кнопкой",
+        "option_title": "Система предупреждения бокового столкновения при выезде с парковки задним ходом (RCCW)",
         "available_on_config": [
           false,
           false,
+          true,
           true
         ]
       }
