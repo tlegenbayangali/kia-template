@@ -1,5 +1,7 @@
 <?php
 
+include_once 'currentMonth.php';
+
 get_header();
 $parent_post = get_post($post->post_parent);
 $parent_post_id = get_post()->post_parent;
@@ -30,7 +32,7 @@ get_template_part('template-parts/content', 'header-models', ['parent_post' => $
                     } ?>
                     <div class="equip-breadcrumbs-right d-flex align-items-md-center">
                         <?php
-                        $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $parent_post->post_name . '.pdf';
+                        $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $parent_post->post_name . '_' . $month . '.pdf';
 
                         // Remote file url
                         $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist

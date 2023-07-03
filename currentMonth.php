@@ -1,0 +1,3 @@
+<?php
+
+$month = 'jul';

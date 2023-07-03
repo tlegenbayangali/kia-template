@@ -1,5 +1,7 @@
 <?php
 
+include_once 'currentMonth.php';
+
 /**
  * The template for displaying archive pages
  *
@@ -86,7 +88,7 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                                     </div>
                                                 </div>
                                                 <?php
-                                                $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $model->post_name . '.pdf';
+                                                $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $model->post_name . '_' . $month . '.pdf';
 
                                                 // Remote file url
                                                 $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
