@@ -1,6 +1,6 @@
 <?php
 
-include_once $_SERVER[ 'DOCUMENT_ROOT' ] . '/currentMonth.php';
+include_once $_SERVER[ 'DOCUMENT_ROOT' ] . '/wp-content/themes/kia/currentMonth.php';
 ?>
 <div class="header-model-wrapper">
     <div class="header-model" id="header-model">
