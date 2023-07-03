@@ -45,15 +45,6 @@
     "tech_characteristics": "2.0 MPI \/ 150 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
   },
   {
-    "title": "Style",
-    "price": "12 590 000 ₸",
-    "years": {
-      "model_year": "2022-2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "1.6 MPI \/ 128 л. c. \/ Бензин\n\nАвтомат\n\n\/\n\nПередний"
-  },
-  {
     "title": "Prestige",
     "price": "12 590 000 ₸",
     "years": {
@@ -64,7 +55,7 @@
   },
   {
     "title": "Prestige",
-    "price": "13 190 000 ₸",
+    "price": "12 990 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
