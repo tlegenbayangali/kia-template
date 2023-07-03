@@ -22,38 +22,43 @@
                             if (get_field('show_or_hide_price_models', $post->ID)) : ?> active <?php
                             endif; ?> d-flex align-items-center"><?php
                                 echo esc_html(get_the_title($args[ 'parent_post' ]->ID)); ?></h1>
-                            <div class="header-model-price align-items-center d-xl-flex d-none">
-                                <?php
-                                $link = get_template_directory_uri() . '/model_config_data/' . $current_m . '_details.json';
-                                $configs = json_decode(file_get_contents($link));
+                            <?php
+                            $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $post->post_name . '.pdf';
 
-                                $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $post->post_name . '.pdf';
-
-                                // Remote file url
-                                $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
-                                ?>
-                                <!-- Edit Sagyndyk -->
-                                <?php
-                                if (get_field('show_or_hide_price_models', $post->ID) ?? $handle) : ?>
+                            // Remote file url
+                            $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
+                            ?>
+                            <?php
+                            if ($handle) : ?>
+                                <div class="header-model-price align-items-center d-xl-flex d-none">
                                     <?php
-                                    if (isset($configs[ 0 ]) && $configs[ 0 ]->price != 0) : ?>
-                                        <span class="d-block"> от <?= $configs[ 0 ]->price ?> </span>
+                                    $link = get_template_directory_uri() . '/model_config_data/' . $current_m . '_details.json';
+                                    $configs = json_decode(file_get_contents($link));
+                                    ?>
+                                    <!-- Edit Sagyndyk -->
+                                    <?php
+                                    if (get_field('show_or_hide_price_models', $post->ID) ?? $handle) : ?>
+                                        <?php
+                                        if (isset($configs[ 0 ]) && $configs[ 0 ]->price != 0) : ?>
+                                            <span class="d-block"> от <?= $configs[ 0 ]->price ?> </span>
+                                        <?php
+                                        endif; ?>
+                                    <?php
+                                    endif ?>
+                                    <?php
+                                    if (get_field('car_price_conditions', $args[ 'parent_post' ]->ID)) : ?>
+                                        <svg class="ml-10 info-additional conditions">
+                                            <use xlink:href="<?php
+                                            echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
+                                        </svg>
                                     <?php
                                     endif; ?>
-                                <?php
-                                endif ?>
-                                <?php
-                                if (get_field('car_price_conditions', $args[ 'parent_post' ]->ID)) : ?>
-                                    <svg class="ml-10 info-additional conditions">
-                                        <use xlink:href="<?php
-                                        echo get_template_directory_uri() ?>/dist/images/dist/sprite.svg#info-circle"></use>
-                                    </svg>
-                                <?php
-                                endif; ?>
-                            </div>
-                            <div class="model-conditions">
-                                <?= get_field('car_price_conditions', $args[ 'parent_post' ]->ID) ?>
-                            </div>
+                                </div>
+                                <div class="model-conditions">
+                                    <?= get_field('car_price_conditions', $args[ 'parent_post' ]->ID) ?>
+                                </div>
+                            <?php
+                            endif; ?>
                         </div>
                         <?php
                         $arguments = array (
