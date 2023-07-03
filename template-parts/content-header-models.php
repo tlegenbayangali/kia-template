@@ -23,7 +23,7 @@
                             endif; ?> d-flex align-items-center"><?php
                                 echo esc_html(get_the_title($args[ 'parent_post' ]->ID)); ?></h1>
                             <?php
-                            $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $post->post_name . '.pdf';
+                            $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $current_m . '.pdf';
 
                             // Remote file url
                             $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
