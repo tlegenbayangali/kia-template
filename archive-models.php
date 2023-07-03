@@ -1,6 +1,6 @@
 <?php
 
-include_once 'currentMonth.php';
+include_once __DIR__ . '/currentMonth.php';
 
 /**
  * The template for displaying archive pages

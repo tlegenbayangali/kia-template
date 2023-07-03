@@ -1,6 +1,6 @@
 <?php
 
-include_once 'currentMonth.php';
+include_once __DIR__ . '/currentMonth.php';
 
 get_header();
 $parent_post = get_post($post->post_parent);
