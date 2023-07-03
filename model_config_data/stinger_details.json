@@ -6,7 +6,7 @@
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nЗадний"
+    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Задний"
   },
   {
     "title": "Luxe",
@@ -15,7 +15,7 @@
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
+    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Полный"
   },
   {
     "title": "Prestige",
@@ -24,7 +24,7 @@
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
+    "tech_characteristics": "2.0 / 247 л.с. / Автомат / Полный"
   },
   {
     "title": "Style",
@@ -33,7 +33,7 @@
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
+    "tech_characteristics": "2.0 / 247 л.с. / Автомат / Полный"
   },
   {
     "title": "GT Line",
@@ -42,7 +42,7 @@
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
+    "tech_characteristics": "2.0 / 247 л.с. / Автомат / Полный"
   },
   {
     "title": "GT Line Suede",
@@ -51,7 +51,7 @@
       "model_year": "2023 модельный год",
       "manufacture_year": "2022 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
+    "tech_characteristics": "2.0 / 247 л.с. / Автомат / Полный"
   },
   {
     "title": "GT Suede",
@@ -60,6 +60,6 @@
       "model_year": "2023 модельный год",
       "manufacture_year": "2023 года выпуска"
     },
-    "tech_characteristics": "Автомат\n\n\/\n\nПолный"
+    "tech_characteristics": "3.3 / 370 л.с. / Автомат / Полный"
   }
 ]
