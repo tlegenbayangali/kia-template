@@ -86,7 +86,11 @@ get_template_part('template-parts/breadcrumbs'); ?>
                                                     </div>
                                                 </div>
                                                 <?php
-                                                if (get_field('show_or_hide_price_models', $model->ID)) : ?>
+                                                $priceListFileUrl = get_template_directory_uri() . '/prices/price_' . $model->post_name . '.pdf';
+
+                                                // Remote file url
+                                                $handle = @fopen($priceListFileUrl, 'r'); // Check if file exist
+                                                if (get_field('show_or_hide_price_models', $model->ID) && $handle) : ?>
                                                     <?php
                                                     $configs = json_decode(file_get_contents($link . '/wp-content/themes/kia/model_config_data/' . $model->post_name . '_details.json'));
                                                     ?>
