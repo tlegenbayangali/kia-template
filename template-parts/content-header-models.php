@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . '/currentMonth.php';
+include_once $_SERVER[ 'DOCUMENT_ROOT' ] . '/currentMonth.php';
 ?>
 <div class="header-model-wrapper">
     <div class="header-model" id="header-model">
