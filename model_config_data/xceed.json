@@ -1,0 +1,209 @@
+[
+  {
+    "options_category": "Пакет \"Теплые опции\"",
+    "options": [
+      {
+        "option_title": "Подогрев зеркал заднего вида",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев форсунок стеклоомывателя",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев рулевого колеса",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев передних сидений",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Дополнительный электрический отопитель салона",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Подогрев задних сидений",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрообогрев лобового стекла",
+        "available_on_config": [
+          false,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Экстерьер",
+    "options": [
+      {
+        "option_title": "Легкосплавные диски 16\", с шинами 205/60 R16",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Корпуса зеркал заднего вида, окрашенные в цвет кузова",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электропривод складывания зеркал заднего вида",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодные повторители указателя поворота",
+        "available_on_config": [
+          false,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Интерьер",
+    "options": [
+      {
+        "option_title": "Сиденья с отделкой тканью",
+        "available_on_config": [
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Интерьер с комбинированной отделкой искусственной кожей и тканью",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Салонное зеркало заднего вида с автоматическим затемнением",
+        "available_on_config": [
+          false,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Современные системы помощи водителю DRIVE WISE",
+    "options": [
+      {
+        "option_title": "Система контроля слепых зон (BCW)",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система помощи при выезде с парковки задним ходом (RCCW)",
+        "available_on_config": [
+          false,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Комфорт",
+    "options": [
+      {
+        "option_title": "Подрулевые \"лепестки\" переключения передач",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Датчик дождя",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Функция \"Эскорт\" (Задержка выключения фар при закрывании замков)",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система бесключевого доступа Smartkey и запуск двигателя кнопкой",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Задние датчики парковки",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Интеллектуальная система открывания багажника c электроприводом",
+        "available_on_config": [
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Приборная панель Supervision c цветным дисплеем TFT 4.2''",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Камера заднего вида",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Мультимедиа с 8\" цветным дисплеем, с поддержкой Android Auto и Apple Carplay",
+        "available_on_config": [
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Стальное запасное колесо временного использования",
+        "available_on_config": [
+          true,
+          true
+        ]
+      }
+    ]
+  }
+]

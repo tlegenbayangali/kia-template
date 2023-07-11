@@ -1,0 +1,61 @@
+[
+  {
+    "options_category": "Двигатель и трансмиссия",
+    "options": [
+      {
+        "option_title": "Двигатель",
+        "available_on_config": [
+          "1.5 T-GDI",
+          "1.5 T-GDI"
+        ]
+      },
+      {
+        "option_title": "Мощность, л.с.",
+        "available_on_config": [
+          "150",
+          "150"
+        ]
+      },
+      {
+        "option_title": "Тип топлива",
+        "available_on_config": [
+          "Бензин",
+          "Бензин"
+        ]
+      },
+      {
+        "option_title": "Экологический класс",
+        "available_on_config": [
+          "Евро-5",
+          "Евро-5"
+        ]
+      },
+      {
+        "option_title": "Коробка передач",
+        "available_on_config": [
+          "Робот",
+          "Робот"
+        ]
+      },
+      {
+        "option_title": "Привод",
+        "available_on_config": [
+          "Передний",
+          "Передний"
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Спецификация",
+    "options": [
+      {
+        "option_title": "Код модели",
+        "available_on_config": [
+          "J7S8K8G1U",
+          "J7S8K8G1U"
+        ]
+      }
+    ]
+  }
+]
