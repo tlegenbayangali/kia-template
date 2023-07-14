@@ -138,14 +138,6 @@
           true,
           true
         ]
-      },
-      {
-        "option_title": "Полка багажного отделения",
-        "available_on_config": [
-          true,
-          true,
-          true
-        ]
       }
     ]
   },
