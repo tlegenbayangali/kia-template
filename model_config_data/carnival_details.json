@@ -1,55 +1,28 @@
 [
   {
     "title": "Luxe",
-    "price": "18 990 000 ₸",
+    "price": "19 990 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "2.2 CRDi / 199 л.c. / Дизель / Автомат / Передний привод / 8 мест"
-  },
-  {
-    "title": "Prestige",
-    "price": "22 990 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "2.2 CRDi / 199 л.c. / Дизель / Автомат / Передний привод / 8 мест"
-  },
-  {
-    "title": "Prestige",
-    "price": "23 990 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
+      "manufacture_year": "2023 года выпуска"
     },
     "tech_characteristics": "3.5 MPI / 249 л.c. / Бензин / Автомат / Передний привод / 8 мест"
   },
   {
-    "title": "Premium",
-    "price": "25 590 000 ₸",
+    "title": "Prestige",
+    "price": "24 490 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
+      "manufacture_year": "2023 года выпуска"
     },
-    "tech_characteristics": "2.2 CRDi / 199 л.c. / Дизель / Автомат / Передний привод / 8 мест"
+    "tech_characteristics": "3.5 MPI / 249 л.c. / Бензин / Автомат / Передний привод / 8 мест"
   },
   {
     "title": "Limousine",
-    "price": "25 990 000 ₸",
+    "price": "27 490 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "2.2 CRDi / 199 л.c. / Дизель / Автомат / Передний привод / 7 мест"
-  },
-  {
-    "title": "Limousine",
-    "price": "26 990 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
+      "manufacture_year": "2023 года выпуска"
     },
     "tech_characteristics": "3.5 MPI / 249 л.c. / Бензин / Автомат / Передний привод / 7 мест"
   }
