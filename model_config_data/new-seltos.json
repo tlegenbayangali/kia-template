@@ -7,6 +7,8 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
           true
         ]
       },
@@ -15,12 +17,26 @@
         "available_on_config": [
           false,
           true,
+          true,
+          false,
           true
         ]
       },
       {
         "option_title": "Подогрев рулевого колеса",
         "available_on_config": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрообогрев ветрового стекла",
+        "available_on_config": [
+          false,
+          false,
           false,
           true,
           true
@@ -31,6 +47,8 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
           true
         ]
       },
@@ -39,12 +57,16 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
           true
         ]
       },
       {
         "option_title": "Воздуховоды для задних пассажиров",
         "available_on_config": [
+          true,
+          true,
           true,
           true,
           true
@@ -60,12 +82,36 @@
         "available_on_config": [
           true,
           false,
+          false,
+          false,
           false
         ]
       },
       {
         "option_title": "Легкосплавные диски 16\" с шинами 205/60 R16",
         "available_on_config": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Легкосплавные диски 18\" с шинами 235/45 R18",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Решетка радиатора с черными глянцевыми вставками",
+        "available_on_config": [
+          false,
+          false,
           false,
           true,
           true
@@ -76,6 +122,28 @@
         "available_on_config": [
           true,
           true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Светодиодные (LED) фары проекционного типа",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодные дневные ходовые огни (LED DRL)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
           true
         ]
       },
@@ -84,13 +152,37 @@
         "available_on_config": [
           true,
           true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Светодиодные (LED) противотуманные фары",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
           true
         ]
       },
       {
-        "option_title": "Двухцветная окраска кузова (опционально)",
+        "option_title": "Светодиодные (LED) задние фонари",
         "available_on_config": [
+          false,
+          false,
+          false,
           true,
+          true
+        ]
+      },
+      {
+        "option_title": "Светодиодные (LED) габаритные огни",
+        "available_on_config": [
+          false,
+          false,
+          false,
           true,
           true
         ]
@@ -100,6 +192,28 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Люк с электроприводом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Дверные ручки с отделкой хромом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
           true
         ]
       }
@@ -112,6 +226,19 @@
         "option_title": "Вставки серого цвета",
         "available_on_config": [
           true,
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Вставки из черного глянца с принтом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
           true
         ]
       },
@@ -120,12 +247,26 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Рулевое колесо с отделкой кожей спортивного дизайна",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
           true
         ]
       },
       {
         "option_title": "Ручка селектора трансмиссии с отделкой кожей",
         "available_on_config": [
+          true,
+          true,
           true,
           true,
           true
@@ -136,6 +277,28 @@
         "available_on_config": [
           true,
           true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Сиденья с отделкой искусственной кожей",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "тмосферная подсветка интерьера Mood lamp",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
           true
         ]
       }
@@ -149,6 +312,8 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
           true
         ]
       },
@@ -157,6 +322,8 @@
         "available_on_config": [
           false,
           true,
+          true,
+          true,
           true
         ]
       },
@@ -164,6 +331,18 @@
         "option_title": "Стальное запасное колесо временного использования",
         "available_on_config": [
           true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Полноразмерное легкосплавное запасное колесо",
+        "available_on_config": [
+          false,
+          false,
+          false,
           true,
           true
         ]
@@ -178,6 +357,78 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Датчик дождя",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировка передних сидений с функцией памяти",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Вентиляция передних сидений",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Беспроводная зарядка мобильного телефона в центральной консоли",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Регулируемый центральный подлокотник",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Задний подлокотник с подстаканниками",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Бескаркасные стеклоочистители \"Aero Blade\"",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
           true
         ]
       },
@@ -185,6 +436,8 @@
         "option_title": "Стеклоподъемник водителя с функцией Auto (вверх/вниз)",
         "available_on_config": [
           false,
+          true,
+          true,
           true,
           true
         ]
@@ -194,6 +447,28 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Дверь багажника с электроприводом",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Салонное зеркало с автоматическим затемнением (ECM)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
           true
         ]
       },
@@ -202,6 +477,18 @@
         "available_on_config": [
           false,
           true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрический стояночный тормоз (EPB)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
           true
         ]
       },
@@ -210,12 +497,26 @@
         "available_on_config": [
           true,
           false,
+          false,
+          false,
           false
         ]
       },
       {
         "option_title": "Климат-контроль",
         "available_on_config": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электропривод складывания зеркал заднего вида",
+        "available_on_config": [
+          false,
+          false,
           false,
           true,
           true
@@ -226,12 +527,16 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
           true
         ]
       },
       {
         "option_title": "Передние датчики парковки",
         "available_on_config": [
+          true,
+          true,
           true,
           true,
           true
@@ -242,6 +547,8 @@
         "available_on_config": [
           true,
           true,
+          true,
+          true,
           true
         ]
       },
@@ -249,6 +556,18 @@
         "option_title": "Цветная приборная панель с дисплеем 4.2\"",
         "available_on_config": [
           true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Цифровая приборная панель c цветным дисплеем TFT 10.25",
+        "available_on_config": [
+          false,
+          false,
+          false,
           true,
           true
         ]
@@ -258,6 +577,18 @@
         "available_on_config": [
           false,
           true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Проекционный дисплей на лобовое стекло (HUD)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
           true
         ]
       }
@@ -267,10 +598,107 @@
     "options_category": "Мультимедиа",
     "options": [
       {
+        "option_title": "Мультимедиа с 8\" цветным дисплеем, с поддержкой Android Auto и Apple Carplay",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "option_title": "Мультимедиа с 10,25\" цветным дисплеем, с поддержкой Android Auto и Apple Carplay",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Премиальная аудиосистема BOSE",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ]
+      },
+      {
         "option_title": "Дополнительные разъемы зарядки USB",
         "available_on_config": [
           false,
           true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Bluetooth для подключения мобильных устройств",
+        "available_on_config": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  {
+    "options_category": "Комплекс систем безопасности и помощи водителю Drive Wise",
+    "options": [
+      {
+        "option_title": "Интеллектуальный круиз-контроль с функцией Stop&Go (SSC)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения с автомобилем в слепой зоне (BCA)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения выезда из полосы движения (LKA)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Ассистент движения в полосе (LFA)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Cистема предотвращения фронтального столконовения (FCA) (уровень распознавания: автомобиль/пешеход/велосипед)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false,
           true
         ]
       }

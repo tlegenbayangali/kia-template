@@ -6,12 +6,14 @@
         "option_title": "Подогрев зеркал заднего вида",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Подогрев форсунок стеклоомывателя",
         "available_on_config": [
+          true,
           true,
           true
         ]
@@ -20,12 +22,14 @@
         "option_title": "Подогрев рулевого колеса",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
       {
         "option_title": "Подогрев передних сидений",
         "available_on_config": [
+          true,
           true,
           true
         ]
@@ -34,6 +38,7 @@
         "option_title": "Дополнительный электрический отопитель салона",
         "available_on_config": [
           true,
+          true,
           true
         ]
       },
@@ -41,6 +46,7 @@
         "option_title": "Подогрев задних сидений",
         "available_on_config": [
           false,
+          true,
           true
         ]
       },
@@ -48,6 +54,7 @@
         "option_title": "Электрообогрев лобового стекла",
         "available_on_config": [
           false,
+          true,
           true
         ]
       }
@@ -60,6 +67,15 @@
         "option_title": "Легкосплавные диски 16\", с шинами 205/60 R16",
         "available_on_config": [
           true,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Легкосплавные диски 18\", с шинами 235 / 45 R18",
+        "available_on_config": [
+          false,
+          false,
           true
         ]
       },
@@ -67,6 +83,15 @@
         "option_title": "Корпуса зеркал заднего вида, окрашенные в цвет кузова",
         "available_on_config": [
           true,
+          true,
+          false
+        ]
+      },
+      {
+        "option_title": "Корпуса зеркал заднего вида, черный глянец",
+        "available_on_config": [
+          false,
+          false,
           true
         ]
       },
@@ -74,6 +99,7 @@
         "option_title": "Электропривод складывания зеркал заднего вида",
         "available_on_config": [
           false,
+          true,
           true
         ]
       },
@@ -81,6 +107,7 @@
         "option_title": "Светодиодные повторители указателя поворота",
         "available_on_config": [
           false,
+          true,
           true
         ]
       }
@@ -93,6 +120,7 @@
         "option_title": "Сиденья с отделкой тканью",
         "available_on_config": [
           true,
+          false,
           false
         ]
       },
@@ -100,12 +128,46 @@
         "option_title": "Интерьер с комбинированной отделкой искусственной кожей и тканью",
         "available_on_config": [
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Салонное зеркало заднего вида с автоматическим затемнением",
         "available_on_config": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировка поясничного подпора сиденья водителя и пассажира",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Электрорегулировка сиденья водителя с функцией памяти",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Спортивные металлические педали",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Атмосферная подсветка интерьера Mood lamp",
+        "available_on_config": [
+          false,
           false,
           true
         ]
@@ -119,12 +181,62 @@
         "option_title": "Система контроля слепых зон (BCW)",
         "available_on_config": [
           false,
+          true,
           true
         ]
       },
       {
         "option_title": "Система помощи при выезде с парковки задним ходом (RCCW)",
         "available_on_config": [
+          false,
+          true,
+          true
+        ]
+      },
+      {
+        "option_title": "Интеллектуальный круиз-контроль (SCC) с функцией Stop&Go",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения выезда из полосы движения (LKA)",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Ассистент движения в полосе (LFA)",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система контроля внимания водителя (DAW)",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Ассистент управления дальним светом (HBA)",
+        "available_on_config": [
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "option_title": "Система предотвращения столкновения с автомобилем в слепой зоне (BCA)",
+        "available_on_config": [
+          false,
           false,
           true
         ]
