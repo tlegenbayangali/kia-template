@@ -1,1 +1,11 @@
-[{"title":"Premium","price":"39 990 000 ₸","years":{"model_year":"2022 модельный год","manufacture_year":"2022 года выпуска"},"tech_characteristics":"3.3 GDI \/ 249 л.с.\/ Бензин\n\nАвтомат\n\n\/\n\nПолный"}]
+[
+  {
+    "title": "Premium",
+    "price": "37 290 000 ₸",
+    "years": {
+      "model_year": "2022 модельный год",
+      "manufacture_year": "2022 года выпуска"
+    },
+    "tech_characteristics": "3.3 GDI \/ 249 л.с.\/ Бензин\n\nАвтомат\n\n\/\n\nПолный"
+  }
+]
