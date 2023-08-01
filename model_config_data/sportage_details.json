@@ -4,53 +4,53 @@
     "price": "13 190 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
+      "manufacture_year": "2023 года выпуска"
     },
-    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Передний"
+    "tech_characteristics": "2.0 MPI / 150 л.с. / Автомат / Передний привод"
   },
   {
     "title": "Comfort",
     "price": "13 790 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
+      "manufacture_year": "2023 года выпуска"
     },
-    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Передний"
+    "tech_characteristics": "2.0 MPI / 150 л.с. / Автомат / Передний привод"
   },
   {
     "title": "Comfort",
     "price": "14 490 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
+      "manufacture_year": "2023 года выпуска"
     },
-    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Полный"
+    "tech_characteristics": "2.0 MPI / 150 л.с. / Автомат / Полный привод"
+  },
+  {
+    "title": "Luxe",
+    "price": "14 490 000 ₸",
+    "years": {
+      "model_year": "2023 модельный год",
+      "manufacture_year": "2023 года выпуска"
+    },
+    "tech_characteristics": "2.0 MPI / 150 л.с. / Автомат / Передний привод"
   },
   {
     "title": "Luxe",
     "price": "15 190 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
+      "manufacture_year": "2023 года выпуска"
     },
-    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Полный"
+    "tech_characteristics": "2.0 MPI / 150 л.с. / Автомат / Полный привод"
   },
   {
     "title": "Prestige",
     "price": "16 190 000 ₸",
     "years": {
       "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Полный"
-  },
-  {
-    "title": "Prestige",
-    "price": "17 390 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
       "manufacture_year": "2023 года выпуска"
     },
-    "tech_characteristics": "2.5 / 184 л.с. / Автомат / Полный"
+    "tech_characteristics": "2.0 MPI / 150 л.с. / Автомат / Полный привод"
   }
 ]

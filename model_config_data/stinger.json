@@ -8,9 +8,6 @@
           true,
           true,
           true,
-          true,
-          true,
-          true,
           true
         ]
       },
@@ -18,9 +15,6 @@
         "option_title": "Подогрев задних сидений",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -32,18 +26,12 @@
           true,
           true,
           true,
-          true,
-          true,
-          true,
           true
         ]
       },
       {
         "option_title": "Боковые зеркала с электроприводом и подогревом",
         "available_on_config": [
-          true,
-          true,
-          true,
           true,
           true,
           true,
@@ -60,9 +48,6 @@
         "available_on_config": [
           true,
           true,
-          true,
-          true,
-          false,
           false,
           false
         ]
@@ -72,9 +57,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -82,9 +64,6 @@
       {
         "option_title": "Светодиодные фары ближнего и дальнего света (LED)",
         "available_on_config": [
-          true,
-          false,
-          false,
           false,
           false,
           false,
@@ -94,34 +73,25 @@
       {
         "option_title": "Проекционные светодиодные фары ближнего и дальнего света (LED)",
         "available_on_config": [
-          false,
           true,
           true,
           true,
-          true,
-          true,
-          false
-        ]
-      },
-      {
-        "option_title": "Проекционные светодиодные фары ближнего и дальнего света (LED)",
-        "available_on_config": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false,
           true
+        ]
+      },
+      {
+        "option_title": "Проекционные светодиодные фары ближнего и дальнего света (LED)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false
         ]
       },
       {
         "option_title": "Корпуса боковых зеркал заднего вида окрашены в цвет кузова",
         "available_on_config": [
           true,
-          true,
-          true,
-          false,
           false,
           false,
           false
@@ -131,9 +101,6 @@
         "option_title": "Корпуса боковых зеркал заднего вида покрыты темным хромом, линия остекления с отделкой темным хромом",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -143,9 +110,6 @@
         "option_title": "Решетка радиатора и передний бампер с отделкой темным хромом",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -155,9 +119,6 @@
         "option_title": "Декоративные вставки на переднем и заднем бамперах",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -168,9 +129,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -183,9 +141,6 @@
       {
         "option_title": "Сиденья с отделкой искусственной кожей",
         "available_on_config": [
-          true,
-          false,
-          false,
           false,
           false,
           false,
@@ -195,12 +150,9 @@
       {
         "option_title": "Сиденья с комбинированной кожаной отделкой",
         "available_on_config": [
-          false,
-          false,
           true,
           true,
           true,
-          false,
           false
         ]
       },
@@ -210,9 +162,6 @@
           false,
           false,
           false,
-          false,
-          false,
-          true,
           true
         ]
       },
@@ -221,9 +170,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -233,9 +179,6 @@
         "available_on_config": [
           true,
           true,
-          true,
-          true,
-          false,
           false,
           false
         ]
@@ -245,9 +188,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -258,9 +198,6 @@
           false,
           false,
           false,
-          false,
-          false,
-          true,
           true
         ]
       },
@@ -269,9 +206,6 @@
         "available_on_config": [
           true,
           true,
-          true,
-          true,
-          false,
           false,
           false
         ]
@@ -281,9 +215,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -293,9 +224,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -305,9 +233,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -317,9 +242,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -335,10 +257,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -347,10 +266,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -359,10 +275,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -371,21 +284,6 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
-        ]
-      },
-      {
-        "option_title": "Система контроля слепых зон (BCW)",
-        "available_on_config": [
-          false,
-          false,
-          false,
-          true,
-          true,
-          true,
           false
         ]
       },
@@ -393,21 +291,24 @@
         "option_title": "Система контроля слепых зон (BCW)",
         "available_on_config": [
           false,
-          false,
-          false,
-          false,
-          false,
-          false,
+          true,
+          true,
           true
+        ]
+      },
+      {
+        "option_title": "Система контроля слепых зон (BCW)",
+        "available_on_config": [
+          false,
+          false,
+          false,
+          false
         ]
       },
       {
         "option_title": "Система предупреждения при выезде с парковки задним ходом (RCCW)",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -419,10 +320,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -431,10 +329,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -443,10 +338,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       }
     ]
@@ -457,9 +349,6 @@
       {
         "option_title": "Электронное управление трансмиссией (Shift by Wire)",
         "available_on_config": [
-          false,
-          false,
-          true,
           true,
           true,
           true,
@@ -471,9 +360,6 @@
         "available_on_config": [
           true,
           true,
-          true,
-          true,
-          false,
           false,
           false
         ]
@@ -482,9 +368,6 @@
         "option_title": "Электрорегулируемое сиденье переднего пассажира в 8-ми направлениях",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -495,10 +378,7 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
           true,
-          false,
           false
         ]
       },
@@ -508,9 +388,6 @@
           false,
           false,
           false,
-          false,
-          false,
-          true,
           true
         ]
       },
@@ -519,9 +396,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -530,9 +404,6 @@
         "option_title": "Вентиляция передних сидений",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -541,9 +412,6 @@
       {
         "option_title": "Передние и задние стеклоподъёмники с электроприводом с функцией Auto и Safety",
         "available_on_config": [
-          false,
-          false,
-          true,
           true,
           true,
           true,
@@ -556,10 +424,7 @@
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          false
+          true
         ]
       },
       {
@@ -567,9 +432,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -579,9 +441,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -589,9 +448,6 @@
       {
         "option_title": "Аудиосистема с радио, USB и AUX входы + 6 динамиков",
         "available_on_config": [
-          true,
-          true,
-          false,
           false,
           false,
           false,
@@ -601,10 +457,7 @@
       {
         "option_title": "Аудиосистема с радио, USB и AUX входы + 9 динамиков",
         "available_on_config": [
-          false,
-          false,
           true,
-          false,
           false,
           false,
           false
@@ -614,9 +467,6 @@
         "option_title": "Аудиосистема премиум класса Harman/Kardon, AUX/USB входы + 15 динамиков",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -625,9 +475,6 @@
       {
         "option_title": "Система активного звукового сопровождения (ASD)",
         "available_on_config": [
-          false,
-          false,
-          true,
           true,
           true,
           true,
@@ -638,9 +485,6 @@
         "option_title": "Мультимедийная система с 8'' цветным дисплеем с беспроводной поддержкой Android Auto и Apple Carplay",
         "available_on_config": [
           true,
-          true,
-          true,
-          false,
           false,
           false,
           false
@@ -650,9 +494,6 @@
         "option_title": "Мультимедийная система с 10,25'' с цветным дисплеем с поддержкой Android Auto и Apple Carplay",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -663,9 +504,6 @@
         "available_on_config": [
           true,
           true,
-          true,
-          true,
-          false,
           false,
           false
         ]
@@ -675,9 +513,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -687,9 +522,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -698,9 +530,6 @@
         "option_title": "Электропривод двери багажника с индивидуальной настройкой",
         "available_on_config": [
           false,
-          false,
-          false,
-          true,
           true,
           true,
           true
@@ -711,9 +540,6 @@
         "available_on_config": [
           true,
           true,
-          true,
-          true,
-          false,
           false,
           false
         ]
@@ -723,9 +549,6 @@
         "available_on_config": [
           false,
           false,
-          false,
-          false,
-          true,
           true,
           true
         ]
@@ -733,9 +556,6 @@
       {
         "option_title": "Беспроводная зарядка мобильного телефона в центральной консоли",
         "available_on_config": [
-          false,
-          false,
-          true,
           true,
           true,
           true,
@@ -750,9 +570,6 @@
       {
         "option_title": "Дифференциал повышенного трения (2WD)",
         "available_on_config": [
-          true,
-          true,
-          false,
           false,
           false,
           false,
@@ -765,10 +582,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -777,10 +591,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -789,10 +600,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -801,10 +609,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       },
       {
@@ -813,10 +618,7 @@
           false,
           false,
           false,
-          false,
-          false,
-          false,
-          true
+          false
         ]
       }
     ]

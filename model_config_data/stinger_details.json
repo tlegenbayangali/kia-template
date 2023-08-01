@@ -1,23 +1,5 @@
 [
   {
-    "title": "Luxe",
-    "price": "16 990 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Задний"
-  },
-  {
-    "title": "Luxe",
-    "price": "17 990 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2022 года выпуска"
-    },
-    "tech_characteristics": "2.0 / 150 л.с. / Автомат / Полный"
-  },
-  {
     "title": "Prestige",
     "price": "18 590 000 ₸",
     "years": {
@@ -52,14 +34,5 @@
       "manufacture_year": "2022 года выпуска"
     },
     "tech_characteristics": "2.0 / 247 л.с. / Автомат / Полный"
-  },
-  {
-    "title": "GT Suede",
-    "price": "25 490 000 ₸",
-    "years": {
-      "model_year": "2023 модельный год",
-      "manufacture_year": "2023 года выпуска"
-    },
-    "tech_characteristics": "3.3 / 370 л.с. / Автомат / Полный"
   }
 ]

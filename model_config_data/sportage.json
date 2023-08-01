@@ -107,17 +107,6 @@
         ]
       },
       {
-        "option_title": "Легкосплавные диски 19\" с шинами 235/55 R19",
-        "available_on_config": [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
-        ]
-      },
-      {
         "option_title": "Электропривод складывания зеркал заднего вида и повторители указателя поворота",
         "available_on_config": [
           false,
@@ -217,7 +206,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       },
@@ -239,7 +228,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false
         ]
       },
@@ -250,7 +239,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       },
@@ -272,7 +261,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false
         ]
       },
@@ -283,7 +272,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       }
@@ -337,7 +326,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       },
@@ -359,7 +348,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       },
@@ -370,7 +359,7 @@
           true,
           true,
           true,
-          false,
+          true,
           false
         ]
       },
@@ -381,7 +370,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       },
@@ -403,7 +392,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       },
@@ -507,7 +496,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       },
@@ -518,7 +507,7 @@
           false,
           false,
           false,
-          true,
+          false,
           true
         ]
       }
