@@ -68,12 +68,13 @@ $('.wpcf7-form-control.wpcf7-checkbox').remove();
 const cfForm = $('.wpcf7-form');
 const cfSubmit = $('.wpcf7-submit');
 
+cfForm.on('wpcf7submit', function () {
+	cfSubmit.css({
+		pointerEvents: 'none'
+	})
+});
+
 if (cfForm.length) {
-	cfForm.on('wpcf7submit', function () {
-		cfSubmit.css({
-			pointerEvents: 'none'
-		})
-	});
 	cfForm.on('wpcf7mailsent', function cfFormHandler() {
 		$(this).parents('.callback-col').append(`
         <div class="mt-40 mb-40">
