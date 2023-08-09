@@ -68,8 +68,8 @@ $('.wpcf7-form-control.wpcf7-checkbox').remove();
 const cfForm = $('.wpcf7-form');
 const cfSubmit = $('.wpcf7-submit');
 
-cfForm.on('wpcf7submit', function () {
-	cfSubmit.css({
+cfSubmit.on('click', function () {
+	$(this).css({
 		pointerEvents: 'none'
 	})
 });
