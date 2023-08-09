@@ -71,7 +71,7 @@ if (cfForm.length) {
 	cfForm.on('wpcf7mailsent', function cfFormHandler() {
 		$(this).parents('.callback-col').append(`
         <div class="mt-40 mb-40">
-            <span class="fz-25 fw-700">Ваша заявка успешно отправлена!</span>
+            <span class="fz-25 fw-700 thankyou">Ваша заявка успешно отправлена!</span>
             <p class="mt-20">Сотрудник дилерского центра Kia свяжется с Вами в ближайшее время.</p>
             <a href="/" class="mt-30 d-block">На главную</a>
         </div>
