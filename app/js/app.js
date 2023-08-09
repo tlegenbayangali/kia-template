@@ -66,6 +66,11 @@ setTimeout(() => {
 $('.wpcf7-form-control.wpcf7-checkbox').remove();
 
 const cfForm = $('.wpcf7-form');
+const cfSubmit = $('.wpcf7-submit');
+
+cfSubmit.on('click', function () {
+	$(this).prop('disabled', true)
+})
 
 if (cfForm.length) {
 	cfForm.on('wpcf7mailsent', function cfFormHandler() {
