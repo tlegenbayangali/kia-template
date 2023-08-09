@@ -70,8 +70,9 @@ const cfSubmit = $('.wpcf7-submit');
 
 if (cfForm.length) {
 	cfForm.on('wpcf7submit', function () {
-		console.log(cfSubmit);
-		cfSubmit.prop('disabled', true);
+		cfSubmit.css({
+			pointerEvents: 'none'
+		})
 	});
 	cfForm.on('wpcf7mailsent', function cfFormHandler() {
 		$(this).parents('.callback-col').append(`
