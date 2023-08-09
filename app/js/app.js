@@ -69,9 +69,11 @@ const cfForm = $('.wpcf7-form');
 const cfSubmit = $('.wpcf7-submit');
 
 cfSubmit.on('click', function () {
-	$(this).css({
-		pointerEvents: 'none'
-	})
+	$(this)
+		.parent('.btn-wrapper')
+		.css({
+			pointerEvents: 'none'
+		})
 });
 
 if (cfForm.length) {
