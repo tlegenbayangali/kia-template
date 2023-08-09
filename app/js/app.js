@@ -68,10 +68,6 @@ $('.wpcf7-form-control.wpcf7-checkbox').remove();
 const cfForm = $('.wpcf7-form');
 const cfSubmit = $('.wpcf7-submit');
 
-cfSubmit.on('click', function () {
-	$(this).prop('disabled', true)
-})
-
 if (cfForm.length) {
 	cfForm.on('wpcf7mailsent', function cfFormHandler() {
 		$(this).parents('.callback-col').append(`
@@ -82,6 +78,10 @@ if (cfForm.length) {
         </div>
         `);
 		$(this).parents('.callback-form').remove();
+	});
+
+	cfForm.on('wpcf7submit', function () {
+		cfSubmit.prop('disabled', true);
 	});
 }
 
