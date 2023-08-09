@@ -30,36 +30,37 @@ import './utils/range-custom';
 // import Sagyndyk do
 import './utils/slider-block';
 import './utils/scroll';
+
 window.jQuery = $;
 
 $('body').addClass('is-loading');
 let openedItems = null;
 $(document).on('click', () => {
-  openedItems = $('.opened');
-  $(openedItems).removeClass('opened');
+	openedItems = $('.opened');
+	$(openedItems).removeClass('opened');
 });
 
 $(window).on('resize', function resizeHandler() {
-  if ($(window).width() >= 992) {
-    $(document).on('click', () => {
-      openedItems = $('.opened');
-      $(openedItems).removeClass('opened');
-      $('body').css('overflow', 'auto');
-      const sh = $('.sh');
-      openedItems = $('.opened, .m-opened');
-      $(openedItems).removeClass('opened, m-opened');
-      $(sh).css({
-        opacity: 0,
-        'pointer-events': 'none',
-      });
-    });
-  }
+	if ($(window).width() >= 992) {
+		$(document).on('click', () => {
+			openedItems = $('.opened');
+			$(openedItems).removeClass('opened');
+			$('body').css('overflow', 'auto');
+			const sh = $('.sh');
+			openedItems = $('.opened, .m-opened');
+			$(openedItems).removeClass('opened, m-opened');
+			$(sh).css({
+				opacity: 0,
+				'pointer-events': 'none',
+			});
+		});
+	}
 });
 $(window).trigger('resize');
 
 setTimeout(() => {
-  $('body').removeClass('is-loading');
-  $('.loader').addClass('loader-loaded');
+	$('body').removeClass('is-loading');
+	$('.loader').addClass('loader-loaded');
 }, 1000);
 
 $('.wpcf7-form-control.wpcf7-checkbox').remove();
@@ -67,16 +68,16 @@ $('.wpcf7-form-control.wpcf7-checkbox').remove();
 const cfForm = $('.wpcf7-form');
 
 if (cfForm.length) {
-  cfForm.on('wpcf7mailsent', function cfFormHandler() {
-    $(this).parents('.callback-col').append(`
+	cfForm.on('wpcf7mailsent', function cfFormHandler() {
+		$(this).parents('.callback-col').append(`
         <div class="mt-40 mb-40">
             <span class="fz-25 fw-700">Ваша заявка успешно отправлена!</span>
             <p class="mt-20">Сотрудник дилерского центра Kia свяжется с Вами в ближайшее время.</p>
             <a href="/" class="mt-30 d-block">На главную</a>
         </div>
         `);
-    $(this).parents('.callback-form').remove();
-  });
+		$(this).parents('.callback-form').remove();
+	});
 }
 
 /**
@@ -86,7 +87,7 @@ const formSubmitter = $('.wpcf7-form .btn-wrapper.btn-wrapper-lg');
 const submitInput = $('.wpcf7-form input[type=submit]');
 
 formSubmitter.on('click', function formSubmitterHandler() {
-  $(submitInput).trigger('click');
+	$(submitInput).trigger('click');
 });
 
 // $('a[href^="#"]').on('click', function transitionHadler(event) {
@@ -108,37 +109,37 @@ formSubmitter.on('click', function formSubmitterHandler() {
 const sticky = new Sticky('.model-info');
 
 if ($('.equip-config')) {
-  const itemWrapper = $('.equip-config');
-  const item = $('.equip-config-section-item');
-  item.each((idx, equipItem) => {
-    let counter = 0;
-    $(equipItem)
-      .find('.equip-config-section-item-carousel-wrapper .swiper-slide div')
-      .each((innerIdx, innerItem) => {
-        if ($.trim($(innerItem).text()) !== '—') {
-          counter += 1;
-        }
-      });
-    if (!counter && !$(equipItem).hasClass('plain')) {
-      $(equipItem).remove();
-    }
-  });
-  itemWrapper.each((idx, parentItem) => {
-    if (!$(parentItem).find('.equip-config-section-item').length) {
-      $(parentItem).remove();
-    }
-  });
+	const itemWrapper = $('.equip-config');
+	const item = $('.equip-config-section-item');
+	item.each((idx, equipItem) => {
+		let counter = 0;
+		$(equipItem)
+			.find('.equip-config-section-item-carousel-wrapper .swiper-slide div')
+			.each((innerIdx, innerItem) => {
+				if ($.trim($(innerItem).text()) !== '—') {
+					counter += 1;
+				}
+			});
+		if (!counter && !$(equipItem).hasClass('plain')) {
+			$(equipItem).remove();
+		}
+	});
+	itemWrapper.each((idx, parentItem) => {
+		if (!$(parentItem).find('.equip-config-section-item').length) {
+			$(parentItem).remove();
+		}
+	});
 }
 
 if ($('#offer-form').length) {
-  const offerName = $.trim($('.breadcrumbs .kb_title').text());
-  const formOfferName = $('#form-offer-name');
+	const offerName = $.trim($('.breadcrumbs .kb_title').text());
+	const formOfferName = $('#form-offer-name');
 
-  setTimeout(() => {
-    formOfferName.val(offerName);
-  }, 5000);
+	setTimeout(() => {
+		formOfferName.val(offerName);
+	}, 5000);
 }
 
 $('#single-model-car-button').on('click', () => {
-  $('.header-single-model-mobile').toggleClass('open');
+	$('.header-single-model-mobile').toggleClass('open');
 });

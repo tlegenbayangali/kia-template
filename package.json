@@ -4,6 +4,9 @@
   "description": "OptimizedHTML 5 - Lightweight Gulp Starter",
   "main": "index.js",
   "author": "WebDesign Master",
+  "scripts": {
+    "start": "gulp  --openssl-legacy-provider"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.10",
