@@ -66,11 +66,10 @@ setTimeout(() => {
 $('.wpcf7-form-control.wpcf7-checkbox').remove();
 
 const cfForm = $('.wpcf7-form');
-const cfSubmit = $('.wpcf7-submit');
+const cfSubmit = $('.btn-wrapper.btn-wrapper-lg.btn-wrapper-black');
 
 cfSubmit.on('click', function () {
 	$(this)
-		.parent('.btn-wrapper')
 		.css({
 			pointerEvents: 'none'
 		})
