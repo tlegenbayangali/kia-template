@@ -69,6 +69,10 @@ const cfForm = $('.wpcf7-form');
 const cfSubmit = $('.wpcf7-submit');
 
 if (cfForm.length) {
+	cfForm.on('wpcf7submit', function () {
+		console.log(cfSubmit);
+		cfSubmit.prop('disabled', true);
+	});
 	cfForm.on('wpcf7mailsent', function cfFormHandler() {
 		$(this).parents('.callback-col').append(`
         <div class="mt-40 mb-40">
@@ -78,10 +82,6 @@ if (cfForm.length) {
         </div>
         `);
 		$(this).parents('.callback-form').remove();
-	});
-
-	cfForm.on('wpcf7submit', function () {
-		cfSubmit.prop('disabled', true);
 	});
 }
 
